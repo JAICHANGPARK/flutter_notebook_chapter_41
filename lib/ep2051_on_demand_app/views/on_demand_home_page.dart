@@ -12,10 +12,14 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [],
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        
           selectedItemColor: Colors.deepOrange,
           type: BottomNavigationBarType.fixed,
           items: [
