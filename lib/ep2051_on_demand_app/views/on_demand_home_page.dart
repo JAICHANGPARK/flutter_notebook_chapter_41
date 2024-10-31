@@ -11,6 +11,15 @@ class OnDemandHomePage extends StatefulWidget {
 class _OnDemandHomePageState extends State<OnDemandHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon())
+      ]),
+    );
   }
 }
