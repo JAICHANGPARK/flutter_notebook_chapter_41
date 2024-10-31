@@ -12,7 +12,7 @@ dependencies:
 
   hugeicons: ^0.0.7
   gap: ^3.0.1
-  percent_indicator: 
+  percent_indicator: ^4.2.3
 
 
 dev_dependencies:
