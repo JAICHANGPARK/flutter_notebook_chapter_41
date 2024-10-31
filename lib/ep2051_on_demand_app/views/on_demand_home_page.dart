@@ -39,8 +39,13 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
             Icons.checklist,
           ),
           label: "Services",
-          
-        )
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.chat_outlined,
+          ),
+          label: "Message",
+        ),
       ]),
     );
   }
