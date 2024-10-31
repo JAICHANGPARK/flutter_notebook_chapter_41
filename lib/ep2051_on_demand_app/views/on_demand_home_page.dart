@@ -17,7 +17,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.deepOrange,
-          
+          type: BottomNavigationBarType.fixed,
           items: [
         BottomNavigationBarItem(
           icon: Icon(
