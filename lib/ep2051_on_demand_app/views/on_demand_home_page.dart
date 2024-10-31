@@ -15,7 +15,10 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
       body: Column(
         children: [],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.deepOrange,
+          
+          items: [
         BottomNavigationBarItem(
           icon: Icon(
             HugeIcons.strokeRoundedHome01,
