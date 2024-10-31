@@ -21,6 +21,12 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
             HugeIcons.strokeRoundedHome01,
           ),
           label: "Home",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            HugeIcons.strokeRoundedPlayList,
+          ),
+          label: "Jobs",
         )
       ]),
     );
