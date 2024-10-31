@@ -11,6 +11,6 @@ class OnDemandHomePage extends StatefulWidget {
 class _OnDemandHomePageState extends State<OnDemandHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
