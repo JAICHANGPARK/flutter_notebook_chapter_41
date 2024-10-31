@@ -20,7 +20,9 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
       ),
       bottomNavigationBar: SizedBox(
         height: 80,
+
         child: BottomNavigationBar(
+          backgroundColor: Colors.white,
 
             selectedItemColor: Colors.deepOrange,
             type: BottomNavigationBarType.fixed,
