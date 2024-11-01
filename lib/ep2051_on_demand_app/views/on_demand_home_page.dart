@@ -165,7 +165,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   );
                 },
               ),
-            )
+            ),
           ],
         ),
       ),
