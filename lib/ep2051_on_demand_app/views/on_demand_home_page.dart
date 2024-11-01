@@ -23,7 +23,22 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [],
+                    children: [
+                      Text('Hi John Doe'),
+                      Row(
+                        children: [
+                          Icon(
+                            HugeIcons.strokeRoundedLocation01,
+                          ),
+                          Text(
+                            "N.Y Bronx ",
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_down,
+                          ),
+                        ],
+                      )
+                    ],
                   ),
                 )
               ],
