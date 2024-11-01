@@ -129,20 +129,23 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 120,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 120,
-                    margin: EdgeInsets.only(right: 12),
-                    decoration: BoxDecoration(
-                      color: Colors.orange[50]!,
-                    ),
-                  );
-                },
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: SizedBox(
+                height: 120,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 120,
+                      margin: EdgeInsets.only(right: 12),
+                      decoration: BoxDecoration(
+                        color: Colors.orange[50]!,
+                      ),
+                    );
+                  },
+                ),
               ),
             )
           ],
