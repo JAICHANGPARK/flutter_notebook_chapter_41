@@ -105,15 +105,26 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
               ),
             ),
             Divider(),
-            Row(
-              children: [
-                Text(
-                  "Service Categories",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Service Categories",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                )
-              ],
+                  TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "View all",
+                      ),
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.orange,
+                      ))
+                ],
+              ),
             )
           ],
         ),
