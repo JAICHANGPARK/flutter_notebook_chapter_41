@@ -155,7 +155,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 240,
+                    width: 260,
                     decoration: BoxDecoration(
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(8),
