@@ -91,6 +91,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search for services",
+                        border: InputBorder.none,
                       ),
                     ),
                   ),
