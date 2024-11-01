@@ -84,6 +84,23 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   color: Colors.grey,
                 ),
               ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: "Search for services",
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.search,
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
