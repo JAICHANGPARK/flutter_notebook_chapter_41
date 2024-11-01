@@ -201,7 +201,9 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     width: 280,
-
+                    decoration: BoxDecoration(
+                      color: Colors.grey[100]!,
+                    ),
                   );
                 },
               ),
