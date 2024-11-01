@@ -130,11 +130,12 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
               ),
             ),
             SizedBox(
-              height: 80,
+              height: 120,
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    height: 80,
+                    height: 120,
+                    margin: EdgeInsets.only(right: 12),
                     decoration: BoxDecoration(
                       color: Colors.orange[50]!,
                     ),
