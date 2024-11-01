@@ -108,22 +108,38 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Service Categories",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 18,
                     ),
                   ),
                   TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "View all",
-                      ),
-                      style: TextButton.styleFrom(
-                        foregroundColor: Colors.deepOrange,
-                      ))
+                    onPressed: () {},
+                    child: Text(
+                      "View all",
+                    ),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.deepOrange,
+                    ),
+                  ),
                 ],
+              ),
+            ),
+            SizedBox(
+              height: 80,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    height: 80,
+                    decoration: BoxDecoration(
+                      color: Colors.orange[50]!,
+                    ),
+                  );
+                },
               ),
             )
           ],
