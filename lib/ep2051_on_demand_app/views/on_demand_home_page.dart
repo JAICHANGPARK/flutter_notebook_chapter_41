@@ -201,12 +201,14 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     width: 280,
+                    margin: EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
-                        color: Colors.grey[100]!,
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(
-                          color: Colors.grey[500],
-                        )),
+                      color: Colors.grey[100]!,
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: Colors.grey[500]!,
+                      ),
+                    ),
                   );
                 },
               ),
