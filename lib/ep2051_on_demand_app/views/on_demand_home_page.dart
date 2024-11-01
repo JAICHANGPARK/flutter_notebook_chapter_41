@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class OnDemandHomePage extends StatefulWidget {
@@ -22,16 +23,19 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
               child: Row(
                 children: [
                   CircleAvatar(),
+                  Gap(12),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text('Hi John Doe'),
+                        Gap(4),
                         Row(
                           children: [
                             Icon(
                               HugeIcons.strokeRoundedLocation01,
                             ),
+                            Gap(6),
                             Text(
                               "N.Y Bronx ",
                             ),
