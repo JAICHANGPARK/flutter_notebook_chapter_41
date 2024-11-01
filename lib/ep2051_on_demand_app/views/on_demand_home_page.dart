@@ -166,6 +166,31 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 },
               ),
             ),
+            Gap(24),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Popular servcices",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "View all",
+                    ),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.deepOrange,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
