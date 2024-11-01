@@ -64,6 +64,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 16,),
               child: Text("What service do you want?"),
             ),
+            Gap(8),
             Container(
               height: 52,
               margin: EdgeInsets.symmetric(
