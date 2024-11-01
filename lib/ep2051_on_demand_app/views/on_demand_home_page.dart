@@ -34,10 +34,14 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                           children: [
                             Icon(
                               HugeIcons.strokeRoundedLocation01,
+                              size: 18,
                             ),
                             Gap(6),
                             Text(
                               "N.Y Bronx ",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             Icon(
                               Icons.keyboard_arrow_down,
