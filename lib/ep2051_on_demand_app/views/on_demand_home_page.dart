@@ -59,6 +59,14 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   ),
                 ],
               ),
+            ),
+            Text("What service do you want?"),
+            Container(
+              height: 52,
+              decoration: BoxDecoration(
+                color: Colors.grey[300]!,
+                borderRadius: BorderRadius.circular(6),
+              ),
             )
           ],
         ),
