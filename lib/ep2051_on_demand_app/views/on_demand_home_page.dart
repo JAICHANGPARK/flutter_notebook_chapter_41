@@ -202,8 +202,11 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   return Container(
                     width: 280,
                     decoration: BoxDecoration(
-                      color: Colors.grey[100]!,
-                    ),
+                        color: Colors.grey[100]!,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: Colors.grey[500],
+                        )),
                   );
                 },
               ),
