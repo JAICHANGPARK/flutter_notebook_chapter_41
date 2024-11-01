@@ -61,8 +61,15 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16,),
-              child: Text("What service do you want?"),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              child: Text(
+                "What service do you want?",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             Gap(8),
             Container(
@@ -71,7 +78,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
-                color: Colors.grey[300]!,
+                color: Colors.grey[100]!,
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
                   color: Colors.grey,
