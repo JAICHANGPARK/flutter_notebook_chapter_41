@@ -103,6 +103,17 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   ),
                 ],
               ),
+            ),
+            Divider(),
+            Row(
+              children: [
+                Text(
+                  "Service Categories",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
             )
           ],
         ),
