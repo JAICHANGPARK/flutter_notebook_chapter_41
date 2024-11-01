@@ -84,6 +84,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   color: Colors.grey,
                 ),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Expanded(
