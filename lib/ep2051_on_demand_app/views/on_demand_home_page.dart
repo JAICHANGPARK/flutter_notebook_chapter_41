@@ -22,9 +22,9 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(),
-                  Gap(12),
-                  Expanded(
+                  const CircleAvatar(),
+                  const Gap(12),
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -53,15 +53,15 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.notifications_none,
                     ),
                   ),
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
+            const Padding(
+              padding: EdgeInsets.symmetric(
                 horizontal: 16,
               ),
               child: Text(
@@ -71,10 +71,10 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 ),
               ),
             ),
-            Gap(8),
+            const Gap(8),
             Container(
               height: 52,
-              margin: EdgeInsets.symmetric(
+              margin: const EdgeInsets.symmetric(
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
@@ -84,10 +84,10 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   color: Colors.grey,
                 ),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search for services",
@@ -97,20 +97,22 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.search,
                     ),
                   ),
                 ],
               ),
             ),
-            Divider(),
+            const Divider(
+              height: 28,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Service Categories",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -119,7 +121,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "View all",
                     ),
                     style: TextButton.styleFrom(
@@ -139,7 +141,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 120,
-                      margin: EdgeInsets.only(right: 12),
+                      margin: const EdgeInsets.only(right: 12),
                       decoration: BoxDecoration(
                         color: Colors.orange[50]!,
                       ),
@@ -148,16 +150,16 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 ),
               ),
             ),
-            Gap(24),
+            const Gap(42),
             Container(
               height: 160,
-              margin: EdgeInsets.only(left: 16),
+              margin: const EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
                     width: 320,
-                    margin: EdgeInsets.only(right: 14),
+                    margin: const EdgeInsets.only(right: 14),
                     decoration: BoxDecoration(
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(8),
@@ -166,14 +168,14 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 },
               ),
             ),
-            Gap(24),
+            const Gap(24),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    "Popular servcices",
+                  const Text(
+                    "Popular services",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
@@ -181,7 +183,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "View all",
                     ),
                     style: TextButton.styleFrom(
@@ -191,6 +193,19 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 240,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 280,
+
+                  );
+                },
+              ),
+            )
           ],
         ),
       ),
@@ -201,31 +216,31 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
             selectedItemColor: Colors.deepOrange,
             type: BottomNavigationBarType.fixed,
             items: [
-              BottomNavigationBarItem(
+              const BottomNavigationBarItem(
                 icon: Icon(
                   HugeIcons.strokeRoundedHome01,
                 ),
                 label: "Home",
               ),
-              BottomNavigationBarItem(
+              const BottomNavigationBarItem(
                 icon: Icon(
                   HugeIcons.strokeRoundedPlayList,
                 ),
                 label: "Jobs",
               ),
-              BottomNavigationBarItem(
+              const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person_2_outlined,
                 ),
                 label: "Workers",
               ),
-              BottomNavigationBarItem(
+              const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.checklist,
                 ),
                 label: "Services",
               ),
-              BottomNavigationBarItem(
+              const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.chat_outlined,
                 ),
