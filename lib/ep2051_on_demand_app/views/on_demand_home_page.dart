@@ -17,31 +17,40 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Hi John Doe'),
-                      Row(
-                        children: [
-                          Icon(
-                            HugeIcons.strokeRoundedLocation01,
-                          ),
-                          Text(
-                            "N.Y Bronx ",
-                          ),
-                          Icon(
-                            Icons.keyboard_arrow_down,
-                          ),
-                        ],
-                      )
-                    ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Hi John Doe'),
+                        Row(
+                          children: [
+                            Icon(
+                              HugeIcons.strokeRoundedLocation01,
+                            ),
+                            Text(
+                              "N.Y Bronx ",
+                            ),
+                            Icon(
+                              Icons.keyboard_arrow_down,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                )
-              ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.notifications_none,
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
