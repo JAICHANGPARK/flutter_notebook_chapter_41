@@ -106,7 +106,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
             ),
             Divider(),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 children: [
                   Text(
@@ -121,7 +121,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                         "View all",
                       ),
                       style: TextButton.styleFrom(
-                        foregroundColor: Colors.orange,
+                        foregroundColor: Colors.deepOrange,
                       ))
                 ],
               ),
