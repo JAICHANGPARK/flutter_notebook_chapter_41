@@ -147,6 +147,21 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                   },
                 ),
               ),
+            ),
+            Gap(24),
+            Container(
+              height: 160,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  );
+                },
+              ),
             )
           ],
         ),
