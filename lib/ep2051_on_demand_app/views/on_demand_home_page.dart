@@ -151,11 +151,13 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
             Gap(24),
             Container(
               height: 160,
+              margin: EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 260,
+                    width: 320,
+                    margin: EdgeInsets.only(right: 14),
                     decoration: BoxDecoration(
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(8),
