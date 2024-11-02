@@ -32,6 +32,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.deepOrange[50],
+                      borderRadius: BorderRadius.circular(4),
                     ),
                     child: Center(
                       child: Text(
