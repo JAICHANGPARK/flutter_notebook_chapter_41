@@ -256,7 +256,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 16),
-                      height: 200,
+                      height: 180,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
@@ -282,6 +282,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                       borderRadius: BorderRadius.only(
                                         topRight: Radius.circular(8),
                                         topLeft:  Radius.circular(8),
+                                        bottomRight: Radius.circular(8),
                                       )
                                     ),
                                   ),
