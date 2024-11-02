@@ -12,7 +12,16 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [],
+      children: [
+        Text("My jobs"),
+        Container(
+          height: 48,
+          decoration: BoxDecoration(
+              border: Border.all(
+            color: Colors.grey[400]!,
+          )),
+        )
+      ],
     );
   }
 }
