@@ -290,6 +290,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Container(
+                                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                                           decoration: BoxDecoration(
                                             color: Colors.black,
                                           ),
@@ -299,6 +300,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                               Icon(
                                                 Icons.star_border,
                                                 color: Colors.orangeAccent,
+                                                size: 15,
                                               ),
                                               Text(
                                                 "4.5 (442)",
