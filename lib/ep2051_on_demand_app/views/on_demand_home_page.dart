@@ -286,6 +286,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                       ),
                                     ),
                                     width: double.infinity,
+                                    padding: EdgeInsets.all(8),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -294,6 +295,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                           decoration: BoxDecoration(
                                             color: Colors.black,
                                           ),
+                                          
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
