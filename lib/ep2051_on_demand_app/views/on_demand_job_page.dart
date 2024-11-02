@@ -32,10 +32,13 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                     decoration: BoxDecoration(
                       color: Colors.deepOrange[100],
                     ),
-                    child: Text(
-                      "Active",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                    child: Center(
+                      child: Text(
+                        "Active",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.deepOrange,
+                        ),
                       ),
                     ),
                   ),
