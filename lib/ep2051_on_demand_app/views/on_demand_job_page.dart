@@ -19,12 +19,13 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
           Text("My jobs"),
           Gap(6),
           Container(
-            height: 42,
+            height: 46,
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.grey[400]!,
               ),
             ),
+            padding: EdgeInsets.all(5),
             child: Row(
               children: [
                 Expanded(
