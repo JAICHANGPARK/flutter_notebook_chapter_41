@@ -16,7 +16,12 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("My jobs"),
+          Text(
+            "My jobs",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           Gap(6),
           Container(
             height: 46,
@@ -116,9 +121,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                             CircleAvatar(),
                             Expanded(
                               child: Column(
-                                children: [
-                                  Text("John Doe")
-                                ],
+                                children: [Text("John Doe")],
                               ),
                             ),
                           ],
