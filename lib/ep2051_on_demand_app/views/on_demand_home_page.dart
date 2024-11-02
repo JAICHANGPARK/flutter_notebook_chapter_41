@@ -180,12 +180,12 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                               color: Colors.orangeAccent[100],
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.all(24),
+                            padding: EdgeInsets.all(20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("#PromoToday"),
-                                Gap(12),
+                                Gap(8),
                                 Text(
                                   "Work with our best\nservice provider",
                                   style: TextStyle(
@@ -193,14 +193,16 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Gap(12),
+                                Gap(8),
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                     borderRadius: BorderRadius.circular(24),
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                                   child: Text(
                                     "Book",
+
                                     style: TextStyle(
                                       color: Colors.orangeAccent,
                                     ),
