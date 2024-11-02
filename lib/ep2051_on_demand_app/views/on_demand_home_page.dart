@@ -185,7 +185,12 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("#PromoToday"),
-                                Text("Work with our best service provider"),
+                                Gap(12),
+                                Text("Work with our best\nservice provider",style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),),
+                                Gap(12),
                                 Container(
                                   child: Text(
                                     "Book",
