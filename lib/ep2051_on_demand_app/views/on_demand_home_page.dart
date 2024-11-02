@@ -177,7 +177,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                             width: 320,
                             margin: const EdgeInsets.only(right: 14),
                             decoration: BoxDecoration(
-                              color: Colors.orange,
+                              color: Colors.orangeAccent[100],
                               borderRadius: BorderRadius.circular(8),
                             ),
                             padding: EdgeInsets.all(24),
@@ -186,14 +186,24 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                               children: [
                                 Text("#PromoToday"),
                                 Gap(12),
-                                Text("Work with our best\nservice provider",style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),),
+                                Text(
+                                  "Work with our best\nservice provider",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 Gap(12),
                                 Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
                                   child: Text(
                                     "Book",
+                                    style: TextStyle(
+                                      color: Colors.orangeAccent,
+                                    ),
                                   ),
                                 )
                               ],
