@@ -278,12 +278,13 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
-                                        color: Colors.grey,
-                                        borderRadius: BorderRadius.only(
-                                          topRight: Radius.circular(8),
-                                          topLeft: Radius.circular(8),
-                                          bottomRight: Radius.circular(8),
-                                        )),
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(8),
+                                        topLeft: Radius.circular(8),
+                                        bottomRight: Radius.circular(8),
+                                      ),
+                                    ),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -292,15 +293,21 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                             color: Colors.black,
                                           ),
                                           child: Row(
+                                            mainAxisSize: MainAxisSize.min,
                                             children: [
                                               Icon(
                                                 Icons.star_border,
                                                 color: Colors.orangeAccent,
                                               ),
-                                              Text("4.5 (442)")
+                                              Text(
+                                                "4.5 (442)",
+                                                style: TextStyle(
+                                                  color: Colors.orangeAccent,
+                                                ),
+                                              )
                                             ],
                                           ),
-                                        )
+                                        ),
                                       ],
                                     ),
                                   ),
