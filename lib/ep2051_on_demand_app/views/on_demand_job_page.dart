@@ -87,6 +87,10 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
+                  margin: EdgeInsets.only(
+                    bottom: 8,
+                  ),
+                  padding: EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: Colors.orange[50],
                   ),
@@ -105,8 +109,44 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                         ],
                       ),
                       Divider(),
+                      SizedBox(
+                        height: 64,
+                        child: Row(
+                          children: [
+                            CircleAvatar(),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text("John Doe")
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                       Row(
-                        children: [],
+                        children: [
+                          Expanded(
+                            child: Container(
+                              child: Row(
+                                children: [
+                                  Icon(Icons.chat_outlined),
+                                  Text("Chat"),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              child: Row(
+                                children: [
+                                  Icon(Icons.call),
+                                  Text("Call"),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
                       )
                     ],
                   ),
