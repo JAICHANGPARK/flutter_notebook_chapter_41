@@ -294,8 +294,8 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                           padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                                           decoration: BoxDecoration(
                                             color: Colors.black,
+                                            borderRadius: BorderRadius.circular(4),
                                           ),
-                                          
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
