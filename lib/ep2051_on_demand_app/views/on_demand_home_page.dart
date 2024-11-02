@@ -148,6 +148,19 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                               margin: const EdgeInsets.only(right: 12),
                               decoration: BoxDecoration(
                                 color: Colors.orange[50]!,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 24,
+                                  ),
+                                  Gap(8),
+                                  Text("Painter"),
+                                ],
                               ),
                             );
                           },
