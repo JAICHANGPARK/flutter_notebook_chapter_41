@@ -188,6 +188,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                   "#PromoToday",
                                   style: TextStyle(
                                     color: Colors.deepOrange,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 Gap(8),
