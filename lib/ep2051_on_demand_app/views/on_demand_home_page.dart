@@ -285,6 +285,16 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                         bottomRight: Radius.circular(8),
                                       )
                                     ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Gap(12),
