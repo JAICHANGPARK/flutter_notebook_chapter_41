@@ -92,6 +92,9 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                       decoration: InputDecoration(
                         hintText: "Search for services",
                         border: InputBorder.none,
+                        hintStyle: TextStyle(
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ),
