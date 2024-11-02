@@ -285,6 +285,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                         bottomRight: Radius.circular(8),
                                       ),
                                     ),
+                                    width: double.infinity,
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
