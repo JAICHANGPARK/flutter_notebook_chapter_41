@@ -180,7 +180,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                               color: Colors.orange,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: EdgeInsets.all(24),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
