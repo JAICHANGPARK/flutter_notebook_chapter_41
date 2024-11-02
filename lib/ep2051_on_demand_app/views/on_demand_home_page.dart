@@ -272,9 +272,17 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                               ),
                             ),
                             child: Column(
-                              
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                                Gap(12),
+                                Text("Title Title")
                               ],
                             ),
                           );
