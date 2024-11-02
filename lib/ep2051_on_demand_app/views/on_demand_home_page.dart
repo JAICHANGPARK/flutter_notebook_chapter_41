@@ -152,7 +152,6 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                               ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-
                                 children: [
                                   CircleAvatar(
                                     backgroundColor: Colors.white,
@@ -180,6 +179,18 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.orange,
                               borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("#PromoToday"),
+                                Text("Work with our best service provider"),
+                                Container(
+                                  child: Text(
+                                    "Book",
+                                  ),
+                                )
+                              ],
                             ),
                           );
                         },
