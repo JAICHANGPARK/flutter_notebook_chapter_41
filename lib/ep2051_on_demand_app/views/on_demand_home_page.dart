@@ -198,11 +198,17 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                     borderRadius: BorderRadius.circular(24),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(.1),
+                                        spreadRadius: 3,
+                                        blurRadius: 3,
+                                      ),
+                                    ],
                                   ),
                                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                                   child: Text(
                                     "Book",
-
                                     style: TextStyle(
                                       color: Colors.orangeAccent,
                                     ),
