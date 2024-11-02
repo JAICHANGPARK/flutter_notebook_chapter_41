@@ -46,10 +46,38 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                   ),
                 ),
                 Expanded(
-                  child: Container(),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      // color: Colors.deepOrange[50],
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Requested",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
                 Expanded(
-                  child: Container(),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      // color: Colors.deepOrange[50],
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "History",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -59,11 +87,22 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.orange[50],
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
-                        children: [],
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                            height: 64,
+                            width: 84,
+                          )
+                        ],
                       ),
                       Divider(),
                       Row(
