@@ -281,6 +281,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                       color: Colors.grey,
                                       borderRadius: BorderRadius.only(
                                         topRight: Radius.circular(8),
+                                        topLeft:  Radius.circular(8),
                                       )
                                     ),
                                   ),
