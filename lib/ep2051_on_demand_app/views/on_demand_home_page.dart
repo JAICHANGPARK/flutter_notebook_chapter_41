@@ -278,19 +278,27 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.only(
-                                        topRight: Radius.circular(8),
-                                        topLeft:  Radius.circular(8),
-                                        bottomRight: Radius.circular(8),
-                                      )
-                                    ),
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(8),
+                                          topLeft: Radius.circular(8),
+                                          bottomRight: Radius.circular(8),
+                                        )),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Container(
                                           decoration: BoxDecoration(
                                             color: Colors.black,
+                                          ),
+                                          child: Row(
+                                            children: [
+                                              Icon(
+                                                Icons.star_border,
+                                                color: Colors.orangeAccent,
+                                              ),
+                                              Text("4.5 (442)")
+                                            ],
                                           ),
                                         )
                                       ],
