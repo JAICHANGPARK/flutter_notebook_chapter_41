@@ -81,7 +81,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                 color: Colors.grey[100]!,
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
-                  color: Colors.grey,
+                  color: Colors.grey[400]!,
                 ),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 16),
