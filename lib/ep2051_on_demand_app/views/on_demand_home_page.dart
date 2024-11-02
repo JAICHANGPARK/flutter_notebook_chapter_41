@@ -271,6 +271,7 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                 color: Colors.grey[500]!,
                               ),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -278,6 +279,9 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(8),
+                                      )
                                     ),
                                   ),
                                 ),
