@@ -12,12 +12,15 @@ class OnDemandHomePage extends StatefulWidget {
 }
 
 class _OnDemandHomePageState extends State<OnDemandHomePage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: IndexedStack(
+          index: pageIndex,
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -342,6 +345,12 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+            currentIndex: pageIndex,
+            onTap: (idx) {
+              setState(() {
+                pageIndex = idx;
+              });
+            },
             backgroundColor: Colors.white,
             selectedItemColor: Colors.deepOrange,
             type: BottomNavigationBarType.fixed,
