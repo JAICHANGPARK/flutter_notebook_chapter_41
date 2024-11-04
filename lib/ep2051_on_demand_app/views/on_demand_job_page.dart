@@ -126,6 +126,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                   Text("30 May, 2024"),
                                 ],
                               ),
+                              Gap(5),
                               Row(
                                 children: [
                                   Icon(Icons.access_time_outlined, size: 16,),
@@ -137,7 +138,10 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                           )
                         ],
                       ),
-                      Divider(),
+
+                      Divider(
+                        height: 32,
+                      ),
                       SizedBox(
                         height: 64,
                         child: Row(
