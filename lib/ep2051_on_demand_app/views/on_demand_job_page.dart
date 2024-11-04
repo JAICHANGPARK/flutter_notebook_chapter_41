@@ -96,7 +96,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                   margin: EdgeInsets.only(
                     bottom: 8,
                   ),
-                  padding: EdgeInsets.all(12),
+                  padding: EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     color: Color.fromRGBO(247, 242, 239, 1),
                     borderRadius: BorderRadius.circular(6),
@@ -234,7 +234,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                               decoration: BoxDecoration(
                                 color: Colors.white,
                               ),
-                              
+
                               padding: EdgeInsets.symmetric(vertical: 4),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -247,6 +247,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                               ),
                             ),
                           ),
+                          Gap(12),
                           Expanded(
                             child: Container(
                               child: Row(
