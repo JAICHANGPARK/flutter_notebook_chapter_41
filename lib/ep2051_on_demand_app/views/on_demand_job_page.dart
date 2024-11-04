@@ -234,11 +234,14 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                               decoration: BoxDecoration(
                                 color: Colors.white,
                               ),
+                              
+                              padding: EdgeInsets.symmetric(vertical: 4),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Icon(Icons.chat_outlined),
+                                  Gap(8),
                                   Text("Chat"),
                                 ],
                               ),
