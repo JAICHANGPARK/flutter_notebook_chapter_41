@@ -109,6 +109,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.grey,
+                              borderRadius: BorderRadius.circular(6),
                             ),
                             height: 72,
                             width: 84,
@@ -204,6 +205,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                     Container(
                                       decoration: BoxDecoration(
                                         color: Colors.greenAccent[100],
+                                        borderRadius: BorderRadius.circular(6),
                                       ),
                                       padding: EdgeInsets.symmetric(
                                         horizontal: 8,
@@ -229,7 +231,12 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                         children: [
                           Expanded(
                             child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Icon(Icons.chat_outlined),
                                   Text("Chat"),
