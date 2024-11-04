@@ -121,7 +121,10 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                               Gap(8),
                               Row(
                                 children: [
-                                  Icon(Icons.calendar_today, size: 16,),
+                                  Icon(
+                                    Icons.calendar_today,
+                                    size: 16,
+                                  ),
                                   Gap(8),
                                   Text("30 May, 2024"),
                                 ],
@@ -129,7 +132,10 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                               Gap(5),
                               Row(
                                 children: [
-                                  Icon(Icons.access_time_outlined, size: 16,),
+                                  Icon(
+                                    Icons.access_time_outlined,
+                                    size: 16,
+                                  ),
                                   Gap(8),
                                   Text("08:00 AM - 10:00 AM"),
                                 ],
@@ -138,7 +144,6 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                           )
                         ],
                       ),
-
                       Divider(
                         height: 32,
                       ),
@@ -146,11 +151,20 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                         height: 64,
                         child: Row(
                           children: [
-                            CircleAvatar(),
+                            CircleAvatar(
+                              radius: 26,
+                            ),
+                            Gap(16),
                             Expanded(
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("John Doe"),
+                                  Text(
+                                    "John Doe",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
