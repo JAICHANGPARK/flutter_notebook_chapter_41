@@ -125,6 +125,13 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                   Gap(8),
                                   Text("30 May, 2024"),
                                 ],
+                              ),
+                              Row(
+                                children: [
+                                  Icon(Icons.access_time_outlined, size: 16,),
+                                  Gap(8),
+                                  Text("08:00 AM - 10:00 AM"),
+                                ],
                               )
                             ],
                           )
