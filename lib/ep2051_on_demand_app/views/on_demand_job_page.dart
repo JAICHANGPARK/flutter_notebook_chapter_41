@@ -187,7 +187,18 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                       Icon(
                                         Icons.star,
                                         color: Colors.orangeAccent,
+                                        size: 20,
                                       ),
+                                      Text("4.9 (40+ Rating)"),
+                                      Spacer(),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.greenAccent[100],
+                                        ),
+                                        child: Text(
+                                          "Active",
+                                        ),
+                                      )
                                     ],
                                   )
                                 ],
