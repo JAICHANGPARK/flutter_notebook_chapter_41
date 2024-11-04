@@ -157,9 +157,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                               child: Stack(
                                 children: [
                                   Positioned.fill(
-                                    child: CircleAvatar(
-
-                                    ),
+                                    child: CircleAvatar(),
                                   ),
                                 ],
                               ),
@@ -175,6 +173,23 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.location_on_sharp,
+                                        size: 12,
+                                      ),
+                                      Text("Full address, Berin City"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orangeAccent,
+                                      ),
+                                    ],
+                                  )
                                 ],
                               ),
                             ),
