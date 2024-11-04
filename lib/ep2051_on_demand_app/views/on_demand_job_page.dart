@@ -29,6 +29,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
               border: Border.all(
                 color: Colors.grey[400]!,
               ),
+              borderRadius: BorderRadius.circular(4),
             ),
             padding: EdgeInsets.all(5),
             child: Row(
@@ -36,7 +37,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.deepOrange[50],
+                      color: Color.fromRGBO(255, 243, 240, 1),
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: Center(
@@ -44,7 +45,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                         "Active",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.deepOrange,
+                          color: Colors.white,
                         ),
                       ),
                     ),
