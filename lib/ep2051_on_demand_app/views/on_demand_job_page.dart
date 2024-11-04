@@ -233,8 +233,11 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
+                                borderRadius: BorderRadius.circular(6),
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
                               ),
-
                               padding: EdgeInsets.symmetric(vertical: 4),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
