@@ -205,8 +205,15 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.greenAccent[100],
                                       ),
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: Text(
                                         "Active",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     )
                                   ],
