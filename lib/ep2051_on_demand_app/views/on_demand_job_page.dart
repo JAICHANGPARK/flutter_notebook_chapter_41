@@ -118,7 +118,13 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("AC Installation"),
+                              Text(
+                                "AC Installation",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
                               Gap(8),
                               Row(
                                 children: [
