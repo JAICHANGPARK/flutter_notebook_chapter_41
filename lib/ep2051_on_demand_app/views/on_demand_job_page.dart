@@ -147,69 +147,66 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                       Divider(
                         height: 32,
                       ),
-                      SizedBox(
-                        height: 64,
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 52,
-                              width: 52,
-                              child: Stack(
-                                children: [
-                                  Positioned.fill(
-                                    child: CircleAvatar(),
-                                  ),
-                                ],
-                              ),
+                      Row(
+                        children: [
+                          Container(
+                            height: 52,
+                            width: 52,
+                            child: Stack(
+                              children: [
+                                Positioned.fill(
+                                  child: CircleAvatar(),
+                                ),
+                              ],
                             ),
-                            Gap(16),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "John Doe",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                          ),
+                          Gap(16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "John Doe",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Gap(6),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on_sharp,
+                                      size: 12,
                                     ),
-                                  ),
-                                  Gap(12),
-                                  Row(
-                                    children: [
-                                      Icon(
-                                        Icons.location_on_sharp,
-                                        size: 12,
-                                      ),
-                                      Text("Full address, Berin City"),
-                                    ],
-                                  ),
-                                  Gap(12),
-                                  Row(
-                                    children: [
-                                      Icon(
-                                        Icons.star,
-                                        color: Colors.orangeAccent,
-                                        size: 20,
-                                      ),
-                                      Gap(8),
-                                      Text("4.9 (40+ Rating)"),
+                                    Text("Full address, Berin City"),
+                                  ],
+                                ),
+                                Gap(6),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orangeAccent,
+                                      size: 20,
+                                    ),
+                                    Gap(8),
+                                    Text("4.9 (40+ Rating)"),
 
-                                      Spacer(),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.greenAccent[100],
-                                        ),
-                                        child: Text(
-                                          "Active",
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                ],
-                              ),
+                                    Spacer(),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.greenAccent[100],
+                                      ),
+                                      child: Text(
+                                        "Active",
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                       Gap(12),
                       Row(
