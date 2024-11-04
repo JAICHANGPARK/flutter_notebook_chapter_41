@@ -151,8 +151,16 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                         height: 64,
                         child: Row(
                           children: [
-                            CircleAvatar(
-                              radius: 26,
+                            Container(
+                              height: 52,
+                              width: 52,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: CircleAvatar(),
+                                  ),
+                                ],
+                              ),
                             ),
                             Gap(16),
                             Expanded(
