@@ -238,7 +238,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                   color: Colors.grey[300]!,
                                 ),
                               ),
-                              padding: EdgeInsets.symmetric(vertical: 4),
+                              padding: EdgeInsets.symmetric(vertical: 6),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -253,10 +253,28 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                           Gap(12),
                           Expanded(
                             child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(6),
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
+                              ),
+                              padding: EdgeInsets.symmetric(vertical: 6),
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.call),
-                                  Text("Call"),
+                                  Icon(
+                                    Icons.call,
+                                    color: Colors.white,
+                                  ),
+                                  Text(
+                                    "Call",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
