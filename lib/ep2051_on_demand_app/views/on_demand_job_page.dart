@@ -173,6 +173,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  Gap(12),
                                   Row(
                                     children: [
                                       Icon(
@@ -182,6 +183,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                       Text("Full address, Berin City"),
                                     ],
                                   ),
+                                  Gap(12),
                                   Row(
                                     children: [
                                       Icon(
@@ -189,7 +191,9 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                         color: Colors.orangeAccent,
                                         size: 20,
                                       ),
+                                      Gap(8),
                                       Text("4.9 (40+ Rating)"),
+
                                       Spacer(),
                                       Container(
                                         decoration: BoxDecoration(
