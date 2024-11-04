@@ -269,6 +269,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                     Icons.call,
                                     color: Colors.white,
                                   ),
+                                  Gap(8),
                                   Text(
                                     "Call",
                                     style: TextStyle(
