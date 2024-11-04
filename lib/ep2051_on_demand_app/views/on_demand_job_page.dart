@@ -157,6 +157,15 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                 Positioned.fill(
                                   child: CircleAvatar(),
                                 ),
+                                Positioned(
+                                  bottom: 0,
+                                  right: 0,
+                                  child: Icon(
+                                    Icons.verified,
+                                    color: Colors.green,
+                                    size: 18,
+                                  ),
+                                )
                               ],
                             ),
                           ),
@@ -191,7 +200,6 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                     ),
                                     Gap(8),
                                     Text("4.9 (40+ Rating)"),
-
                                     Spacer(),
                                     Container(
                                       decoration: BoxDecoration(
