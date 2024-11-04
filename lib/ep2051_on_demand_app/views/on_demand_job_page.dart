@@ -112,6 +112,18 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                             ),
                             height: 64,
                             width: 84,
+                          ),
+                          Column(
+                            children: [
+                              Text("AC Installation"),
+                              Row(
+                                children: [
+                                  Icon(Icons.calendar_today, size: 16,),
+                                  Gap(8),
+                                  Text("30 May, 2024"),
+                                ],
+                              )
+                            ],
                           )
                         ],
                       ),
@@ -123,7 +135,9 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                             CircleAvatar(),
                             Expanded(
                               child: Column(
-                                children: [Text("John Doe")],
+                                children: [
+                                  Text("John Doe"),
+                                ],
                               ),
                             ),
                           ],
