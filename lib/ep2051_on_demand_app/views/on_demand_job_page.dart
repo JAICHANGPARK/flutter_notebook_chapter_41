@@ -113,9 +113,12 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                             height: 64,
                             width: 84,
                           ),
+                          Gap(16),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("AC Installation"),
+                              Gap(8),
                               Row(
                                 children: [
                                   Icon(Icons.calendar_today, size: 16,),
