@@ -110,7 +110,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                             decoration: BoxDecoration(
                               color: Colors.grey,
                             ),
-                            height: 64,
+                            height: 72,
                             width: 84,
                           ),
                           Gap(16),
@@ -206,13 +206,14 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                                         color: Colors.greenAccent[100],
                                       ),
                                       padding: EdgeInsets.symmetric(
-                                        horizontal: 4,
+                                        horizontal: 8,
                                         vertical: 2,
                                       ),
                                       child: Text(
                                         "Active",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          color: Colors.green,
                                         ),
                                       ),
                                     )
