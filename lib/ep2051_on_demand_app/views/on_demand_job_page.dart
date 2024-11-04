@@ -45,7 +45,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                         "Active",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: Colors.deepOrange,
                         ),
                       ),
                     ),
@@ -88,7 +88,7 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
               ],
             ),
           ),
-          Gap(6),
+          Gap(16),
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) {
@@ -98,7 +98,8 @@ class _OnDemandJobPageState extends State<OnDemandJobPage> {
                   ),
                   padding: EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: Colors.orange[50],
+                    color: Color.fromRGBO(247, 242, 239, 1),
+                    borderRadius: BorderRadius.circular(6),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
