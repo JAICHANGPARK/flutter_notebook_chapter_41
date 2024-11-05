@@ -17,7 +17,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 82,
+              height: 100,
+              padding: EdgeInsets.all(12),
               child: Placeholder(),
             ),
             Expanded(
