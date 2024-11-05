@@ -12,15 +12,23 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 82,
-            child: Placeholder(),
-          ),
-          Expanded(child: Container())
-        ],
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 82,
+              child: Placeholder(),
+            ),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue[50],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         height: 86,
@@ -35,7 +43,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 8,
+                    height: 4,
                     color: Colors.lightGreenAccent,
                   ),
                   Spacer(),
@@ -51,7 +59,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 8,
+                    height: 4,
                     color: Colors.transparent,
                   ),
                   Spacer(),
@@ -67,7 +75,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 8,
+                    height: 4,
                     color: Colors.transparent,
                   ),
                   Spacer(),
@@ -83,7 +91,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 8,
+                    height: 4,
                     color: Colors.transparent,
                   ),
                   Spacer(),
@@ -101,7 +109,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 8,
+                    height: 4,
                     color: Colors.transparent,
                   ),
                   Spacer(),
