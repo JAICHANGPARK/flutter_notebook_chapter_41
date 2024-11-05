@@ -14,7 +14,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [],
+        children: [
+          Container(
+            height: 82,
+            child: Placeholder(),
+          ),
+          Expanded(child: Container())
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         height: 86,
@@ -40,7 +46,75 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Text("Home")
                 ],
               ),
-            )
+            ),
+            Expanded(
+              child: Column(
+                children: [
+                  Container(
+                    height: 8,
+                    color: Colors.transparent,
+                  ),
+                  Spacer(),
+                  Icon(
+                    Icons.explore_outlined,
+                  ),
+                  Gap(8),
+                  Text("Discover")
+                ],
+              ),
+            ),
+            Expanded(
+              child: Column(
+                children: [
+                  Container(
+                    height: 8,
+                    color: Colors.transparent,
+                  ),
+                  Spacer(),
+                  Icon(
+                    Icons.favorite_outline,
+                  ),
+                  Gap(8),
+                  Text("Favourite")
+                ],
+              ),
+            ),
+            Expanded(
+              child: Column(
+                children: [
+                  Container(
+                    height: 8,
+                    color: Colors.transparent,
+                  ),
+                  Spacer(),
+                  Icon(
+                    Icons.message_outlined,
+                  ),
+                  Gap(8),
+                  Text(
+                    "Messages",
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              child: Column(
+                children: [
+                  Container(
+                    height: 8,
+                    color: Colors.transparent,
+                  ),
+                  Spacer(),
+                  Icon(
+                    Icons.person_2_outlined,
+                  ),
+                  Gap(8),
+                  Text(
+                    "Profile",
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
