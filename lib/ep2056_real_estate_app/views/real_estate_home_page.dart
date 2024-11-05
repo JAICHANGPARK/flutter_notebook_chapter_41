@@ -17,7 +17,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
         children: [],
       ),
       bottomNavigationBar: BottomAppBar(
-        height: 80,
+        height: 86,
+        padding: EdgeInsets.only(
+          bottom: 16,
+          left: 16,
+          right: 16,
+        ),
         child: Row(
           children: [
             Expanded(
@@ -27,6 +32,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 8,
                     color: Colors.lightGreenAccent,
                   ),
+                  Spacer(),
                   Icon(
                     Icons.home_filled,
                   ),
