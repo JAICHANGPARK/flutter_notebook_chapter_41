@@ -137,7 +137,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 decoration: InputDecoration(
                                   prefixIcon: Icon(Icons.search),
                                   hintText: "Let's get started",
+                                  hintStyle: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.grey,
+                                  ),
                                   suffixIcon: Icon(Icons.mic_none),
+                                  border: InputBorder.none,
                                 ),
                               ),
                             ),
