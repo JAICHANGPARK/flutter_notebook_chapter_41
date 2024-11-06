@@ -39,20 +39,28 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           "John Micheal",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                         ),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.lightGreenAccent,
+                            borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Text("Seoul, KR"),
+                              Text(
+                                "Seoul, KR",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Gap(4),
                               Icon(
                                 Icons.keyboard_arrow_down,
+                                size: 14,
                               )
                             ],
                           ),
