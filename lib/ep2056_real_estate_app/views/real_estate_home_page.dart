@@ -30,24 +30,29 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                   ),
                   Expanded(
-                      child: Column(
-                    children: [
-                      Text("John Micheal"),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.lightGreenAccent,
-                        ),
-                        child: Row(
-                          children: [
-                            Text("Seoul, KR"),
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                            )
-                          ],
-                        ),
-                      )
-                    ],
-                  ))
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                        Text("John Micheal"),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightGreenAccent,
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text("Seoul, KR"),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                              )
+                            ],
+                          ),
+                        )
+                                            ],
+                                          ),
+                      ))
                 ],
               ),
             ),
