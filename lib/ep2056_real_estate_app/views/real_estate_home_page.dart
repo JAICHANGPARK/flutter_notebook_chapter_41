@@ -104,6 +104,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.blue[50],
                 ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Discover properties and find"),
+                  ],
+                ),
               ),
             )
           ],
