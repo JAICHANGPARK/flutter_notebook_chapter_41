@@ -119,7 +119,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 12,),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                      ),
                       child: Row(
                         children: [
                           Expanded(
@@ -129,17 +131,24 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   color: Colors.grey[300]!,
                                 ),
                                 borderRadius: BorderRadius.circular(8),
+                                color: Colors.white,
                               ),
                               child: TextField(
-                                decoration: InputDecoration(),
+                                decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.search),
+                                  hintText: "Let's get started",
+                                  suffixIcon: Icon(Icons.mic_none),
+                                ),
                               ),
                             ),
                           ),
+                          Gap(12),
                           Container(
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.grey[300]!,
                               ),
+                              color: Colors.white,
                             ),
                             child: IconButton(
                               icon: Icon(
