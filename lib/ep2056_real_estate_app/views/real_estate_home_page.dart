@@ -130,9 +130,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                              border: Border.all(
-                            color: Colors.grey[300]!,
-                          )),
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.tune,
+                            ),
+                            onPressed: () {},
+                          ),
                         )
                       ],
                     )
