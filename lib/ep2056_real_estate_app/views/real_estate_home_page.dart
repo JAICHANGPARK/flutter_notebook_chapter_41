@@ -22,8 +22,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               child: Row(
                 children: [
                   Container(
-                    height: 64,
-                    width: 64,
+                    height: 52,
+                    width: 52,
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(6),
