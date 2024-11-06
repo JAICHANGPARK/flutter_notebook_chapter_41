@@ -173,40 +173,44 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         itemCount: 8,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Container();
+                          return Placeholder();
                         },
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "Featured properties",
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.lightGreenAccent,
-                            borderRadius: BorderRadius.circular(24),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Featured properties",
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                "View all",
-                                style: TextStyle(
-                                  fontSize: 12,
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.lightGreenAccent,
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  "View all",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                              Gap(4),
-                              Icon(
-                                Icons.keyboard_arrow_right,
-                                size: 14,
-                              )
-                            ],
-                          ),
-                        )
-
-                      ],
+                                Gap(4),
+                                Icon(
+                                  Icons.keyboard_arrow_right,
+                                  size: 14,
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
