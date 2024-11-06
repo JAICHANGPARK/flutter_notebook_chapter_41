@@ -17,10 +17,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 100,
-              padding: EdgeInsets.all(12),
-              child: Placeholder(),
-            ),
+                height: 100,
+                padding: EdgeInsets.all(12),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+
+                    )
+                  ],
+                )),
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
