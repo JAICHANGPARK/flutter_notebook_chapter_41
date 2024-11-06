@@ -34,6 +34,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "John Micheal",
