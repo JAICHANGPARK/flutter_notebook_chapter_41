@@ -107,7 +107,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Discover properties and find"),
+                    Text(
+                      "Discover properties and find\nyour place of dreams",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
