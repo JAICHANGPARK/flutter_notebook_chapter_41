@@ -153,6 +153,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               border: Border.all(
                                 color: Colors.grey[300]!,
                               ),
+                              borderRadius: BorderRadius.circular(8),
                               color: Colors.white,
                             ),
                             child: IconButton(
@@ -163,6 +164,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             ),
                           )
                         ],
+                      ),
+                    ),
+                    Gap(24),
+                    SizedBox(
+                      height: 42,
+                      child: ListView.builder(
+                        itemCount: 8,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container();
+                        },
                       ),
                     )
                   ],
