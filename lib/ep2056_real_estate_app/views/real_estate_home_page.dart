@@ -180,6 +180,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         },
                       ),
                     ),
+                    Gap(16),
                     Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: Row(
@@ -187,6 +188,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         children: [
                           Text(
                             "Featured properties",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           Container(
                             decoration: BoxDecoration(
@@ -216,7 +220,6 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                     Container(
-
                       height: 380,
                       child: Placeholder(),
                     )
