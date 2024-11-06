@@ -176,6 +176,37 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           return Container();
                         },
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "Featured properties",
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightGreenAccent,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "View all",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Gap(4),
+                              Icon(
+                                Icons.keyboard_arrow_right,
+                                size: 14,
+                              )
+                            ],
+                          ),
+                        )
+
+                      ],
                     )
                   ],
                 ),
