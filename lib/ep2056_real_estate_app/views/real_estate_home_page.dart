@@ -76,6 +76,25 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       color: Colors.blueGrey[50]!,
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.notifications_none,
+                      ),
+                    ),
+                  ),
+                  Gap(8),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey[50]!,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.menu,
+                      ),
+                    ),
                   )
                 ],
               ),
