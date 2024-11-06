@@ -221,6 +221,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     Container(
                       height: 380,
+                      padding: EdgeInsets.only(left: 16),
                       child: Placeholder(),
                     )
                   ],
