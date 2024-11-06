@@ -31,15 +31,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   ),
                   Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                        Text("John Micheal"),
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "John Micheal",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.lightGreenAccent,
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
@@ -50,9 +57,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             ],
                           ),
                         )
-                                            ],
-                                          ),
-                      ))
+                      ],
+                    ),
+                  ))
                 ],
               ),
             ),
