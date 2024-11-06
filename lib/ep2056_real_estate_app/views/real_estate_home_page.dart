@@ -107,41 +107,49 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "Discover properties and find\nyour place of dreams",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                    Gap(12),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Text(
+                        "Discover properties and find\nyour place of dreams",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12,),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: TextField(
+                                decoration: InputDecoration(),
+                              ),
+                            ),
+                          ),
+                          Container(
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.grey[300]!,
                               ),
-                              borderRadius: BorderRadius.circular(8),
                             ),
-                            child: TextField(
-                              decoration: InputDecoration(),
+                            child: IconButton(
+                              icon: Icon(
+                                Icons.tune,
+                              ),
+                              onPressed: () {},
                             ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[300]!,
-                            ),
-                          ),
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.tune,
-                            ),
-                            onPressed: () {},
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
