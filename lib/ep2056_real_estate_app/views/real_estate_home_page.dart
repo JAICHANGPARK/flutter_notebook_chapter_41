@@ -167,8 +167,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                     Gap(24),
-                    SizedBox(
+                    Container(
                       height: 42,
+                      padding: EdgeInsets.only(
+                        left: 16,
+                      ),
                       child: ListView.builder(
                         itemCount: 8,
                         scrollDirection: Axis.horizontal,
