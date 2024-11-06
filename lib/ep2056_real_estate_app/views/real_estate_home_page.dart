@@ -123,7 +123,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ),
                               borderRadius: BorderRadius.circular(8),
                             ),
+                            child: TextField(
+                              decoration: InputDecoration(),
+                            ),
                           ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                            color: Colors.grey[300]!,
+                          )),
                         )
                       ],
                     )
