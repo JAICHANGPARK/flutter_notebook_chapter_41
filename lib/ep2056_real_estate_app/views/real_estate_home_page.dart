@@ -30,45 +30,53 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                   ),
                   Expanded(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "John Micheal",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "John Micheal",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.lightGreenAccent,
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                "Seoul, KR",
-                                style: TextStyle(
-                                  fontSize: 12,
+                          Gap(4),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.lightGreenAccent,
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  "Seoul, KR",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
                                 ),
-                              ),
-                              Gap(4),
-                              Icon(
-                                Icons.keyboard_arrow_down,
-                                size: 14,
-                              )
-                            ],
-                          ),
-                        )
-                      ],
+                                Gap(4),
+                                Icon(
+                                  Icons.keyboard_arrow_down,
+                                  size: 14,
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                  ))
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey[50]!,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  )
                 ],
               ),
             ),
