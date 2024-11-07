@@ -306,7 +306,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   ),
                   Gap(8),
                   Text("Discover", style: TextStyle(
-                    color: _accentColor,
+                    color: Colors.white,
                   ),)
                 ],
               ),
@@ -323,7 +323,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     Icons.favorite_outline,
                   ),
                   Gap(8),
-                  Text("Favourite")
+                  Text("Favourite" ,style: TextStyle(
+                    color: Colors.white,
+                  ),)
                 ],
               ),
             ),
@@ -341,6 +343,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Gap(8),
                   Text(
                     "Messages",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),
@@ -358,7 +363,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   ),
                   Gap(8),
                   Text(
-                    "Profile",
+                    "Profile"
+                      , style: TextStyle(
+                  color: Colors.white,
+                  ),
                   )
                 ],
               ),
