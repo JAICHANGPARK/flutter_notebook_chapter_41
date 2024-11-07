@@ -302,9 +302,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Spacer(),
                   Icon(
                     Icons.explore_outlined,
+                    color: Colors.white,
                   ),
                   Gap(8),
-                  Text("Discover")
+                  Text("Discover", style: TextStyle(
+                    color: _accentColor,
+                  ),)
                 ],
               ),
             ),
