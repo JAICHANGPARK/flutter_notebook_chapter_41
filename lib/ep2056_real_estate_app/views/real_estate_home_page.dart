@@ -257,13 +257,24 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
-                              width: 420,
+                              width: 340,
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
-
                               ),
                               margin: EdgeInsets.only(right: 12),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      CircleAvatar(),
+                                      Expanded(
+                                        child: Placeholder(),
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
                             );
                           },
                         ))
@@ -301,6 +312,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     "Home",
                     style: TextStyle(
                       color: _accentColor,
+                      fontSize: 12,
                     ),
                   )
                 ],
@@ -323,6 +335,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     "Discover",
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 12,
                     ),
                   )
                 ],
@@ -345,6 +358,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     "Favourite",
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 12,
                     ),
                   )
                 ],
@@ -367,6 +381,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     "Messages",
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 12,
                     ),
                   )
                 ],
@@ -389,6 +404,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     "Profile",
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 12,
                     ),
                   )
                 ],
