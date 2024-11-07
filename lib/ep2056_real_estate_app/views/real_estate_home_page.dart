@@ -305,9 +305,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     color: Colors.white,
                   ),
                   Gap(8),
-                  Text("Discover", style: TextStyle(
-                    color: Colors.white,
-                  ),)
+                  Text(
+                    "Discover",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  )
                 ],
               ),
             ),
@@ -321,11 +324,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Spacer(),
                   Icon(
                     Icons.favorite_outline,
+                    color: Colors.white,
                   ),
                   Gap(8),
-                  Text("Favourite" ,style: TextStyle(
-                    color: Colors.white,
-                  ),)
+                  Text(
+                    "Favourite",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  )
                 ],
               ),
             ),
@@ -339,6 +346,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Spacer(),
                   Icon(
                     Icons.message_outlined,
+                    color: Colors.white,
                   ),
                   Gap(8),
                   Text(
@@ -360,13 +368,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Spacer(),
                   Icon(
                     Icons.person_2_outlined,
+                    color: Colors.white,
                   ),
                   Gap(8),
                   Text(
-                    "Profile"
-                      , style: TextStyle(
-                  color: Colors.white,
-                  ),
+                    "Profile",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),
