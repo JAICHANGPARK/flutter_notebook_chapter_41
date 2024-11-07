@@ -266,38 +266,44 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Row(
-                                    children: [
-                                      CircleAvatar(),
-                                    ],
+                                  Padding(
+                                    padding: const EdgeInsets.all(12.0),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(),
+                                      ],
+                                    ),
                                   ),
                                   Expanded(
                                     child: Placeholder(),
                                   ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-
-
-                                    ],
-                                  )
-                                  Row(
-                                    children: [
-                                      Text("Elite House"),
-                                      Text("\$123344"),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.location_on_outlined),
-                                      Text("1234 Despard Street, Atlanta, GA"),
-                                    ],
-                                  ),
-                                  Divider(),
-                                  Row(
-                                    children: [
-
-                                    ],
+                                  Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text("Elite House"),
+                                            Text("\$123344"),
+                                          ],
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              size: 16,
+                                            ),
+                                            Text("1234 Despard Street, Atlanta, GA"),
+                                          ],
+                                        ),
+                                        Divider(),
+                                        Row(
+                                          children: [],
+                                        )
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
