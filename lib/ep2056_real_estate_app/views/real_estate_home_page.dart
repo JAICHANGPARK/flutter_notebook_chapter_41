@@ -253,12 +253,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         height: 380,
                         padding: EdgeInsets.only(left: 16),
                         child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
+                              width: 420,
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
+
                               ),
+                              margin: EdgeInsets.only(right: 12),
                             );
                           },
                         ))
