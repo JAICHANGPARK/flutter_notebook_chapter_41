@@ -183,7 +183,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         left: 16,
                       ),
                       child: ListView.builder(
-                        itemCount: 8,
+                        itemCount: _tabs.length,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           final title = _tabs[index];
@@ -191,7 +191,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             decoration: BoxDecoration(
                               color: index == 0 ? _accentColor : Colors.white,
                             ),
-                            child: ,
+                            child: Text(
+                              title,
+                            ),
                           );
                         },
                       ),
