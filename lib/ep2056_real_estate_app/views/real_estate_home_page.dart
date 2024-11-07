@@ -275,7 +275,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 children: [
                   Container(
                     height: 4,
-                    color: Colors.lightGreenAccent,
+                    color: _accentColor,
                   ),
                   Spacer(),
                   Icon(
