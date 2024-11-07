@@ -191,10 +191,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             padding: EdgeInsets.symmetric(horizontal: 20),
                             margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
-                                color: index == 0 ? _accentColor : Colors.white,
-                                border: Border.all(
-                                  color: Colors.grey[500]!,
-                                )),
+                              color: index == 0 ? _accentColor : Colors.white,
+                              border: Border.all(
+                                color: Colors.grey[500]!,
+                              ),
+                              borderRadius: BorderRadius.circular(6),
+                            ),
                             child: Center(
                               child: Text(
                                 title,
