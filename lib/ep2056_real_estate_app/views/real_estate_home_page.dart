@@ -280,9 +280,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   Spacer(),
                   Icon(
                     Icons.home_filled,
+                    color: _accentColor,
                   ),
                   Gap(8),
-                  Text("Home")
+                  Text(
+                    "Home",
+                    style: TextStyle(
+                      color: _accentColor,
+                    ),
+                  )
                 ],
               ),
             ),
