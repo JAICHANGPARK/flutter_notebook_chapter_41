@@ -264,13 +264,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ),
                               margin: EdgeInsets.only(right: 12),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Row(
                                     children: [
                                       CircleAvatar(),
-                                      Expanded(
-                                        child: Placeholder(),
-                                      ),
+                                    ],
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("Elite House"),
+                                      Text("\$123344"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.location_on_outlined),
+                                      Text("1234 Despard Street, Atlanta, GA"),
                                     ],
                                   )
                                 ],
