@@ -11,6 +11,13 @@ class RealEstateHomePage extends StatefulWidget {
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
   Color _accentColor = Color.fromRGBO(208, 245, 43, 1);
 
+  List<String> _tabs = [
+    "Houses",
+    "Apartments",
+    "Offices",
+    "Community",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -179,7 +186,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         itemCount: 8,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Placeholder();
+                          final title = _tabs[index];
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: index == 0 ? _accentColor : Colors.white,
+                            ),
+                            child: ,
+                          );
                         },
                       ),
                     ),
