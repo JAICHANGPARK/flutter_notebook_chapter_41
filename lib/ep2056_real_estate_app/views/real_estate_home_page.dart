@@ -14,6 +14,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +49,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           Gap(4),
                           Container(
                             decoration: BoxDecoration(
-                              color: Colors.lightGreenAccent,
+                              color: _accentColor,
                               borderRadius: BorderRadius.circular(24),
                             ),
                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
