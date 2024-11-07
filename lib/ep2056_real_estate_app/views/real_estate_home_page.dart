@@ -9,6 +9,8 @@ class RealEstateHomePage extends StatefulWidget {
 }
 
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
+  Color _accentColor = Color.fromRGBO(208, 245, 43, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
