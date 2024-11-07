@@ -262,6 +262,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 86,
+        color: Color.fromRGBO(1, 32, 27, 1),
         padding: EdgeInsets.only(
           bottom: 16,
           left: 16,
