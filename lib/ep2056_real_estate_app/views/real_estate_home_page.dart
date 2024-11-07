@@ -250,10 +250,18 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                     Container(
-                      height: 380,
-                      padding: EdgeInsets.only(left: 16),
-                      child: Placeholder(),
-                    )
+                        height: 380,
+                        padding: EdgeInsets.only(left: 16),
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                            );
+                          },
+                        ))
                   ],
                 ),
               ),
