@@ -200,6 +200,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             child: Center(
                               child: Text(
                                 title,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           );
