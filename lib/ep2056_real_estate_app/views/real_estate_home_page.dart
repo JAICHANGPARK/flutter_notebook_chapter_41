@@ -274,6 +274,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   Expanded(
                                     child: Placeholder(),
                                   ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+
+
+                                    ],
+                                  )
                                   Row(
                                     children: [
                                       Text("Elite House"),
@@ -284,6 +291,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     children: [
                                       Icon(Icons.location_on_outlined),
                                       Text("1234 Despard Street, Atlanta, GA"),
+                                    ],
+                                  ),
+                                  Divider(),
+                                  Row(
+                                    children: [
+
                                     ],
                                   )
                                 ],
