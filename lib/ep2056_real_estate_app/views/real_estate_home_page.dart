@@ -365,8 +365,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                   ],
                                                 ),
                                               ),
+                                              CircleAvatar(
+                                                backgroundColor: Colors.black.withOpacity(.7),
+                                                foregroundColor: _accentColor,
+                                                child: Icon(
+                                                  Icons.favorite_outline,
+                                                ),
+                                              )
                                             ],
-                                          )
+                                          ),
                                         ],
                                       ),
                                     ),
