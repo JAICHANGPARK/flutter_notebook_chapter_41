@@ -114,28 +114,53 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.blue[50],
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Gap(12),
-                    const Padding(
-                      padding: EdgeInsets.all(12.0),
-                      child: Text(
-                        "Discover properties and find\nyour place of dreams",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
+                child: SingleChildScrollView(
+
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Gap(12),
+                      const Padding(
+                        padding: EdgeInsets.all(12.0),
+                        child: Text(
+                          "Discover properties and find\nyour place of dreams",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                      ),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Container(
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.grey[300]!,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: Colors.white,
+                                ),
+                                child: const TextField(
+                                  decoration: InputDecoration(
+                                    prefixIcon: Icon(Icons.search),
+                                    hintText: "Let's get started",
+                                    hintStyle: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                    ),
+                                    suffixIcon: Icon(Icons.mic_none),
+                                    border: InputBorder.none,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const Gap(12),
+                            Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey[300]!,
@@ -143,308 +168,286 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                                 color: Colors.white,
                               ),
-                              child: const TextField(
-                                decoration: InputDecoration(
-                                  prefixIcon: Icon(Icons.search),
-                                  hintText: "Let's get started",
-                                  hintStyle: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.grey,
-                                  ),
-                                  suffixIcon: Icon(Icons.mic_none),
-                                  border: InputBorder.none,
+                              child: IconButton(
+                                icon: const Icon(
+                                  Icons.tune,
                                 ),
+                                onPressed: () {},
                               ),
-                            ),
-                          ),
-                          const Gap(12),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
-                              borderRadius: BorderRadius.circular(8),
-                              color: Colors.white,
-                            ),
-                            child: IconButton(
-                              icon: const Icon(
-                                Icons.tune,
-                              ),
-                              onPressed: () {},
-                            ),
-                          )
-                        ],
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                    const Gap(24),
-                    Container(
-                      height: 42,
-                      padding: const EdgeInsets.only(
-                        left: 16,
-                      ),
-                      child: ListView.builder(
-                        itemCount: _tabs.length,
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          final title = _tabs[index];
-                          return Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 20),
-                            margin: const EdgeInsets.only(right: 16),
-                            decoration: BoxDecoration(
-                              color: index == 0 ? _accentColor : Colors.white,
-                              border: Border.all(
-                                color: Colors.grey[500]!,
-                              ),
-                              borderRadius: BorderRadius.circular(6),
-                            ),
-                            child: Center(
-                              child: Text(
-                                title,
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
+                      const Gap(24),
+                      Container(
+                        height: 42,
+                        padding: const EdgeInsets.only(
+                          left: 16,
+                        ),
+                        child: ListView.builder(
+                          itemCount: _tabs.length,
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            final title = _tabs[index];
+                            return Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 20),
+                              margin: const EdgeInsets.only(right: 16),
+                              decoration: BoxDecoration(
+                                color: index == 0 ? _accentColor : Colors.white,
+                                border: Border.all(
+                                  color: Colors.grey[500]!,
                                 ),
+                                borderRadius: BorderRadius.circular(6),
                               ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                    const Gap(16),
-                    Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          const Text(
-                            "Featured properties",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              color: _accentColor,
-                              borderRadius: BorderRadius.circular(24),
-                            ),
-                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                            child: const Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Text(
-                                  "View all",
-                                  style: TextStyle(
-                                    fontSize: 12,
+                              child: Center(
+                                child: Text(
+                                  title,
+                                  style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Gap(4),
-                                Icon(
-                                  Icons.keyboard_arrow_right,
-                                  size: 14,
-                                )
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Container(
-                        height: 380,
-                        padding: const EdgeInsets.only(left: 16),
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemCount: 10,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              width: 340,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              margin: const EdgeInsets.only(right: 12),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.all(12.0),
-                                    child: Row(
-                                      children: [
-                                        CircleAvatar(),
-                                        Gap(6),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Row(
-                                                children: [
-                                                  Text(
-                                                    "John Micheal",
-                                                    style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
-                                                    ),
-                                                  ),
-                                                  Gap(4),
-                                                  Icon(
-                                                    Icons.verified,
-                                                    color: Colors.teal,
-                                                    size: 16,
-                                                  ),
-                                                ],
-                                              ),
-                                              Text(
-                                                "California, CA",
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: _accentColor,
-                                            borderRadius: BorderRadius.circular(6),
-                                          ),
-                                          child: IconButton(
-                                            onPressed: () {},
-                                            icon: Icon(Icons.more_vert),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2020/02/14/22/51/chateau-4849563_1280.jpg",
-                                          ),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      padding: EdgeInsets.all(12),
-                                      child: Column(
-                                        children: [
-                                          Row(
-                                            children: [
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.black.withOpacity(.8),
-                                                  borderRadius: BorderRadius.circular(16),
-                                                ),
-                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                child: Text(
-                                                  'ID #123',
-                                                  style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 12,
-                                                  ),
-                                                ),
-                                              ),
-                                              Gap(8),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.black.withOpacity(.8),
-                                                  borderRadius: BorderRadius.circular(16),
-                                                ),
-                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                child: Row(
-                                                  children: [
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 16,
-                                                      color: Colors.orangeAccent,
-                                                    ),
-                                                    Gap(4),
-                                                    Text(
-                                                      "600",
-                                                      style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 12,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Spacer(),
-                                              CircleAvatar(
-                                                radius: 16,
-                                                backgroundColor: Colors.black.withOpacity(.7),
-                                                foregroundColor: _accentColor,
-                                                child: Icon(
-                                                  Icons.favorite_outline,
-                                                  size: 16,
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                          Spacer(),
-                                          Row(
-                                            children: [
-                                              Spacer(),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.black.withOpacity(.8),
-                                                  borderRadius: BorderRadius.circular(16),
-                                                ),
-                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                child: Row(
-                                                  children: [
-                                                    Icon(
-                                                      Icons.camera_alt_outlined,
-                                                      size: 16,
-                                                      color: Colors.white,
-                                                    ),
-                                                    Gap(4),
-                                                    Text(
-                                                      "3 / 26",
-                                                      style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 12,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.all(16.0),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Text("Elite House"),
-                                            Text("\$123344"),
-                                          ],
-                                        ),
-                                        Row(
-                                          children: [
-                                            Icon(
-                                              Icons.location_on_outlined,
-                                              size: 16,
-                                            ),
-                                            Text("1234 Despard Street, Atlanta, GA"),
-                                          ],
-                                        ),
-                                        Divider(),
-                                        Row(
-                                          children: [],
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
                               ),
                             );
                           },
-                        ))
-                  ],
+                        ),
+                      ),
+                      const Gap(16),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              "Featured properties",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: _accentColor,
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              child: const Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    "View all",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Icon(
+                                    Icons.keyboard_arrow_right,
+                                    size: 14,
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                          height: 380,
+                          padding: const EdgeInsets.only(left: 16),
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 340,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                margin: const EdgeInsets.only(right: 12),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.all(12.0),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Gap(6),
+                                          Expanded(
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      "John Micheal",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                    Gap(4),
+                                                    Icon(
+                                                      Icons.verified,
+                                                      color: Colors.teal,
+                                                      size: 16,
+                                                    ),
+                                                  ],
+                                                ),
+                                                Text(
+                                                  "California, CA",
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: _accentColor,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                            child: IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(Icons.more_vert),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2020/02/14/22/51/chateau-4849563_1280.jpg",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        padding: EdgeInsets.all(12),
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(.8),
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: Text(
+                                                    'ID #123',
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Gap(8),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(.8),
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                        color: Colors.orangeAccent,
+                                                      ),
+                                                      Gap(4),
+                                                      Text(
+                                                        "600",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Spacer(),
+                                                CircleAvatar(
+                                                  radius: 16,
+                                                  backgroundColor: Colors.black.withOpacity(.7),
+                                                  foregroundColor: _accentColor,
+                                                  child: Icon(
+                                                    Icons.favorite_outline,
+                                                    size: 16,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                            Spacer(),
+                                            Row(
+                                              children: [
+                                                Spacer(),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(.8),
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.camera_alt_outlined,
+                                                        size: 16,
+                                                        color: Colors.white,
+                                                      ),
+                                                      Gap(4),
+                                                      Text(
+                                                        "3 / 26",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(16.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text("Elite House"),
+                                              Text("\$123344"),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.location_on_outlined,
+                                                size: 16,
+                                              ),
+                                              Text("1234 Despard Street, Atlanta, GA"),
+                                            ],
+                                          ),
+                                          Divider(),
+                                          Row(
+                                            children: [],
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              );
+                            },
+                          ))
+                    ],
+                  ),
                 ),
               ),
             )
