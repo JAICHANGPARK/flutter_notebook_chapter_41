@@ -263,7 +263,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               margin: const EdgeInsets.only(right: 12),
-                              child: const Column(
+                              child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
@@ -271,6 +271,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     child: Row(
                                       children: [
                                         CircleAvatar(),
+                                        Expanded(
+                                          child: Column(
+                                            
+                                            children: [],
+                                          ),
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: _accentColor,
+
+                                          ),
+                                          child: IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(Icons.more_vert),
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ),
