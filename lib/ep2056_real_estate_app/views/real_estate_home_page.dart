@@ -271,6 +271,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     child: Row(
                                       children: [
                                         CircleAvatar(),
+                                        Gap(6),
                                         Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -278,6 +279,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               Row(
                                                 children: [
                                                   Text("John Micheal"),
+                                                  Gap(4),
                                                   Icon(
                                                     Icons.verified,
                                                     color: Colors.teal,
