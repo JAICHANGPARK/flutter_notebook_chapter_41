@@ -342,17 +342,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               ),
                                               Gap(8),
                                               Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.black.withOpacity(.8),
-                                                  borderRadius: BorderRadius.circular(16),
-                                                ),
-                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                child: Row(
-                                                  children: [
-                                                    
-                                                  ],
-                                                )
-                                              )
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(.8),
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                        color: Colors.orangeAccent,
+                                                      ),
+                                                      Gap(6),
+                                                      Text("600")
+                                                    ],
+                                                  ))
                                             ],
                                           )
                                         ],
