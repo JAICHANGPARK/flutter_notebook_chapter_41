@@ -278,11 +278,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             children: [
                                               Row(
                                                 children: [
-                                                  Text("John Micheal"),
+                                                  Text(
+                                                    "John Micheal",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
                                                   Gap(4),
                                                   Icon(
                                                     Icons.verified,
                                                     color: Colors.teal,
+                                                    size: 16,
                                                   ),
                                                 ],
                                               ),
