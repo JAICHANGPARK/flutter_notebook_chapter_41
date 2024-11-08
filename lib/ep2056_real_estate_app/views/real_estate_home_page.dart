@@ -321,18 +321,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           fit: BoxFit.cover,
                                         ),
                                       ),
+                                      padding: EdgeInsets.all(12),
                                       child: Column(
                                         children: [
                                           Row(
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(.8),
-                                                    borderRadius: BorderRadius.circular(8)),
+                                                  color: Colors.black.withOpacity(.8),
+                                                  borderRadius: BorderRadius.circular(16),
+                                                ),
+                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                                                 child: Text(
                                                   'ID #123',
                                                   style: TextStyle(
                                                     color: Colors.white,
+                                                    fontSize: 12,
                                                   ),
                                                 ),
                                               )
