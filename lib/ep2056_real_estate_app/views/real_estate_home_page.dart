@@ -396,7 +396,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                     ),
                                                     Gap(4),
                                                     Text(
-                                                      "600",
+                                                      "3 / 26",
                                                       style: TextStyle(
                                                         color: Colors.white,
                                                         fontSize: 12,
