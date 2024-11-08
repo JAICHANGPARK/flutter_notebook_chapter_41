@@ -377,6 +377,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               )
                                             ],
                                           ),
+                                          Spacer(),
+                                          Row(
+                                            children: [
+                                              Spacer(),
+
+                                            ],
+                                          )
                                         ],
                                       ),
                                     ),
