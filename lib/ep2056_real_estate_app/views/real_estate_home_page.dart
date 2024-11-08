@@ -354,8 +354,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                         size: 16,
                                                         color: Colors.orangeAccent,
                                                       ),
-                                                      Gap(6),
-                                                      Text("600")
+                                                      Gap(4),
+                                                      Text(
+                                                        "600",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 12,
+                                                        ),
+                                                      )
                                                     ],
                                                   ))
                                             ],
