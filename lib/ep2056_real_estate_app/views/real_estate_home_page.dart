@@ -342,28 +342,29 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               ),
                                               Gap(8),
                                               Container(
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(.8),
-                                                    borderRadius: BorderRadius.circular(16),
-                                                  ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                  child: Row(
-                                                    children: [
-                                                      Icon(
-                                                        Icons.star,
-                                                        size: 16,
-                                                        color: Colors.orangeAccent,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.8),
+                                                  borderRadius: BorderRadius.circular(16),
+                                                ),
+                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.star,
+                                                      size: 16,
+                                                      color: Colors.orangeAccent,
+                                                    ),
+                                                    Gap(4),
+                                                    Text(
+                                                      "600",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 12,
                                                       ),
-                                                      Gap(4),
-                                                      Text(
-                                                        "600",
-                                                        style: TextStyle(
-                                                          color: Colors.white,
-                                                          fontSize: 12,
-                                                        ),
-                                                      )
-                                                    ],
-                                                  ))
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
                                             ],
                                           )
                                         ],
