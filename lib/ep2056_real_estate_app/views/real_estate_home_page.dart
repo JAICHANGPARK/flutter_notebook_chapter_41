@@ -312,7 +312,25 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     ),
                                   ),
                                   Expanded(
-                                    child: Placeholder(),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2020/02/14/22/51/chateau-4849563_1280.jpg",
+                                          ),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            children: [
+                                              
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ),
                                   ),
                                   Padding(
                                     padding: EdgeInsets.all(16.0),
