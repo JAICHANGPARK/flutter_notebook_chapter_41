@@ -325,7 +325,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         children: [
                                           Row(
                                             children: [
-                                              
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(.8),
+                                                    borderRadius: BorderRadius.circular(8)),
+                                                child: Text(
+                                                  'ID #123',
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              )
                                             ],
                                           )
                                         ],
