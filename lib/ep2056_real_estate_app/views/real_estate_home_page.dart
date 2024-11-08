@@ -273,7 +273,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         CircleAvatar(),
                                         Expanded(
                                           child: Column(
-                                            
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [],
                                           ),
                                         ),
