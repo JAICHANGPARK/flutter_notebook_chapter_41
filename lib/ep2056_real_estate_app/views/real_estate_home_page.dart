@@ -274,13 +274,25 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [],
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Text("John Micheal"),
+                                                  Icon(
+                                                    Icons.verified,
+                                                    color: Colors.teal,
+                                                  ),
+                                                ],
+                                              ),
+                                              Text(
+                                                "California, CA",
+                                              )
+                                            ],
                                           ),
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
                                             color: _accentColor,
-
                                           ),
                                           child: IconButton(
                                             onPressed: () {},
