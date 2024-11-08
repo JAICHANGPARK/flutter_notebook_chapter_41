@@ -9,7 +9,7 @@ class RealEstateHomePage extends StatefulWidget {
 }
 
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
-  Color _accentColor = Color.fromRGBO(208, 245, 43, 1);
+  Color _accentColor = const Color.fromRGBO(208, 245, 43, 1);
 
   List<String> _tabs = [
     "Houses",
@@ -28,7 +28,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
           children: [
             Container(
               height: 100,
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               child: Row(
                 children: [
                   Container(
@@ -46,21 +46,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             "John Micheal",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
                             ),
                           ),
-                          Gap(4),
+                          const Gap(4),
                           Container(
                             decoration: BoxDecoration(
                               color: _accentColor,
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                            child: Row(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
@@ -88,12 +88,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.notifications_none,
                       ),
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.blueGrey[50]!,
@@ -101,7 +101,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.menu,
                       ),
                     ),
@@ -117,9 +117,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Gap(12),
-                    Padding(
-                      padding: const EdgeInsets.all(12.0),
+                    const Gap(12),
+                    const Padding(
+                      padding: EdgeInsets.all(12.0),
                       child: Text(
                         "Discover properties and find\nyour place of dreams",
                         style: TextStyle(
@@ -143,7 +143,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                                 color: Colors.white,
                               ),
-                              child: TextField(
+                              child: const TextField(
                                 decoration: InputDecoration(
                                   prefixIcon: Icon(Icons.search),
                                   hintText: "Let's get started",
@@ -157,7 +157,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               ),
                             ),
                           ),
-                          Gap(12),
+                          const Gap(12),
                           Container(
                             decoration: BoxDecoration(
                               border: Border.all(
@@ -167,7 +167,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               color: Colors.white,
                             ),
                             child: IconButton(
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.tune,
                               ),
                               onPressed: () {},
@@ -176,10 +176,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ],
                       ),
                     ),
-                    Gap(24),
+                    const Gap(24),
                     Container(
                       height: 42,
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 16,
                       ),
                       child: ListView.builder(
@@ -188,8 +188,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         itemBuilder: (context, index) {
                           final title = _tabs[index];
                           return Container(
-                            padding: EdgeInsets.symmetric(horizontal: 20),
-                            margin: EdgeInsets.only(right: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            margin: const EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               color: index == 0 ? _accentColor : Colors.white,
                               border: Border.all(
@@ -200,7 +200,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             child: Center(
                               child: Text(
                                 title,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -209,13 +209,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         },
                       ),
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Featured properties",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -227,8 +227,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               color: _accentColor,
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                            child: Row(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
@@ -251,7 +251,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     Container(
                         height: 380,
-                        padding: EdgeInsets.only(left: 16),
+                        padding: const EdgeInsets.only(left: 16),
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
@@ -262,12 +262,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              margin: EdgeInsets.only(right: 12),
-                              child: Column(
+                              margin: const EdgeInsets.only(right: 12),
+                              child: const Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.all(12.0),
+                                    padding: EdgeInsets.all(12.0),
                                     child: Row(
                                       children: [
                                         CircleAvatar(),
@@ -278,7 +278,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     child: Placeholder(),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.all(16.0),
+                                    padding: EdgeInsets.all(16.0),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -319,8 +319,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 86,
-        color: Color.fromRGBO(1, 32, 27, 1),
-        padding: EdgeInsets.only(
+        color: const Color.fromRGBO(1, 32, 27, 1),
+        padding: const EdgeInsets.only(
           bottom: 16,
           left: 16,
           right: 16,
@@ -334,12 +334,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 4,
                     color: _accentColor,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Icon(
                     Icons.home_filled,
                     color: _accentColor,
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Text(
                     "Home",
                     style: TextStyle(
@@ -357,13 +357,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 4,
                     color: Colors.transparent,
                   ),
-                  Spacer(),
-                  Icon(
+                  const Spacer(),
+                  const Icon(
                     Icons.explore_outlined,
                     color: Colors.white,
                   ),
-                  Gap(8),
-                  Text(
+                  const Gap(8),
+                  const Text(
                     "Discover",
                     style: TextStyle(
                       color: Colors.white,
@@ -380,13 +380,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 4,
                     color: Colors.transparent,
                   ),
-                  Spacer(),
-                  Icon(
+                  const Spacer(),
+                  const Icon(
                     Icons.favorite_outline,
                     color: Colors.white,
                   ),
-                  Gap(8),
-                  Text(
+                  const Gap(8),
+                  const Text(
                     "Favourite",
                     style: TextStyle(
                       color: Colors.white,
@@ -403,13 +403,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 4,
                     color: Colors.transparent,
                   ),
-                  Spacer(),
-                  Icon(
+                  const Spacer(),
+                  const Icon(
                     Icons.message_outlined,
                     color: Colors.white,
                   ),
-                  Gap(8),
-                  Text(
+                  const Gap(8),
+                  const Text(
                     "Messages",
                     style: TextStyle(
                       color: Colors.white,
@@ -426,13 +426,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     height: 4,
                     color: Colors.transparent,
                   ),
-                  Spacer(),
-                  Icon(
+                  const Spacer(),
+                  const Icon(
                     Icons.person_2_outlined,
                     color: Colors.white,
                   ),
-                  Gap(8),
-                  Text(
+                  const Gap(8),
+                  const Text(
                     "Profile",
                     style: TextStyle(
                       color: Colors.white,
