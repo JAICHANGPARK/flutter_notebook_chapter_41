@@ -381,7 +381,30 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           Row(
                                             children: [
                                               Spacer(),
-
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.8),
+                                                  borderRadius: BorderRadius.circular(16),
+                                                ),
+                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.camera_alt_outlined,
+                                                      size: 16,
+                                                      color: Colors.white,
+                                                    ),
+                                                    Gap(4),
+                                                    Text(
+                                                      "600",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 12,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
                                             ],
                                           )
                                         ],
