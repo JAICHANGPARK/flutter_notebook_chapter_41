@@ -339,6 +339,19 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                     fontSize: 12,
                                                   ),
                                                 ),
+                                              ),
+                                              Gap(8),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.8),
+                                                  borderRadius: BorderRadius.circular(16),
+                                                ),
+                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                child: Row(
+                                                  children: [
+                                                    
+                                                  ],
+                                                )
                                               )
                                             ],
                                           )
