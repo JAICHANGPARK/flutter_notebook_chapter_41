@@ -301,6 +301,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         Container(
                                           decoration: BoxDecoration(
                                             color: _accentColor,
+                                            borderRadius: BorderRadius.circular(6),
                                           ),
                                           child: IconButton(
                                             onPressed: () {},
