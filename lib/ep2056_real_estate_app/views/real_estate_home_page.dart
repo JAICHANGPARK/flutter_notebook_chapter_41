@@ -514,27 +514,24 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       Container(
                         height: 300,
                         padding: const EdgeInsets.only(left: 16),
-
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
                               width: 240,
-                              margin: const EdgeInsets.only(right: 12,bottom: 32),
+                              margin: const EdgeInsets.only(right: 12, bottom: 32),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Colors.black.withOpacity(.05),
-                                    blurRadius: 3,
-                                    spreadRadius: 6,
-                                    offset: Offset(3, 8)
-                                  )
+                                      color: Colors.grey.withOpacity(.05),
+                                      blurRadius: 3,
+                                      spreadRadius: 6,
+                                      offset: Offset(3, 8))
                                 ],
                               ),
-
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -698,6 +695,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           ],
                         ),
                       ),
+                      Container(
+                        height: 200,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {},
+                        ),
+                      )
                     ],
                   ),
                 ),
