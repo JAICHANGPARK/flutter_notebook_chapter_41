@@ -697,7 +697,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                       Container(
                         margin: EdgeInsets.only(left: 16),
-                        height: 160,
+                        height: 150,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
@@ -712,8 +712,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               child: Row(
                                 children: [
                                   Container(
-                                    width: 100,
-                                    child: Placeholder(),
+                                    width: 80,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue,
+
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                    ),
                                   ),
                                   Expanded(
                                     child: Padding(
