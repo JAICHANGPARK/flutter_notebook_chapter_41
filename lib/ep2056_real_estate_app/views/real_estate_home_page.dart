@@ -420,7 +420,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
-                                              Text("Elite House".),
+                                              Text(
+                                                "Elite House",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               Text(
                                                 "\$123344",
                                                 style: TextStyle(
@@ -602,10 +607,23 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
-                                              Text("Elite House"),
-                                              Text("\$123344"),
+                                              Text(
+                                                "Elite House",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text(
+                                                "\$123344",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.teal,
+                                                  fontSize: 15,
+                                                ),
+                                              ),
                                             ],
                                           ),
+                                          Gap(6),
                                           Row(
                                             children: [
                                               Icon(
