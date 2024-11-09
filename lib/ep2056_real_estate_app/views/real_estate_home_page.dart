@@ -268,12 +268,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0),
                                       child: Row(
                                         children: [
-                                          CircleAvatar(),
-                                          Gap(6),
-                                          Expanded(
+                                          const CircleAvatar(),
+                                          const Gap(6),
+                                          const Expanded(
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
@@ -306,7 +306,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             ),
                                             child: IconButton(
                                               onPressed: () {},
-                                              icon: Icon(Icons.more_vert),
+                                              icon: const Icon(Icons.more_vert),
                                             ),
                                           ),
                                         ],
@@ -314,7 +314,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     ),
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           image: DecorationImage(
                                             image: NetworkImage(
                                               "https://cdn.pixabay.com/photo/2020/02/14/22/51/chateau-4849563_1280.jpg",
@@ -322,7 +322,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             fit: BoxFit.cover,
                                           ),
                                         ),
-                                        padding: EdgeInsets.all(12),
+                                        padding: const EdgeInsets.all(12),
                                         child: Column(
                                           children: [
                                             Row(
@@ -332,8 +332,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                     color: Colors.black.withOpacity(.8),
                                                     borderRadius: BorderRadius.circular(16),
                                                   ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                  child: Text(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: const Text(
                                                     'ID #123',
                                                     style: TextStyle(
                                                       color: Colors.white,
@@ -341,14 +341,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                     ),
                                                   ),
                                                 ),
-                                                Gap(8),
+                                                const Gap(8),
                                                 Container(
                                                   decoration: BoxDecoration(
                                                     color: Colors.black.withOpacity(.8),
                                                     borderRadius: BorderRadius.circular(16),
                                                   ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                  child: Row(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: const Row(
                                                     children: [
                                                       Icon(
                                                         Icons.star,
@@ -366,29 +366,29 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                     ],
                                                   ),
                                                 ),
-                                                Spacer(),
+                                                const Spacer(),
                                                 CircleAvatar(
                                                   radius: 16,
                                                   backgroundColor: Colors.black.withOpacity(.7),
                                                   foregroundColor: _accentColor,
-                                                  child: Icon(
+                                                  child: const Icon(
                                                     Icons.favorite_outline,
                                                     size: 16,
                                                   ),
                                                 )
                                               ],
                                             ),
-                                            Spacer(),
+                                            const Spacer(),
                                             Row(
                                               children: [
-                                                Spacer(),
+                                                const Spacer(),
                                                 Container(
                                                   decoration: BoxDecoration(
                                                     color: Colors.black.withOpacity(.8),
                                                     borderRadius: BorderRadius.circular(16),
                                                   ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                  child: Row(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: const Row(
                                                     children: [
                                                       Icon(
                                                         Icons.camera_alt_outlined,
@@ -412,7 +412,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         ),
                                       ),
                                     ),
-                                    Padding(
+                                    const Padding(
                                       padding: EdgeInsets.all(16.0),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -512,25 +512,35 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ),
                       ),
                       Container(
-                        height: 240,
+                        height: 300,
                         padding: const EdgeInsets.only(left: 16),
+
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
                               width: 240,
+                              margin: const EdgeInsets.only(right: 12,bottom: 32),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(.05),
+                                    blurRadius: 3,
+                                    spreadRadius: 6,
+                                    offset: Offset(3, 8)
+                                  )
+                                ],
                               ),
-                              margin: const EdgeInsets.only(right: 12),
+
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         image: DecorationImage(
                                           image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2020/02/14/22/51/chateau-4849563_1280.jpg",
@@ -538,7 +548,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           fit: BoxFit.cover,
                                         ),
                                       ),
-                                      padding: EdgeInsets.all(12),
+                                      padding: const EdgeInsets.all(12),
                                       child: Column(
                                         children: [
                                           Row(
@@ -548,8 +558,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                   color: Colors.black.withOpacity(.8),
                                                   borderRadius: BorderRadius.circular(16),
                                                 ),
-                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                child: Text(
+                                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                child: const Text(
                                                   'ID #123',
                                                   style: TextStyle(
                                                     color: Colors.white,
@@ -557,14 +567,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                   ),
                                                 ),
                                               ),
-                                              Gap(8),
+                                              const Gap(8),
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.black.withOpacity(.8),
                                                   borderRadius: BorderRadius.circular(16),
                                                 ),
-                                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                child: Row(
+                                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                child: const Row(
                                                   children: [
                                                     Icon(
                                                       Icons.star,
@@ -582,24 +592,24 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                   ],
                                                 ),
                                               ),
-                                              Spacer(),
+                                              const Spacer(),
                                               CircleAvatar(
                                                 radius: 16,
                                                 backgroundColor: Colors.black.withOpacity(.7),
                                                 foregroundColor: _accentColor,
-                                                child: Icon(
+                                                child: const Icon(
                                                   Icons.favorite_outline,
                                                   size: 16,
                                                 ),
                                               )
                                             ],
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                         ],
                                       ),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsets.all(16.0),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -649,7 +659,6 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           },
                         ),
                       ),
-                      Gap(32),
                       Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Row(
@@ -689,7 +698,6 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           ],
                         ),
                       ),
-
                     ],
                   ),
                 ),
