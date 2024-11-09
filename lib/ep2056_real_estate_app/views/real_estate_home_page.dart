@@ -435,7 +435,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           ),
                                           Divider(),
                                           Row(
-                                            children: [],
+                                            children: [
+                                              Icon(Icons.bed),
+                                              Text("2 Beds"),
+                                              Icon(Icons.bathtub_outlined),
+                                              Text("2 Baths"),
+                                            ],
                                           )
                                         ],
                                       ),
