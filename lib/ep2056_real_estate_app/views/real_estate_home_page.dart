@@ -437,9 +437,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           Row(
                                             children: [
                                               Icon(Icons.bed),
+                                              Gap(4),
                                               Text("2 Beds"),
-                                              Icon(Icons.bathtub_outlined),
+                                              Gap(8),
+                                              Icon(Icons.bathtub_outlined),Gap(4),
                                               Text("2 Baths"),
+                                              Gap(8),
+                                              Icon(Icons.square_outlined),Gap(4),
+                                              Text("350 sqft"),
                                             ],
                                           )
                                         ],
