@@ -698,7 +698,24 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       Container(
                         height: 200,
                         child: ListView.builder(
-                          itemBuilder: (context, index) {},
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 340,
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(child: Column(children: [
+
+                                  ],))
+                                ],
+                              ),
+                            );
+                          },
                         ),
                       )
                     ],
