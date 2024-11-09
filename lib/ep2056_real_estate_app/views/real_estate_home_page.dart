@@ -115,7 +115,6 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   color: Colors.blue[50],
                 ),
                 child: SingleChildScrollView(
-
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -445,7 +444,171 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 ),
                               );
                             },
-                          ))
+                          )),
+                      const Gap(16),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              "Near By",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: _accentColor,
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              child: const Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    "View all",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Icon(
+                                    Icons.keyboard_arrow_right,
+                                    size: 14,
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                          height: 240,
+                          padding: const EdgeInsets.only(left: 16),
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 240,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                margin: const EdgeInsets.only(right: 12),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2020/02/14/22/51/chateau-4849563_1280.jpg",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        padding: EdgeInsets.all(12),
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(.8),
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: Text(
+                                                    'ID #123',
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Gap(8),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(.8),
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                        color: Colors.orangeAccent,
+                                                      ),
+                                                      Gap(4),
+                                                      Text(
+                                                        "600",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Spacer(),
+                                                CircleAvatar(
+                                                  radius: 16,
+                                                  backgroundColor: Colors.black.withOpacity(.7),
+                                                  foregroundColor: _accentColor,
+                                                  child: Icon(
+                                                    Icons.favorite_outline,
+                                                    size: 16,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                            Spacer(),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(16.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text("Elite House"),
+                                              Text("\$123344"),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.location_on_outlined,
+                                                size: 16,
+                                              ),
+                                              Expanded(
+                                                child: Text(
+                                                  "1234 Despard Street, Atlanta, GA",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              );
+                            },
+                          )),
                     ],
                   ),
                 ),
