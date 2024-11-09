@@ -715,9 +715,30 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     width: 100,
                                     child: Placeholder(),
                                   ),
-                                  Expanded(child: Column(children: [
-
-                                  ],))
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Text("Blue Small House"),
+                                        Text("2328 Despard Street, GA"),
+                                        Text("\$4270"),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.bed),
+                                            Gap(4),
+                                            Text("2"),
+                                            Gap(12),
+                                            Icon(Icons.bathtub_outlined),
+                                            Gap(4),
+                                            Text("2"),
+                                            Gap(12),
+                                            Icon(Icons.square_outlined),
+                                            Gap(4),
+                                            Text("350"),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
                                 ],
                               ),
                             );
