@@ -696,13 +696,19 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ),
                       ),
                       Container(
-                        height: 200,
+                        margin: EdgeInsets.only(left: 16),
+                        height: 160,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
                               width: 340,
+                              margin: EdgeInsets.only(right: 12, bottom: 32),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
                               child: Row(
                                 children: [
                                   Container(
