@@ -709,6 +709,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
                               ),
+                              padding: EdgeInsets.all(4),
                               child: Row(
                                 children: [
                                   Container(
