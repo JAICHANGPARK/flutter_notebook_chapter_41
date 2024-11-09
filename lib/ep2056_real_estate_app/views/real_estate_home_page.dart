@@ -420,8 +420,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
-                                              Text("Elite House"),
-                                              Text("\$123344"),
+                                              Text("Elite House".),
+                                              Text(
+                                                "\$123344",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.teal,
+                                                  fontSize: 15,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                           Row(
@@ -433,17 +440,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               Text("1234 Despard Street, Atlanta, GA"),
                                             ],
                                           ),
-                                          Divider(),
+                                          Divider(
+                                            height: 32,
+                                          ),
                                           Row(
                                             children: [
                                               Icon(Icons.bed),
                                               Gap(4),
                                               Text("2 Beds"),
-                                              Gap(8),
-                                              Icon(Icons.bathtub_outlined),Gap(4),
+                                              Gap(12),
+                                              Icon(Icons.bathtub_outlined),
+                                              Gap(4),
                                               Text("2 Baths"),
-                                              Gap(8),
-                                              Icon(Icons.square_outlined),Gap(4),
+                                              Gap(12),
+                                              Icon(Icons.square_outlined),
+                                              Gap(4),
                                               Text("350 sqft"),
                                             ],
                                           )
