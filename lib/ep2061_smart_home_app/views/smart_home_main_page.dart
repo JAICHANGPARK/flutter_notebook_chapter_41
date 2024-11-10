@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SmartHomeMainPage extends StatefulWidget {
   const SmartHomeMainPage({super.key});
@@ -25,6 +26,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.lightGreenAccent,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                        ),
+                        Gap(12),
+                        Text("Home")
+                      ],
                     ),
                   )
                 ],
