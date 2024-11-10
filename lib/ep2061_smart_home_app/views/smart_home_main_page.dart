@@ -22,11 +22,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   shape: StadiumBorder(),
                   color: Colors.grey[100],
                 ),
+                padding: EdgeInsets.all(6),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
-                      decoration: BoxDecoration(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
                         color: Colors.lightGreenAccent,
                       ),
                       child: Row(
