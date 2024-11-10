@@ -9,6 +9,9 @@ class SmartHomeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SmartHomeMainPage(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
+      ),
     );
   }
 }
