@@ -17,6 +17,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           children: [
             Positioned.fill(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
