@@ -4,9 +4,9 @@ A new Flutter project.
 
 ## EP2061
 
-- Real estate mobile app design
-- Gurvinder Singh
-- https://dribbble.com/shots/25138458-Real-estate-mobile-app-design
+- 🏡Mobile design for the smart home app | Hyperactive
+- Hyperactive Mobile App for Hyperactive Design
+- https://dribbble.com/shots/25157793--Mobile-design-for-the-smart-home-app-Hyperactive
 
 <img src="https://cdn.dribbble.com/userupload/17414470/file/original-645fa0257cc74852fafb0511f9b769c3.png?resize=1905x1429"/>
 
