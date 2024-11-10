@@ -26,7 +26,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           Text("Welcome home,"),
                           Text("Dream!"),
                         ],
-                      )
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey[200]!,
+                          ),
+                        ),
+                        padding: EdgeInsets.all(8),
+                        child: Icon(
+                          Icons.settings_outlined,
+                          
+                        ),
+                      ),
+                      CircleAvatar(),
                     ],
                   )
                 ],
