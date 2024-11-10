@@ -15,8 +15,22 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
-              child: Column(),
+            Positioned.fill(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Welcome home,"),
+                          Text("Dream!"),
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
             Positioned(
               bottom: 32,
