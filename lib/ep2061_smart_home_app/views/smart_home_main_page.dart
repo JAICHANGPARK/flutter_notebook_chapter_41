@@ -37,11 +37,41 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         padding: EdgeInsets.all(8),
                         child: Icon(
                           Icons.settings_outlined,
-                          
                         ),
                       ),
                       CircleAvatar(),
                     ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Presets"),
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey[200]!,
+                          ),
+                        ),
+                        padding: EdgeInsets.all(8),
+                        child: Icon(
+                          Icons.add,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    height: 52,
+                    child: Placeholder(),
+                  ),
+                  Text("Overview"),
+                  Container(
+                    height: 52,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 260,
+                    child: Placeholder(),
                   )
                 ],
               ),
