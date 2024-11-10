@@ -15,7 +15,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: Stack(
         children: [
           Positioned(
-            bottom: 24,
+            bottom: 32,
+            left: 0,
+            right: 0,
             child: Center(
               child: Container(
                 decoration: ShapeDecoration(
@@ -42,6 +44,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       ),
                       padding: EdgeInsets.all(8),
                     ),
+                    Gap(12),
                     Container(
                       decoration: ShapeDecoration(
                         shape: StadiumBorder(),
@@ -49,6 +52,24 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       ),
                       padding: EdgeInsets.all(8),
                       child: Icon(Icons.grid_view),
+                    ),
+                    Gap(12),
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: Icon(Icons.grid_view),
+                    ),
+                    Gap(12),
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: Icon(Icons.notifications_none),
                     )
                   ],
                 ),
