@@ -73,7 +73,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   Container(
                     height: 260,
                     child: Placeholder(),
-                  )
+                  ),
+                  Text("Active devices"),
+                  Container(
+                    height: 260,
+                    child: Placeholder(),
+                  ),
                 ],
               ),
             ),
