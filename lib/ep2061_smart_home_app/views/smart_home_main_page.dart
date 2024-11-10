@@ -16,28 +16,40 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         children: [
           Positioned(
             bottom: 24,
-            child: Container(
-              decoration: ShapeDecoration(
-                shape: StadiumBorder(),
-                color: Colors.grey[100],
-              ),
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.lightGreenAccent,
+            child: Center(
+              child: Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.grey[100],
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.lightGreenAccent,
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.home_filled,
+                          ),
+                          Gap(12),
+                          Text("Home")
+                        ],
+                      ),
+                      padding: EdgeInsets.all(8),
                     ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.home_filled,
-                        ),
-                        Gap(12),
-                        Text("Home")
-                      ],
-                    ),
-                  )
-                ],
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: Icon(Icons.grid_view),
+                    )
+                  ],
+                ),
               ),
             ),
           )
