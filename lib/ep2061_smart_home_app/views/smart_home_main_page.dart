@@ -103,8 +103,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           itemCount: tabs.length,
                           itemBuilder: (context, index) {
                             return Container(
+                              margin: EdgeInsets.only(right: 12),
+                              decoration: ShapeDecoration(
+                                color: value == index ? Colors.lightGreenAccent : Colors.grey[300]!,
+                                shape: StadiumBorder(),
+                              ),
                               child: Center(
-                                child: Text("${tabs[index]}"),
+                                child: Text(
+                                  "${tabs[index]}",
+                                ),
                               ),
                             );
                           },
