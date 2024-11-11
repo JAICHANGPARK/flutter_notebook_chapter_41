@@ -82,7 +82,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               padding: EdgeInsets.all(8),
                               child: Icon(
                                 Icons.add,
-                                size: 24,
+                                size: 28,
                               ),
                             ),
                           ],
