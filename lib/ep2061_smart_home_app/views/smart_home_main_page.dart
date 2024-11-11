@@ -145,9 +145,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   "Overview",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                   ),
                                 ),
+                                Gap(12),
                                 Container(
                                   height: 52,
                                   child: Placeholder(),
