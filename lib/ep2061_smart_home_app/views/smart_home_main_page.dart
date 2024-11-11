@@ -110,7 +110,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 padding: EdgeInsets.symmetric(horizontal: 20),
                                 margin: EdgeInsets.only(right: 8),
                                 decoration: ShapeDecoration(
-                                  color: value == index ? Colors.lightGreenAccent : Colors.grey[300]!,
+                                  color: value == index ? Colors.lightGreenAccent : Colors.grey[200]!,
                                   shape: StadiumBorder(),
                                 ),
                                 child: Center(
