@@ -99,8 +99,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       valueListenable: tabIndex,
                       builder: (context, value, _) {
                         return ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: tabs.length,
                           itemBuilder: (context, index) {
-                            return Container();
+                            return Container(
+                              child: Center(
+                                child: Text("${tabs[index]}"),
+                              ),
+                            );
                           },
                         );
                       },
