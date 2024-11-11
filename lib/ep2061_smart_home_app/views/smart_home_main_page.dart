@@ -130,25 +130,43 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     ),
                   ),
                   Gap(16),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Overview"),
-                      Container(
-                        height: 52,
-                        child: Placeholder(),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                        ),
+                        child: Column(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Overview",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                Container(
+                                  height: 52,
+                                  child: Placeholder(),
+                                ),
+                              ],
+                            ),
+                            Container(
+                              height: 260,
+                              child: Placeholder(),
+                            ),
+                            Text("Active devices"),
+                            Container(
+                              height: 260,
+                              child: Placeholder(),
+                            ),
+                          ],
+                        ),
                       ),
-                    ],
-                  ),
-
-                  Container(
-                    height: 260,
-                    child: Placeholder(),
-                  ),
-                  Text("Active devices"),
-                  Container(
-                    height: 260,
-                    child: Placeholder(),
+                    ),
                   ),
                 ],
               ),
