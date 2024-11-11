@@ -102,15 +102,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           scrollDirection: Axis.horizontal,
                           itemCount: tabs.length,
                           itemBuilder: (context, index) {
-                            return Container(
-                              margin: EdgeInsets.only(right: 12),
-                              decoration: ShapeDecoration(
-                                color: value == index ? Colors.lightGreenAccent : Colors.grey[300]!,
-                                shape: StadiumBorder(),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "${tabs[index]}",
+                            return GestureDetector(
+                              onTap: () {
+                                tabIndex.value = index;
+                              },
+                              child: Container(
+                                padding: EdgeInsets.symmetric(horizontal: 20),
+                                margin: EdgeInsets.only(right: 8),
+                                decoration: ShapeDecoration(
+                                  color: value == index ? Colors.lightGreenAccent : Colors.grey[300]!,
+                                  shape: StadiumBorder(),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "${tabs[index]}",
+                                  ),
                                 ),
                               ),
                             );
