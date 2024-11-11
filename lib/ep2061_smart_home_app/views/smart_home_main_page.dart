@@ -9,6 +9,9 @@ class SmartHomeMainPage extends StatefulWidget {
 }
 
 class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
+  ValueNotifier<int> tabIndex = ValueNotifier(0);
+  List<String> tabs = ["Out of home", "Work time", "Bedtime", "Cleaning"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,7 +95,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                   Container(
                     height: 52,
-                    child: Placeholder(),
+                    child: ValueListenableBuilder(
+                      valueListenable: tabIndex,
+                      builder: (context, value, _) {
+                        return ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container();
+                          },
+                        );
+                      },
+                    ),
                   ),
                   Text("Overview"),
                   Container(
