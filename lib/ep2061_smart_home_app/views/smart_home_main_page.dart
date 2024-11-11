@@ -20,7 +20,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -32,13 +32,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 Text(
                                   "Welcome home,",
                                   style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 24,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 26,
                                   ),
                                 ),
-                                Text("Dream!"),
+                                Text(
+                                  "Dream!",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 28,
+                                  ),
+                                ),
                               ],
                             ),
+                            Spacer(),
                             Container(
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
@@ -51,13 +58,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 Icons.settings_outlined,
                               ),
                             ),
+                            Gap(6),
                             CircleAvatar(),
                           ],
                         ),
+                        Gap(12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Presets"),
+                            Text(
+                              "Presets",
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                            ),
                             Container(
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
@@ -75,7 +89,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       ],
                     ),
                   ),
-
                   Container(
                     height: 52,
                     child: Placeholder(),
