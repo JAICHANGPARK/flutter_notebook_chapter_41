@@ -94,7 +94,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     ),
                   ),
                   Container(
-                    height: 52,
+                    height: 48,
+                    padding: EdgeInsets.only(left: 16),
                     child: ValueListenableBuilder(
                       valueListenable: tabIndex,
                       builder: (context, value, _) {
@@ -128,6 +129,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       },
                     ),
                   ),
+                  Gap(16),
+                  Column(
+                    children: [
+
+                    ],
+                  )
                   Text("Overview"),
                   Container(
                     height: 52,
