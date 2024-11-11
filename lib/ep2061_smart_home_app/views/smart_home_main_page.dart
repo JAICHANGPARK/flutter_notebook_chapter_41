@@ -178,20 +178,79 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           ),
                                         ),
                                       ),
+                                      Gap(6),
                                       Expanded(
-                                        child: Container(),
+                                        child: Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.grey[100],
+                                          ),
+                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                "12",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 28,
+                                                ),
+                                              ),
+                                              Gap(6),
+                                              Text(
+                                                "Total\ndevices",
+                                              )
+                                            ],
+                                          ),
+                                        ),
                                       ),
+                                      Gap(6),
                                       Expanded(
-                                        child: Container(),
+                                        child: Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.grey[100],
+                                          ),
+                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                "12",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 28,
+                                                ),
+                                              ),
+                                              Gap(6),
+                                              Text(
+                                                "Total\ndevices",
+                                              )
+                                            ],
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
                                 ),
                               ],
                             ),
+                            Gap(8),
                             Container(
                               height: 260,
-                              child: Placeholder(),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Placeholder(),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                             Text("Active devices"),
                             Container(
