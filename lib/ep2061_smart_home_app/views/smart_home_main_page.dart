@@ -19,12 +19,19 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Column(),
                   Row(
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Welcome home,"),
+                          Text(
+                            "Welcome home,",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
+                          ),
                           Text("Dream!"),
                         ],
                       ),
