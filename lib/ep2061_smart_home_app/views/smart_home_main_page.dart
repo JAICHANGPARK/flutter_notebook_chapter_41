@@ -136,7 +136,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
                         ),
-                        child: Column(
+                        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -246,13 +246,37 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         Expanded(
                                           child: Placeholder(),
                                         ),
+                                        Gap(4),
+                                        Expanded(
+                                          child: Placeholder(),
+                                        ),
                                       ],
                                     ),
-                                  )
+                                  ),
+                                  Gap(4),
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Placeholder(),
+                                        ),
+                                        Gap(4),
+                                        Expanded(
+                                          child: Placeholder(),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
-                            Text("Active devices"),
+                            Gap(20),
+                            Text(
+                              "Active devices",
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                            ),
                             Container(
                               height: 260,
                               child: Placeholder(),
