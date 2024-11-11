@@ -116,6 +116,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 child: Center(
                                   child: Text(
                                     "${tabs[index]}",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                    ),
                                   ),
                                 ),
                               ),
