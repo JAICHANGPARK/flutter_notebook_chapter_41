@@ -111,7 +111,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 padding: EdgeInsets.symmetric(horizontal: 20),
                                 margin: EdgeInsets.only(right: 8),
                                 decoration: ShapeDecoration(
-                                  color: value == index ? Colors.lightGreenAccent : Colors.grey[200]!,
+                                  color: value == index ? Colors.lightGreenAccent : Colors.grey[100]!,
                                   shape: StadiumBorder(),
                                 ),
                                 child: Center(
@@ -158,6 +158,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           decoration: ShapeDecoration(
                                             shape: StadiumBorder(),
                                             color: Colors.grey[100],
+                                          ),
+                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                "12",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 28,
+                                                ),
+                                              ),
+                                              Gap(6),
+                                              Text(
+                                                "Total\ndevices",
+                                              )
+                                            ],
                                           ),
                                         ),
                                       ),
