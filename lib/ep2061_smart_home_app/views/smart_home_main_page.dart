@@ -151,7 +151,24 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 Gap(12),
                                 Container(
                                   height: 52,
-                                  child: Placeholder(),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.grey[100],
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: Container(),
+                                      ),
+                                      Expanded(
+                                        child: Container(),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
