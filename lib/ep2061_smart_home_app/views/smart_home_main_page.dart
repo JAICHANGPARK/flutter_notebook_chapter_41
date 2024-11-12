@@ -287,7 +287,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         Gap(4),
                                         Expanded(
                                           child: Transform.rotate(
-                                          angle: ,
+                                          angle: .05,
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 border: Border.all(
