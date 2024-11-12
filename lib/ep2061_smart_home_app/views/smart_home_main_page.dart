@@ -427,12 +427,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 fontSize: 18,
                               ),
                             ),
-                            Gap(16),
+                            Gap(12),
                             Container(
                               height: 260,
                               child: GridView.builder(
                                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 2,
+                                  mainAxisSpacing: 12,
+                                  crossAxisSpacing: 12,
                                 ),
                                 itemBuilder: (context, index) {
                                   return Container(
@@ -453,9 +455,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                               foregroundColor: Colors.white,
                                               radius: 24,
                                               child: Icon(Icons.power_settings_new),
-
                                             ),
                                           ],
+                                        ),
+                                        Gap(12),
+                                        Text(
+                                          "Robot Vaccum Cleaner",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                          ),
                                         )
                                       ],
                                     ),
