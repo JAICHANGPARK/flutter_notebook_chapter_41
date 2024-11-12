@@ -238,7 +238,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             ),
                             Gap(8),
                             Container(
-                              height: 260,
+                              height: 250,
                               child: Column(
                                 children: [
                                   Expanded(
@@ -253,7 +253,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             padding: EdgeInsets.all(12),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
-                                              
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
                                               children: [
                                                 Row(
                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
