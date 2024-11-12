@@ -368,7 +368,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                   ],
                                                 ),
                                                 Text(
-                                                  "16 m^3",
+                                                  "16 m³",
                                                   style: TextStyle(
                                                     fontSize: 24,
                                                     fontWeight: FontWeight.bold,
