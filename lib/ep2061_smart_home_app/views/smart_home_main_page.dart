@@ -381,7 +381,43 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         ),
                                         Gap(4),
                                         Expanded(
-                                          child: Placeholder(),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.blue[50],
+                                              borderRadius: BorderRadius.circular(24),
+                                            ),
+                                            padding: EdgeInsets.all(12),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [
+                                                    Text(
+                                                      "Electricity",
+                                                      style: TextStyle(
+                                                        fontSize: 15,
+                                                      ),
+                                                    ),
+                                                    CircleAvatar(
+                                                      backgroundColor: Colors.lightGreenAccent,
+                                                      radius: 24,
+                                                      child: Icon(Icons.flash_on_rounded),
+                                                    ),
+                                                  ],
+                                                ),
+                                                Text(
+                                                  "245 kWh",
+                                                  style: TextStyle(
+                                                    fontSize: 24,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
