@@ -255,6 +255,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                   children: [
                                                     Text("Temperature"),
                                                     CircleAvatar(
@@ -263,6 +264,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                       child: Icon(Icons.thermostat),
                                                     ),
                                                   ],
+                                                ),
+                                                Text(
+                                                  "+22°C",
+                                                  style: TextStyle(
+                                                    fontSize: 24,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                  ),
                                                 )
                                               ],
                                             ),
