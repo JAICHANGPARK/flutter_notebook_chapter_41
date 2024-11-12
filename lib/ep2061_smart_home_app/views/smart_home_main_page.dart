@@ -246,6 +246,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       children: [
                                         Expanded(
                                           child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.blueAccent,
+                                              borderRadius: BorderRadius.circular(24),
+                                            ),
+                                            padding: EdgeInsets.all(12),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
