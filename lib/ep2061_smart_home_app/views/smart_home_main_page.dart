@@ -190,7 +190,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "12",
+                                                "3",
                                                 style: TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 28,
@@ -198,7 +198,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                               ),
                                               Gap(6),
                                               Text(
-                                                "Total\ndevices",
+                                                "Active\ndevices",
                                               )
                                             ],
                                           ),
@@ -216,7 +216,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                "12",
+                                                "5",
                                                 style: TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 28,
@@ -224,7 +224,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                               ),
                                               Gap(6),
                                               Text(
-                                                "Total\ndevices",
+                                                "Presets",
                                               )
                                             ],
                                           ),
