@@ -136,7 +136,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
                         ),
-                        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -244,7 +245,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     child: Row(
                                       children: [
                                         Expanded(
-                                          child: Placeholder(),
+                                          child: Container(
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text("Temperature"),
+                                                    CircleAvatar(
+                                                      backgroundColor: Colors.lightGreenAccent,
+                                                      radius: 24,
+                                                      child: Icon(Icons.thermostat),
+                                                    ),
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
                                         ),
                                         Gap(4),
                                         Expanded(
