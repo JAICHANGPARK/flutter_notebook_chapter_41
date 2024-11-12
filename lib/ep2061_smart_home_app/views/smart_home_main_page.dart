@@ -287,7 +287,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         Gap(4),
                                         Expanded(
                                           child: Transform.rotate(
-                                          angle: .05,
+                                            angle: .05,
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 border: Border.all(
@@ -306,7 +306,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                       Text(
                                                         "Cameras",
                                                         style: TextStyle(
-
                                                           fontSize: 15,
                                                         ),
                                                       ),
@@ -322,7 +321,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                     style: TextStyle(
                                                       fontSize: 24,
                                                       fontWeight: FontWeight.bold,
-
                                                     ),
                                                   )
                                                 ],
@@ -356,7 +354,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                     Text(
                                                       "Water",
                                                       style: TextStyle(
-                                          
                                                         fontSize: 15,
                                                       ),
                                                     ),
@@ -372,7 +369,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                   style: TextStyle(
                                                     fontSize: 24,
                                                     fontWeight: FontWeight.bold,
-                                          
                                                   ),
                                                 )
                                               ],
@@ -412,7 +408,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                   style: TextStyle(
                                                     fontSize: 24,
                                                     fontWeight: FontWeight.bold,
-                                                    color: Colors.white,
                                                   ),
                                                 )
                                               ],
@@ -434,7 +429,25 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             ),
                             Container(
                               height: 260,
-                              child: Placeholder(),
+                              child: GridView.builder(
+                                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                ),
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Spacer(),
+                                            
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  );
+                                },
+                              ),
                             ),
                           ],
                         ),
