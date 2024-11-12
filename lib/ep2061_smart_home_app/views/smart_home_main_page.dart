@@ -253,11 +253,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             padding: EdgeInsets.all(12),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
+                                              
                                               children: [
                                                 Row(
                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                   children: [
-                                                    Text("Temperature"),
+                                                    Text("Temperature",style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 15,
+                                                    ),),
                                                     CircleAvatar(
                                                       backgroundColor: Colors.lightGreenAccent,
                                                       radius: 24,
