@@ -254,15 +254,17 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
                                               children: [
                                                 Row(
                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                   children: [
-                                                    Text("Temperature",style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontSize: 15,
-                                                    ),),
+                                                    Text(
+                                                      "Temperature",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 15,
+                                                      ),
+                                                    ),
                                                     CircleAvatar(
                                                       backgroundColor: Colors.lightGreenAccent,
                                                       radius: 24,
@@ -284,7 +286,49 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         ),
                                         Gap(4),
                                         Expanded(
-                                          child: Placeholder(),
+                                          child: Transform.rotate(
+                                          angle: ,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey[400]!,
+                                                ),
+                                                borderRadius: BorderRadius.circular(24),
+                                              ),
+                                              padding: EdgeInsets.all(12),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                  Row(
+                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                    children: [
+                                                      Text(
+                                                        "Cameras",
+                                                        style: TextStyle(
+
+                                                          fontSize: 15,
+                                                        ),
+                                                      ),
+                                                      CircleAvatar(
+                                                        backgroundColor: Colors.lightGreenAccent,
+                                                        radius: 24,
+                                                        child: Icon(Icons.camera_alt_outlined),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  Text(
+                                                    "On",
+                                                    style: TextStyle(
+                                                      fontSize: 24,
+                                                      fontWeight: FontWeight.bold,
+
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
