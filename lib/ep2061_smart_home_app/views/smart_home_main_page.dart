@@ -435,12 +435,24 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 ),
                                 itemBuilder: (context, index) {
                                   return Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.grey[400]!,
+                                      ),
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
                                     child: Column(
                                       children: [
                                         Row(
                                           children: [
                                             Spacer(),
-                                            
+                                            CircleAvatar(
+                                              backgroundColor: Colors.blueAccent,
+                                              foregroundColor: Colors.white,
+                                              radius: 24,
+                                              child: Icon(Icons.power_settings_new),
+
+                                            ),
                                           ],
                                         )
                                       ],
