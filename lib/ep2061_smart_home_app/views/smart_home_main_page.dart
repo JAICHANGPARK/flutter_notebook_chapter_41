@@ -427,6 +427,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 fontSize: 18,
                               ),
                             ),
+                            Gap(16),
                             Container(
                               height: 260,
                               child: GridView.builder(
@@ -441,6 +442,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       ),
                                       borderRadius: BorderRadius.circular(24),
                                     ),
+                                    padding: EdgeInsets.all(12),
                                     child: Column(
                                       children: [
                                         Row(
