@@ -31,35 +31,39 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              HugeIcons.strokeRoundedHome01,
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                HugeIcons.strokeRoundedHome01,
+              ),
+              label: "Home",
             ),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              HugeIcons.strokeRoundedCalendar01,
+            BottomNavigationBarItem(
+              icon: Icon(
+                HugeIcons.strokeRoundedCalendar01,
+              ),
+              label: "Search",
             ),
-            label: "Search",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              HugeIcons.strokeRoundedHandBag01,
+            BottomNavigationBarItem(
+              icon: Icon(
+                HugeIcons.strokeRoundedHandBag01,
+              ),
+              label: "Search",
             ),
-            label: "Search",
-          ),
-          BottomNavigationBarItem(
-            icon:Icon(Icons.favorite_outline),
-            label: "Wishlist",
-          ),
-          BottomNavigationBarItem(
-            icon:Icon(Icons.person_2_outlined),
-            label: "Profile",
-          ),
-        ],
+            BottomNavigationBarItem(
+              icon:Icon(Icons.favorite_outline),
+              label: "Wishlist",
+            ),
+            BottomNavigationBarItem(
+              icon:Icon(Icons.person_2_outlined),
+              label: "Profile",
+            ),
+          ],
+        ),
       ),
     );
   }
