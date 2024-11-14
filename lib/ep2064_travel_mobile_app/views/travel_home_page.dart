@@ -73,7 +73,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       ),
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 16),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 3),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     child: Row(
                       children: [
                         IconButton(
@@ -83,7 +83,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           ),
                         ),
                         Expanded(
-                          child: TextField(),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: "Where we go?",
+                            ),
+                          ),
                         ),
                         IconButton(
                           onPressed: () {},
