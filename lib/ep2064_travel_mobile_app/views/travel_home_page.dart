@@ -72,9 +72,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
+                      borderRadius: BorderRadius.circular(16),
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 16),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     child: Row(
                       children: [
                         IconButton(
