@@ -36,7 +36,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 children: [
                   Row(
                     children: [
-                      Text("Explore"),
+                      Text(
+                        "Explore",
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(
