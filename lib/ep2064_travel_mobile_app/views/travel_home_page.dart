@@ -65,6 +65,28 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     ),
                   ),
                   Gap(16),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        Colors.grey[200]!,
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.search,
+                          ),
+                        ),
+                        Expanded(
+                          child: TextField(),
+                        ),
+                        
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
