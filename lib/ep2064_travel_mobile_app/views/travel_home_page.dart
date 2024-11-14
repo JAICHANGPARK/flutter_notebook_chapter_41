@@ -50,7 +50,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             color: Colors.grey[300]!,
                           ),
                           shape: BoxShape.circle,
+                          color: Colors.white,
+                          
                         ),
+                        padding: EdgeInsets.all(12),
                         child: Badge(
                           child: Icon(Icons.notifications_active_outlined),
                           // label: Text(""),
