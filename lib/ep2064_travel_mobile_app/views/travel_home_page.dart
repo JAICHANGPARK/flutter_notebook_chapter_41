@@ -103,16 +103,31 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     height: 42,
                     child: Placeholder(),
                   ),
-                  Row(
-                    children: [
-                      Text("For you"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "See all",
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Text(
+                          "For you",
+                          style: TextStyle(
+                            fontSize: 18,
+                          ),
                         ),
-                      ),
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See all",
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Placeholder();
+                      },
+                    ),
                   )
                 ],
               ),
