@@ -38,6 +38,22 @@ class _TravelHomePageState extends State<TravelHomePage> {
               HugeIcons.strokeRoundedHome01,
             ),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              HugeIcons.strokeRoundedCalendar01,
+            ),
+            label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              HugeIcons.strokeRoundedHandBag01,
+            ),
+            label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon:Icon(Icons.favorite_outline),
+            label: "Search",
           )
         ],
       ),
