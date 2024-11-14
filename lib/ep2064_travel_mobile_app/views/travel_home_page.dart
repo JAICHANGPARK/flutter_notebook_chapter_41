@@ -86,6 +86,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: "Where we go?",
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
