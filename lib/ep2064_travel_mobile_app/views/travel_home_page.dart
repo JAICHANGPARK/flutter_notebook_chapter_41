@@ -98,6 +98,21 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         ),
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: 42,
+                    child: Placeholder(),
+                  ),
+                  Row(
+                    children: [
+                      Text("For you"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "See all",
+                        ),
+                      ),
+                    ],
                   )
                 ],
               ),
