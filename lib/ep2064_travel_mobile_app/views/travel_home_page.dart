@@ -69,9 +69,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(
-                        Colors.grey[200]!,
+                        color: Colors.grey[200]!,
                       ),
                     ),
+                    margin: EdgeInsets.symmetric(horizontal: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 3),
                     child: Row(
                       children: [
                         IconButton(
@@ -83,7 +85,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         Expanded(
                           child: TextField(),
                         ),
-                        
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.tune),
+                        ),
                       ],
                     ),
                   )
