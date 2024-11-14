@@ -34,7 +34,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
           items: [
             BottomNavigationBarItem(
               icon: Icon(
@@ -55,11 +58,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
               label: "Search",
             ),
             BottomNavigationBarItem(
-              icon:Icon(Icons.favorite_outline),
+              icon: Icon(Icons.favorite_outline),
               label: "Wishlist",
             ),
             BottomNavigationBarItem(
-              icon:Icon(Icons.person_2_outlined),
+              icon: Icon(Icons.person_2_outlined),
               label: "Profile",
             ),
           ],
