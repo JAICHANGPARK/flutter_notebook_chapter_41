@@ -53,8 +53,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
           BottomNavigationBarItem(
             icon:Icon(Icons.favorite_outline),
-            label: "Search",
-          )
+            label: "Wishlist",
+          ),
+          BottomNavigationBarItem(
+            icon:Icon(Icons.person_2_outlined),
+            label: "Profile",
+          ),
         ],
       ),
     );
