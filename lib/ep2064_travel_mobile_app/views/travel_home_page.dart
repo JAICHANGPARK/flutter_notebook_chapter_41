@@ -17,7 +17,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
             child: Column(
               children: [
                 Container(
-                  height: 240,
+                  height: 200,
                   color: Colors.grey[100],
                 ),
                 Expanded(
