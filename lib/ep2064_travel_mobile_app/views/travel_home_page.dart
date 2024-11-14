@@ -30,23 +30,29 @@ class _TravelHomePageState extends State<TravelHomePage> {
             ),
           ),
           Positioned.fill(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Text("Explore"),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[300]!,
+            child: SafeArea(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text("Explore"),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                          shape: BoxShape.circle,
                         ),
-                        shape: BoxShape.circle,
-                      ),
-                    )
-                  ],
-                )
-              ],
+                        child: Badge(
+                          child: Icon(Icons.notifications_active_outlined),
+                          // label: Text(""),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           )
         ],
