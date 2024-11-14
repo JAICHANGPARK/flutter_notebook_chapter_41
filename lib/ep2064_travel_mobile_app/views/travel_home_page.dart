@@ -34,32 +34,35 @@ class _TravelHomePageState extends State<TravelHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Explore",
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[300]!,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Explore",
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
                           ),
-                          shape: BoxShape.circle,
-                          color: Colors.white,
-                          
                         ),
-                        padding: EdgeInsets.all(12),
-                        child: Badge(
-                          child: Icon(Icons.notifications_active_outlined),
-                          // label: Text(""),
-                        ),
-                      )
-                    ],
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                            shape: BoxShape.circle,
+                            color: Colors.white,
+
+                          ),
+                          padding: EdgeInsets.all(12),
+                          child: Badge(
+                            child: Icon(Icons.notifications_active_outlined),
+                            // label: Text(""),
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
