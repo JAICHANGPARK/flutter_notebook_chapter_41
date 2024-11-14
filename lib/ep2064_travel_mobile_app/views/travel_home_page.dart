@@ -29,6 +29,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
               ],
             ),
           ),
+          Positioned.fill(
+            child: Column(
+              children: [],
+            ),
+          )
         ],
       ),
       bottomNavigationBar: SizedBox(
