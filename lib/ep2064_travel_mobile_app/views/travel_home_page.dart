@@ -31,7 +31,22 @@ class _TravelHomePageState extends State<TravelHomePage> {
           ),
           Positioned.fill(
             child: Column(
-              children: [],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Text("Explore"),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        shape: BoxShape.circle,
+                      ),
+                    )
+                  ],
+                )
+              ],
             ),
           )
         ],
