@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class TravelHomePage extends StatefulWidget {
@@ -53,17 +54,17 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             ),
                             shape: BoxShape.circle,
                             color: Colors.white,
-
                           ),
                           padding: EdgeInsets.all(12),
                           child: Badge(
                             child: Icon(Icons.notifications_active_outlined),
                             // label: Text(""),
                           ),
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
+                  Gap(16),
                 ],
               ),
             ),
