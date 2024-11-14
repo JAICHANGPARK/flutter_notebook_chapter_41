@@ -31,6 +31,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
             ),
           ),
           Positioned.fill(
+            top: 16,
             child: SafeArea(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
