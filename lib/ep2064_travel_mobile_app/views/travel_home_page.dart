@@ -109,6 +109,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       itemCount: tabs.length,
                       itemBuilder: (context, index) {
                         return Container(
+                          padding: EdgeInsets.symmetric(horizontal: 24,),
+                          margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(32),
                             border: Border.all(
