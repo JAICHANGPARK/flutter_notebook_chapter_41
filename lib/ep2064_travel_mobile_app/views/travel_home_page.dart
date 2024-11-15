@@ -10,6 +10,9 @@ class TravelHomePage extends StatefulWidget {
 }
 
 class _TravelHomePageState extends State<TravelHomePage> {
+
+  List<String> tabs = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
