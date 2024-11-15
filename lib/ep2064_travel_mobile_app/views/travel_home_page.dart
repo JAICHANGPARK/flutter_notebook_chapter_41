@@ -184,6 +184,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                           borderRadius: BorderRadius.circular(16),
+                                          image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2024/05/26/10/22/indonesia-8788501_1280.jpg",
+                                            ),
+                                          ),
                                         ),
                                         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                         child: Row(
