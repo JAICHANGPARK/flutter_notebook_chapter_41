@@ -172,6 +172,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.brown,
                                   ),
+                                  padding: EdgeInsets.all(20),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -179,6 +180,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                         ),
+                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
@@ -186,7 +188,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                               Icons.star,
                                               color: Colors.deepOrange,
                                               size: 20,
-                                            )
+                                            ),
+                                            Text("4.8")
                                           ],
                                         ),
                                       ),
