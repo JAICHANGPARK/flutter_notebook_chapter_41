@@ -175,13 +175,20 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     children: [
                                       Expanded(
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               "Ancient architecture",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16,
+                                              ),
                                             ),
+                                            Gap(8),
                                             Row(
                                               children: [
-                                                Icon(Icons.location_on_outlined),
+                                                Icon(Icons.location_on_outlined,
+                                                size: 16,),
                                                 Text(
                                                   "Bali, Indonesia",
                                                 )
