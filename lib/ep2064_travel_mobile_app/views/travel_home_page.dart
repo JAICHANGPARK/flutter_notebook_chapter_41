@@ -99,9 +99,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       ],
                     ),
                   ),
+                  Gap(24),
                   SizedBox(
                     height: 42,
-                    child: Placeholder(),
+                    child: ListView.builder(
+                      itemCount: ,
+                      itemBuilder: (context, index) {},
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
