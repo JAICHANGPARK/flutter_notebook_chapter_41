@@ -11,7 +11,7 @@ class TravelHomePage extends StatefulWidget {
 
 class _TravelHomePageState extends State<TravelHomePage> {
 
-  List<String> tabs = [];
+  List<String> tabs = ["Asia", "Europe", "United States", "South Africa"];
 
   @override
   Widget build(BuildContext context) {
