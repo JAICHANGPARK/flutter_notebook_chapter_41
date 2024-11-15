@@ -110,7 +110,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       itemCount: tabs.length,
                       itemBuilder: (context, index) {
                         return Container(
-                          padding: EdgeInsets.symmetric(horizontal: 24,),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 24,
+                          ),
                           margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(32),
@@ -121,6 +123,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           child: Center(
                             child: Text(
                               "${tabs[index]}",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                              ),
                             ),
                           ),
                         );
