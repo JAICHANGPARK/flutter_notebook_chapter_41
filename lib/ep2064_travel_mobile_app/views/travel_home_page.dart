@@ -171,6 +171,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                   width: double.infinity,
                                   decoration: BoxDecoration(
                                     color: Colors.brown,
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(8),
+                                    ),
                                   ),
                                   padding: EdgeInsets.all(20),
                                   child: Column(
@@ -179,6 +182,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.white,
+                                          borderRadius: BorderRadius.circular(16),
                                         ),
                                         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                         child: Row(
