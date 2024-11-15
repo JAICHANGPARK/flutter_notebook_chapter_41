@@ -168,6 +168,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               children: [
                                 Container(
                                   height: 300,
+                                  width: double.infinity,
                                   decoration: BoxDecoration(
                                     color: Colors.brown,
                                   ),
