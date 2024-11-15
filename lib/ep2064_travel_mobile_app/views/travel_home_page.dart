@@ -169,43 +169,46 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                 Container(
                                   height: 300,
                                 ),
-                                Row(
-                                  children: [
-                                    Expanded(
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Ancient architecture",
-                                          ),
-                                          Row(
-                                            children: [
-                                              Icon(Icons.location_on_outlined),
-                                              Text(
-                                                "Bali, Indonesia",
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                    Container(
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 20,
-                                        vertical: 8,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: Colors.deepOrange,
-                                        borderRadius: BorderRadius.circular(24),
-                                      ),
-                                      child: Text(
-                                        "View",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16,
+                                Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Ancient architecture",
+                                            ),
+                                            Row(
+                                              children: [
+                                                Icon(Icons.location_on_outlined),
+                                                Text(
+                                                  "Bali, Indonesia",
+                                                )
+                                              ],
+                                            )
+                                          ],
                                         ),
                                       ),
-                                    )
-                                  ],
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 20,
+                                          vertical: 8,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: Colors.deepOrange,
+                                          borderRadius: BorderRadius.circular(24),
+                                        ),
+                                        child: Text(
+                                          "View",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
