@@ -171,6 +171,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.brown,
                                   ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+
+                                    ],
+                                  ),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(20.0),
