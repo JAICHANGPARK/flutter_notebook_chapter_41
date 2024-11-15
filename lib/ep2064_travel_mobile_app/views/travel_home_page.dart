@@ -136,11 +136,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           "For you",
                           style: TextStyle(
                             fontSize: 18,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                         TextButton(
@@ -153,10 +155,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     ),
                   ),
                   Expanded(
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Placeholder();
-                      },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange[50],
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   )
                 ],
