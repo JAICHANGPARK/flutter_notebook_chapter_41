@@ -173,6 +173,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     color: Colors.brown,
                                     borderRadius: BorderRadius.only(
                                       topLeft: Radius.circular(8),
+                                      topRight: Radius.circular(8),
                                     ),
                                   ),
                                   padding: EdgeInsets.all(20),
