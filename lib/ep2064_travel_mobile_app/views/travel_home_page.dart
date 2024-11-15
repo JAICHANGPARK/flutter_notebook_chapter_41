@@ -176,8 +176,25 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                         Text(
                                           "Ancient architecture",
                                         ),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.location_on_outlined),
+                                            Text(
+                                              "Bali, Indonesia",
+                                            )
+                                          ],
+                                        )
                                       ],
                                     ),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.deepOrange,
+                                      ),
+                                      child: Text(
+                                        "View",
+                                        
+                                      ),
+                                    )
                                   ],
                                 )
                               ],
