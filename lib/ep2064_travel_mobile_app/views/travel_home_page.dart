@@ -171,25 +171,27 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                 ),
                                 Row(
                                   children: [
-                                    Column(
-                                      children: [
-                                        Text(
-                                          "Ancient architecture",
-                                        ),
-                                        Row(
-                                          children: [
-                                            Icon(Icons.location_on_outlined),
-                                            Text(
-                                              "Bali, Indonesia",
-                                            )
-                                          ],
-                                        )
-                                      ],
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "Ancient architecture",
+                                          ),
+                                          Row(
+                                            children: [
+                                              Icon(Icons.location_on_outlined),
+                                              Text(
+                                                "Bali, Indonesia",
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                     Container(
                                       padding: EdgeInsets.symmetric(
-                                        horizontal: 16,
-                                        vertical: 6,
+                                        horizontal: 20,
+                                        vertical: 8,
                                       ),
                                       decoration: BoxDecoration(
                                         color: Colors.deepOrange,
