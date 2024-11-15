@@ -10,7 +10,6 @@ class TravelHomePage extends StatefulWidget {
 }
 
 class _TravelHomePageState extends State<TravelHomePage> {
-
   List<String> tabs = ["Asia", "Europe", "United States", "South Africa"];
 
   @override
@@ -106,10 +105,21 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   SizedBox(
                     height: 42,
                     child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
                       itemCount: tabs.length,
                       itemBuilder: (context, index) {
                         return Container(
-
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(32),
+                            border: Border.all(
+                              color: Colors.black,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "${tabs[index]}",
+                            ),
+                          ),
                         );
                       },
                     ),
