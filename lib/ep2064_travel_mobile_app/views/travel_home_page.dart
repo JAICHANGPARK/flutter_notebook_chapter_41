@@ -168,9 +168,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               children: [
                                 Container(
                                   height: 300,
+                                  decoration: BoxDecoration(
+                                    color: Colors.brown,
+                                  ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(20.0),
                                   child: Row(
                                     children: [
                                       Expanded(
@@ -187,8 +190,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                             Gap(8),
                                             Row(
                                               children: [
-                                                Icon(Icons.location_on_outlined,
-                                                size: 16,),
+                                                Icon(
+                                                  Icons.location_on_outlined,
+                                                  size: 16,
+                                                ),
                                                 Text(
                                                   "Bali, Indonesia",
                                                 )
