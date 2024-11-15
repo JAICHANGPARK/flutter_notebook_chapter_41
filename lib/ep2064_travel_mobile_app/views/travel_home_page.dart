@@ -192,7 +192,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       ),
                                       child: Text(
                                         "View",
-                                        
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                        ),
                                       ),
                                     )
                                   ],
