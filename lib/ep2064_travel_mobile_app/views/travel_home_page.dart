@@ -106,8 +106,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   SizedBox(
                     height: 42,
                     child: ListView.builder(
-                      itemCount: ,
-                      itemBuilder: (context, index) {},
+                      itemCount: tabs.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+
+                        );
+                      },
                     ),
                   ),
                   Padding(
