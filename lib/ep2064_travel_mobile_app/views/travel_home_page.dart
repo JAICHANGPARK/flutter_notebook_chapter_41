@@ -103,7 +103,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   ),
                   Gap(24),
                   Container(
-                    height: 42,
+                    height: 46,
                     margin: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
