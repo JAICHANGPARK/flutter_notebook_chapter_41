@@ -160,9 +160,27 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
-
-                            decoration: BoxDecoration(
-                              color: Colors.deepOrange[50],
+                            margin: EdgeInsets.only(bottom: 16),
+                            decoration:
+                                BoxDecoration(color: Colors.deepOrange[50], borderRadius: BorderRadius.circular(8)),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  height: 300,
+                                ),
+                                Row(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "Ancient architecture",
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )
+                              ],
                             ),
                           );
                         },
