@@ -187,8 +187,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       ],
                                     ),
                                     Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 16,
+                                        vertical: 6,
+                                      ),
                                       decoration: BoxDecoration(
                                         color: Colors.deepOrange,
+                                        borderRadius: BorderRadius.circular(24),
                                       ),
                                       child: Text(
                                         "View",
