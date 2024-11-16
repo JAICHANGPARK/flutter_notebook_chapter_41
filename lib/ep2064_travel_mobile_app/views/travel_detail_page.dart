@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelDetailPage extends StatefulWidget {
   const TravelDetailPage({super.key});
@@ -22,6 +23,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         ),
         bottomNavigationBar: BottomAppBar(
           padding: EdgeInsets.zero,
+          height: 88,
           color: Colors.white,
           surfaceTintColor: Colors.white,
           child: Container(
@@ -31,8 +33,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     top: BorderSide(
                   color: Colors.grey,
                 ))),
-            height: 80,
-            padding: EdgeInsets.all(16),
+            height: 88,
+            padding: EdgeInsets.all(20),
             child: Row(
               children: [
                 Column(
@@ -46,16 +48,18 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             text: "\$500",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 16,
                             ),
                           ),
                           TextSpan(
                             text: "/person",
-                          )
+                          ),
                         ],
                       ),
                     )
                   ],
                 ),
+                Gap(16),
                 Expanded(
                   child: Container(
                     decoration: ShapeDecoration(
