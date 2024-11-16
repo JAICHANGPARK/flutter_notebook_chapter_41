@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_41/ep2064_travel_mobile_app/views/travel_detail_page.dart';
 import 'package:flutter_notebook_chapter_41/ep2064_travel_mobile_app/views/travel_home_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -15,15 +16,15 @@ class TravelMobileApp extends StatelessWidget {
       GoRoute(
           path: "/detail",
           builder: (context, state) {
-            return TravelHomePage();
+            return TravelDetailPage();
           }),
     ],
   );
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: TravelHomePage(),
+    return MaterialApp.router(
+      routerConfig: router,
     );
   }
 }
