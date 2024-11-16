@@ -162,7 +162,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         itemBuilder: (context, index) {
                           return InkWell(
                             onTap: (){
-                              GoRouter.of(context).go("detail");
+                              GoRouter.of(context).go("/detail");
                             },
                             child: Container(
                               margin: EdgeInsets.only(bottom: 16),
