@@ -41,6 +41,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                                 CircleAvatar(
                                   radius: 24,
                                   backgroundColor: Colors.white,
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.favorite_outline,
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
