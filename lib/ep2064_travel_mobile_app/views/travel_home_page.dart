@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class TravelHomePage extends StatefulWidget {
@@ -159,106 +160,111 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
-                          return Container(
-                            margin: EdgeInsets.only(bottom: 16),
-                            decoration:
-                                BoxDecoration(color: Colors.deepOrange[50], borderRadius: BorderRadius.circular(8)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 300,
-                                  width: double.infinity,
-                                  decoration: BoxDecoration(
-                                    color: Colors.brown,
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(8),
-                                      topRight: Radius.circular(8),
-                                    ),
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2024/05/26/10/22/indonesia-8788501_1280.jpg",
+                          return InkWell(
+                            onTap: (){
+                              GoRouter.of(context).go("detail");
+                            },
+                            child: Container(
+                              margin: EdgeInsets.only(bottom: 16),
+                              decoration:
+                                  BoxDecoration(color: Colors.deepOrange[50], borderRadius: BorderRadius.circular(8)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 300,
+                                    width: double.infinity,
+                                    decoration: BoxDecoration(
+                                      color: Colors.brown,
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(8),
                                       ),
-                                      fit: BoxFit.cover,
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2024/05/26/10/22/indonesia-8788501_1280.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
-                                  ),
-                                  padding: EdgeInsets.all(20),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius: BorderRadius.circular(16),
+                                    padding: EdgeInsets.all(20),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(16),
 
-                                        ),
-                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Icon(
-                                              Icons.star,
-                                              color: Colors.deepOrange,
-                                              size: 20,
-                                            ),
-                                            Text("4.8")
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(20.0),
-                                  child: Row(
-                                    children: [
-                                      Expanded(
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Ancient architecture",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 16,
+                                          ),
+                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Icon(
+                                                Icons.star,
+                                                color: Colors.deepOrange,
+                                                size: 20,
                                               ),
-                                            ),
-                                            Gap(8),
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.location_on_outlined,
-                                                  size: 16,
-                                                ),
-                                                Text(
-                                                  "Bali, Indonesia",
-                                                )
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        padding: EdgeInsets.symmetric(
-                                          horizontal: 20,
-                                          vertical: 8,
-                                        ),
-                                        decoration: BoxDecoration(
-                                          color: Colors.deepOrange,
-                                          borderRadius: BorderRadius.circular(24),
-                                        ),
-                                        child: Text(
-                                          "View",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 16,
+                                              Text("4.8")
+                                            ],
                                           ),
                                         ),
-                                      )
-                                    ],
+                                      ],
+                                    ),
                                   ),
-                                )
-                              ],
+                                  Padding(
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Ancient architecture",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 16,
+                                                ),
+                                              ),
+                                              Gap(8),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.location_on_outlined,
+                                                    size: 16,
+                                                  ),
+                                                  Text(
+                                                    "Bali, Indonesia",
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Container(
+                                          padding: EdgeInsets.symmetric(
+                                            horizontal: 20,
+                                            vertical: 8,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: Colors.deepOrange,
+                                            borderRadius: BorderRadius.circular(24),
+                                          ),
+                                          child: Text(
+                                            "View",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },
