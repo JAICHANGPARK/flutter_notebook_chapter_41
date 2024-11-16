@@ -16,7 +16,19 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           children: [
             Positioned.fill(
               child: Column(
-                children: [],
+                children: [
+                  Container(
+                    height: 320,
+                    color: Colors.blue,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
               ),
             ),
           ],
