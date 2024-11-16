@@ -20,6 +20,21 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   Container(
                     height: 320,
                     color: Colors.blue,
+                    child: SafeArea(
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                      
+                              ),
+                              CircleAvatar()
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                   Expanded(
                     child: Container(
