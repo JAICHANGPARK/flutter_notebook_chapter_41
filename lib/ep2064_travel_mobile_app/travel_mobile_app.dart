@@ -7,6 +7,7 @@ class TravelMobileApp extends StatelessWidget {
   TravelMobileApp({super.key});
 
   final router = GoRouter(
+    initialLocation: "/",
     routes: [
       GoRoute(
           path: "/",
