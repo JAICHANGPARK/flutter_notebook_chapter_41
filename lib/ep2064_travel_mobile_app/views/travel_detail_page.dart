@@ -21,18 +21,31 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     height: 320,
                     color: Colors.blue,
                     child: SafeArea(
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                      
-                              ),
-                              CircleAvatar()
-                            ],
-                          ),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.white,
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.arrow_back,
+                                    ),
+                                  ),
+                                ),
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.white,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
