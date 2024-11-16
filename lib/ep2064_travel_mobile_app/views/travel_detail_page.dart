@@ -21,8 +21,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           ],
         ),
         bottomNavigationBar: BottomAppBar(
+          padding: EdgeInsets.zero,
+          color: Colors.white,
+          surfaceTintColor: Colors.white,
           child: Container(
+
             decoration: BoxDecoration(
+                color: Colors.white,
                 border: Border(
                     top: BorderSide(
               color: Colors.grey,
