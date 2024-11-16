@@ -36,7 +36,25 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             child: Row(
               children: [
                 Column(
-                  children: [],
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Start from"),
+                    Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "\$500",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(
+                            text: "/person",
+                          )
+                        ],
+                      ),
+                    )
+                  ],
                 ),
                 Expanded(
                   child: Container(
