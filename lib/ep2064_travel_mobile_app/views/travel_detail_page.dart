@@ -25,16 +25,28 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           color: Colors.white,
           surfaceTintColor: Colors.white,
           child: Container(
-
             decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border(
                     top: BorderSide(
-              color: Colors.grey,
-            ))),
+                  color: Colors.grey,
+                ))),
             height: 80,
+            padding: EdgeInsets.all(16),
             child: Row(
-              children: [],
+              children: [
+                Column(
+                  children: [],
+                ),
+                Expanded(
+                  child: Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.deepOrange,
+                    ),
+                  ),
+                )
+              ],
             ),
           ),
         ));
