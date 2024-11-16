@@ -44,6 +44,14 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       shape: StadiumBorder(),
                       color: Colors.deepOrange,
                     ),
+                    child: Center(
+                      child: Text(
+                        "Select Date",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
                 )
               ],
