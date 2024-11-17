@@ -71,7 +71,16 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-
+                          Row(
+                            children: [
+                              Text("Eiffel Tower"),
+                              Icon(
+                                Icons.star,
+                                color: Colors.deepOrange,
+                              ),
+                              Text("4.8"),
+                            ],
+                          )
                         ],
                       ),
                     ),
