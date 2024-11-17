@@ -68,6 +68,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                      padding: EdgeInsets.all(20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
