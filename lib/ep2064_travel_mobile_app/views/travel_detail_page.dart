@@ -101,6 +101,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             decoration: ShapeDecoration(
                               shape: StadiumBorder(),
                             ),
+                            child: Row(
+                              children: [
+                                Expanded(child: Row()),
+                                VerticalDivider(),
+                                Expanded(child: Row()),
+                              ],
+                            ),
                           )
                         ],
                       ),
