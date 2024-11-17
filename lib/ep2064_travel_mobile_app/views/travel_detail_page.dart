@@ -83,14 +83,23 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                               Text("4.8"),
                             ],
                           ),
+                          Gap(8),
                           Row(
                             children: [
                               Icon(
                                 Icons.location_on_outlined,
                                 color: Colors.grey,
+                                size: 20,
                               ),
+                              Gap(8),
                               Text("Paris, France"),
                             ],
+                          ),
+                          Container(
+                            height: 52,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[100],
+                            ),
                           )
                         ],
                       ),
