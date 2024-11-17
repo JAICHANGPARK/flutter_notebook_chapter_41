@@ -68,87 +68,89 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
-                      padding: EdgeInsets.all(20),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Text("Eiffel Tower"),
-                              Spacer(),
-                              Icon(
-                                Icons.star,
-                                color: Colors.deepOrange,
-                              ),
-                              Text("4.8"),
-                            ],
-                          ),
-                          Gap(8),
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.location_on_outlined,
-                                color: Colors.grey,
-                                size: 20,
-                              ),
-                              Gap(8),
-                              Text("Paris, France"),
-                            ],
-                          ),
-                          Container(
-                            height: 56,
-                            margin: EdgeInsets.symmetric(vertical: 24),
-                            decoration: ShapeDecoration(
-                              shape: StadiumBorder(),
-                            ),
-                            child: Row(
+                      padding: EdgeInsets.fromLTRB(20, 20 ,20 ,0),
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
                               children: [
-                                Expanded(
-                                    child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.group,
-                                    ),
-                                    Text("Max 8 group size")
-                                  ],
-                                )),
-                                VerticalDivider(),
-                                Expanded(
-                                    child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.group,
-                                    ),
-                                    Text("5 day trip duration")
-                                  ],
-                                )),
+                                Text("Eiffel Tower"),
+                                Spacer(),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.deepOrange,
+                                ),
+                                Text("4.8"),
                               ],
                             ),
-                          ),
-                          Text("Description"),
-                          Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                            maxLines: 5,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Locations"),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  "Open see map",
+                            Gap(8),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.location_on_outlined,
+                                  color: Colors.grey,
+                                  size: 20,
                                 ),
-                              )
-                            ],
-                          ),
-                          Container(
-                            height: 240,
-                            decoration: BoxDecoration(
-                              color: Colors.grey
+                                Gap(8),
+                                Text("Paris, France"),
+                              ],
                             ),
-                          )
-                        ],
+                            Container(
+                              height: 56,
+                              margin: EdgeInsets.symmetric(vertical: 24),
+                              decoration: ShapeDecoration(
+                                shape: StadiumBorder(),
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.group,
+                                      ),
+                                      Text("Max 8 group size")
+                                    ],
+                                  )),
+                                  VerticalDivider(),
+                                  Expanded(
+                                      child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.group,
+                                      ),
+                                      Text("5 day trip duration")
+                                    ],
+                                  )),
+                                ],
+                              ),
+                            ),
+                            Text("Description"),
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                              maxLines: 5,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Locations"),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Open see map",
+                                  ),
+                                )
+                              ],
+                            ),
+                            Container(
+                              height: 240,
+                              decoration: BoxDecoration(
+                                color: Colors.grey
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   )
