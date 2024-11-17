@@ -103,7 +103,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             ),
                             child: Row(
                               children: [
-                                Expanded(child: Row()),
+                                Expanded(child: Row(
+                                  children: [
+                                    Icon(Icons.group,),
+                                    Text("Max 8 group size")
+                                  ],
+                                )),
                                 VerticalDivider(),
                                 Expanded(child: Row()),
                               ],
