@@ -18,7 +18,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               child: Column(
                 children: [
                   Container(
-                    height: 320,
+                    height: 340,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       image: DecorationImage(
@@ -82,11 +82,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           surfaceTintColor: Colors.white,
           child: Container(
             decoration: BoxDecoration(
-                color: Colors.white,
-                border: Border(
-                    top: BorderSide(
+              color: Colors.white,
+              border: Border(
+                top: BorderSide(
                   color: Colors.grey,
-                ))),
+                ),
+              ),
+            ),
             height: 88,
             padding: EdgeInsets.all(20),
             child: Row(
