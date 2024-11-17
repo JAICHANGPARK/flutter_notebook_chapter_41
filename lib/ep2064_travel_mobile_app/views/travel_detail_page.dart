@@ -96,9 +96,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             ],
                           ),
                           Container(
-                            height: 52,
-                            decoration: BoxDecoration(
-                              color: Colors.grey[100],
+                            height: 56,
+                            margin: EdgeInsets.symmetric(vertical: 24),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
                             ),
                           )
                         ],
