@@ -20,6 +20,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   Container(
                     height: 320,
                     color: Colors.blue,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075_1280.jpg",
+                      ),
+                    )),
                     child: SafeArea(
                       child: Padding(
                         padding: const EdgeInsets.all(20.0),
