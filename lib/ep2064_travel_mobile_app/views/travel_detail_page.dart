@@ -131,6 +131,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             maxLines: 5,
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Locations"),
                               TextButton(
@@ -140,6 +141,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                                 ),
                               )
                             ],
+                          ),
+                          Container(
+                            height: 240,
+                            decoration: BoxDecoration(
+                              color: Colors.grey
+                            ),
                           )
                         ],
                       ),
