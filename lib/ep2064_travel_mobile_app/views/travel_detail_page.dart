@@ -68,6 +68,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+
+                        ],
+                      ),
                     ),
                   )
                 ],
