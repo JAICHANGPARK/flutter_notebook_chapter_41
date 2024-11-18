@@ -56,18 +56,42 @@ class _TravelBookPageState extends State<TravelBookPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text("Dates"),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("Clear all"),
-                        )
-                      ],
-                    )
-                  ],
+                padding: EdgeInsets.all(16),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Dates"),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("Clear all"),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 480,
+                        child: DateRangePickerDialog(
+                          firstDate: DateTime.now(),
+                          lastDate: DateTime.now(),
+                        ),
+                      ),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.grey[100],
+                        ),
+                        child: ListTile(
+                          leading: Icon(Icons.group),
+                          title: Text("5 adult"),
+                          trailing: Icon(
+                            Icons.keyboard_arrow_down,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
