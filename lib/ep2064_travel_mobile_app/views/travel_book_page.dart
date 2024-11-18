@@ -77,6 +77,21 @@ class _TravelBookPageState extends State<TravelBookPage> {
                           lastDate: DateTime.now(),
                         ),
                       ),
+                      Gap(12),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.grey[100],
+                        ),
+                        child: ListTile(
+                          leading: Icon(Icons.group),
+                          title: Text("5 adult"),
+                          trailing: Icon(
+                            Icons.keyboard_arrow_down,
+                          ),
+                        ),
+                      ),
+                      Gap(12),
                       Container(
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
