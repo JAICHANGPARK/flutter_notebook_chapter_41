@@ -56,6 +56,19 @@ class _TravelBookPageState extends State<TravelBookPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text("Dates"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("Clear all"),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ],
@@ -92,7 +105,6 @@ class _TravelBookPageState extends State<TravelBookPage> {
                               fontSize: 18,
                             ),
                           ),
-
                         ],
                       ),
                     )
