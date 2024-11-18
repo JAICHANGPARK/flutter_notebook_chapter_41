@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 class TravelDetailPage extends StatefulWidget {
   const TravelDetailPage({super.key});
@@ -201,16 +202,20 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 ),
                 Gap(16),
                 Expanded(
-                  child: Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.deepOrange,
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Select Date",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                  child: GestureDetector(
+                    onTap: (){
+                      GoRouter.of(context).push("/detail/book");                    },
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.deepOrange,
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Select Date",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
