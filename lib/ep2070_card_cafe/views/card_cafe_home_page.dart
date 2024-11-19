@@ -35,8 +35,15 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                       child: Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Popular Cards"),
+                              Text(
+                                "Popular Cards",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: Text(
