@@ -19,6 +19,21 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
             decoration: BoxDecoration(
               color: Colors.orangeAccent,
             ),
+            child: Column(
+              children: [
+                Text("Welcome"),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: TextField(
+                    decoration: InputDecoration(
+
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
           Expanded(
             child: Column(
@@ -60,7 +75,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                "Popular Cards",
+                                "Anniversary",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
@@ -79,8 +94,15 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                             child: Placeholder(),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Popular Cards"),
+                              Text(
+                                "Thank You",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: Text(
