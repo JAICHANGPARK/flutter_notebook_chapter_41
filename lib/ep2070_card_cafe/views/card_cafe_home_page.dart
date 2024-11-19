@@ -36,7 +36,11 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                     color: Colors.white,
                   ),
                   child: TextField(
-                    decoration: InputDecoration(),
+                    decoration: InputDecoration(
+                      suffixIcon: Icon(Icons.mic),
+                      icon: Icon(Icons.search),
+                      border: InputBorder.none,
+                    ),
                   ),
                 )
               ],
