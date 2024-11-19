@@ -9,6 +9,14 @@ class CardCafeHomePage extends StatefulWidget {
 }
 
 class _CardCafeHomePageState extends State<CardCafeHomePage> {
+  List<String> tabs = [
+    "My Cards",
+    "Anniversary",
+    "Birthday",
+    "Celebration",
+    "Thank You",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,11 +46,10 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                   ),
                   child: TextField(
                     decoration: InputDecoration(
-                      suffixIcon: Icon(Icons.mic),
-                      icon: Icon(Icons.search),
-                      border: InputBorder.none,
-                      hintText: "cards, gift, or degisn"
-                    ),
+                        suffixIcon: Icon(Icons.mic),
+                        icon: Icon(Icons.search),
+                        border: InputBorder.none,
+                        hintText: "cards, gift, or degisn"),
                   ),
                 )
               ],
@@ -52,10 +59,19 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
-                  height: 42,
-                  child: Placeholder(),
-                ),
+                    margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                    height: 42,
+                    child: ListView.builder(
+                      itemCount: tabs.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        );
+                      },
+                    )),
                 Expanded(
                   child: SingleChildScrollView(
                     child: Padding(
