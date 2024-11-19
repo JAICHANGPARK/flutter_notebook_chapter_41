@@ -73,6 +73,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                               color: Colors.grey[200]!,
                               borderRadius: BorderRadius.circular(4),
                             ),
+                            margin: EdgeInsets.only(right: 8),
                             child: Center(
                                 child: Text(
                               "${tabs[index]}",
