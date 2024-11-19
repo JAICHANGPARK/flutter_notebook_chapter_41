@@ -62,7 +62,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                 children: [
                   Container(
                       margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
-                      height: 42,
+                      height: 38,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: tabs.length,
