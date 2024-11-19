@@ -23,9 +23,17 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
           Expanded(
             child: Column(
               children: [
-                SizedBox(
+                Container(
+                  margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
                   height: 42,
                   child: Placeholder(),
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [],
+                    ),
+                  ),
                 )
               ],
             ),
