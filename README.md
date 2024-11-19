@@ -6,7 +6,7 @@
 - Shahid Miah UI UX Designer for Wavespace - UI/UX Design Agency
 - https://dribbble.com/shots/25208218-CardCafe-Greeting-Cards-and-Gifting-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/17557717/file/original-cd58cd47da262d3bcf410afde55c312f.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/17626706/file/original-b187c2c13e2a8121937a50829a2dc2b7.jpg?resize=1905x1429"/>
 
 ## EP2064-2069
 
