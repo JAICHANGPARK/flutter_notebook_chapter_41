@@ -2,9 +2,9 @@
 
 ## EP2070
 
-- WanderGo - Travel Mobile App
-- Vlanner
-- https://dribbble.com/shots/25185474-WanderGo-Travel-Mobile-App
+- CardCafe – Greeting Cards and Gifting Mobile App
+- Shahid Miah UI UX Designer for Wavespace - UI/UX Design Agency
+- https://dribbble.com/shots/25208218-CardCafe-Greeting-Cards-and-Gifting-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/17557717/file/original-cd58cd47da262d3bcf410afde55c312f.png?resize=1905x1429"/>
 
