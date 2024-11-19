@@ -30,7 +30,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
             label: "MyCards",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.receipt_long),
+            icon: Icon(Icons.account_circle_outlined),
             label: "MyCards",
           )
         ],
