@@ -10,6 +10,19 @@ class CardCafeHomePage extends StatefulWidget {
 class _CardCafeHomePageState extends State<CardCafeHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Gallary",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: "MyCards",
+          )
+        ],
+      ),
+    );
   }
 }
