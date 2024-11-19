@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_41/ep2070_card_cafe/views/card_cafe_home_page.dart';
 
 
 class CardCafeApp extends StatefulWidget {
@@ -11,6 +12,8 @@ class CardCafeApp extends StatefulWidget {
 class _CardCafeAppState extends State<CardCafeApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: CardCafeHomePage(),
+    );
   }
 }
