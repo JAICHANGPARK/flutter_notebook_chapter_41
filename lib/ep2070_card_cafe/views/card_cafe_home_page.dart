@@ -20,6 +20,18 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: "MyCards",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.card_giftcard),
+            label: "MyCards",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.receipt_long),
+            label: "MyCards",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.receipt_long),
+            label: "MyCards",
           )
         ],
       ),
