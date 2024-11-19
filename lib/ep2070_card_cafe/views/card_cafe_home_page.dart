@@ -111,7 +111,11 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                 scrollDirection: Axis.horizontal,
                                 itemCount: 10,
                                 itemBuilder: (context, index) {
-                                  return Container();
+                                  return Container(
+                                    margin: EdgeInsets.only(right: 16),
+                                    width: 150,
+                                    child: Placeholder(),
+                                  );
                                 },
                               ),
                             ),
