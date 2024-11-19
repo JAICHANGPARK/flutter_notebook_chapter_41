@@ -11,11 +11,31 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 180,
+            decoration: BoxDecoration(
+              color: Colors.orangeAccent,
+            ),
+          ),
+          Expanded(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 42,
+                  child: Placeholder(),
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
-
-          onTap: (idx){},
+          onTap: (idx) {},
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
