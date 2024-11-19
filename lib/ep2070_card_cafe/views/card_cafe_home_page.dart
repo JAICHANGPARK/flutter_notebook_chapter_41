@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CardCafeHomePage extends StatefulWidget {
   const CardCafeHomePage({super.key});
@@ -15,20 +16,21 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 180,
+            height: 160,
             decoration: BoxDecoration(
               color: Colors.orangeAccent,
             ),
-            padding: EdgeInsets.only(
-              top: 72,
-              left: 16,
-              right: 16,
-              bottom: 12
-            ),
+            padding: EdgeInsets.only(top: 72, left: 16, right: 16, bottom: 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Welcome"),
+                Text(
+                  "Welcome",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Gap(8),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
