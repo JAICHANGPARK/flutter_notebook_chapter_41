@@ -62,13 +62,16 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                     margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
                     height: 42,
                     child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
                       itemCount: tabs.length,
                       itemBuilder: (context, index) {
                         return Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
                             color: Colors.grey,
                             borderRadius: BorderRadius.circular(4),
                           ),
+                          child: Text("${tabs[index] }",),
                         );
                       },
                     )),
