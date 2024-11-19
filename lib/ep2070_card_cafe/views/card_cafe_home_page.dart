@@ -99,6 +99,9 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          backgroundColor: Colors.white,
+          selectedItemColor: Colors.deepOrange,
+          unselectedItemColor: Colors.black,
           onTap: (idx) {},
           type: BottomNavigationBarType.fixed,
           items: [
