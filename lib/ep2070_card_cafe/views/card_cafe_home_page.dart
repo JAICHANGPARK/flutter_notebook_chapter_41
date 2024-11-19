@@ -56,106 +56,109 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
             ),
           ),
           Expanded(
-            child: Column(
-              children: [
-                Container(
-                    margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
-                    height: 42,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: tabs.length,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200]!,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Center(
-                              child: Text(
-                            "${tabs[index]}",
-                          )),
-                        );
-                      },
-                    )),
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 16),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Popular Cards",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18,
-                                ),
-                              ),
-                              TextButton(
-                                onPressed: () {},
+            child: Container(
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Container(
+                      margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      height: 42,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: tabs.length,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200]!,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Center(
                                 child: Text(
-                                  "See all",
+                              "${tabs[index]}",
+                            )),
+                          );
+                        },
+                      )),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Popular Cards",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              )
-                            ],
-                          ),
-                          Container(
-                            height: 200,
-                            child: Placeholder(),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Anniversary",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "See all",
+                                  ),
+                                )
+                              ],
+                            ),
+                            Container(
+                              height: 200,
+                              child: Placeholder(),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Anniversary",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  "See all",
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "See all",
+                                  ),
+                                )
+                              ],
+                            ),
+                            Container(
+                              height: 200,
+                              child: Placeholder(),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Thank You",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              )
-                            ],
-                          ),
-                          Container(
-                            height: 200,
-                            child: Placeholder(),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Thank You",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18,
-                                ),
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  "See all",
-                                ),
-                              )
-                            ],
-                          ),
-                          Container(
-                            height: 200,
-                            child: Placeholder(),
-                          )
-                        ],
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "See all",
+                                  ),
+                                )
+                              ],
+                            ),
+                            Container(
+                              height: 200,
+                              child: Placeholder(),
+                            )
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
