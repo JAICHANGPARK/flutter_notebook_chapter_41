@@ -30,8 +30,57 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                 ),
                 Expanded(
                   child: SingleChildScrollView(
-                    child: Column(
-                      children: [],
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text("Popular Cards"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "See all",
+                                ),
+                              )
+                            ],
+                          ),
+                          Container(
+                            height: 200,
+                            child: Placeholder(),
+                          ),
+                          Row(
+                            children: [
+                              Text("Popular Cards"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "See all",
+                                ),
+                              )
+                            ],
+                          ),
+                          Container(
+                            height: 200,
+                            child: Placeholder(),
+                          ),
+                          Row(
+                            children: [
+                              Text("Popular Cards"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "See all",
+                                ),
+                              )
+                            ],
+                          ),
+                          Container(
+                            height: 200,
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 )
