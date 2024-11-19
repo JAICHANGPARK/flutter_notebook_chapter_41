@@ -32,6 +32,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                 ),
                 Gap(8),
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
@@ -40,6 +41,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                       suffixIcon: Icon(Icons.mic),
                       icon: Icon(Icons.search),
                       border: InputBorder.none,
+                      hintText: "cards, gift, or degisn"
                     ),
                   ),
                 )
