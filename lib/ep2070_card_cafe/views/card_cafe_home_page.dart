@@ -68,10 +68,13 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                         return Container(
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: Colors.grey[200]!,
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          child: Text("${tabs[index] }",),
+                          child: Center(
+                              child: Text(
+                            "${tabs[index]}",
+                          )),
                         );
                       },
                     )),
