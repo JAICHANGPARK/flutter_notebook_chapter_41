@@ -139,7 +139,17 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                             ),
                             Container(
                               height: 200,
-                              child: Placeholder(),
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: 10,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    margin: EdgeInsets.only(right: 16),
+                                    width: 150,
+                                    child: Placeholder(),
+                                  );
+                                },
+                              ),
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -161,8 +171,18 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                             ),
                             Container(
                               height: 200,
-                              child: Placeholder(),
-                            )
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: 10,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    margin: EdgeInsets.only(right: 16),
+                                    width: 150,
+                                    child: Placeholder(),
+                                  );
+                                },
+                              ),
+                            ),
                           ],
                         ),
                       ),
