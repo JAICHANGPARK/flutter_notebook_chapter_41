@@ -49,7 +49,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                         suffixIcon: Icon(Icons.mic),
                         icon: Icon(Icons.search),
                         border: InputBorder.none,
-                        hintText: "cards, gift, or degisn"),
+                        hintText: "cards, gift, or degisn",),
                   ),
                 )
               ],
