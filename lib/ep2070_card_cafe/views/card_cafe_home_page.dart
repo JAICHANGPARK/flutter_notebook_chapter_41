@@ -28,7 +28,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
             decoration: BoxDecoration(
               color: Colors.orangeAccent,
             ),
-            padding: EdgeInsets.only(top: 72, left: 16, right: 16, bottom: 12),
+            padding: EdgeInsets.only(top: 72, left: 16, right: 16, bottom: 12,),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
