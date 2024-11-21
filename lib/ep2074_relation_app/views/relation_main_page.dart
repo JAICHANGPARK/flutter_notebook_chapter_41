@@ -109,8 +109,30 @@ class _RelationMainPageState extends State<RelationMainPage> {
             Container(
               height: 160,
               child: Column(
-                children: [],
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+
+                    ],
+                  ),
+                  Row(
+                    children: [
+
+                    ],
+                  )
+                ],
               ),
+            ),
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Text("Leads list"),
+                    Text("Today 12 Jun, 11 43 AM")
+                  ],
+                )
+              ],
             )
           ],
         ),
