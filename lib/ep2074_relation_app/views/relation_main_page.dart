@@ -247,10 +247,12 @@ class _RelationMainPageState extends State<RelationMainPage> {
               margin: EdgeInsets.all(16),
               child: Placeholder(),
             ),
-            Expanded(child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Placeholder(),
-            ),),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Placeholder(),
+              ),
+            ),
           ],
         ),
       ),
