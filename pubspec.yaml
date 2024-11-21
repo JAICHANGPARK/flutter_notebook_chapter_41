@@ -15,7 +15,6 @@ dependencies:
   percent_indicator: ^4.2.3
   go_router: ^14.6.0
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
