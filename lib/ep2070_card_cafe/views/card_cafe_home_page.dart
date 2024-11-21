@@ -127,11 +127,16 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                       child: Stack(
                                         children: [
                                           Positioned.fill(
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.grey,
-                                                borderRadius:
-                                                    BorderRadius.circular(4),
+                                            top: 12,right: 12,
+                                            child: Transform(
+                                              transform: Matrix4.identity()
+                                              ..rotateZ(-.05),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey,
+                                                  borderRadius:
+                                                      BorderRadius.circular(4),
+                                                ),
                                               ),
                                             ),
                                           ),
