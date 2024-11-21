@@ -67,10 +67,25 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 200,
+                    width: 320,
+                    margin: EdgeInsets.only(
+                      right: 16,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Active Project",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
                     ),
                   );
                 },
@@ -79,9 +94,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
             Container(
               height: 160,
               child: Column(
-                children: [
-                  
-                ],
+                children: [],
               ),
             )
           ],
