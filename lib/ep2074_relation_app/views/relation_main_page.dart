@@ -23,19 +23,25 @@ class _RelationMainPageState extends State<RelationMainPage> {
                     Icons.apps,
                     size: 32,
                   ),
-                  Text("Relatons"),
+                  Text("Relatons",),
                   Spacer(),
 
                   CircleAvatar(
                     radius: 26,
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
                   ),
                   Gap(2),
                   CircleAvatar(
                     radius: 26,
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
                   ),
                   Gap(2),
                   CircleAvatar(
                     radius: 26,
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
                   ),
 
                 ],
