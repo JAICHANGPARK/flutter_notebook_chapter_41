@@ -111,14 +111,17 @@ class _RelationMainPageState extends State<RelationMainPage> {
               padding: EdgeInsets.all(16),
               height: 160,
               decoration: BoxDecoration(
+                color: Colors.white,
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(.05),
-                  )
+                      color: Colors.black.withOpacity(.025),
+                      spreadRadius: 4,
+                      blurRadius: 4),
                 ],
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -127,6 +130,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                         "TEAM MEMBERS",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 20,
                         ),
                       ),
                       Container(
@@ -146,7 +150,30 @@ class _RelationMainPageState extends State<RelationMainPage> {
                     ],
                   ),
                   Row(
-                    children: [],
+                    children: [
+                      Expanded(
+                        child: SizedBox(
+                          height: 42,
+                          child: Stack(
+                            children: [
+                              Positioned.fill(
+                                child: Placeholder(),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Text("+12 members"),
+                      Container(
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.grey)),
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.add),
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
