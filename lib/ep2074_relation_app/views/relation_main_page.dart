@@ -241,7 +241,16 @@ class _RelationMainPageState extends State<RelationMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              height: 52,
+              margin: EdgeInsets.all(16),
+              child: Placeholder(),
+            ),
+            Expanded(child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Placeholder(),
+            ),),
           ],
         ),
       ),
