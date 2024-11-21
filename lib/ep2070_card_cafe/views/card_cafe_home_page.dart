@@ -41,6 +41,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                   "Welcome",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 18,
                   ),
                 ),
                 Gap(8),
@@ -55,6 +56,9 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                       icon: Icon(Icons.search),
                       border: InputBorder.none,
                       hintText: "cards, gift, or degisn",
+                      contentPadding: EdgeInsets.symmetric(
+                        vertical: 12,
+                      ),
                     ),
                   ),
                 )
