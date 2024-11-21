@@ -155,9 +155,29 @@ class _RelationMainPageState extends State<RelationMainPage> {
                         child: SizedBox(
                           height: 48,
                           child: Stack(
-                            children: [
+                            children:
+                            [
                               Positioned(
                                 left: 0,
+                                child: CircleAvatar(
+                                  radius: 24,
+                                ),
+                              ),
+
+                              Positioned(
+                                left:  32,
+                                child: CircleAvatar(
+                                  radius: 24,
+                                ),
+                              ),
+                              Positioned(
+                                left: 56,
+                                child: CircleAvatar(
+                                  radius: 24,
+                                ),
+                              ),
+                              Positioned(
+                                left: 24 * 3 + 8,
                                 child: CircleAvatar(
                                   radius: 24,
                                 ),
