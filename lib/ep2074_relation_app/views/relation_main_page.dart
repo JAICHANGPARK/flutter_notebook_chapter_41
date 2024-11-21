@@ -112,14 +112,28 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-
+                      Text(
+                        "TEAM MEMBERS",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        child: Text("See All",style: TextStyle(
+                          color: Colors.white,
+                        ),),
+                      )
                     ],
                   ),
                   Row(
-                    children: [
-
-                    ],
+                    children: [],
                   )
                 ],
               ),
