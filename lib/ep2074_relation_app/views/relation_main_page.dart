@@ -12,7 +12,11 @@ class _RelationMainPageState extends State<RelationMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(),
+      body: SafeArea(
+        child: Column(
+
+        ),
+      ),
     );
   }
 }
