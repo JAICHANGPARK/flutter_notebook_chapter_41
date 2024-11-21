@@ -62,8 +62,20 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 top: 24,
                 bottom: 24,
               ),
-              child: (),
-            )
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
