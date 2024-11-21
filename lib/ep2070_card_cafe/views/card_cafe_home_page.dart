@@ -126,9 +126,14 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                       width: 150,
                                       child: Stack(
                                         children: [
-                                          Positioned.fill(
+                                          Positioned(
                                             child: Placeholder(),
                                           ),
+                                          Positioned.fill(
+                                            top: 12,
+                                            child: Placeholder(),
+                                          ),
+
                                         ],
                                       ));
                                 },
