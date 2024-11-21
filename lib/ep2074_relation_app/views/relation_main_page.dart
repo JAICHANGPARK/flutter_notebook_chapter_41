@@ -107,7 +107,16 @@ class _RelationMainPageState extends State<RelationMainPage> {
               ),
             ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.all(16),
               height: 160,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(.05),
+                  )
+                ],
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -125,10 +134,14 @@ class _RelationMainPageState extends State<RelationMainPage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        child: Text("See All",style: TextStyle(
-                          color: Colors.white,
-                        ),),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        child: Text(
+                          "See All",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       )
                     ],
                   ),
