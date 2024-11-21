@@ -116,7 +116,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                               ],
                             ),
                             Container(
-                              height: 200,
+                              height: 210,
                               child: ListView.builder(
                                 scrollDirection: Axis.horizontal,
                                 itemCount: 10,
@@ -152,8 +152,10 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                               child: Stack(
                                                 children: [
                                                   Positioned(
+                                                    top: 12,
+                                                    right: 12,
                                                     child: CircleAvatar(
-                                                      radius: 15,
+                                                      radius: 18,
                                                       backgroundColor:
                                                           Colors.white,
                                                       child: Icon(
