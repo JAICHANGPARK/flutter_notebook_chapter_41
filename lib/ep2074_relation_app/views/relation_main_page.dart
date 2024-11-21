@@ -56,7 +56,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
               ),
             ),
             Container(
-              height: 180,
+              height: 160,
               margin: EdgeInsets.only(
                 left: 16,
                 top: 24,
@@ -83,8 +83,22 @@ class _RelationMainPageState extends State<RelationMainPage> {
                           "Active Project",
                           style: TextStyle(
                             color: Colors.white,
+                            fontSize: 20,
                           ),
                         ),
+                        Text(
+                          "42",
+                          style: TextStyle(
+                            fontSize: 32,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          "+16% last month",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
                       ],
                     ),
                   );
