@@ -24,7 +24,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 160,
+            height: 180,
             decoration: BoxDecoration(
               color: Colors.orangeAccent,
             ),
@@ -122,10 +122,15 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                 itemCount: 10,
                                 itemBuilder: (context, index) {
                                   return Container(
-                                    margin: EdgeInsets.only(right: 16),
-                                    width: 150,
-                                    child: Placeholder(),
-                                  );
+                                      margin: EdgeInsets.only(right: 16),
+                                      width: 150,
+                                      child: Stack(
+                                        children: [
+                                          Positioned.fill(
+                                            child: Placeholder(),
+                                          ),
+                                        ],
+                                      ));
                                 },
                               ),
                             ),
