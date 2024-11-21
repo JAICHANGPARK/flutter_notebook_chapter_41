@@ -11,20 +11,24 @@ class TravelMobileApp extends StatelessWidget {
     initialLocation: "/",
     routes: [
       GoRoute(
-          path: "/",
-          builder: (context, state) {
-            return TravelHomePage();
-          }),
+        path: "/",
+        builder: (context, state) {
+          return TravelHomePage();
+        },
+      ),
       GoRoute(
         path: "/detail",
         builder: (context, state) {
           return TravelDetailPage();
         },
         routes: [
-          GoRoute(path: "book", builder: (context, state){
-            return TravelBookPage();
-          })
-        ]
+          GoRoute(
+            path: "book",
+            builder: (context, state) {
+              return TravelBookPage();
+            },
+          )
+        ],
       ),
     ],
   );
