@@ -126,14 +126,21 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                       width: 150,
                                       child: Stack(
                                         children: [
-                                          Positioned(
-                                            child: Placeholder(),
+                                          Positioned.fill(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                           ),
                                           Positioned.fill(
                                             top: 12,
-                                            child: Placeholder(),
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.indigoAccent,
+                                              ),
+                                            ),
                                           ),
-
                                         ],
                                       ));
                                 },
