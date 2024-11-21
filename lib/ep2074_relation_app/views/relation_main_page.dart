@@ -124,15 +124,19 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 ],
               ),
             ),
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Text("Leads list"),
-                    Text("Today 12 Jun, 11 43 AM")
-                  ],
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Leads list"),
+                      Text("Today 12 Jun, 11 43 AM")
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
