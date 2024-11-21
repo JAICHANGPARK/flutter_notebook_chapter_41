@@ -193,16 +193,61 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                               ],
                             ),
                             Container(
-                              height: 200,
+                              height: 210,
                               child: ListView.builder(
                                 scrollDirection: Axis.horizontal,
                                 itemCount: 10,
                                 itemBuilder: (context, index) {
                                   return Container(
-                                    margin: EdgeInsets.only(right: 16),
-                                    width: 150,
-                                    child: Placeholder(),
-                                  );
+                                      margin: EdgeInsets.only(right: 16),
+                                      width: 150,
+                                      child: Stack(
+                                        children: [
+                                          Positioned.fill(
+                                            top: 8,
+                                            right: 12,
+                                            child: Transform(
+                                              transform: Matrix4.identity()
+                                                ..rotateZ(-.05),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey[300],
+                                                  borderRadius:
+                                                  BorderRadius.circular(4),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned.fill(
+                                            top: 12,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.indigoAccent,
+                                                borderRadius:
+                                                BorderRadius.circular(4),
+                                              ),
+                                              child: Stack(
+                                                children: [
+                                                  Positioned(
+                                                    top: 12,
+                                                    right: 12,
+                                                    child: CircleAvatar(
+                                                      radius: 18,
+                                                      backgroundColor:
+                                                      Colors.white,
+                                                      child: Icon(
+                                                        Icons.favorite_border,
+                                                      ),
+                                                      foregroundColor:
+                                                      Colors.black,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ));
                                 },
                               ),
                             ),
@@ -225,16 +270,61 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                               ],
                             ),
                             Container(
-                              height: 200,
+                              height: 210,
                               child: ListView.builder(
                                 scrollDirection: Axis.horizontal,
                                 itemCount: 10,
                                 itemBuilder: (context, index) {
                                   return Container(
-                                    margin: EdgeInsets.only(right: 16),
-                                    width: 150,
-                                    child: Placeholder(),
-                                  );
+                                      margin: EdgeInsets.only(right: 16),
+                                      width: 150,
+                                      child: Stack(
+                                        children: [
+                                          Positioned.fill(
+                                            top: 8,
+                                            right: 12,
+                                            child: Transform(
+                                              transform: Matrix4.identity()
+                                                ..rotateZ(-.05),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey[300],
+                                                  borderRadius:
+                                                  BorderRadius.circular(4),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned.fill(
+                                            top: 12,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.indigoAccent,
+                                                borderRadius:
+                                                BorderRadius.circular(4),
+                                              ),
+                                              child: Stack(
+                                                children: [
+                                                  Positioned(
+                                                    top: 12,
+                                                    right: 12,
+                                                    child: CircleAvatar(
+                                                      radius: 18,
+                                                      backgroundColor:
+                                                      Colors.white,
+                                                      child: Icon(
+                                                        Icons.favorite_border,
+                                                      ),
+                                                      foregroundColor:
+                                                      Colors.black,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ));
                                 },
                               ),
                             ),
