@@ -76,6 +76,14 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 },
               ),
             ),
+            Container(
+              height: 160,
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            )
           ],
         ),
       ),
