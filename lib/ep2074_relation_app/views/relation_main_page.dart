@@ -155,17 +155,15 @@ class _RelationMainPageState extends State<RelationMainPage> {
                         child: SizedBox(
                           height: 48,
                           child: Stack(
-                            children:
-                            [
+                            children: [
                               Positioned(
                                 left: 0,
                                 child: CircleAvatar(
                                   radius: 24,
                                 ),
                               ),
-
                               Positioned(
-                                left:  32,
+                                left: 32,
                                 child: CircleAvatar(
                                   radius: 24,
                                 ),
@@ -206,13 +204,33 @@ class _RelationMainPageState extends State<RelationMainPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Leads list"),
+                      Text(
+                        "Leads list",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Text("Today 12 Jun, 11 43 AM")
                     ],
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreenAccent,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
+                    child: Row(
+                      children: [
+                        Text("Latest"), 
+                        Icon(Icons.arrow_drop_down),
+                      ],
+                    ),
                   )
                 ],
               ),
