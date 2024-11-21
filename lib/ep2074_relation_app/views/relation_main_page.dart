@@ -201,6 +201,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 ],
               ),
             ),
+            Gap(12),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Row(
@@ -224,10 +225,16 @@ class _RelationMainPageState extends State<RelationMainPage> {
                       color: Colors.lightGreenAccent,
                       borderRadius: BorderRadius.circular(4),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Row(
                       children: [
-                        Text("Latest"), 
+                        Text(
+                          "Latest",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                         Icon(Icons.arrow_drop_down),
                       ],
                     ),
