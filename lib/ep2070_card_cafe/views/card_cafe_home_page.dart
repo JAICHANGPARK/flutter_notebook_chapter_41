@@ -127,10 +127,11 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                       child: Stack(
                                         children: [
                                           Positioned.fill(
-                                            top: 8,right: 12,
+                                            top: 8,
+                                            right: 12,
                                             child: Transform(
                                               transform: Matrix4.identity()
-                                              ..rotateZ(-.05),
+                                                ..rotateZ(-.05),
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey[300],
@@ -146,7 +147,23 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                               decoration: BoxDecoration(
                                                 color: Colors.indigoAccent,
                                                 borderRadius:
-                                                BorderRadius.circular(4),
+                                                    BorderRadius.circular(4),
+                                              ),
+                                              child: Stack(
+                                                children: [
+                                                  Positioned(
+                                                    child: CircleAvatar(
+                                                      radius: 15,
+                                                      backgroundColor:
+                                                          Colors.white,
+                                                      child: Icon(
+                                                        Icons.favorite_border,
+                                                      ),
+                                                      foregroundColor:
+                                                          Colors.black,
+                                                    ),
+                                                  )
+                                                ],
                                               ),
                                             ),
                                           ),
