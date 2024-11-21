@@ -35,12 +35,16 @@ class _RelationMainPageState extends State<RelationMainPage> {
                     radius: 26,
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
+                    child: Icon(
+                      Icons.search,
+                    ),
                   ),
                   Gap(2),
                   CircleAvatar(
                     radius: 26,
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
+                    child: Icon(Icons.notifications),
                   ),
                   Gap(2),
                   CircleAvatar(
@@ -50,6 +54,15 @@ class _RelationMainPageState extends State<RelationMainPage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              height: 180,
+              margin: EdgeInsets.only(
+                left: 16,
+                top: 24,
+                bottom: 24,
+              ),
+              child: (),
             )
           ],
         ),
