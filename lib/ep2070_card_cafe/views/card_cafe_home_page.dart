@@ -130,6 +130,8 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 color: Colors.grey,
+                                                borderRadius:
+                                                    BorderRadius.circular(4),
                                               ),
                                             ),
                                           ),
@@ -138,6 +140,8 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 color: Colors.indigoAccent,
+                                                borderRadius:
+                                                BorderRadius.circular(4),
                                               ),
                                             ),
                                           ),
