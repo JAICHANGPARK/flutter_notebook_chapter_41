@@ -75,7 +75,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -86,6 +86,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                             fontSize: 20,
                           ),
                         ),
+                        Spacer(),
                         Text(
                           "42",
                           style: TextStyle(
@@ -96,7 +97,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                         Text(
                           "+16% last month",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.grey,
                           ),
                         )
                       ],
