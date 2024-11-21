@@ -121,7 +121,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -153,17 +153,22 @@ class _RelationMainPageState extends State<RelationMainPage> {
                     children: [
                       Expanded(
                         child: SizedBox(
-                          height: 42,
+                          height: 48,
                           child: Stack(
                             children: [
-                              Positioned.fill(
-                                child: Placeholder(),
+                              Positioned(
+                                left: 0,
+                                child: CircleAvatar(
+                                  radius: 24,
+                                ),
                               ),
                             ],
                           ),
                         ),
                       ),
+                      Gap(8),
                       Text("+12 members"),
+                      Gap(32),
                       Container(
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
