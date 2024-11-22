@@ -235,7 +235,9 @@ class _RelationMainPageState extends State<RelationMainPage> {
                             fontSize: 18,
                           ),
                         ),
-                        Icon(Icons.arrow_drop_down),
+                        Icon(
+                          Icons.arrow_drop_down,
+                        ),
                       ],
                     ),
                   )
