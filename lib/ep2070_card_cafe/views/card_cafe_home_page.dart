@@ -235,11 +235,11 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                                       radius: 18,
                                                       backgroundColor:
                                                       Colors.white,
+                                                      foregroundColor:
+                                                      Colors.black,
                                                       child: Icon(
                                                         Icons.favorite_border,
                                                       ),
-                                                      foregroundColor:
-                                                      Colors.black,
                                                     ),
                                                   )
                                                 ],
