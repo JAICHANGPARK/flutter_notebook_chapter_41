@@ -213,7 +213,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey[300],
                                                   borderRadius:
-                                                  BorderRadius.circular(4),
+                                                      BorderRadius.circular(4),
                                                 ),
                                               ),
                                             ),
@@ -224,7 +224,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                               decoration: BoxDecoration(
                                                 color: Colors.indigoAccent,
                                                 borderRadius:
-                                                BorderRadius.circular(4),
+                                                    BorderRadius.circular(4),
                                               ),
                                               child: Stack(
                                                 children: [
@@ -234,9 +234,9 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                                     child: CircleAvatar(
                                                       radius: 18,
                                                       backgroundColor:
-                                                      Colors.white,
+                                                          Colors.white,
                                                       foregroundColor:
-                                                      Colors.black,
+                                                          Colors.black,
                                                       child: Icon(
                                                         Icons.favorite_border,
                                                       ),
@@ -290,7 +290,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey[300],
                                                   borderRadius:
-                                                  BorderRadius.circular(4),
+                                                      BorderRadius.circular(4),
                                                 ),
                                               ),
                                             ),
@@ -301,7 +301,7 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                               decoration: BoxDecoration(
                                                 color: Colors.indigoAccent,
                                                 borderRadius:
-                                                BorderRadius.circular(4),
+                                                    BorderRadius.circular(4),
                                               ),
                                               child: Stack(
                                                 children: [
@@ -311,9 +311,9 @@ class _CardCafeHomePageState extends State<CardCafeHomePage> {
                                                     child: CircleAvatar(
                                                       radius: 18,
                                                       backgroundColor:
-                                                      Colors.white,
+                                                          Colors.white,
                                                       foregroundColor:
-                                                      Colors.black,
+                                                          Colors.black,
                                                       child: Icon(
                                                         Icons.favorite_border,
                                                       ),
