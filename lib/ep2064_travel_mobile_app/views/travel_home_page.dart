@@ -161,13 +161,14 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return InkWell(
-                            onTap: (){
+                            onTap: () {
                               GoRouter.of(context).go("/detail");
                             },
                             child: Container(
                               margin: EdgeInsets.only(bottom: 16),
-                              decoration:
-                                  BoxDecoration(color: Colors.deepOrange[50], borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(
+                                  color: Colors.deepOrange[50],
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -189,15 +190,17 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     ),
                                     padding: EdgeInsets.all(20),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Container(
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            borderRadius: BorderRadius.circular(16),
-
+                                            borderRadius:
+                                                BorderRadius.circular(16),
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 12, vertical: 4),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
@@ -219,7 +222,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       children: [
                                         Expanded(
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text(
                                                 "Ancient architecture",
@@ -250,7 +254,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                           ),
                                           decoration: BoxDecoration(
                                             color: Colors.deepOrange,
-                                            borderRadius: BorderRadius.circular(24),
+                                            borderRadius:
+                                                BorderRadius.circular(24),
                                           ),
                                           child: Text(
                                             "View",
