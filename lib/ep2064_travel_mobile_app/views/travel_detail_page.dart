@@ -69,7 +69,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
-                      padding: EdgeInsets.fromLTRB(20, 20 ,20 ,0),
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -146,9 +146,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             ),
                             Container(
                               height: 240,
-                              decoration: BoxDecoration(
-                                color: Colors.grey
-                              ),
+                              decoration: BoxDecoration(color: Colors.grey),
                             )
                           ],
                         ),
@@ -203,8 +201,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 Gap(16),
                 Expanded(
                   child: GestureDetector(
-                    onTap: (){
-                      GoRouter.of(context).push("/detail/book");                    },
+                    onTap: () {
+                      GoRouter.of(context).push("/detail/book");
+                    },
                     child: Container(
                       decoration: ShapeDecoration(
                         shape: StadiumBorder(),
