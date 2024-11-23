@@ -10,7 +10,12 @@ class SmartHomeMainPage extends StatefulWidget {
 
 class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   ValueNotifier<int> tabIndex = ValueNotifier(0);
-  List<String> tabs = ["Out of home", "Work time", "Bedtime", "Cleaning"];
+  List<String> tabs = [
+    "Out of home",
+    "Work time",
+    "Bedtime",
+    "Cleaning",
+  ];
 
   @override
   Widget build(BuildContext context) {
