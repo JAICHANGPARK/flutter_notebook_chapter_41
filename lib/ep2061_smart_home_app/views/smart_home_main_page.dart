@@ -111,7 +111,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 padding: EdgeInsets.symmetric(horizontal: 20),
                                 margin: EdgeInsets.only(right: 8),
                                 decoration: ShapeDecoration(
-                                  color: value == index ? Colors.lightGreenAccent : Colors.grey[100]!,
+                                  color: value == index
+                                      ? Colors.lightGreenAccent
+                                      : Colors.grey[100]!,
                                   shape: StadiumBorder(),
                                 ),
                                 child: Center(
@@ -160,9 +162,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             shape: StadiumBorder(),
                                             color: Colors.grey[100],
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 12, vertical: 4),
                                           child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
                                             children: [
                                               Text(
                                                 "12",
@@ -186,9 +190,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             shape: StadiumBorder(),
                                             color: Colors.grey[100],
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 12, vertical: 4),
                                           child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
                                             children: [
                                               Text(
                                                 "3",
@@ -212,9 +218,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             shape: StadiumBorder(),
                                             color: Colors.grey[100],
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 12, vertical: 4),
                                           child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
                                             children: [
                                               Text(
                                                 "5",
@@ -248,15 +256,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           child: Container(
                                             decoration: BoxDecoration(
                                               color: Colors.blueAccent,
-                                              borderRadius: BorderRadius.circular(24),
+                                              borderRadius:
+                                                  BorderRadius.circular(24),
                                             ),
                                             padding: EdgeInsets.all(12),
                                             child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
                                                 Row(
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
                                                   children: [
                                                     Text(
                                                       "Temperature",
@@ -266,9 +280,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                       ),
                                                     ),
                                                     CircleAvatar(
-                                                      backgroundColor: Colors.lightGreenAccent,
+                                                      backgroundColor: Colors
+                                                          .lightGreenAccent,
                                                       radius: 24,
-                                                      child: Icon(Icons.thermostat),
+                                                      child: Icon(
+                                                          Icons.thermostat),
                                                     ),
                                                   ],
                                                 ),
@@ -293,15 +309,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                 border: Border.all(
                                                   color: Colors.grey[400]!,
                                                 ),
-                                                borderRadius: BorderRadius.circular(24),
+                                                borderRadius:
+                                                    BorderRadius.circular(24),
                                               ),
                                               padding: EdgeInsets.all(12),
                                               child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
                                                 children: [
                                                   Row(
-                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceBetween,
                                                     children: [
                                                       Text(
                                                         "Cameras",
@@ -310,9 +332,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                         ),
                                                       ),
                                                       CircleAvatar(
-                                                        backgroundColor: Colors.lightGreenAccent,
+                                                        backgroundColor: Colors
+                                                            .lightGreenAccent,
                                                         radius: 24,
-                                                        child: Icon(Icons.camera_alt_outlined),
+                                                        child: Icon(Icons
+                                                            .camera_alt_outlined),
                                                       ),
                                                     ],
                                                   ),
@@ -320,7 +344,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                     "On",
                                                     style: TextStyle(
                                                       fontSize: 24,
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                     ),
                                                   )
                                                 ],
@@ -341,15 +366,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                               border: Border.all(
                                                 color: Colors.grey[400]!,
                                               ),
-                                              borderRadius: BorderRadius.circular(24),
+                                              borderRadius:
+                                                  BorderRadius.circular(24),
                                             ),
                                             padding: EdgeInsets.all(12),
                                             child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
                                                 Row(
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
                                                   children: [
                                                     Text(
                                                       "Water",
@@ -358,9 +389,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                       ),
                                                     ),
                                                     CircleAvatar(
-                                                      backgroundColor: Colors.lightGreenAccent,
+                                                      backgroundColor: Colors
+                                                          .lightGreenAccent,
                                                       radius: 24,
-                                                      child: Icon(Icons.water_drop),
+                                                      child: Icon(
+                                                          Icons.water_drop),
                                                     ),
                                                   ],
                                                 ),
@@ -380,15 +413,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           child: Container(
                                             decoration: BoxDecoration(
                                               color: Colors.blue[50],
-                                              borderRadius: BorderRadius.circular(24),
+                                              borderRadius:
+                                                  BorderRadius.circular(24),
                                             ),
                                             padding: EdgeInsets.all(12),
                                             child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
                                                 Row(
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
                                                   children: [
                                                     Text(
                                                       "Electricity",
@@ -397,9 +436,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                       ),
                                                     ),
                                                     CircleAvatar(
-                                                      backgroundColor: Colors.lightGreenAccent,
+                                                      backgroundColor: Colors
+                                                          .lightGreenAccent,
                                                       radius: 24,
-                                                      child: Icon(Icons.flash_on_rounded),
+                                                      child: Icon(Icons
+                                                          .flash_on_rounded),
                                                     ),
                                                   ],
                                                 ),
@@ -431,7 +472,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             Container(
                               height: 260,
                               child: GridView.builder(
-                                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                gridDelegate:
+                                    SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 2,
                                   mainAxisSpacing: 12,
                                   crossAxisSpacing: 12,
@@ -451,10 +493,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           children: [
                                             Spacer(),
                                             CircleAvatar(
-                                              backgroundColor: Colors.blueAccent,
+                                              backgroundColor:
+                                                  Colors.blueAccent,
                                               foregroundColor: Colors.white,
                                               radius: 24,
-                                              child: Icon(Icons.power_settings_new),
+                                              child: Icon(
+                                                  Icons.power_settings_new),
                                             ),
                                           ],
                                         ),
