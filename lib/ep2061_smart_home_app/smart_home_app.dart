@@ -8,10 +8,10 @@ class SmartHomeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SmartHomeMainPage(),
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
+      home: SmartHomeMainPage(),
     );
   }
 }
