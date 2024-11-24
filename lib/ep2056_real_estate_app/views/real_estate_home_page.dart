@@ -9,9 +9,9 @@ class RealEstateHomePage extends StatefulWidget {
 }
 
 class _RealEstateHomePageState extends State<RealEstateHomePage> {
-  Color _accentColor = const Color.fromRGBO(208, 245, 43, 1);
+  final Color _accentColor = const Color.fromRGBO(208, 245, 43, 1);
 
-  List<String> _tabs = [
+  final List<String> _tabs = [
     "Houses",
     "Apartments",
     "Offices",
