@@ -222,7 +222,8 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                           ),
                                         ],
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                                      padding: EdgeInsets.symmetric(
+                                          horizontal: 16, vertical: 6),
                                       child: Text(
                                         "Book",
                                         style: TextStyle(
@@ -295,13 +296,16 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                         width: double.infinity,
                                         padding: EdgeInsets.all(8),
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                              padding: EdgeInsets.symmetric(
+                                                  horizontal: 4, vertical: 2),
                                               decoration: BoxDecoration(
                                                 color: Colors.black,
-                                                borderRadius: BorderRadius.circular(4),
+                                                borderRadius:
+                                                    BorderRadius.circular(4),
                                               ),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -314,7 +318,8 @@ class _OnDemandHomePageState extends State<OnDemandHomePage> {
                                                   Text(
                                                     "4.5 (442)",
                                                     style: TextStyle(
-                                                      color: Colors.orangeAccent,
+                                                      color:
+                                                          Colors.orangeAccent,
                                                     ),
                                                   )
                                                 ],
