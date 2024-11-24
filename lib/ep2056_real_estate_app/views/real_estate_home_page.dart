@@ -59,7 +59,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                               color: _accentColor,
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 2),
                             child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -189,7 +190,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           itemBuilder: (context, index) {
                             final title = _tabs[index];
                             return Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 20),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 20),
                               margin: const EdgeInsets.only(right: 16),
                               decoration: BoxDecoration(
                                 color: index == 0 ? _accentColor : Colors.white,
@@ -228,7 +230,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 color: _accentColor,
                                 borderRadius: BorderRadius.circular(24),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 2),
                               child: const Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -275,14 +278,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           const Gap(6),
                                           const Expanded(
                                             child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
                                               children: [
                                                 Row(
                                                   children: [
                                                     Text(
                                                       "John Micheal",
                                                       style: TextStyle(
-                                                        fontWeight: FontWeight.bold,
+                                                        fontWeight:
+                                                            FontWeight.bold,
                                                       ),
                                                     ),
                                                     Gap(4),
@@ -302,7 +307,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                           Container(
                                             decoration: BoxDecoration(
                                               color: _accentColor,
-                                              borderRadius: BorderRadius.circular(6),
+                                              borderRadius:
+                                                  BorderRadius.circular(6),
                                             ),
                                             child: IconButton(
                                               onPressed: () {},
@@ -329,10 +335,16 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               children: [
                                                 Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(.8),
-                                                    borderRadius: BorderRadius.circular(16),
+                                                    color: Colors.black
+                                                        .withOpacity(.8),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            16),
                                                   ),
-                                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  padding: const EdgeInsets
+                                                      .symmetric(
+                                                      horizontal: 12,
+                                                      vertical: 2),
                                                   child: const Text(
                                                     'ID #123',
                                                     style: TextStyle(
@@ -344,16 +356,23 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                 const Gap(8),
                                                 Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(.8),
-                                                    borderRadius: BorderRadius.circular(16),
+                                                    color: Colors.black
+                                                        .withOpacity(.8),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            16),
                                                   ),
-                                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  padding: const EdgeInsets
+                                                      .symmetric(
+                                                      horizontal: 12,
+                                                      vertical: 2),
                                                   child: const Row(
                                                     children: [
                                                       Icon(
                                                         Icons.star,
                                                         size: 16,
-                                                        color: Colors.orangeAccent,
+                                                        color:
+                                                            Colors.orangeAccent,
                                                       ),
                                                       Gap(4),
                                                       Text(
@@ -369,7 +388,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                 const Spacer(),
                                                 CircleAvatar(
                                                   radius: 16,
-                                                  backgroundColor: Colors.black.withOpacity(.7),
+                                                  backgroundColor: Colors.black
+                                                      .withOpacity(.7),
                                                   foregroundColor: _accentColor,
                                                   child: const Icon(
                                                     Icons.favorite_outline,
@@ -384,14 +404,21 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                 const Spacer(),
                                                 Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(.8),
-                                                    borderRadius: BorderRadius.circular(16),
+                                                    color: Colors.black
+                                                        .withOpacity(.8),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            16),
                                                   ),
-                                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                  padding: const EdgeInsets
+                                                      .symmetric(
+                                                      horizontal: 12,
+                                                      vertical: 2),
                                                   child: const Row(
                                                     children: [
                                                       Icon(
-                                                        Icons.camera_alt_outlined,
+                                                        Icons
+                                                            .camera_alt_outlined,
                                                         size: 16,
                                                         color: Colors.white,
                                                       ),
@@ -415,10 +442,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     const Padding(
                                       padding: EdgeInsets.all(16.0),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
                                             children: [
                                               Text(
                                                 "Elite House",
@@ -442,7 +471,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                                 Icons.location_on_outlined,
                                                 size: 16,
                                               ),
-                                              Text("1234 Despard Street, Atlanta, GA"),
+                                              Text(
+                                                  "1234 Despard Street, Atlanta, GA"),
                                             ],
                                           ),
                                           Divider(
@@ -489,7 +519,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 color: _accentColor,
                                 borderRadius: BorderRadius.circular(24),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 2),
                               child: const Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -520,7 +551,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 240,
-                              margin: const EdgeInsets.only(right: 12, bottom: 32),
+                              margin:
+                                  const EdgeInsets.only(right: 12, bottom: 32),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
@@ -552,10 +584,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.black.withOpacity(.8),
-                                                  borderRadius: BorderRadius.circular(16),
+                                                  color: Colors.black
+                                                      .withOpacity(.8),
+                                                  borderRadius:
+                                                      BorderRadius.circular(16),
                                                 ),
-                                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 12,
+                                                        vertical: 2),
                                                 child: const Text(
                                                   'ID #123',
                                                   style: TextStyle(
@@ -567,16 +604,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               const Gap(8),
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.black.withOpacity(.8),
-                                                  borderRadius: BorderRadius.circular(16),
+                                                  color: Colors.black
+                                                      .withOpacity(.8),
+                                                  borderRadius:
+                                                      BorderRadius.circular(16),
                                                 ),
-                                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 12,
+                                                        vertical: 2),
                                                 child: const Row(
                                                   children: [
                                                     Icon(
                                                       Icons.star,
                                                       size: 16,
-                                                      color: Colors.orangeAccent,
+                                                      color:
+                                                          Colors.orangeAccent,
                                                     ),
                                                     Gap(4),
                                                     Text(
@@ -592,7 +635,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                               const Spacer(),
                                               CircleAvatar(
                                                 radius: 16,
-                                                backgroundColor: Colors.black.withOpacity(.7),
+                                                backgroundColor: Colors.black
+                                                    .withOpacity(.7),
                                                 foregroundColor: _accentColor,
                                                 child: const Icon(
                                                   Icons.favorite_outline,
@@ -609,10 +653,12 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                   const Padding(
                                     padding: EdgeInsets.all(16.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
                                               "Elite House",
@@ -673,7 +719,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                 color: _accentColor,
                                 borderRadius: BorderRadius.circular(24),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 2),
                               child: const Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -717,7 +764,6 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.blue,
-
                                         borderRadius: BorderRadius.circular(16),
                                       ),
                                     ),
@@ -726,8 +772,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Text("Blue Small House"),
                                           Text("2328 Despard Street, GA"),
