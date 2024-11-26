@@ -219,11 +219,16 @@ class _RelationMainPageState extends State<RelationMainPage> {
                       Text(
                         "Leads list",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 22,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text("Today 12 Jun, 11 43 AM")
+                      Text(
+                        "Today 12 Jun, 11 43 AM",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      )
                     ],
                   ),
                   Container(
@@ -335,10 +340,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                                   children: [
                                     Text(
                                       "sample@abc.def",
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.grey
-                                      ),
+                                      style: TextStyle(fontSize: 12, color: Colors.grey),
                                     ),
                                     Text("June 16, 2024, 10:10 AM"),
                                   ],
