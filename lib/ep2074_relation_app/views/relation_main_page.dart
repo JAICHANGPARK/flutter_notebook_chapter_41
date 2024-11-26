@@ -11,6 +11,7 @@ class RelationMainPage extends StatefulWidget {
 }
 
 class _RelationMainPageState extends State<RelationMainPage> {
+  int selectedTab = 0;
   List<RelationTab> tabs = [
     RelationTab(title: "All", count: 28),
     RelationTab(title: "Branding", count: 10),
@@ -265,7 +266,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                         Text(
                           "${tabs[index].title}",
                         ),
-                        
+
                         Container(
                           decoration: BoxDecoration(
 
