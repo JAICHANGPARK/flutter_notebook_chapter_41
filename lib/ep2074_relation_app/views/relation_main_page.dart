@@ -20,7 +20,6 @@ class _RelationMainPageState extends State<RelationMainPage> {
     RelationTab(title: "Front", count: 40),
   ];
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -253,7 +252,15 @@ class _RelationMainPageState extends State<RelationMainPage> {
             Container(
               height: 52,
               margin: EdgeInsets.all(16),
-              child: Placeholder(),
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                    ),
+                  );
+                },
+              ),
             ),
             Expanded(
               child: Padding(
