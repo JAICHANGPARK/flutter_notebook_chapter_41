@@ -313,7 +313,10 @@ class _RelationMainPageState extends State<RelationMainPage> {
                   itemBuilder: (context, index) {
                     return Row(
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+                          radius: 24,
+                        ),
+                        Gap(12),
                         Expanded(
                           child: Column(
                             children: [],
