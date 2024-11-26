@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../model/relation_tab.dart';
+
 class RelationMainPage extends StatefulWidget {
   const RelationMainPage({super.key});
 
@@ -9,6 +11,8 @@ class RelationMainPage extends StatefulWidget {
 }
 
 class _RelationMainPageState extends State<RelationMainPage> {
+  List<RelationTab> tabs = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -113,10 +117,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
-                  BoxShadow(
-                      color: Colors.black.withOpacity(.025),
-                      spreadRadius: 4,
-                      blurRadius: 4),
+                  BoxShadow(color: Colors.black.withOpacity(.025), spreadRadius: 4, blurRadius: 4),
                 ],
               ),
               child: Column(
@@ -138,8 +139,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         child: Text(
                           "See All",
                           style: TextStyle(
@@ -188,9 +188,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                       Text("+12 members"),
                       Gap(32),
                       Container(
-                        decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Colors.grey)),
+                        decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.add),
