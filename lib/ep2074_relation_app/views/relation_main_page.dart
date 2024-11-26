@@ -329,10 +329,17 @@ class _RelationMainPageState extends State<RelationMainPage> {
                                     Text("\$1150"),
                                   ],
                                 ),
+                                Gap(8),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("sample@abc.def"),
+                                    Text(
+                                      "sample@abc.def",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey
+                                      ),
+                                    ),
                                     Text("June 16, 2024, 10:10 AM"),
                                   ],
                                 )
