@@ -68,7 +68,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
               ),
             ),
             Container(
-              height: 160,
+              height: 148,
               margin: EdgeInsets.only(
                 left: 16,
                 top: 24,
