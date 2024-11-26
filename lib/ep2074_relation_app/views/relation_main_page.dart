@@ -278,13 +278,17 @@ class _RelationMainPageState extends State<RelationMainPage> {
                               color: selectedTab == index ? Colors.white : Colors.black,
                             ),
                           ),
-
                           if (selectedTab == index)
                             Row(
                               children: [
+                                Gap(8),
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.tealAccent,
+                                    borderRadius: BorderRadius.circular(24)
+                                  ),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 8,
                                   ),
                                   child: Text(
                                     "${tabs[index].count}",
