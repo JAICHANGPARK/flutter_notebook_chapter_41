@@ -283,15 +283,16 @@ class _RelationMainPageState extends State<RelationMainPage> {
                               children: [
                                 Gap(8),
                                 Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.tealAccent,
-                                    borderRadius: BorderRadius.circular(24)
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(24)),
                                   padding: EdgeInsets.symmetric(
                                     horizontal: 8,
                                   ),
                                   child: Text(
                                     "${tabs[index].count}",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
                                   ),
                                 ),
                               ],
