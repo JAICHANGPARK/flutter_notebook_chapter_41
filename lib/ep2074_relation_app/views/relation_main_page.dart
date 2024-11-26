@@ -253,10 +253,25 @@ class _RelationMainPageState extends State<RelationMainPage> {
               height: 52,
               margin: EdgeInsets.all(16),
               child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: tabs.length,
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
+                    ),
+                    child: Row(
+                      children: [
+                        Text(
+                          "${tabs[index].title}",
+                        ),
+                        
+                        Container(
+                          decoration: BoxDecoration(
+
+                          ),
+                        )
+                      ],
                     ),
                   );
                 },
