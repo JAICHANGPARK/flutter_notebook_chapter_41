@@ -171,19 +171,19 @@ class _RelationMainPageState extends State<RelationMainPage> {
                                 ),
                               ),
                               Positioned(
-                                left: 32,
+                                left: 24 * 1 + 12,
                                 child: CircleAvatar(
                                   radius: 24,
                                 ),
                               ),
                               Positioned(
-                                left: 56,
+                                left: 24 * 2 + 24,
                                 child: CircleAvatar(
                                   radius: 24,
                                 ),
                               ),
                               Positioned(
-                                left: 24 * 3 + 8,
+                                left: 24 * 3 + 36,
                                 child: CircleAvatar(
                                   radius: 24,
                                 ),
@@ -242,8 +242,8 @@ class _RelationMainPageState extends State<RelationMainPage> {
                         Text(
                           "Latest",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontWeight: FontWeight.w300,
+                            fontSize: 16,
                           ),
                         ),
                         Icon(
