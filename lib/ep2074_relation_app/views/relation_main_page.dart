@@ -323,8 +323,16 @@ class _RelationMainPageState extends State<RelationMainPage> {
                             child: Column(
                               children: [
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text("John Doe"),
+                                    Text("\$1150"),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("sample@abc.def"),
                                     Text("\$1150"),
                                   ],
                                 )
