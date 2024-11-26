@@ -311,18 +311,28 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 ),
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Row(
-                      children: [
-                        CircleAvatar(
-                          radius: 24,
-                        ),
-                        Gap(12),
-                        Expanded(
-                          child: Column(
-                            children: [],
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 12),
+                      child: Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
                           ),
-                        )
-                      ],
+                          Gap(12),
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("John Doe"),
+                                    Text("\$1150"),
+                                  ],
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
