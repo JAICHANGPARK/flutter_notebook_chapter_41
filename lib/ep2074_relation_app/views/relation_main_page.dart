@@ -266,15 +266,25 @@ class _RelationMainPageState extends State<RelationMainPage> {
                     child: Container(
                       decoration: ShapeDecoration(
                         shape: StadiumBorder(),
+                        color: selectedTab == index ? Colors.black : Colors.brown[50],
                       ),
                       child: Row(
                         children: [
                           Text(
                             "${tabs[index].title}",
+                            style: TextStyle(
+                              color: selectedTab == index ? Colors.white : Colors.black,
+                            ),
                           ),
-                          Container(
-                            decoration: BoxDecoration(),
-                          )
+                          if (selectedTab == index)
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.tealAccent,
+                              ),
+                              child: Text(
+                                "${tabs[index].count}",
+                              ),
+                            )
                         ],
                       ),
                     ),
