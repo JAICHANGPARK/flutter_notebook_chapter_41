@@ -11,7 +11,15 @@ class RelationMainPage extends StatefulWidget {
 }
 
 class _RelationMainPageState extends State<RelationMainPage> {
-  List<RelationTab> tabs = [];
+  List<RelationTab> tabs = [
+    RelationTab(title: "All", count: 28),
+    RelationTab(title: "Branding", count: 10),
+    RelationTab(title: "Website", count: 10),
+    RelationTab(title: "UI/UX", count: 15),
+    RelationTab(title: "Graphics", count: 90),
+    RelationTab(title: "Front", count: 40),
+  ];
+
 
   @override
   Widget build(BuildContext context) {
