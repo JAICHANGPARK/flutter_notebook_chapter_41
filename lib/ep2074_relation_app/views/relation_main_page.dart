@@ -264,6 +264,8 @@ class _RelationMainPageState extends State<RelationMainPage> {
                       });
                     },
                     child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      margin: EdgeInsets.only(right: 12),
                       decoration: ShapeDecoration(
                         shape: StadiumBorder(),
                         color: selectedTab == index ? Colors.black : Colors.brown[50],
@@ -276,14 +278,19 @@ class _RelationMainPageState extends State<RelationMainPage> {
                               color: selectedTab == index ? Colors.white : Colors.black,
                             ),
                           ),
+
                           if (selectedTab == index)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.tealAccent,
-                              ),
-                              child: Text(
-                                "${tabs[index].count}",
-                              ),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.tealAccent,
+                                  ),
+                                  child: Text(
+                                    "${tabs[index].count}",
+                                  ),
+                                ),
+                              ],
                             )
                         ],
                       ),
