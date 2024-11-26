@@ -333,7 +333,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text("sample@abc.def"),
-                                    Text("\$1150"),
+                                    Text("June 16, 2024, 10:10 AM"),
                                   ],
                                 )
                               ],
