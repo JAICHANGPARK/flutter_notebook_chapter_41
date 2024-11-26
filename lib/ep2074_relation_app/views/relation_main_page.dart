@@ -168,24 +168,29 @@ class _RelationMainPageState extends State<RelationMainPage> {
                                 left: 0,
                                 child: CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.orangeAccent,
                                 ),
+
                               ),
                               Positioned(
                                 left: 24 * 1 + 12,
                                 child: CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.green,
                                 ),
                               ),
                               Positioned(
                                 left: 24 * 2 + 24,
                                 child: CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.blueAccent,
                                 ),
                               ),
                               Positioned(
                                 left: 24 * 3 + 36,
                                 child: CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.red,
                                 ),
                               ),
                             ],
