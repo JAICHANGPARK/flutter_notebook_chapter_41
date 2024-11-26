@@ -251,7 +251,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
               ),
             ),
             Container(
-              height: 52,
+              height: 32,
               margin: EdgeInsets.all(16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
