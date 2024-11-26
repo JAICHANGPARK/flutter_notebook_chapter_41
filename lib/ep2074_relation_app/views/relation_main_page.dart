@@ -309,7 +309,20 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,
                 ),
-                child: Placeholder(),
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Row(
+                      children: [
+                        CircleAvatar(),
+                        Expanded(
+                          child: Column(
+                            children: [],
+                          ),
+                        )
+                      ],
+                    );
+                  },
+                ),
               ),
             ),
           ],
