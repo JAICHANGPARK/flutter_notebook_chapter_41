@@ -257,22 +257,26 @@ class _RelationMainPageState extends State<RelationMainPage> {
                 scrollDirection: Axis.horizontal,
                 itemCount: tabs.length,
                 itemBuilder: (context, index) {
-                  return Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                    ),
-                    child: Row(
-                      children: [
-                        Text(
-                          "${tabs[index].title}",
-                        ),
-
-                        Container(
-                          decoration: BoxDecoration(
-
+                  return InkWell(
+                    onTap: () {
+                      setState(() {
+                        selectedTab = index;
+                      });
+                    },
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                      ),
+                      child: Row(
+                        children: [
+                          Text(
+                            "${tabs[index].title}",
                           ),
-                        )
-                      ],
+                          Container(
+                            decoration: BoxDecoration(),
+                          )
+                        ],
+                      ),
                     ),
                   );
                 },
