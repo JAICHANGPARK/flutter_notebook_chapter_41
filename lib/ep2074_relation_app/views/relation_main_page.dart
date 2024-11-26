@@ -219,7 +219,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                       Text(
                         "Leads list",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
