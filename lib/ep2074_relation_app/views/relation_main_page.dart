@@ -281,7 +281,7 @@ class _RelationMainPageState extends State<RelationMainPage> {
                           if (selectedTab == index)
                             Row(
                               children: [
-                                Gap(8),
+                                Gap(6),
                                 Container(
                                   decoration:
                                       BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(24)),
