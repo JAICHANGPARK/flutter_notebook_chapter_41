@@ -21,7 +21,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                   decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(32),
+                        bottomLeft: Radius.circular(48),
                       )),
                 )
               ],
