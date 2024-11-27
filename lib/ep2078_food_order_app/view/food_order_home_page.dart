@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FoodOrderHomePage extends StatefulWidget {
   const FoodOrderHomePage({super.key});
 
@@ -14,7 +13,15 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(child: child)
+          Positioned.fill(
+            child: Column(
+              children: [
+                Container(
+                  height: 400,
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
