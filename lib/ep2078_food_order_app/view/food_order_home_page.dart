@@ -45,38 +45,44 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
           )
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.home_filled,
-          ),
-          label: "Home",
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: "Search",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.favorite_outline,
+              ),
+              label: "Wishlist",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.group,
+              ),
+              label: "Friends",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.menu,
+              ),
+              label: "More",
+            )
+          ],
         ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.search,
-          ),
-          label: "Search",
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.favorite_outline,
-          ),
-          label: "Wishlist",
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.group,
-          ),
-          label: "Friends",
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.menu,
-          ),
-          label: "More",
-        )
-      ]),
+      ),
     );
   }
 }
