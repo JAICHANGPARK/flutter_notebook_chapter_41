@@ -60,21 +60,21 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.search,
+            Icons.favorite_outline,
           ),
-          label: "Search",
+          label: "Wishlist",
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.search,
+            Icons.group,
           ),
-          label: "Search",
+          label: "Friends",
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.search,
+            Icons.menu,
           ),
-          label: "Search",
+          label: "More",
         )
       ]),
     );
