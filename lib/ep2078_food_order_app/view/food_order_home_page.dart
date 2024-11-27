@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class FoodOrderHomePage extends StatefulWidget {
   const FoodOrderHomePage({super.key});
@@ -31,10 +32,11 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                           ),
                         ),
                       ),
-
                     ],
                   ),
                 ),
+                Gap(8),
+                Expanded(child: Container(color: Colors.white,))
               ],
             ),
           )
