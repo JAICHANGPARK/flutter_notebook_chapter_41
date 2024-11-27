@@ -36,12 +36,29 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                   ),
                 ),
                 Gap(8),
-                Expanded(child: Container(color: Colors.white,))
+                Expanded(
+                    child: Container(
+                  color: Colors.white,
+                ))
               ],
             ),
           )
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.home_filled,
+          ),
+          label: "Home",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.search,
+          ),
+          label: "Search",
+        )
+      ]),
     );
   }
 }
