@@ -18,6 +18,11 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
               children: [
                 Container(
                   height: 400,
+                  decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(32),
+                      )),
                 )
               ],
             ),
