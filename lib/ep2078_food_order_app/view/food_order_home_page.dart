@@ -19,12 +19,12 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
             child: Column(
               children: [
                 Container(
-                  height: 500,
+                  height: 580,
                   color: Colors.white,
                   child: Column(
                     children: [
                       Container(
-                        height: 380,
+                        height: 420,
                         decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.only(
