@@ -57,6 +57,24 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
             Icons.search,
           ),
           label: "Search",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.search,
+          ),
+          label: "Search",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.search,
+          ),
+          label: "Search",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.search,
+          ),
+          label: "Search",
         )
       ]),
     );
