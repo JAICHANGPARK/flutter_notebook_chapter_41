@@ -39,26 +39,28 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                         ),
                       ),
                       Positioned.fill(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                CircleAvatar(),
-                                Expanded(
-                                    child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [],
-                                )),
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.notifications_none,
-                                  ),
-                                )
-                              ],
-                            )
-                          ],
+                        child: SafeArea(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                  Expanded(
+                                      child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [],
+                                  )),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.notifications_none,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
