@@ -40,7 +40,26 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                   child: Container(
                     color: Colors.white,
                     child: ListView.builder(
-                      itemBuilder: (context, index) {},
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                  Expanded(
+                                      child: Column(
+                                    children: [],
+                                  ))
+                                ],
+                              )
+                            ],
+                          ),
+                        );
+                      },
                     ),
                   ),
                 )
