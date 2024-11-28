@@ -39,7 +39,9 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                 Expanded(
                   child: Container(
                     color: Colors.white,
+                    padding: EdgeInsets.all(16),
                     child: ListView.builder(
+                      padding: EdgeInsets.zero,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
@@ -51,9 +53,18 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                 children: [
                                   CircleAvatar(),
                                   Expanded(
-                                      child: Column(
-                                    children: [],
-                                  ))
+                                    child: Column(
+                                      children: [
+                                        Text('Dream Walker'),
+                                        Text("Photo and offer details"),
+                                        Row(
+                                          children: [
+                                            
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
                                 ],
                               )
                             ],
