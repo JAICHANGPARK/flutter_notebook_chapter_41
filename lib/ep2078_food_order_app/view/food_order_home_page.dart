@@ -38,6 +38,12 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                           ],
                         ),
                       ),
+                      Positioned.fill(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [],
+                        ),
+                      )
                     ],
                   ),
                 ),
