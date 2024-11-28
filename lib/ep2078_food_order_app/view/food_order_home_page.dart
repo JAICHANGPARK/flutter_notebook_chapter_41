@@ -21,15 +21,21 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                 Container(
                   height: 580,
                   color: Colors.white,
-                  child: Column(
+                  child: Stack(
                     children: [
-                      Container(
-                        height: 420,
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(48),
-                          ),
+                      Positioned.fill(
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 420,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(48),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
