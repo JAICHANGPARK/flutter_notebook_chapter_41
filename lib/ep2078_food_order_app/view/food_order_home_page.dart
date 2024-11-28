@@ -37,10 +37,20 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                 ),
                 Gap(8),
                 Expanded(
-                    child: Container(
-                  color: Colors.white,
-                ))
+                  child: Container(
+                    color: Colors.white,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {},
+                    ),
+                  ),
+                )
               ],
+            ),
+          ),
+          Positioned.fill(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [],
             ),
           )
         ],
