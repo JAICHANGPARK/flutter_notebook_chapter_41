@@ -46,6 +46,9 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(),
+                          padding: EdgeInsets.only(
+                            bottom: 12
+                          ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -54,12 +57,13 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                   CircleAvatar(),
                                   Expanded(
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text('Dream Walker'),
                                         Text("Photo and offer details"),
                                         Row(
                                           children: [
-                                            
+
                                           ],
                                         )
                                       ],
