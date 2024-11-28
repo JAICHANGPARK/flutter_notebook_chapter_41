@@ -66,7 +66,9 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
+                                        Gap(4),
                                         Text("Photo and offer details"),
+                                        Gap(4),
                                         Row(
                                           children: [
                                             Icon(
