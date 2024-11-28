@@ -52,7 +52,9 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(),
+                                  CircleAvatar(
+                                    radius: 24,
+                                  ),
                                   Gap(12),
                                   Expanded(
                                     child: Column(
@@ -71,7 +73,9 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                               Icons.location_on_outlined,
                                               size: 12,
                                             ),
+                                            Gap(4),
                                             Text("Seoul, Korea"),
+                                            Gap(12),
                                             Text("Jun 4 at 7:32 pm"),
                                           ],
                                         ),
@@ -81,6 +85,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                   )
                                 ],
                               ),
+                              Gap(12),
                               Container(
                                 height: 180,
                                 decoration: BoxDecoration(
