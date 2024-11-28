@@ -46,30 +46,46 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(),
-                          padding: EdgeInsets.only(
-                            bottom: 12
-                          ),
+                          padding: EdgeInsets.only(bottom: 12),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 children: [
                                   CircleAvatar(),
+                                  Gap(12),
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text('Dream Walker'),
+                                        Text(
+                                          'Dream Walker',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                         Text("Photo and offer details"),
                                         Row(
                                           children: [
-
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              size: 12,
+                                            ),
+                                            Text("Seoul, Korea"),
+                                            Text("Jun 4 at 7:32 pm"),
                                           ],
-                                        )
+                                        ),
+
                                       ],
                                     ),
                                   )
                                 ],
+                              ),
+                              Container(
+                                height: 180,
+                                decoration: BoxDecoration(
+                                  color: Colors.orangeAccent,
+                                ),
                               )
                             ],
                           ),
