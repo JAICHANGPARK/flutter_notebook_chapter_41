@@ -81,7 +81,6 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                             Text("Jun 4 at 7:32 pm"),
                                           ],
                                         ),
-
                                       ],
                                     ),
                                   )
@@ -92,6 +91,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                 height: 180,
                                 decoration: BoxDecoration(
                                   color: Colors.orangeAccent,
+                                  borderRadius: BorderRadius.circular(12),
                                 ),
                               )
                             ],
@@ -116,6 +116,8 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
         height: 72,
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.red,
+          unselectedItemColor: Colors.black,
           items: [
             BottomNavigationBarItem(
               icon: Icon(
