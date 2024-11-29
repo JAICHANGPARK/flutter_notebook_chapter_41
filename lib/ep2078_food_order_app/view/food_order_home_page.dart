@@ -160,6 +160,11 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                     )
                                   ],
                                 ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  margin: EdgeInsets.only(left: 16),
+                                ),
                               )
                             ],
                           ),
