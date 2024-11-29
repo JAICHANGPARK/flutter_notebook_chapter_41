@@ -39,12 +39,13 @@ class _TripHomePageState extends State<TripHomePage> {
             bottom: 32,
             left: 24,
             right: 24,
-
             child: Center(
               child: Container(
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
+                  color: Colors.green,
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
