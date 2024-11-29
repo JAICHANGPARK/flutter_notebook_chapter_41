@@ -111,7 +111,10 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                               ),
                               Container(
                                 height: 100,
-                                margin: EdgeInsets.only(),
+                                margin: EdgeInsets.only(
+                                  left: 16,
+                                  top: 16,
+                                ),
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
@@ -119,8 +122,16 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                       padding: const EdgeInsets.only(right: 12),
                                       child: Column(
                                         children: [
-                                          CircleAvatar(radius: 32,),
-                                          Text("Dream Bab")
+                                          CircleAvatar(
+                                            radius: 32,
+                                          ),
+                                          Gap(6),
+                                          Text(
+                                            "Dream Bab",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
                                         ],
                                       ),
                                     );
