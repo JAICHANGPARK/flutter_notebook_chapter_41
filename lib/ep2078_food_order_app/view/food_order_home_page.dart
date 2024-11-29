@@ -43,31 +43,37 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Row(
-                                children: [
-                                  CircleAvatar(),
-                                  Expanded(
-                                      child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Hi Dreamwalker "),
-                                      Row(
-                                        children: [
-                                          Text("Seoul, Korea"),
-                                          Icon(Icons.keyboard_arrow_down_outlined),
-                                        ],
-                                      )
-                                    ],
-                                  )),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      Icons.notifications_none,
-                                    ),
-                                  )
-                                ],
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Hi Dreamwalker "),
+                                        Row(
+                                          children: [
+                                            Text("Seoul, Korea"),
+                                            Icon(Icons.keyboard_arrow_down_outlined),
+                                          ],
+                                        )
+                                      ],
+                                    )),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.notifications_none,
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                               Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                ),
                                 decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(.1),
                                 ),
