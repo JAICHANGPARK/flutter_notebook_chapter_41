@@ -10,6 +10,23 @@ class TripHomePage extends StatefulWidget {
 class _TripHomePageState extends State<TripHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Column(
+              children: [
+                Container(
+                  height: 320,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                  ),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
