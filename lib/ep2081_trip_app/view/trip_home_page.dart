@@ -30,46 +30,49 @@ class _TripHomePageState extends State<TripHomePage> {
                   child: SafeArea(
                     child: Column(
                       children: [
-                        Row(
-                          children: [
-                            CircleAvatar(
-                              radius: 26,
-                              backgroundColor: Colors.white,
-                            ),
-                            Spacer(),
-                            Container(
-                              height: 52,
-                              width: 52,
-                              child: Stack(
-                                children: [
-                                  Positioned.fill(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        color: Colors.white,
-                                      ),
-                                      child: Icon(
-                                        Icons.notifications_none,
-                                      ),
-                                    ),
-                                  ),
-                                  Positioned(
-                                    left: 0,
-                                    top: 0,
-                                    child: CircleAvatar(
-                                      radius: 8,
-                                      backgroundColor: Colors.deepOrangeAccent,
-                                    ),
-                                  ),
-                                ],
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 26,
+                                backgroundColor: Colors.white,
                               ),
-                            ),
-                            Gap(12),
-                            CircleAvatar(
-                              radius: 26,
-                              backgroundColor: Colors.white,
-                            ),
-                          ],
+                              Spacer(),
+                              Container(
+                                height: 52,
+                                width: 52,
+                                child: Stack(
+                                  children: [
+                                    Positioned.fill(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: Colors.white,
+                                        ),
+                                        child: Icon(
+                                          Icons.notifications_none,
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 0,
+                                      top: 0,
+                                      child: CircleAvatar(
+                                        radius: 8,
+                                        backgroundColor: Colors.deepOrangeAccent,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Gap(12),
+                              CircleAvatar(
+                                radius: 26,
+                                backgroundColor: Colors.white,
+                              ),
+                            ],
+                          ),
                         )
                       ],
                     ),
