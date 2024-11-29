@@ -137,6 +137,22 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                     );
                                   },
                                 ),
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Dine Discoveries for You",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "View All",
+                                    ),
+                                  )
+                                ],
                               )
                             ],
                           ),
