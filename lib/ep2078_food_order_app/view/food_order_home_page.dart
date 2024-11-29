@@ -49,7 +49,15 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                   Expanded(
                                       child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [],
+                                    children: [
+                                      Text("Hi Dreamwalker "),
+                                      Row(
+                                        children: [
+                                          Text("Seoul, Korea"),
+                                          Icon(Icons.keyboard_arrow_down_outlined),
+                                        ],
+                                      )
+                                    ],
                                   )),
                                   IconButton(
                                     onPressed: () {},
@@ -58,6 +66,12 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                     ),
                                   )
                                 ],
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(.1),
+                                ),
+                                child: TextField(),
                               )
                             ],
                           ),
