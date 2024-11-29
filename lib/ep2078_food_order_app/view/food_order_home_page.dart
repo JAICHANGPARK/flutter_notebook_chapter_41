@@ -108,6 +108,19 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                         color: Colors.white,
                                       )),
                                 ),
+                              ),
+                              SizedBox(
+                                height: 72,
+                                child: ListView.builder(
+                                  itemBuilder: (context, index) {
+                                    return Column(
+                                      children: [
+                                        CircleAvatar(radius: 32,),
+                                        Text("Dream Bab")
+                                      ],
+                                    );
+                                  },
+                                ),
                               )
                             ],
                           ),
