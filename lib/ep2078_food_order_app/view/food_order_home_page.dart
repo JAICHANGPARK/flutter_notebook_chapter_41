@@ -166,7 +166,25 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                   margin: EdgeInsets.only(left: 16),
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
-                                    itemBuilder: (context, index) {},
+                                    itemBuilder: (context, index) {
+                                      return Padding(
+                                        padding: const EdgeInsets.only(right: 16),
+                                        child: SizedBox(
+                                          width: 260,
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.green,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      );
+                                    },
                                   ),
                                 ),
                               )
