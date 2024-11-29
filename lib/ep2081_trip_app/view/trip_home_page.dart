@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TripHomePage extends StatefulWidget {
   const TripHomePage({super.key});
@@ -50,12 +51,17 @@ class _TripHomePageState extends State<TripHomePage> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.headset_mic),
+                    Icon(
+                      Icons.headset_mic,
+                      color: Colors.white,
+                    ),
+                    Gap(6),
                     Text(
                       "Need a Help?",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
+                        fontSize: 20,
                       ),
                     )
                   ],
