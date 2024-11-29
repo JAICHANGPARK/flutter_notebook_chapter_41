@@ -40,6 +40,17 @@ class _TripHomePageState extends State<TripHomePage> {
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
               ),
+              child: Row(
+                children: [
+                  Icon(Icons.headset_mic),
+                  Text(
+                    "Need a Help?",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
