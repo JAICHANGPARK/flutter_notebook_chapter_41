@@ -196,6 +196,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                                     size: 16,
                                                     Icons.location_on_outlined,
                                                   ),
+                                                  Gap(8),
                                                   Text(
                                                     "2222 abcd, Town Center",
                                                   )
