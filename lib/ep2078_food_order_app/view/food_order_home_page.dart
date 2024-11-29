@@ -170,7 +170,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                       return Padding(
                                         padding: const EdgeInsets.only(right: 16),
                                         child: SizedBox(
-                                          width: 260,
+                                          width: 250,
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
