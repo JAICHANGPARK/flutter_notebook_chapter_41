@@ -47,7 +47,10 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                 padding: const EdgeInsets.all(16.0),
                                 child: Row(
                                   children: [
-                                    CircleAvatar(),
+                                    CircleAvatar(
+                                      radius: 24,
+                                    ),
+                                    Gap(8),
                                     Expanded(
                                         child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -71,11 +74,11 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsets.symmetric(
+                                margin: EdgeInsets.symmetric(
                                   horizontal: 16,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(.1),
+                                  color: Colors.white.withOpacity(.3),
                                 ),
                                 child: TextField(),
                               )
