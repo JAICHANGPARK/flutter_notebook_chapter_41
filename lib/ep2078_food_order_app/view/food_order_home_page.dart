@@ -109,15 +109,19 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                       )),
                                 ),
                               ),
-                              SizedBox(
-                                height: 72,
+                              Container(
+                                height: 100,
                                 child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
-                                    return Column(
-                                      children: [
-                                        CircleAvatar(radius: 32,),
-                                        Text("Dream Bab")
-                                      ],
+                                    return Padding(
+                                      padding: const EdgeInsets.only(right: 12),
+                                      child: Column(
+                                        children: [
+                                          CircleAvatar(radius: 32,),
+                                          Text("Dream Bab")
+                                        ],
+                                      ),
                                     );
                                   },
                                 ),
