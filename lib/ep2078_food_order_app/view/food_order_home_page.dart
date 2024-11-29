@@ -67,11 +67,13 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                             Text(
                                               "Seoul, Korea",
                                               style: TextStyle(
-                                                
                                                 color: Colors.white,
                                               ),
                                             ),
-                                            Icon(Icons.keyboard_arrow_down_outlined),
+                                            Icon(
+                                              Icons.keyboard_arrow_down_outlined,
+                                              color: Colors.white,
+                                            ),
                                           ],
                                         )
                                       ],
@@ -81,6 +83,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                       icon: Icon(
                                         Icons.notifications_none,
                                       ),
+                                      color: Colors.white,
                                     )
                                   ],
                                 ),
@@ -92,7 +95,13 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(.3),
                                 ),
-                                child: TextField(),
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    icon: Icon(
+                                      Icons.search,
+                                    ),
+                                  ),
+                                ),
                               )
                             ],
                           ),
