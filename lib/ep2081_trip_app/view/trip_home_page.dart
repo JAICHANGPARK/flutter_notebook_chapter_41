@@ -22,6 +22,11 @@ class _TripHomePageState extends State<TripHomePage> {
                     color: Colors.green,
                   ),
                 ),
+                Expanded(
+                  child: Column(
+                    children: [],
+                  ),
+                )
               ],
             ),
           )
