@@ -178,11 +178,18 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                                 child: Container(
                                                   decoration: BoxDecoration(
                                                     color: Colors.green,
+                                                    borderRadius: BorderRadius.circular(12)
                                                   ),
                                                 ),
                                               ),
                                               Gap(8),
-                                              Text("Maui Brewing "),
+                                              Text(
+                                                "Maui Brewing ",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 16,
+                                                ),
+                                              ),
                                               Gap(4),
                                               Row(
                                                 children: [
