@@ -36,20 +36,27 @@ class _TripHomePageState extends State<TripHomePage> {
             ),
           ),
           Positioned(
-            child: Container(
-              decoration: ShapeDecoration(
-                shape: StadiumBorder(),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.headset_mic),
-                  Text(
-                    "Need a Help?",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )
-                ],
+            bottom: 32,
+
+            child: Center(
+              child: Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.headset_mic),
+                    Text(
+                      "Need a Help?",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           )
