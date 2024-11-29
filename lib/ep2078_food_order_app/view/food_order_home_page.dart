@@ -172,6 +172,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                         child: SizedBox(
                                           width: 260,
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Expanded(
                                                 child: Container(
