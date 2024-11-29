@@ -11,6 +11,7 @@ class _TripHomePageState extends State<TripHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned.fill(
@@ -20,6 +21,10 @@ class _TripHomePageState extends State<TripHomePage> {
                   height: 320,
                   decoration: BoxDecoration(
                     color: Colors.green,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(16),
+                      bottomRight: Radius.circular(16),
+                    ),
                   ),
                 ),
                 Expanded(
