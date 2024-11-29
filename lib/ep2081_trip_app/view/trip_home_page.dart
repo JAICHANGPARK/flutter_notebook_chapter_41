@@ -35,6 +35,13 @@ class _TripHomePageState extends State<TripHomePage> {
                             CircleAvatar(
                               radius: 26,
                               backgroundColor: Colors.white,
+                            ),
+                            Container(
+                              height: 52,
+                              width: 52,
+                              child: Stack(
+                                children: [],
+                              ),
                             )
                           ],
                         )
