@@ -37,6 +37,8 @@ class _TripHomePageState extends State<TripHomePage> {
           ),
           Positioned(
             bottom: 32,
+            left: 24,
+            right: 24,
 
             child: Center(
               child: Container(
