@@ -97,10 +97,14 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                 ),
                                 child: TextField(
                                   decoration: InputDecoration(
-                                    icon: Icon(
-                                      Icons.search,
-                                    ),
-                                  ),
+                                      icon: Icon(
+                                        Icons.search,
+                                      ),
+                                      border: InputBorder.none,
+                                      hintText: "Search your restaurant",
+                                      hintStyle: TextStyle(
+                                        color: Colors.white,
+                                      )),
                                 ),
                               )
                             ],
