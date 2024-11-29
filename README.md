@@ -6,7 +6,7 @@
 - Nixtio
 - https://dribbble.com/shots/25251071-Trip-Planner-App
 
-<img src="https://cdn.dribbble.com/userupload/17738927/file/original-aa287359bd9438fcbd2d3360113d3ee8.png?resize=1905x1429&vertical=center"/>
+<img src="https://cdn.dribbble.com/userupload/17758238/file/original-f844eb3f98822074ac11c945c9b8aaa7.png?resize=1905x1429&vertical=center"/>
 
 
 ## EP2078-2080
