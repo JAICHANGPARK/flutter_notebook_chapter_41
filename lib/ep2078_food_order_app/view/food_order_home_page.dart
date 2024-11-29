@@ -55,10 +55,22 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                         child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("Hi Dreamwalker "),
+                                        Text(
+                                          "Hi Dreamwalker ",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                         Row(
                                           children: [
-                                            Text("Seoul, Korea"),
+                                            Text(
+                                              "Seoul, Korea",
+                                              style: TextStyle(
+                                                
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                             Icon(Icons.keyboard_arrow_down_outlined),
                                           ],
                                         )
