@@ -92,6 +92,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                 margin: EdgeInsets.symmetric(
                                   horizontal: 16,
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 12),
                                 decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(.3),
                                 ),
@@ -100,6 +101,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                       icon: Icon(
                                         Icons.search,
                                       ),
+                                      iconColor: Colors.white,
                                       border: InputBorder.none,
                                       hintText: "Search your restaurant",
                                       hintStyle: TextStyle(
