@@ -34,6 +34,13 @@ class _TripHomePageState extends State<TripHomePage> {
                 )
               ],
             ),
+          ),
+          Positioned(
+            child: Container(
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+              ),
+            ),
           )
         ],
       ),
