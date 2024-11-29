@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_41
 
-## EP2078
+## EP2081
+
+- Trip Planner App
+- Nixtio
+- https://dribbble.com/shots/25251071-Trip-Planner-App
+
+<img src="https://cdn.dribbble.com/userupload/17738927/file/original-aa287359bd9438fcbd2d3360113d3ee8.png?resize=1905x1429&vertical=center"/>
+
+
+## EP2078-2080
 
 - Plate- Food Ordering Mobile App UI UX Design Concept
 - Noman for Design Monks
