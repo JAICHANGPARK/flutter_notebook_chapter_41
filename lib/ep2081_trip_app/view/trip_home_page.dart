@@ -19,12 +19,26 @@ class _TripHomePageState extends State<TripHomePage> {
             child: Column(
               children: [
                 Container(
-                  height: 320,
+                  height: 340,
                   decoration: BoxDecoration(
                     color: Colors.green,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(16),
                       bottomRight: Radius.circular(16),
+                    ),
+                  ),
+                  child: SafeArea(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 26,
+                              backgroundColor: Colors.white,
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
                 ),
