@@ -142,11 +142,14 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                               Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
                                       "Dine Discoveries for You",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.white,
                                       ),
                                     ),
                                     TextButton(
