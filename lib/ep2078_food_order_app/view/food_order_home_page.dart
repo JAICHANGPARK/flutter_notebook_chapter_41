@@ -119,11 +119,11 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
                                     return Padding(
-                                      padding: const EdgeInsets.only(right: 12),
+                                      padding: const EdgeInsets.only(right: 20),
                                       child: Column(
                                         children: [
                                           CircleAvatar(
-                                            radius: 32,
+                                            radius: 36,
                                           ),
                                           Gap(6),
                                           Text(
