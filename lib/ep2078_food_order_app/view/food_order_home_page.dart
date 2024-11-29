@@ -111,6 +111,7 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                               ),
                               Container(
                                 height: 100,
+                                margin: EdgeInsets.only(),
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
