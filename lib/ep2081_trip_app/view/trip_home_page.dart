@@ -41,10 +41,15 @@ class _TripHomePageState extends State<TripHomePage> {
                               width: 52,
                               child: Stack(
                                 children: [
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: Colors.white,
+                                  Positioned.fill(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        color: Colors.white,
+                                      ),
+                                      child: Icon(
+                                        Icons.notifications_none,
+                                      ),
                                     ),
                                   ),
                                 ],
