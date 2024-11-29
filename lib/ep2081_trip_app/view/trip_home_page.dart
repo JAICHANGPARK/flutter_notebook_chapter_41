@@ -52,6 +52,14 @@ class _TripHomePageState extends State<TripHomePage> {
                                       ),
                                     ),
                                   ),
+                                  Positioned(
+                                    left: 0,
+                                    top: 0,
+                                    child: CircleAvatar(
+                                      radius: 8,
+                                      backgroundColor: Colors.deepOrangeAccent,
+                                    ),
+                                  ),
                                 ],
                               ),
                             )
