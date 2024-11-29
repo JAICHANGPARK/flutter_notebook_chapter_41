@@ -181,14 +181,19 @@ class _FoodOrderHomePageState extends State<FoodOrderHomePage> {
                                                   ),
                                                 ),
                                               ),
+                                              Gap(8),
                                               Text("Maui Brewing "),
+                                              Gap(4),
                                               Row(
                                                 children: [
                                                   Icon(
                                                     Icons.star,
+                                                    size: 16,
                                                   ),
                                                   Text("4.8"),
+                                                  Gap(12),
                                                   Icon(
+                                                    size: 16,
                                                     Icons.location_on_outlined,
                                                   ),
                                                   Text(
