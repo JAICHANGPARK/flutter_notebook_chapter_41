@@ -90,7 +90,14 @@ class _TripHomePageState extends State<TripHomePage> {
                                 ),
                               ),
                               Gap(12),
-                              Text("Trip"),
+                              Text(
+                                "Trip",
+                                style: TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey,
+                                ),
+                              ),
                               CircleAvatar(
                                 backgroundColor: Colors.white,
                                 child: Icon(
