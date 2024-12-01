@@ -116,9 +116,18 @@ class _TripHomePageState extends State<TripHomePage> {
                           ),
                           child: Row(
                             children: [
-                              Text("Sep 23 - Oct 6"),
+                              Text(
+                                "Sep 23 - Oct 6",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
                               Gap(12),
-                              Text("2 Adults"),
+                              Text("2 Adults",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
                             ],
                           ),
                         ),
