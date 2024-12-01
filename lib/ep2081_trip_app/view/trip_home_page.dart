@@ -74,6 +74,16 @@ class _TripHomePageState extends State<TripHomePage> {
                               ),
                             ],
                           ),
+                        ),
+                        Row(
+                          children: [
+                            Text("Dubai"),
+                            Text("Trip"),
+                            CircleAvatar(
+                              backgroundColor: Colors.white,
+                              child: Icon(),
+                            )
+                          ],
                         )
                       ],
                     ),
