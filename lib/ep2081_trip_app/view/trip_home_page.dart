@@ -191,6 +191,14 @@ class _TripHomePageState extends State<TripHomePage> {
                         ),
                         child: Placeholder(),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+
+                          ],
+                        ),
+                      )
                       Text(
                         "Boarding on plane",
                       ),
