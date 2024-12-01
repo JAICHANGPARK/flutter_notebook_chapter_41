@@ -101,6 +101,7 @@ class _TripHomePageState extends State<TripHomePage> {
                               Gap(12),
                               CircleAvatar(
                                 backgroundColor: Colors.white.withOpacity(.2),
+                                foregroundColor: Colors.blueGrey,
                                 child: Icon(
                                   Icons.keyboard_arrow_right,
                                 ),
