@@ -154,6 +154,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                     color: Colors.white,
                                   ),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         "23",
