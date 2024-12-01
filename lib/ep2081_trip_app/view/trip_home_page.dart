@@ -142,6 +142,10 @@ class _TripHomePageState extends State<TripHomePage> {
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
+                                margin: EdgeInsets.only(
+                                  right: 12,
+                                ),
+                                padding: EdgeInsets.all(8),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   border: Border.all(
