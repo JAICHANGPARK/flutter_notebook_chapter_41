@@ -179,38 +179,40 @@ class _TripHomePageState extends State<TripHomePage> {
                   ),
                 ),
                 Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 52,
-                        margin: EdgeInsets.only(
-                          left: 16,
-                          top: 24,
-                          bottom: 12,
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 52,
+                          margin: EdgeInsets.only(
+                            left: 16,
+                            top: 24,
+                            bottom: 12,
+                          ),
+                          child: Placeholder(),
                         ),
-                        child: Placeholder(),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Column(  crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Boarding on plane",
-                            ),
-                            Text(
-                              "Incheon, South Korea",
-                            )
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(  crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Boarding on plane",
+                              ),
+                              Text(
+                                "Incheon, South Korea",
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-
-                      Container(
-                        height: 600,
-                        child: Placeholder(),
-                      )
-
-                    ],
+                    
+                        Container(
+                          height: 600,
+                          child: Placeholder(),
+                        )
+                    
+                      ],
+                    ),
                   ),
                 )
               ],
