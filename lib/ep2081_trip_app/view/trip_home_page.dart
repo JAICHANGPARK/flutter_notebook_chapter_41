@@ -193,7 +193,7 @@ class _TripHomePageState extends State<TripHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),
-                        child: Column(
+                        child: Column(  crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Boarding on plane",
