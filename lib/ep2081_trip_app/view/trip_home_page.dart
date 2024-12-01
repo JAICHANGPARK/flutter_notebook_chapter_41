@@ -144,6 +144,19 @@ class _TripHomePageState extends State<TripHomePage> {
                               return Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "23",
+                                    ),
+                                    Text(
+                                      "Sep",
+                                    )
+                                  ],
                                 ),
                               );
                             },
