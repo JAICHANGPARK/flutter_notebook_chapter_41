@@ -145,7 +145,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                   margin: EdgeInsets.only(
                                     right: 12,
                                   ),
-                                  padding: EdgeInsets.all(16),
+                                  padding: EdgeInsets.all(20),
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     border: Border.all(
@@ -155,11 +155,13 @@ class _TripHomePageState extends State<TripHomePage> {
                                   ),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
                                         "23",
                                         style: TextStyle(
                                           fontSize: 20,
+                                          fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                       Text(
