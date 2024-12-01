@@ -134,7 +134,7 @@ class _TripHomePageState extends State<TripHomePage> {
                         ),
                         Gap(16),
                         Container(
-                          height: 52,
+                          height: 72,
                           margin: EdgeInsets.only(
                             left: 16,
                           ),
@@ -145,7 +145,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                 margin: EdgeInsets.only(
                                   right: 12,
                                 ),
-                                padding: EdgeInsets.all(8),
+                                padding: EdgeInsets.all(16),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   border: Border.all(
