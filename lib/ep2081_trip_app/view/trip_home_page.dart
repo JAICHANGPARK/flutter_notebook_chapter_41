@@ -187,7 +187,7 @@ class _TripHomePageState extends State<TripHomePage> {
                         margin: EdgeInsets.only(
                           left: 16,
                           top: 24,
-                          bottom: 24,
+                          bottom: 12,
                         ),
                         child: Placeholder(),
                       ),
