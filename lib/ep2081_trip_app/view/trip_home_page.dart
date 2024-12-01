@@ -123,7 +123,8 @@ class _TripHomePageState extends State<TripHomePage> {
                                 ),
                               ),
                               Gap(12),
-                              Text("2 Adults",
+                              Text(
+                                "2 Adults",
                                 style: TextStyle(
                                   fontSize: 16,
                                 ),
@@ -137,7 +138,16 @@ class _TripHomePageState extends State<TripHomePage> {
                           margin: EdgeInsets.only(
                             left: 16,
                           ),
-                          child: Placeholder(),
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                ),
+                              );
+                            },
+                          ),
                         )
                       ],
                     ),
