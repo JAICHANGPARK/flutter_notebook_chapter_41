@@ -75,26 +75,34 @@ class _TripHomePageState extends State<TripHomePage> {
                             ],
                           ),
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              "Dubai",
-                              style: TextStyle(),
-                            ),
-                            Text("Trip"),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(
-                                Icons.keyboard_arrow_right,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                          ),
+                          child: Row(
+                            children: [
+                              Text(
+                                "Dubai",
+                                style: TextStyle(),
                               ),
-                            )
-                          ],
+                              Text("Trip"),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.keyboard_arrow_right,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
-                        Row(
-                          children: [
-                            Text("Sep 23 - Oct 6"),
-                            Text("2 Adults"),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Text("Sep 23 - Oct 6"),
+                              Text("2 Adults"),
+                            ],
+                          ),
                         ),
                         Container(
                           height: 52,
