@@ -75,6 +75,7 @@ class _TripHomePageState extends State<TripHomePage> {
                             ],
                           ),
                         ),
+                        Gap(12),
                         Padding(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -88,6 +89,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              Gap(12),
                               Text("Trip"),
                               CircleAvatar(
                                 backgroundColor: Colors.white,
