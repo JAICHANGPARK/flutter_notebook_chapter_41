@@ -180,7 +180,17 @@ class _TripHomePageState extends State<TripHomePage> {
                 ),
                 Expanded(
                   child: Column(
-                    children: [],
+                    children: [
+                      Container(
+                        height: 52,
+                        margin: EdgeInsets.only(
+                          left: 16,
+                          top: 24,
+                          bottom: 24,
+                        ),
+                        child: Placeholder(),
+                      )
+                    ],
                   ),
                 )
               ],
