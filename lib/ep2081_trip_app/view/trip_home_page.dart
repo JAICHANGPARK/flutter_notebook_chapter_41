@@ -81,7 +81,9 @@ class _TripHomePageState extends State<TripHomePage> {
                             Text("Trip"),
                             CircleAvatar(
                               backgroundColor: Colors.white,
-                              child: Icon(),
+                              child: Icon(
+                                Icons.keyboard_arrow_right,
+                              ),
                             )
                           ],
                         )
