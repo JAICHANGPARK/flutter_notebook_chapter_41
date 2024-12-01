@@ -132,39 +132,43 @@ class _TripHomePageState extends State<TripHomePage> {
                             ],
                           ),
                         ),
-                        Gap(16),
-                        Container(
-                          height: 80,
-                          margin: EdgeInsets.only(
-                            left: 16,
-                          ),
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index) {
-                              return Container(
-                                margin: EdgeInsets.only(
-                                  right: 12,
-                                ),
-                                padding: EdgeInsets.all(16),
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: Colors.grey,
+                        Gap(8),
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.only(
+                              left: 16,
+                            ),
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  margin: EdgeInsets.only(
+                                    right: 12,
                                   ),
-                                  color: Colors.white,
-                                ),
-                                child: Column(
-                                  children: [
-                                    Text(
-                                      "23",
+                                  padding: EdgeInsets.all(16),
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: Colors.grey,
                                     ),
-                                    Text(
-                                      "Sep",
-                                    )
-                                  ],
-                                ),
-                              );
-                            },
+                                    color: Colors.white,
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        "23",
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Sep",
+                                      )
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
                           ),
                         )
                       ],
