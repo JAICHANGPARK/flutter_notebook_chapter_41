@@ -180,6 +180,7 @@ class _TripHomePageState extends State<TripHomePage> {
                 ),
                 Expanded(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         height: 52,
@@ -189,6 +190,12 @@ class _TripHomePageState extends State<TripHomePage> {
                           bottom: 24,
                         ),
                         child: Placeholder(),
+                      ),
+                      Text(
+                        "Boarding on plane",
+                      ),
+                      Text(
+                        "Incheon, South Korea",
                       )
                     ],
                   ),
