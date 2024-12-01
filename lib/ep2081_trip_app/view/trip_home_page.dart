@@ -96,8 +96,11 @@ class _TripHomePageState extends State<TripHomePage> {
                             Text("2 Adults"),
                           ],
                         ),
-                        SizedBox(
+                        Container(
                           height: 52,
+                          margin: EdgeInsets.only(
+                            left: 16,
+                          ),
                           child: Placeholder(),
                         )
                       ],
