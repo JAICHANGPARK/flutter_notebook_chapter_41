@@ -85,7 +85,7 @@ class _TripHomePageState extends State<TripHomePage> {
                               Text(
                                 "Dubai",
                                 style: TextStyle(
-                                  fontSize: 28,
+                                  fontSize: 32,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -93,7 +93,7 @@ class _TripHomePageState extends State<TripHomePage> {
                               Text(
                                 "Trip",
                                 style: TextStyle(
-                                  fontSize: 28,
+                                  fontSize: 32,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.grey,
                                 ),
@@ -122,6 +122,7 @@ class _TripHomePageState extends State<TripHomePage> {
                             ],
                           ),
                         ),
+                        Gap(16),
                         Container(
                           height: 52,
                           margin: EdgeInsets.only(
