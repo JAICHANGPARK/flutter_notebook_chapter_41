@@ -86,7 +86,12 @@ class _TripHomePageState extends State<TripHomePage> {
                               ),
                             )
                           ],
-                        )
+                        ),
+                        Row(
+                          children: [
+                            Text("Sep 23 - Oct 6"),
+                          ],
+                        ),
                       ],
                     ),
                   ),
