@@ -109,6 +109,7 @@ class _TripHomePageState extends State<TripHomePage> {
                             ],
                           ),
                         ),
+                        Gap(12),
                         Padding(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -116,6 +117,7 @@ class _TripHomePageState extends State<TripHomePage> {
                           child: Row(
                             children: [
                               Text("Sep 23 - Oct 6"),
+                              Gap(12),
                               Text("2 Adults"),
                             ],
                           ),
