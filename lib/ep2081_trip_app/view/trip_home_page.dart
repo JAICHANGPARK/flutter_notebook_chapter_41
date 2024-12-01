@@ -83,7 +83,10 @@ class _TripHomePageState extends State<TripHomePage> {
                             children: [
                               Text(
                                 "Dubai",
-                                style: TextStyle(),
+                                style: TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                               Text("Trip"),
                               CircleAvatar(
