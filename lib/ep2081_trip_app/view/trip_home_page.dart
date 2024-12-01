@@ -205,6 +205,11 @@ class _TripHomePageState extends State<TripHomePage> {
                         ),
                       ),
 
+                      Container(
+                        height: 600,
+                        child: Placeholder(),
+                      )
+
                     ],
                   ),
                 )
