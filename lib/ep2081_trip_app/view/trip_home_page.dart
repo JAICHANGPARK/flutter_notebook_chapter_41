@@ -77,7 +77,10 @@ class _TripHomePageState extends State<TripHomePage> {
                         ),
                         Row(
                           children: [
-                            Text("Dubai"),
+                            Text(
+                              "Dubai",
+                              style: TextStyle(),
+                            ),
                             Text("Trip"),
                             CircleAvatar(
                               backgroundColor: Colors.white,
@@ -90,8 +93,13 @@ class _TripHomePageState extends State<TripHomePage> {
                         Row(
                           children: [
                             Text("Sep 23 - Oct 6"),
+                            Text("2 Adults"),
                           ],
                         ),
+                        SizedBox(
+                          height: 52,
+                          child: Placeholder(),
+                        )
                       ],
                     ),
                   ),
