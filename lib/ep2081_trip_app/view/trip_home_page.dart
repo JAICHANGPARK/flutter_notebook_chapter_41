@@ -202,6 +202,9 @@ class _TripHomePageState extends State<TripHomePage> {
                                   )),
                                   color: Colors.green[100],
                                 ),
+                                child: Text.rich(TextSpan(
+                                  children: [],
+                                ),),
                               );
                             },
                           ),
