@@ -197,32 +197,36 @@ class _TripHomePageState extends State<TripHomePage> {
                               return Container(
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(
-                                      side: BorderSide(
-                                    color: Colors.green,
-                                  )),
-                                  color: Colors.green[100],
+                                    side: BorderSide(
+                                      color: Colors.green,
+                                      width: 1.5,
+                                    ),
+                                  ),
+                                  color: Colors.green[50],
                                 ),
                                 padding: EdgeInsets.symmetric(horizontal: 16),
                                 child: Center(
-                                  child: Text.rich(TextSpan(
-                                    children: [
-                                      TextSpan(
-                                        text: "3:20",
-                                      ),
-                                      TextSpan(
-                                        text: " AM",
-                                      ),
-                                      TextSpan(
-                                        text: " - ",
-                                      ),
-                                      TextSpan(
-                                        text: "7:50",
-                                      ),
-                                      TextSpan(
-                                        text: " AM",
-                                      ),
-                                    ],
-                                  ),),
+                                  child: Text.rich(
+                                    TextSpan(
+                                      children: [
+                                        TextSpan(
+                                          text: "3:20",
+                                        ),
+                                        TextSpan(
+                                          text: " AM",
+                                        ),
+                                        TextSpan(
+                                          text: " - ",
+                                        ),
+                                        TextSpan(
+                                          text: "7:50",
+                                        ),
+                                        TextSpan(
+                                          text: " AM",
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ),
                               );
                             },
