@@ -295,8 +295,8 @@ class _TripHomePageState extends State<TripHomePage> {
                           child: Stack(
                             children: [
                               Positioned(
-                                left: 24,
-                                right: 24,
+                                left: 16,
+                                right: 16,
                                 top: 0,
                                 bottom: 0,
                                 child: Container(
