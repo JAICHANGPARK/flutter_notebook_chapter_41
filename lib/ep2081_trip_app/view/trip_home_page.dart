@@ -22,6 +22,13 @@ class _TripHomePageState extends State<TripHomePage> {
                   height: 340,
                   decoration: BoxDecoration(
                     color: Colors.green,
+                    gradient: LinearGradient(
+                      colors: [
+                        Color.fromRGBO(241, 241, 233, 1),
+                        Color.fromRGBO(235, 245, 239, 1),
+                        Color.fromRGBO(232, 247, 244, 1),
+                      ],
+                    ),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(16),
                       bottomRight: Radius.circular(16),
@@ -268,7 +275,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                   fontSize: 28,
                                 ),
                               ),
-                              Gap(12),
+                              Gap(8),
                               Text(
                                 "Incheon, South Korea",
                                 style: TextStyle(
