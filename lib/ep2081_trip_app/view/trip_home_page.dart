@@ -290,7 +290,33 @@ class _TripHomePageState extends State<TripHomePage> {
                         ),
                         Container(
                           height: 600,
-                          child: Placeholder(),
+                          margin: EdgeInsets.symmetric(horizontal: 16),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 24,
+                                right: 24,
+                                top: 0,
+                                bottom: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.orangeAccent,
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                top: 32,
+                                bottom: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
