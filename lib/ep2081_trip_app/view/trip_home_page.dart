@@ -28,6 +28,8 @@ class _TripHomePageState extends State<TripHomePage> {
                         Color.fromRGBO(235, 245, 239, 1),
                         Color.fromRGBO(232, 247, 244, 1),
                       ],
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomRight,
                     ),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(16),
