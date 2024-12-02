@@ -109,7 +109,7 @@ class _TripHomePageState extends State<TripHomePage> {
                               ),
                               Gap(12),
                               CircleAvatar(
-                                backgroundColor: Colors.white.withOpacity(.2),
+                                backgroundColor: Colors.white.withOpacity(.4),
                                 foregroundColor: Colors.blueGrey,
                                 child: Icon(
                                   Icons.keyboard_arrow_right,
@@ -307,7 +307,7 @@ class _TripHomePageState extends State<TripHomePage> {
               child: Container(
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
-                  color: Colors.green,
+                  color: Color.fromRGBO(73, 184, 114, 1),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                 child: Row(
