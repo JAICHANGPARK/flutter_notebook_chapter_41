@@ -256,13 +256,18 @@ class _TripHomePageState extends State<TripHomePage> {
                             },
                           ),
                         ),
+
                         Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "Boarding on plane",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 28,
+                                ),
                               ),
                               Text(
                                 "Incheon, South Korea",
