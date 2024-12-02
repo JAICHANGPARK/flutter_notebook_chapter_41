@@ -256,7 +256,6 @@ class _TripHomePageState extends State<TripHomePage> {
                             },
                           ),
                         ),
-
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: Column(
@@ -269,8 +268,13 @@ class _TripHomePageState extends State<TripHomePage> {
                                   fontSize: 28,
                                 ),
                               ),
+                              Gap(12),
                               Text(
                                 "Incheon, South Korea",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 16,
+                                ),
                               )
                             ],
                           ),
