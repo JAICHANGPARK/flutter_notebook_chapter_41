@@ -206,25 +206,47 @@ class _TripHomePageState extends State<TripHomePage> {
                                   ),
                                   color: Colors.green[50],
                                 ),
-
                                 child: Center(
                                   child: Text.rich(
                                     TextSpan(
                                       children: [
                                         TextSpan(
                                           text: "3:20",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                          ),
                                         ),
                                         TextSpan(
                                           text: " AM",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                            color: Colors.grey,
+                                          ),
                                         ),
                                         TextSpan(
                                           text: " - ",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                            color: Colors.grey,
+                                          ),
                                         ),
                                         TextSpan(
                                           text: "7:50",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                          ),
                                         ),
                                         TextSpan(
                                           text: " AM",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                            color: Colors.grey,
+                                          ),
                                         ),
                                       ],
                                     ),
