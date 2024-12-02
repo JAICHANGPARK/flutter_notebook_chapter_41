@@ -190,11 +190,18 @@ class _TripHomePageState extends State<TripHomePage> {
                             top: 24,
                             bottom: 12,
                           ),
-                          child: Placeholder(),
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container();
+                            },
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Column(  crossAxisAlignment: CrossAxisAlignment.start,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "Boarding on plane",
@@ -205,12 +212,10 @@ class _TripHomePageState extends State<TripHomePage> {
                             ],
                           ),
                         ),
-                    
                         Container(
                           height: 600,
                           child: Placeholder(),
                         )
-                    
                       ],
                     ),
                   ),
