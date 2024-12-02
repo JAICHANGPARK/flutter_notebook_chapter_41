@@ -288,6 +288,7 @@ class _TripHomePageState extends State<TripHomePage> {
                             ],
                           ),
                         ),
+                        Gap(12),
                         Container(
                           height: 600,
                           margin: EdgeInsets.symmetric(horizontal: 16),
@@ -307,7 +308,7 @@ class _TripHomePageState extends State<TripHomePage> {
                               Positioned(
                                 left: 0,
                                 right: 0,
-                                top: 32,
+                                top: 24,
                                 bottom: 0,
                                 child: Container(
                                   decoration: BoxDecoration(
