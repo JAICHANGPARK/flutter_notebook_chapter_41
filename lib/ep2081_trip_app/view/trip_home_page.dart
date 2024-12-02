@@ -202,25 +202,28 @@ class _TripHomePageState extends State<TripHomePage> {
                                   )),
                                   color: Colors.green[100],
                                 ),
-                                child: Text.rich(TextSpan(
-                                  children: [
-                                    TextSpan(
-                                      text: "3:20",
-                                    ),
-                                    TextSpan(
-                                      text: " AM",
-                                    ),
-                                    TextSpan(
-                                      text: " - ",
-                                    ),
-                                    TextSpan(
-                                      text: "7:50",
-                                    ),
-                                    TextSpan(
-                                      text: " AM",
-                                    ),
-                                  ],
-                                ),),
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: Center(
+                                  child: Text.rich(TextSpan(
+                                    children: [
+                                      TextSpan(
+                                        text: "3:20",
+                                      ),
+                                      TextSpan(
+                                        text: " AM",
+                                      ),
+                                      TextSpan(
+                                        text: " - ",
+                                      ),
+                                      TextSpan(
+                                        text: "7:50",
+                                      ),
+                                      TextSpan(
+                                        text: " AM",
+                                      ),
+                                    ],
+                                  ),),
+                                ),
                               );
                             },
                           ),
