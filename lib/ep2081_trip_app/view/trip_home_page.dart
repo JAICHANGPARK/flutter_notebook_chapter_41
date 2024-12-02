@@ -309,7 +309,7 @@ class _TripHomePageState extends State<TripHomePage> {
                   shape: StadiumBorder(),
                   color: Color.fromRGBO(73, 184, 114, 1),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                padding: EdgeInsets.symmetric(horizontal: 28, vertical: 12),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
