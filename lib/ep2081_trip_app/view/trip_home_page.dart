@@ -194,7 +194,15 @@ class _TripHomePageState extends State<TripHomePage> {
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             itemBuilder: (context, index) {
-                              return Container();
+                              return Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(
+                                      side: BorderSide(
+                                    color: Colors.green,
+                                  )),
+                                  color: Colors.green[100],
+                                ),
+                              );
                             },
                           ),
                         ),
