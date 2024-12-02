@@ -184,7 +184,7 @@ class _TripHomePageState extends State<TripHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          height: 52,
+                          height: 42,
                           margin: EdgeInsets.only(
                             left: 16,
                             top: 24,
@@ -195,6 +195,8 @@ class _TripHomePageState extends State<TripHomePage> {
                             itemCount: 10,
                             itemBuilder: (context, index) {
                               return Container(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                margin: EdgeInsets.only(right: 16),
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(
                                     side: BorderSide(
@@ -204,7 +206,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                   ),
                                   color: Colors.green[50],
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 16),
+
                                 child: Center(
                                   child: Text.rich(
                                     TextSpan(
