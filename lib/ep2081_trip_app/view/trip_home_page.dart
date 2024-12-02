@@ -200,7 +200,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(
                                     side: BorderSide(
-                                      color: index == 0 ? Colors.green : Colors.grey,
+                                      color: index == 0 ? Colors.green : Colors.grey[400]!,
                                       width: 2,
                                     ),
                                   ),
