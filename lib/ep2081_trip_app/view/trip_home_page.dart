@@ -334,7 +334,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                         ],
                                       ),
                                     ),
-                                    padding: EdgeInsets.all(24),
+                                    padding: EdgeInsets.all(32),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -364,11 +364,13 @@ class _TripHomePageState extends State<TripHomePage> {
                                             Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Text("DXB",
+                                                Text(
+                                                  "DXB",
                                                   style: TextStyle(
                                                     fontSize: 36,
                                                     fontWeight: FontWeight.bold,
-                                                  ),),
+                                                  ),
+                                                ),
                                                 Text("Dubai"),
                                               ],
                                             )
