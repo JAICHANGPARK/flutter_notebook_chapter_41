@@ -338,14 +338,28 @@ class _TripHomePageState extends State<TripHomePage> {
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("AB8888"),
-                                        Gap(24),
+                                        Text(
+                                          "AB8888",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                        Gap(16),
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
                                             Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [Text("ICN"), Text("Incheon")],
+                                              children: [
+                                                Text(
+                                                  "ICN",
+                                                  style: TextStyle(
+                                                    fontSize: 36,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                Text("Incheon"),
+                                              ],
                                             ),
                                             Column(
                                               children: [
