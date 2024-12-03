@@ -386,7 +386,12 @@ class _TripHomePageState extends State<TripHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Time"),
-                                                  Text("3:20 AM"),
+                                                  Text(
+                                                    "3:20 AM",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                             ),
@@ -395,7 +400,10 @@ class _TripHomePageState extends State<TripHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Gate"),
-                                                  Text("4"),
+                                                  Text("4",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),),
                                                 ],
                                               ),
                                             ),
@@ -404,7 +412,10 @@ class _TripHomePageState extends State<TripHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Terminal"),
-                                                  Text("2"),
+                                                  Text("2",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),),
                                                 ],
                                               ),
                                             )
@@ -418,7 +429,10 @@ class _TripHomePageState extends State<TripHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Time"),
-                                                  Text("3:20 AM"),
+                                                  Text("3:20 AM",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),),
                                                 ],
                                               ),
                                             ),
@@ -427,7 +441,10 @@ class _TripHomePageState extends State<TripHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Gate"),
-                                                  Text("4"),
+                                                  Text("4",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),),
                                                 ],
                                               ),
                                             ),
@@ -436,7 +453,10 @@ class _TripHomePageState extends State<TripHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Terminal"),
-                                                  Text("2"),
+                                                  Text("2",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),),
                                                 ],
                                               ),
                                             )
