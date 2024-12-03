@@ -360,15 +360,34 @@ class _TripHomePageState extends State<TripHomePage> {
                                           children: [
                                             Expanded(
                                               child: Column(
-                                                c
+                                                crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Time"),
                                                   Text("3:20 AM"),
                                                 ],
                                               ),
+                                            ),
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Gate"),
+                                                  Text("4"),
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Terminal"),
+                                                  Text("2"),
+                                                ],
+                                              ),
                                             )
                                           ],
-                                        )
+                                        ),
+                                        
                                       ],
                                     ),
                                   ),
