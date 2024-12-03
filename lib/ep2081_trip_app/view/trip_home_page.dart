@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:ticket_widget/ticket_widget.dart';
 
 class TripHomePage extends StatefulWidget {
   const TripHomePage({super.key});
@@ -302,6 +303,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.orangeAccent,
+                                    borderRadius: BorderRadius.circular(24),
                                     gradient: LinearGradient(
                                       colors: [
                                         Color.fromRGBO(243, 251, 250, 1),
@@ -316,9 +318,13 @@ class _TripHomePageState extends State<TripHomePage> {
                                 right: 0,
                                 top: 24,
                                 bottom: 0,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.red,
+                                child: TicketWidget(
+                                  height: double.infinity,
+                                  width: double.infinity,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                    ),
                                   ),
                                 ),
                               )
