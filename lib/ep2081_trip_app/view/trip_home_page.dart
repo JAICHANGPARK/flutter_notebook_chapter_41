@@ -302,6 +302,12 @@ class _TripHomePageState extends State<TripHomePage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.orangeAccent,
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        Color.fromRGBO(243, 251, 250, 1),
+                                        Color.fromRGBO(243, 251, 250, 1),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
