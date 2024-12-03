@@ -362,6 +362,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                               ],
                                             ),
                                             Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Text("DXB",
                                                   style: TextStyle(
