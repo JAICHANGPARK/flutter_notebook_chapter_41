@@ -431,7 +431,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                                   Text("Time"),
                                                   Text("3:20 AM",
                                                     style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight: FontWeight.bold,fontSize: 16,
                                                     ),),
                                                 ],
                                               ),
@@ -443,7 +443,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                                   Text("Gate"),
                                                   Text("4",
                                                     style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
+                                                      fontWeight: FontWeight.bold,fontSize: 16,
                                                     ),),
                                                 ],
                                               ),
@@ -456,6 +456,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                                   Text("2",
                                                     style: TextStyle(
                                                       fontWeight: FontWeight.bold,
+                                                      fontSize: 16,
                                                     ),),
                                                 ],
                                               ),
