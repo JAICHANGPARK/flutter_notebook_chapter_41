@@ -355,7 +355,9 @@ class _TripHomePageState extends State<TripHomePage> {
                                             )
                                           ],
                                         ),
-                                        Divider(),
+                                        Divider(
+                                          height: 42,
+                                        ),
                                         Row(
                                           children: [
                                             Expanded(
@@ -387,7 +389,38 @@ class _TripHomePageState extends State<TripHomePage> {
                                             )
                                           ],
                                         ),
-                                        
+                                        Gap(12),
+                                        Row(
+                                          children: [
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Time"),
+                                                  Text("3:20 AM"),
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Gate"),
+                                                  Text("4"),
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Terminal"),
+                                                  Text("2"),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ],
                                     ),
                                   ),
