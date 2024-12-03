@@ -328,7 +328,7 @@ class _TripHomePageState extends State<TripHomePage> {
                                         gradient: LinearGradient(
                                           colors: [
                                             Color.fromRGBO(231, 247, 246, 1),
-                                            Color.fromRGBO(231, 247, 246, 1),
+                                            Color.fromRGBO(240, 241, 230, 1),
                                           ],
                                         )),
                                   ),
