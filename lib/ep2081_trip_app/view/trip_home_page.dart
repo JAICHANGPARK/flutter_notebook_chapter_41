@@ -323,8 +323,11 @@ class _TripHomePageState extends State<TripHomePage> {
                                   width: double.infinity,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.red,
-                                    ),
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(24),
+                                        gradient: LinearGradient(
+                                          colors: [],
+                                        )),
                                   ),
                                 ),
                               )
