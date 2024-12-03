@@ -334,6 +334,31 @@ class _TripHomePageState extends State<TripHomePage> {
                                         ],
                                       ),
                                     ),
+                                    padding: EdgeInsets.all(24),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("AB8888"),
+                                        Row(
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text("ICN"),
+                                                Text("Incheon")
+                                              ],
+                                            ),
+                                            Column(
+                                              children: [
+                                                Text("DXB"),
+                                                Text("Dubai"),
+                                              ],
+                                            )
+                                          ],
+                                        )
+
+                                      ],
+                                    ),
                                   ),
                                 ),
                               )
