@@ -339,14 +339,13 @@ class _TripHomePageState extends State<TripHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("AB8888"),
+                                        Gap(24),
                                         Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
                                             Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Text("ICN"),
-                                                Text("Incheon")
-                                              ],
+                                              children: [Text("ICN"), Text("Incheon")],
                                             ),
                                             Column(
                                               children: [
@@ -355,8 +354,21 @@ class _TripHomePageState extends State<TripHomePage> {
                                               ],
                                             )
                                           ],
+                                        ),
+                                        Divider(),
+                                        Row(
+                                          children: [
+                                            Expanded(
+                                              child: Column(
+                                                c
+                                                children: [
+                                                  Text("Time"),
+                                                  Text("3:20 AM"),
+                                                ],
+                                              ),
+                                            )
+                                          ],
                                         )
-
                                       ],
                                     ),
                                   ),
