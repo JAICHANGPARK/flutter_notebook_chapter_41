@@ -326,7 +326,10 @@ class _TripHomePageState extends State<TripHomePage> {
                                         color: Colors.red,
                                         borderRadius: BorderRadius.circular(24),
                                         gradient: LinearGradient(
-                                          colors: [],
+                                          colors: [
+                                            Color.fromRGBO(231, 247, 246, 1),
+                                            Color.fromRGBO(231, 247, 246, 1),
+                                          ],
                                         )),
                                   ),
                                 ),
