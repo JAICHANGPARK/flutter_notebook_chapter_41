@@ -363,7 +363,11 @@ class _TripHomePageState extends State<TripHomePage> {
                                             ),
                                             Column(
                                               children: [
-                                                Text("DXB"),
+                                                Text("DXB",
+                                                  style: TextStyle(
+                                                    fontSize: 36,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),),
                                                 Text("Dubai"),
                                               ],
                                             )
