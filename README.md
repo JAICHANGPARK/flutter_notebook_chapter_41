@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_41
 
-## EP2081
+## EP2085
+
+- E-Commerce Mobile App
+- Nixtio
+- https://dribbble.com/shots/25251071-Trip-Planner-App
+
+<img src="https://cdn.dribbble.com/userupload/17758238/file/original-f844eb3f98822074ac11c945c9b8aaa7.png?resize=1905x1429&vertical=center"/>
+
+## EP2081-2084
 
 - Trip Planner App
 - Nixtio
