@@ -18,8 +18,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  SizedBox(
+                  Container(
                     height: 62,
+                    margin: EdgeInsets.all(16),
                     child: Row(
                       children: [
                         Expanded(
@@ -29,6 +30,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             ),
                           ),
                         ),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                        )
                       ],
                     ),
                   )
