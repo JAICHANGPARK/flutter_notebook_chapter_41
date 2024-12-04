@@ -19,7 +19,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 62,
+                    height: 52,
                     margin: EdgeInsets.all(16),
                     child: Row(
                       children: [
@@ -31,6 +31,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           ),
                         ),
                         CircleAvatar(
+                          radius: 26,
                           backgroundColor: Colors.white,
                         )
                       ],
