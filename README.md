@@ -3,10 +3,10 @@
 ## EP2085
 
 - E-Commerce Mobile App
-- Nixtio
-- https://dribbble.com/shots/25251071-Trip-Planner-App
+- Abu Hossain
+- https://dribbble.com/shots/25276479-E-Commerce-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/17758238/file/original-f844eb3f98822074ac11c945c9b8aaa7.png?resize=1905x1429&vertical=center"/>
+<img src="https://cdn.dribbble.com/userupload/17835710/file/original-ae7a2dcacae2b9f5c38d207749fb1680.png?resize=1600x1200&vertical=center"/>
 
 ## EP2081-2084
 
