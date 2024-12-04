@@ -43,7 +43,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     height: 180,
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     child: Placeholder(),
-                  )
+                  ),
+                  Row(
+                    children: [
+                      Text("Select by Category"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text('See all'),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
