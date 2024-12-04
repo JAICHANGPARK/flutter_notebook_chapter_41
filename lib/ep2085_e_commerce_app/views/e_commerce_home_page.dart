@@ -11,6 +11,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange[50],
       body: Stack(
         children: [
           Positioned.fill(
