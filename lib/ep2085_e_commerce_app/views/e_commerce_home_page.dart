@@ -38,6 +38,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                         )
                       ],
                     ),
+                  ),
+                  Container(
+                    height: 180,
+                    margin: EdgeInsets.symmetric(horizontal: 16),
+                    child: Placeholder(),
                   )
                 ],
               ),
