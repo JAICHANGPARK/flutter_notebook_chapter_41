@@ -44,15 +44,23 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     child: Placeholder(),
                   ),
-                  Row(
-                    children: [
-                      Text("Select by Category"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text('See all'),
-                      ),
-                    ],
+                  Gap(16),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Text("Select by Category"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text('See all'),
+                        ),
+                      ],
+                    ),
                   ),
+                  SizedBox(
+                    height: 62,
+                    child: Placeholder(),
+                  )
                 ],
               ),
             ),
