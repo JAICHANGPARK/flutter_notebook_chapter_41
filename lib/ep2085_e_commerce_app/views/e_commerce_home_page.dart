@@ -66,7 +66,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
                       children: [
-                        Text("Select by Category"),
+                        Text("Recommended Styles"),
                         TextButton(
                           onPressed: () {},
                           child: Text('See all'),
@@ -74,6 +74,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ],
                     ),
                   ),
+                  Expanded(
+                      child: Container(
+                    margin: EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
+                    child: Placeholder(),
+                  ))
                 ],
               ),
             ),
