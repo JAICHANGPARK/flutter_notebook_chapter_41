@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ECommerceHomePage extends StatefulWidget {
   const ECommerceHomePage({super.key});
@@ -30,6 +31,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             ),
                           ),
                         ),
+                        Gap(16),
                         CircleAvatar(
                           radius: 26,
                           backgroundColor: Colors.white,
