@@ -74,18 +74,18 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(12),
+                              borderRadius: BorderRadius.circular(16),
                             ),
                           ),
                         ),
                         Positioned.fill(
-                          bottom: 24,
+                          bottom: 16,
                           left: 20,
                           right: 20,
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.orange[10],
-                              borderRadius: BorderRadius.circular(12),
+                              color: Colors.blue[50],
+                              borderRadius: BorderRadius.circular(16),
                             ),
                           ),
                         ),
@@ -94,7 +94,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.orange,
-                              borderRadius: BorderRadius.circular(12),
+                              borderRadius: BorderRadius.circular(16),
                             ),
                           ),
                         ),
