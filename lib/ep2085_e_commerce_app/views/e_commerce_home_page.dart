@@ -157,11 +157,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Recommended Styles",
+                        Text(
+                          "Recommended Styles",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
-                          ),),
+                          ),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: Text('See all'),
@@ -174,7 +176,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     margin: EdgeInsets.symmetric(
                       horizontal: 16,
                     ),
-                    child: Placeholder(),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: ListView(),
+                        ),
+                        Expanded(
+                          child: ListView(),
+                        ),
+                      ],
+                    ),
                   ))
                 ],
               ),
