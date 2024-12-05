@@ -68,6 +68,17 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     child: Stack(
                       children: [
                         Positioned.fill(
+                          bottom: 24,
+                          left: 20,
+                          right: 20,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.orange[50],
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        ),
+                        Positioned.fill(
                           bottom: 32,
                           child: Container(
                             decoration: BoxDecoration(
@@ -75,7 +86,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                        )
+                        ),
+
                       ],
                     ),
                   ),
