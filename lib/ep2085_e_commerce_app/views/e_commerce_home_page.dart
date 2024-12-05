@@ -31,7 +31,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               borderRadius: BorderRadius.circular(32),
                             ),
                             child: TextField(
-                              decoration: InputDecoration()
+                              decoration: InputDecoration(
+                                hintText: "Search here...",
+                              ),
                             ),
                           ),
                         ),
