@@ -151,11 +151,17 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           );
                         },
                       )),
+                  Gap(12),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Recommended Styles"),
+                        Text("Recommended Styles",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),),
                         TextButton(
                           onPressed: () {},
                           child: Text('See all'),
