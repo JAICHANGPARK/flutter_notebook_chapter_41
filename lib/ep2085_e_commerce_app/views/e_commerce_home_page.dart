@@ -30,11 +30,24 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(32),
                             ),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                hintText: "Search here...",
-                                border: InputBorder.none,
-                              ),
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      hintText: "Search here...",
+                                      border: InputBorder.none,
+                                    ),
+                                  ),
+                                ),
+                                CircleAvatar(
+                                  backgroundColor: Colors.orange,
+                                  child: Icon(
+                                    Icons.search,
+                                  ),
+                                )
+                              ],
                             ),
                           ),
                         ),
