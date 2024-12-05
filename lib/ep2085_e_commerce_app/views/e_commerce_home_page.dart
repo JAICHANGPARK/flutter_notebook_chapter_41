@@ -138,8 +138,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   radius: 24,
                                   backgroundColor: Colors.white,
                                 ),
+                                Gap(3),
                                 Text(
                                   "Blazers",
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                  ),
                                 )
                               ],
                             ),
