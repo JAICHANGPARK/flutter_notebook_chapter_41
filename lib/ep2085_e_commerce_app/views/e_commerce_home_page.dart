@@ -28,6 +28,10 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            child: TextField(
+                              decoration: InputDecoration()
                             ),
                           ),
                         ),
