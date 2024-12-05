@@ -216,12 +216,21 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                     ),
                                   ),
                                 ),
+                              ),
+                              ...List.generate(
+                                4,
+                                    (i) => Placeholder(),
                               )
                             ],
                           ),
                         ),
                         Expanded(
-                          child: ListView(),
+                          child: ListView(
+                            children: List.generate(
+                              4,
+                              (i) => Placeholder(),
+                            ),
+                          ),
                         ),
                       ],
                     ),
