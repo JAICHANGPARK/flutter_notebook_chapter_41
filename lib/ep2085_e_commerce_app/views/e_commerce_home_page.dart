@@ -98,7 +98,6 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             ),
                           ),
                         ),
-
                       ],
                     ),
                   ),
@@ -108,7 +107,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Select by Category"),
+                        Text(
+                          "Select by Category",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: Text('See all'),
@@ -117,10 +122,26 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     ),
                   ),
                   Container(
-                    height: 62,
-                    margin: EdgeInsets.only(left: 16),
-                    child: Placeholder(),
-                  ),
+                      height: 62,
+                      margin: EdgeInsets.only(left: 16),
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return Column(
+                            children: [
+                              Expanded(
+                                child: CircleAvatar(
+                                  backgroundColor: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "Blazers",
+                              )
+                            ],
+                          );
+                        },
+                      )),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
