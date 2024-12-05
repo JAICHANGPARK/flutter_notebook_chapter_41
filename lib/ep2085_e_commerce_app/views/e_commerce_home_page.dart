@@ -181,7 +181,35 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                         Expanded(
                           child: ListView(
                             children: [
+                              Center(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  padding: EdgeInsets.only(left: 12, right: 6),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Text(
+                                        "Filter",
+                                        style: TextStyle(
+                                          color: Colors.white,
 
+                                        ),
+                                      ),
+                                      Gap(12),
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(
+                                          Icons.tune,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
                             ],
                           ),
                         ),
