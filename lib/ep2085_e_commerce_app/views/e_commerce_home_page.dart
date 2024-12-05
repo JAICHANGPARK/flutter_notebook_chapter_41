@@ -65,7 +65,19 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   Container(
                     height: 180,
                     margin: EdgeInsets.symmetric(horizontal: 16),
-                    child: Placeholder(),
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          bottom: 32,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Gap(16),
                   Padding(
