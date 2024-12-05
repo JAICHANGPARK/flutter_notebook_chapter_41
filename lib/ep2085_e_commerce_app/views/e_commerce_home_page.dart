@@ -179,7 +179,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     child: Row(
                       children: [
                         Expanded(
-                          child: ListView(),
+                          child: ListView(
+                            children: [
+
+                            ],
+                          ),
                         ),
                         Expanded(
                           child: ListView(),
