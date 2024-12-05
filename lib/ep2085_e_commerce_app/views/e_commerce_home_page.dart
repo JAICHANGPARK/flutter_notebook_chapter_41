@@ -63,7 +63,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     ),
                   ),
                   Container(
-                    height: 180,
+                    height: 160,
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     child: Stack(
                       children: [
@@ -90,7 +90,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           ),
                         ),
                         Positioned.fill(
-                          bottom: 16,
+                          bottom: 20,
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.orange,
@@ -106,6 +106,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Select by Category"),
                         TextButton(
