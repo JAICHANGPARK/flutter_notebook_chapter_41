@@ -130,10 +130,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                         itemBuilder: (context, index) {
                           return Column(
                             children: [
-                              Expanded(
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.white,
-                                ),
+                              CircleAvatar(
+                                radius: 24,
+                                backgroundColor: Colors.white,
                               ),
                               Text(
                                 "Blazers",
