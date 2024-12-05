@@ -79,7 +79,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           ),
                         ),
                         Positioned.fill(
-                          bottom: 16,
+                          bottom: 8,
                           left: 20,
                           right: 20,
                           child: Container(
@@ -90,7 +90,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           ),
                         ),
                         Positioned.fill(
-                          bottom: 32,
+                          bottom: 16,
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.orange,
