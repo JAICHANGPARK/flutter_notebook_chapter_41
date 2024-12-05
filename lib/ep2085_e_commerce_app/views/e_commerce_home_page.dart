@@ -122,22 +122,27 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     ),
                   ),
                   Container(
-                      height: 62,
+                      height: 72,
                       margin: EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
                         itemBuilder: (context, index) {
-                          return Column(
-                            children: [
-                              CircleAvatar(
-                                radius: 24,
-                                backgroundColor: Colors.white,
-                              ),
-                              Text(
-                                "Blazers",
-                              )
-                            ],
+                          return Padding(
+                            padding: const EdgeInsets.only(
+                              right: 20,
+                            ),
+                            child: Column(
+                              children: [
+                                CircleAvatar(
+                                  radius: 24,
+                                  backgroundColor: Colors.white,
+                                ),
+                                Text(
+                                  "Blazers",
+                                )
+                              ],
+                            ),
                           );
                         },
                       )),
