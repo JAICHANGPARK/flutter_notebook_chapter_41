@@ -121,6 +121,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ],
                     ),
                   ),
+                  Gap(12),
                   Container(
                       height: 72,
                       margin: EdgeInsets.only(left: 16),
