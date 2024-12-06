@@ -275,8 +275,8 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                         borderRadius: BorderRadius.circular(12),
                                         child: BackdropFilter(
                                           filter: ImageFilter.blur(
-                                            sigmaX: 10,
-                                            sigmaY: 10,
+                                            sigmaX: 4,
+                                            sigmaY: 4,
                                           ),
                                           child: Container(
                                             width: double.infinity,
