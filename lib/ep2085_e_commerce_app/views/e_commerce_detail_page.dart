@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ECommerceDetailPage extends StatefulWidget {
   const ECommerceDetailPage({super.key});
@@ -16,6 +17,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
+            flex: 10,
             child: SafeArea(
               child: Stack(
                 children: [
@@ -51,17 +53,24 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
-                                    ),
-                                  )),
+                                color: Colors.brown[50],
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
+                                  ),
+                                  fit: BoxFit.fitHeight,
+                                ),
+                              ),
                             ),
                           ),
+                          Gap(12),
                           SizedBox(
-                            height: 42,
-                            child: Placeholder(),
+                            height: 62,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {},
+                            ),
                           ),
                         ],
                       ),
@@ -72,6 +81,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
             ),
           ),
           Expanded(
+            flex: 9,
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.white,
