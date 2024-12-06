@@ -219,7 +219,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               ),
                               ...List.generate(
                                 4,
-                                    (i) => Placeholder(),
+                                (i) => Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                ),
                               )
                             ],
                           ),
