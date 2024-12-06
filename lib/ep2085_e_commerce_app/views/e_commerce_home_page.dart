@@ -224,6 +224,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   margin: EdgeInsets.only(
                                     bottom: 16,
                                   ),
+                                  padding: EdgeInsets.all(12),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
                                     color: Colors.indigoAccent[100],
