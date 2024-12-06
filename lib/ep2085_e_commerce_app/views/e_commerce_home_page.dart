@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -261,10 +263,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           )
                                         ],
                                       ),
+                                      Spacer(),
+                                      
 
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.black.withOpacity(.1)
+                                      BackdropFilter(
+                                        filter: ImageFilter.blur(),
+                                        child: Container(
+
+                                          decoration: BoxDecoration(
+                                            color: Colors.black.withOpacity(.1)
+                                          ),
                                         ),
                                       )
                                     ],
