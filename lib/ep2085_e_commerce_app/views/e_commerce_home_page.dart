@@ -278,6 +278,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             decoration: BoxDecoration(
                                               color: Colors.black.withOpacity(.1),
                                             ),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       )
