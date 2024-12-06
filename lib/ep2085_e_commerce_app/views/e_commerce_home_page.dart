@@ -221,6 +221,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               ...List.generate(
                                 4,
                                 (i) => Container(
+                                  margin: EdgeInsets.only(
+                                    bottom: 16,
+                                  ),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
                                     color: Colors.indigoAccent[100],
