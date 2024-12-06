@@ -316,11 +316,96 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                         Gap(12),
                         Expanded(
                           child: ListView(
-                            children: List.generate(
-                              4,
-                              (i) => Placeholder(),
+                              children: List.generate(
+                            4,
+                            (i) => Container(
+                              height: 220,
+                              margin: EdgeInsets.only(
+                                bottom: 16,
+                              ),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Colors.indigoAccent[100],
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
+                                      ),
+                                      fit: BoxFit.cover)),
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.all(12),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(.1),
+                                          ),
+                                          child: Row(
+                                            children: [
+                                              Icon(
+                                                Icons.star,
+                                                size: 18,
+                                                color: Colors.orangeAccent,
+                                              ),
+                                              Text("4.6"),
+                                            ],
+                                          ),
+                                        ),
+                                        CircleAvatar(
+                                          radius: 12,
+                                          backgroundColor: Colors.white.withOpacity(.1),
+                                          foregroundColor: Colors.black,
+                                          child: Icon(
+                                            Icons.favorite_outline,
+                                            size: 15,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(12),
+                                    child: BackdropFilter(
+                                      filter: ImageFilter.blur(
+                                        sigmaX: 4,
+                                        sigmaY: 4,
+                                      ),
+                                      child: Container(
+                                        width: double.infinity,
+                                        decoration: BoxDecoration(
+                                          color: Colors.black.withOpacity(.2),
+                                        ),
+                                        padding: EdgeInsets.all(16),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "asd Rose",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 16,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$750.00",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
-                          ),
+                          )),
                         ),
                       ],
                     ),
