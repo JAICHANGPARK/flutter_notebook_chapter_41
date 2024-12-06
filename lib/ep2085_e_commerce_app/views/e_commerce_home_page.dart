@@ -247,6 +247,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                 Text("4.6"),
                                               ],
                                             ),
+                                          ),
+                                          CircleAvatar(
+                                            child: Icon(
+                                              Icons.favorite_outline,
+                                            ),
                                           )
                                         ],
                                       )
@@ -257,6 +262,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             ],
                           ),
                         ),
+                        Gap(12),
                         Expanded(
                           child: ListView(
                             children: List.generate(
