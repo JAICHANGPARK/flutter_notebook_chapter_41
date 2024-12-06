@@ -53,15 +53,16 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.brown[50],
                                 image: DecorationImage(
                                   image: NetworkImage(
+
                                     "https://cdn.pixabay.com/photo/2013/07/12/15/53/t-shirt-150525_1280.png",
                                   ),
-                                  scale: .2,
-                                  // fit: BoxFit.fitHeight,
+                                  
                                 ),
+                                
                               ),
+
                             ),
                           ),
                           Gap(12),
