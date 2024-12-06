@@ -249,8 +249,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             ),
                                           ),
                                           CircleAvatar(
+                                            radius: 12,
+                                            backgroundColor: Colors.white.withOpacity(.1),
+                                            foregroundColor: Colors.black,
                                             child: Icon(
                                               Icons.favorite_outline,
+                                              size: 15,
                                             ),
                                           )
                                         ],
