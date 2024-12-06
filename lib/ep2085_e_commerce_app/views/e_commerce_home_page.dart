@@ -221,6 +221,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               ...List.generate(
                                 4,
                                 (i) => Container(
+                                  height: 240,
                                   margin: EdgeInsets.only(
                                     bottom: 16,
                                   ),
@@ -260,7 +261,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           )
                                         ],
                                       ),
-                                      Spacer(),
+
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.black.withOpacity(.1)
