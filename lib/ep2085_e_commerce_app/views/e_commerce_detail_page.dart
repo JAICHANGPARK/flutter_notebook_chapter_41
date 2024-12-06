@@ -16,16 +16,38 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-              child: Column(
-            children: [],
-          )),
+            child: Stack(
+              children: [
+                Positioned(
+                    child: Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Icon(
+                        Icons.arrow_back_ios_new,
+                      ),
+                    ),
+                    CircleAvatar( backgroundColor: Colors.white,
+                      child: Icon(
+                        Icons.arrow_back_ios_new,
+                      ),)
+                  ],
+                ))
+              ],
+            ),
+          ),
           Expanded(
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(16),
-                )
+                  topLeft: Radius.circular(16),
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [],
               ),
             ),
           )
