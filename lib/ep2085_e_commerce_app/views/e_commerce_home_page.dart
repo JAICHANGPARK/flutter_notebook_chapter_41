@@ -228,9 +228,14 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                     bottom: 16,
                                   ),
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(12),
-                                    color: Colors.indigoAccent[100],
-                                  ),
+                                      borderRadius: BorderRadius.circular(12),
+                                      color: Colors.indigoAccent[100],
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
+                                        ),
+                                        fit: BoxFit.cover
+                                      )),
                                   child: Column(
                                     children: [
                                       Padding(
@@ -276,14 +281,14 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
-                                              color: Colors.black.withOpacity(.1),
+                                              color: Colors.black.withOpacity(.2),
                                             ),
                                             padding: EdgeInsets.all(16),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Text(
-                                                  "Martine Rose",
+                                                  "asd Rose",
                                                   style: TextStyle(
                                                     color: Colors.white,
                                                   ),
@@ -292,6 +297,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   "\$750.00",
                                                   style: TextStyle(
                                                     color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
                                                   ),
                                                 )
                                               ],
