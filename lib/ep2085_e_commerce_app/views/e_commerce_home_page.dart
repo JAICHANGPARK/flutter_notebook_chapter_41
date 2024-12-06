@@ -232,6 +232,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   child: Column(
                                     children: [
                                       Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Container(
                                             decoration: BoxDecoration(
