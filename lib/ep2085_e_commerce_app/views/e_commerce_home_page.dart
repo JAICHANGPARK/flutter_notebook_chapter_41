@@ -282,10 +282,17 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Text("Martine Rose"),
+                                                Text(
+                                                  "Martine Rose",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
                                                 Text(
                                                   "\$750.00",
-                                                  style: TextStyle(),
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
                                                 )
                                               ],
                                             ),
