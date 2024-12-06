@@ -44,14 +44,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ),
                   ),
                   Positioned.fill(
+                    bottom: 16,
                     child: SafeArea(
                       child: Column(
                         children: [
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.white
-                              ),
+                                  color: Colors.white,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
+                                    ),
+                                  )),
                             ),
                           ),
                           SizedBox(
@@ -80,9 +85,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
-                    children: [
-                      Text("Silk Shirt")
-                    ],
+                    children: [Text("Silk Shirt")],
                   )
                 ],
               ),
