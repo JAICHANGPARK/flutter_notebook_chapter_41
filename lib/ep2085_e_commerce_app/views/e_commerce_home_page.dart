@@ -233,44 +233,48 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   ),
                                   child: Column(
                                     children: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.white.withOpacity(.1),
+                                      Padding(
+                                        padding: EdgeInsets.all(12),
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white.withOpacity(.1),
+                                              ),
+                                              child: Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 18,
+                                                    color: Colors.orangeAccent,
+                                                  ),
+                                                  Text("4.6"),
+                                                ],
+                                              ),
                                             ),
-                                            child: Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  size: 18,
-                                                  color: Colors.orangeAccent,
-                                                ),
-                                                Text("4.6"),
-                                              ],
-                                            ),
-                                          ),
-                                          CircleAvatar(
-                                            radius: 12,
-                                            backgroundColor: Colors.white.withOpacity(.1),
-                                            foregroundColor: Colors.black,
-                                            child: Icon(
-                                              Icons.favorite_outline,
-                                              size: 15,
-                                            ),
-                                          )
-                                        ],
+                                            CircleAvatar(
+                                              radius: 12,
+                                              backgroundColor: Colors.white.withOpacity(.1),
+                                              foregroundColor: Colors.black,
+                                              child: Icon(
+                                                Icons.favorite_outline,
+                                                size: 15,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                       Spacer(),
                                       ClipRRect(
+                                        borderRadius: BorderRadius.circular(12),
                                         child: BackdropFilter(
                                           filter: ImageFilter.blur(
                                             sigmaX: 10,
                                             sigmaY: 10,
                                           ),
                                           child: Container(
-                                            height: 42,
+                                           
                                             decoration: BoxDecoration(
                                               color: Colors.black.withOpacity(.1),
                                             ),
