@@ -274,14 +274,18 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             sigmaY: 10,
                                           ),
                                           child: Container(
-                                           
+                                            width: double.infinity,
                                             decoration: BoxDecoration(
                                               color: Colors.black.withOpacity(.1),
                                             ),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                
+                                                Text("Martine Rose"),
+                                                Text(
+                                                  "\$750.00",
+                                                  style: TextStyle(),
+                                                )
                                               ],
                                             ),
                                           ),
