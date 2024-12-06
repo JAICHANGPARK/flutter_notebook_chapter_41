@@ -56,9 +56,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                 color: Colors.brown[50],
                                 image: DecorationImage(
                                   image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
+                                    "https://cdn.pixabay.com/photo/2013/07/12/15/53/t-shirt-150525_1280.png",
                                   ),
-                                  fit: BoxFit.fitHeight,
+                                  scale: .2,
+                                  // fit: BoxFit.fitHeight,
                                 ),
                               ),
                             ),
@@ -69,7 +70,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
-                              itemBuilder: (context, index) {},
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  height: 62,
+                                  width: 62,
+                                  margin: EdgeInsets.only(
+                                    right: 16,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                  ),
+                                );
+                              },
                             ),
                           ),
                         ],
