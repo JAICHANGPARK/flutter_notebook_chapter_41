@@ -259,6 +259,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                             ),
                                           )
                                         ],
+                                      ),
+                                      Spacer(),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.black.withOpacity(.1)
+                                        ),
                                       )
                                     ],
                                   ),
