@@ -16,24 +16,32 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            child: Stack(
-              children: [
-                Positioned(
-                    child: Row(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(
-                        Icons.arrow_back_ios_new,
-                      ),
-                    ),
-                    CircleAvatar( backgroundColor: Colors.white,
-                      child: Icon(
-                        Icons.arrow_back_ios_new,
-                      ),)
-                  ],
-                ))
-              ],
+            child: SafeArea(
+              child: Stack(
+                children: [
+                  Positioned(
+                      top: 0,
+                      left: 16,
+                      right: 16,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: Colors.white,
+                            child: Icon(
+                              Icons.arrow_back_ios_new,
+                            ),
+                          ),
+                          CircleAvatar(
+                            backgroundColor: Colors.white,
+                            child: Icon(
+                              Icons.arrow_back_ios_new,
+                            ),
+                          )
+                        ],
+                      ))
+                ],
+              ),
             ),
           ),
           Expanded(
