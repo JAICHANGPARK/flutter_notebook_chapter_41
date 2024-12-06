@@ -217,6 +217,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   ),
                                 ),
                               ),
+                              Gap(16),
                               ...List.generate(
                                 4,
                                 (i) => Container(
