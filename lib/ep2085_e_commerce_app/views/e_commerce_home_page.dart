@@ -231,11 +231,10 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                       borderRadius: BorderRadius.circular(12),
                                       color: Colors.indigoAccent[100],
                                       image: DecorationImage(
-                                        image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
-                                        ),
-                                        fit: BoxFit.cover
-                                      )),
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2015/10/08/10/03/clothing-977417_1280.jpg",
+                                          ),
+                                          fit: BoxFit.cover)),
                                   child: Column(
                                     children: [
                                       Padding(
@@ -291,6 +290,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   "asd Rose",
                                                   style: TextStyle(
                                                     color: Colors.white,
+                                                    fontSize: 16,
                                                   ),
                                                 ),
                                                 Text(
@@ -298,6 +298,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                                   style: TextStyle(
                                                     color: Colors.white,
                                                     fontWeight: FontWeight.bold,
+                                                    fontSize: 18,
                                                   ),
                                                 )
                                               ],
