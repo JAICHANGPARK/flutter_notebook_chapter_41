@@ -227,7 +227,6 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                   margin: EdgeInsets.only(
                                     bottom: 16,
                                   ),
-                                  padding: EdgeInsets.all(12),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
                                     color: Colors.indigoAccent[100],
@@ -264,14 +263,17 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                         ],
                                       ),
                                       Spacer(),
-                                      
-
-                                      BackdropFilter(
-                                        filter: ImageFilter.blur(),
-                                        child: Container(
-
-                                          decoration: BoxDecoration(
-                                            color: Colors.black.withOpacity(.1)
+                                      ClipRRect(
+                                        child: BackdropFilter(
+                                          filter: ImageFilter.blur(
+                                            sigmaX: 10,
+                                            sigmaY: 10,
+                                          ),
+                                          child: Container(
+                                            height: 42,
+                                            decoration: BoxDecoration(
+                                              color: Colors.black.withOpacity(.1),
+                                            ),
                                           ),
                                         ),
                                       )
