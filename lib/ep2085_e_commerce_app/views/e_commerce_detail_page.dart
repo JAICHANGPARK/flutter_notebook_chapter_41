@@ -20,28 +20,48 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      top: 24,
-                      left: 16,
-                      right: 16,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    top: 24,
+                    left: 16,
+                    right: 16,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.white,
+                          child: Icon(
+                            Icons.arrow_back_ios_new,
+                          ),
+                        ),
+                        CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.white,
+                          child: Icon(
+                            Icons.favorite_outline,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Positioned.fill(
+                    child: SafeArea(
+                      child: Column(
                         children: [
-                          CircleAvatar(
-                            radius: 24,
-                            backgroundColor: Colors.white,
-                            child: Icon(
-                              Icons.arrow_back_ios_new,
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white
+                              ),
                             ),
                           ),
-                          CircleAvatar(
-                            radius: 24,
-                            backgroundColor: Colors.white,
-                            child: Icon(
-                              Icons.favorite_outline,
-                            ),
-                          )
+                          SizedBox(
+                            height: 42,
+                            child: Placeholder(),
+                          ),
                         ],
-                      ))
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
@@ -55,9 +75,16 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   topLeft: Radius.circular(16),
                 ),
               ),
+              padding: EdgeInsets.all(24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Text("Silk Shirt")
+                    ],
+                  )
+                ],
               ),
             ),
           )
