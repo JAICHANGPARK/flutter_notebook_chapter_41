@@ -222,6 +222,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                 (i) => Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
+                                    color: Colors.indigoAccent[100],
                                   ),
                                   child: Column(
                                     children: [
@@ -230,6 +231,16 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                                           Container(
                                             decoration: BoxDecoration(
                                               color: Colors.white.withOpacity(.1),
+                                            ),
+                                            child: Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 18,
+                                                  color: Colors.orangeAccent,
+                                                ),
+                                                Text("4.6"),
+                                              ],
                                             ),
                                           )
                                         ],
