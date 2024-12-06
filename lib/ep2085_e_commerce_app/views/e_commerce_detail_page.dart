@@ -20,22 +20,24 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      top: 0,
+                      top: 24,
                       left: 16,
                       right: 16,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CircleAvatar(
+                            radius: 24,
                             backgroundColor: Colors.white,
                             child: Icon(
                               Icons.arrow_back_ios_new,
                             ),
                           ),
                           CircleAvatar(
+                            radius: 24,
                             backgroundColor: Colors.white,
                             child: Icon(
-                              Icons.arrow_back_ios_new,
+                              Icons.favorite_outline,
                             ),
                           )
                         ],
