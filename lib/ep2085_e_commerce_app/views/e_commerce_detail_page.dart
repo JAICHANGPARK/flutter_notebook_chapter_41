@@ -176,13 +176,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                       Spacer(),
                       Container(
-                        height: 42,
-                        width: 42,
+                        height: 36,
+                        width: 36,
                         decoration: BoxDecoration(
-                          color: Colors.brown[100],
                           border: Border.all(
                             color: Colors.brown,
                           ),
+                          shape: BoxShape.circle,
+                        ),
+                        padding: EdgeInsets.all(3),
+                        child: CircleAvatar(
+                          backgroundColor: Colors.brown[50],
                         ),
                       )
                     ],
