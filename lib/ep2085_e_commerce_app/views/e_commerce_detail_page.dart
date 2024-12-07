@@ -119,11 +119,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         ),
                       ),
                       Container(
+                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                         decoration: BoxDecoration(
                           color: Colors.orange[50],
                           border: Border.all(
                             color: Colors.orange,
                           ),
+                          borderRadius: BorderRadius.circular(42),
                         ),
                         child: Row(
                           children: [
@@ -135,8 +137,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   color: Colors.orange,
                                 ),
                               ),
-                              ),
-                              padding: EdgeInsets.all(6),
+                              padding: EdgeInsets.all(4),
                               child: Icon(
                                 Icons.remove,
                               ),
