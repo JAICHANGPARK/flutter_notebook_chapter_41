@@ -165,6 +165,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ],
                   ),
+                  Gap(16),
                   Row(
                     children: [
                       Text("From:"),
@@ -184,13 +185,47 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           ),
                           shape: BoxShape.circle,
                         ),
-                        padding: EdgeInsets.all(3),
+                        padding: EdgeInsets.all(2),
                         child: CircleAvatar(
-                          backgroundColor: Colors.brown[50],
+                          backgroundColor: Colors.brown[300],
                         ),
-                      )
+                      ),
+                      Container(
+                        height: 36,
+                        width: 36,
+                        decoration: BoxDecoration(
+                          // border: Border.all(
+                          //   color: Colors.brown,
+                          // ),
+                          shape: BoxShape.circle,
+                          color: Colors.teal,
+                        ),
+                      ),
+                      Container(
+                        height: 36,
+                        width: 36,
+                        decoration: BoxDecoration(
+                          // border: Border.all(
+                          //   color: Colors.brown,
+                          // ),
+                          shape: BoxShape.circle,
+                          color: Colors.teal,
+                        ),
+                      ),
+                      Container(
+                        height: 36,
+                        width: 36,
+                        decoration: BoxDecoration(
+                          // border: Border.all(
+                          //   color: Colors.brown,
+                          // ),
+                          shape: BoxShape.circle,
+                          color: Colors.teal,
+                        ),
+                      ),
                     ],
-                  )
+                  ),
+                  Gap(24),
                 ],
               ),
             ),
