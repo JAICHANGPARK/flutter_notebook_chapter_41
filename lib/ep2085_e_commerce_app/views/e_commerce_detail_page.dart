@@ -142,8 +142,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                 Icons.remove,
                               ),
                             ),
+                            Gap(8),
                             Text("01"),
+                            Gap(8),
                             Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.orange,
+                                ),
+                              ),
                               child: Icon(
                                 Icons.add,
                               ),
