@@ -280,7 +280,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: Text("M"),
                           ),
                         ),
-                      ),Gap(8),
+                      ),
+                      Gap(8),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(vertical: 6),
@@ -295,7 +296,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: Text("L"),
                           ),
                         ),
-                      ),Gap(8),
+                      ),
+                      Gap(8),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(vertical: 6),
@@ -310,7 +312,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: Text("XL"),
                           ),
                         ),
-                      ),Gap(8),
+                      ),
+                      Gap(8),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(vertical: 6),
@@ -329,7 +332,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ],
                   ),
                   Text("Description"),
-                  Text("")
+                  Text(
+                      "Description Description Description Description Description Description Description Description "),
+                  
+                  Row(
+                    children: [
+                      widget(child: Container())
+                    ],
+                  )
                 ],
               ),
             ),
