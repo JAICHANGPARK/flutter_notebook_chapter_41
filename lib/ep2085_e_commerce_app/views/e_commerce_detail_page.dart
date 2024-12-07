@@ -265,6 +265,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           ),
                         ),
                       ),
+                      Gap(8),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(vertical: 6),
@@ -279,7 +280,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             child: Text("M"),
                           ),
                         ),
-                      ),
+                      ),Gap(8),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(vertical: 6),
@@ -291,10 +292,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             borderRadius: BorderRadius.circular(24),
                           ),
                           child: Center(
-                            child: Text("S"),
+                            child: Text("L"),
                           ),
                         ),
-                      ),
+                      ),Gap(8),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(vertical: 6),
@@ -306,10 +307,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             borderRadius: BorderRadius.circular(24),
                           ),
                           child: Center(
-                            child: Text("S"),
+                            child: Text("XL"),
                           ),
                         ),
-                      ),
+                      ),Gap(8),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(vertical: 6),
@@ -321,12 +322,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             borderRadius: BorderRadius.circular(24),
                           ),
                           child: Center(
-                            child: Text("S"),
+                            child: Text("XXL"),
                           ),
                         ),
                       ),
                     ],
-                  )
+                  ),
+                  Text("Description"),
+                  Text("")
                 ],
               ),
             ),
