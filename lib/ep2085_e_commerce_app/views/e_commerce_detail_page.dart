@@ -168,11 +168,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   Gap(16),
                   Row(
                     children: [
-                      Text("From:"),
+                      Text(
+                        "From:",
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                      ),
                       Text(
                         "\$975.00",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 18,
                         ),
                       ),
                       Spacer(),
@@ -190,6 +196,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           backgroundColor: Colors.brown[300],
                         ),
                       ),
+                      Gap(8),
                       Container(
                         height: 36,
                         width: 36,
@@ -201,6 +208,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           color: Colors.teal,
                         ),
                       ),
+                      Gap(8),
                       Container(
                         height: 36,
                         width: 36,
@@ -209,9 +217,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           //   color: Colors.brown,
                           // ),
                           shape: BoxShape.circle,
-                          color: Colors.teal,
+                          color: Colors.brown[600],
                         ),
                       ),
+                      Gap(8),
                       Container(
                         height: 36,
                         width: 36,
@@ -220,7 +229,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           //   color: Colors.brown,
                           // ),
                           shape: BoxShape.circle,
-                          color: Colors.teal,
+                          color: Colors.grey,
                         ),
                       ),
                     ],
