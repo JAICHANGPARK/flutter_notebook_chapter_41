@@ -131,6 +131,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               child: Icon(
                                 Icons.remove,
                               ),
+                            ),
+                            Text("01"),
+                            Container(
+                              child: Icon(
+                                Icons.add,
+                              ),
                             )
                           ],
                         ),
