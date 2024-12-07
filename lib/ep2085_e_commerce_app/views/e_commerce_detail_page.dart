@@ -128,6 +128,11 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         child: Row(
                           children: [
                             Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                shape: BoxShape.circle,
+                              ),
+                              padding: EdgeInsets.all(6),
                               child: Icon(
                                 Icons.remove,
                               ),
