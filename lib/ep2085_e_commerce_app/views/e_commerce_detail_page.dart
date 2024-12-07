@@ -116,8 +116,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         "Silk Shirt",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 24,
                         ),
                       ),
+                      Spacer(),
                       Container(
                         padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                         decoration: BoxDecoration(
@@ -130,6 +132,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         child: Row(
                           children: [
                             Container(
+                              padding: EdgeInsets.all(4),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 shape: BoxShape.circle,
@@ -137,7 +140,6 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                                   color: Colors.orange,
                                 ),
                               ),
-                              padding: EdgeInsets.all(4),
                               child: Icon(
                                 Icons.remove,
                               ),
@@ -146,6 +148,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             Text("01"),
                             Gap(8),
                             Container(
+                              padding: EdgeInsets.all(4),
                               decoration: BoxDecoration(
                                 color: Colors.orange,
                                 shape: BoxShape.circle,
