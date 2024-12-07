@@ -131,6 +131,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.orange,
+                                ),
+                              ),
                               ),
                               padding: EdgeInsets.all(6),
                               child: Icon(
