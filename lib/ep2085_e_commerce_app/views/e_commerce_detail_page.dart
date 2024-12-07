@@ -235,6 +235,52 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ],
                   ),
                   Gap(24),
+                  Row(
+                    children: [
+                      Text("Size"),
+                      Spacer(),
+                      Icon(
+                        Icons.star,
+                        color: Colors.orange,
+                      ),
+                      Text("4.6/5"),
+                      Text("(2k+Review)")
+                    ],
+                  ),
+                  Gap(12),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 6),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              color: Colors.grey[100]!,
+                            ),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Center(
+                            child: Text("S"),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 6),
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            border: Border.all(
+                              color: Colors.grey[100]!,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text("M"),
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
