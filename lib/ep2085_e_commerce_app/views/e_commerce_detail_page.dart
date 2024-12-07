@@ -111,8 +111,32 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
-                    children: [Text("Silk Shirt")],
-                  )
+                    children: [
+                      Text(
+                        "Silk Shirt",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.orange[50],
+                          border: Border.all(
+                            color: Colors.orange,
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            Container(
+                              child: Icon(
+                                Icons.remove,
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ],
               ),
             ),
