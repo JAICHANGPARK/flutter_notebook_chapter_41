@@ -334,10 +334,19 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   Text("Description"),
                   Text(
                       "Description Description Description Description Description Description Description Description "),
-                  
                   Row(
                     children: [
-                      widget(child: Container())
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100],
+                          ),
+                        ),
+                      ),
+                      Gap(12),
+                      Expanded(
+                        child: Container(),
+                      ),
                     ],
                   )
                 ],
