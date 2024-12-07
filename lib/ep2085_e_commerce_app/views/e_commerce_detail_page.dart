@@ -162,9 +162,20 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             )
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
+                  Row(
+                    children: [
+                      Text("From:"),
+                      Text(
+                        "\$975.00",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
