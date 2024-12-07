@@ -113,10 +113,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   Row(
                     children: [
                       Text(
-                        "Silk Shirt",
+                        "Title, Title, \nSilk Shirt",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 24,
+                          fontSize: 22,
                         ),
                       ),
                       Spacer(),
