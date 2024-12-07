@@ -173,6 +173,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
+                      ),
+                      Spacer(),
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          color: Colors.brown[100],
+                          border: Border.all(
+                            color: Colors.brown,
+                          ),
+                        ),
                       )
                     ],
                   )
