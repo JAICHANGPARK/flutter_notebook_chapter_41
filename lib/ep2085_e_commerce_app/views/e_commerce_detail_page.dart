@@ -331,6 +331,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ],
                   ),
+                  Gap(24),
                   Text("Description"),
                   Gap(8),
                   Text(
@@ -354,7 +355,18 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                       Gap(12),
                       Expanded(
-                        child: Container(),
+                        child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Buy Now",
+                            ),
+                          ),
+                        ),
                       ),
                     ],
                   )
