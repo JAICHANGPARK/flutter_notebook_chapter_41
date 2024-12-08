@@ -332,14 +332,23 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ],
                   ),
                   Text("Description"),
+                  Gap(8),
                   Text(
                       "Description Description Description Description Description Description Description Description "),
+                  Gap(12),
                   Row(
                     children: [
                       Expanded(
                         child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                             color: Colors.grey[100],
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Add to Cart",
+                            ),
                           ),
                         ),
                       ),
