@@ -70,7 +70,9 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       Spacer(),
                       CircleAvatar(
                         backgroundColor: Colors.white,
+                        radius: 22,
                       ),
+                      Gap(12),
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       )
