@@ -9,23 +9,35 @@ class BeautyMainPage extends StatefulWidget {
 }
 
 class _BeautyMainPageState extends State<BeautyMainPage> {
+  num page = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: IndexedStack(
+        children: [],
+      ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
         surfaceTintColor: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  HugeIcons.strokeRoundedHome01,
-                ),
-                Text("Home")
-              ],
+            GestureDetector(
+              onTap: () {
+                setState(() {
+                  page = 0;
+                });
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    HugeIcons.strokeRoundedHome01,
+                  ),
+                  Text("Home")
+                ],
+              ),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
