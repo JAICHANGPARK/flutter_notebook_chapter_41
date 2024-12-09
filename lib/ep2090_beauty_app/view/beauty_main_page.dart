@@ -25,16 +25,34 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
                 Text("Home")
               ],
             ),
-            Column(children: [
-              Icon(
-                Icons.explore_outlined,
-              ),
-              Text("Discover")
-            ]),
+            Column(
+              children: [
+                Icon(
+                  Icons.explore_outlined,
+                ),
+                Text("Discover")
+              ],
+            ),
             CircleAvatar(
               backgroundColor: Colors.lightGreen,
               radius: 24,
               child: Icon(Icons.add),
+            ),
+            Column(
+              children: [
+                Icon(
+                  Icons.timelapse,
+                ),
+                Text("Routines")
+              ],
+            ),
+            Column(
+              children: [
+                Icon(
+                  Icons.person_2_outlined,
+                ),
+                Text("Profile")
+              ],
             ),
           ],
         ),
