@@ -13,7 +13,7 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          
+
         ],
       ),
     );
