@@ -6,7 +6,7 @@
 - Dhira Danuarta for Caraka
 - https://dribbble.com/shots/25302682-Comeuty-Beauty-Community-App
 
-<img src="https://cdn.dribbble.com/userupload/17835710/file/original-ae7a2dcacae2b9f5c38d207749fb1680.png?resize=1600x1200&vertical=center"/>
+<img src="https://cdn.dribbble.com/userupload/17914295/file/original-5c7acbb5955c6c27bce83c566d7783ee.jpg?resize=1905x1429&vertical=center"/>
 
 ## EP2085-2089
 
