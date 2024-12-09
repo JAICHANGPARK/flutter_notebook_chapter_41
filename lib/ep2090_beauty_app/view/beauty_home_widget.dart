@@ -30,6 +30,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                         child: Row(
                           children: [
                             Container(
+                              padding: EdgeInsets.symmetric(horizontal: 12,vertical: 6),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
 
