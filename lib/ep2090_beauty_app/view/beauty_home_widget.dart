@@ -83,14 +83,26 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                   ),
                 ),
                 Gap(12),
-                SizedBox(
+                Container(
+                  padding: EdgeInsets.only(
+                    left: 16,
+                  ),
                   height: 92,
                   child: ListView(
+                    scrollDirection: Axis.horizontal,
                     children: [
                       Column(
                         children: [
-                          CircleAvatar(),
-                          Text("Add Story",)
+                          CircleAvatar(
+                            radius: 32,
+                            backgroundColor: Colors.white,
+                            child: Icon(
+                              Icons.add,
+                            ),
+                          ),
+                          Text(
+                            "Add Story",
+                          )
                         ],
                       )
                     ],
