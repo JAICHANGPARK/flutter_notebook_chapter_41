@@ -15,7 +15,9 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
-        children: [],
+        children: [
+
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
@@ -39,14 +41,21 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
                 ],
               ),
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.explore_outlined,
-                ),
-                Text("Discover")
-              ],
+            GestureDetector(
+              onTap: () {
+                setState(() {
+                  page = 1;
+                });
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.explore_outlined,
+                  ),
+                  Text("Discover")
+                ],
+              ),
             ),
             CircleAvatar(
               backgroundColor: Colors.lightGreen,
