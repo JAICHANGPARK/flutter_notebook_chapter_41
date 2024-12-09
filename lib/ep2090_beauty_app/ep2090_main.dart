@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/beauty_main_page.dart';
+
 void main() {
   runApp(BeautyApp());
 }
@@ -9,6 +11,8 @@ class BeautyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: BeautyMainPage(),
+    );
   }
 }
