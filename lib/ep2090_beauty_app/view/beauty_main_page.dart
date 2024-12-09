@@ -19,7 +19,7 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Column(
-              
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
                   HugeIcons.strokeRoundedHome01,
@@ -28,6 +28,7 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
               ],
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
                   Icons.explore_outlined,
@@ -41,6 +42,7 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
               child: Icon(Icons.add),
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
                   Icons.timelapse,
@@ -49,6 +51,7 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
               ],
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
                   Icons.person_2_outlined,
