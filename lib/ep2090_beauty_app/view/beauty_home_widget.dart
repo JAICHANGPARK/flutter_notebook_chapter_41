@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BeautyHomeWidget extends StatefulWidget {
   const BeautyHomeWidget({super.key});
@@ -38,10 +39,12 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                               child: Row(
                                 children: [
                                   Icon(Icons.group,),
+                                  Gap(4),
                                   Text("Social")
                                 ],
                               ),
                             ),
+                            Gap(8),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
@@ -50,6 +53,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                               child: Row(
                                 children: [
                                   Icon(Icons.shopping_bag_outlined,),
+                                  Gap(4),
                                   Text("Shop")
                                 ],
                               ),
