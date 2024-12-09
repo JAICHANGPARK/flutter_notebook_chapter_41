@@ -17,11 +17,13 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
           color: Colors.grey[200],
         ),
         Expanded(
-            child: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
           ),
-        ))
+        ),
+        Divider(height: 0,)
       ],
     );
   }
