@@ -15,6 +15,36 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
         Container(
           height: 280,
           color: Colors.grey[200],
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(Icons.group,),
+                              Text("Social")
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
         Expanded(
           child: Container(
