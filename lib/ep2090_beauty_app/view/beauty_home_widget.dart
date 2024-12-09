@@ -70,6 +70,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       Spacer(),
                       CircleAvatar(
                         backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
                         radius: 22,
                         child: Icon(Icons.notifications_none),
                       ),
@@ -77,6 +78,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       CircleAvatar(
                         radius: 22,
                         backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
                         child: Icon(Icons.send_outlined),
                       )
                     ],
