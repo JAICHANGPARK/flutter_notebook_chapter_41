@@ -82,9 +82,19 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                     ],
                   ),
                 ),
+                Gap(12),
                 SizedBox(
-                  height: 82,
-                  child: Placeholder(),
+                  height: 92,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          CircleAvatar(),
+                          Text("Add Story",)
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
