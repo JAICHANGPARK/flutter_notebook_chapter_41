@@ -97,15 +97,27 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
             ),
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Text("Featured Discussions"),
-                    Spacer(),
-                    Text("Explore"),
-                    Icon(
-                      Icons.arrow_forward,
-                    )
-                  ],
+                Gap(12),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Featured Discussions",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Spacer(),
+                      Text("Explore"),
+                      Gap(4),
+                      Icon(
+                        Icons.arrow_forward,
+                        size: 16,
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
