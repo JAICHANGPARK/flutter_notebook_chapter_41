@@ -14,7 +14,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
     return Column(
       children: [
         Container(
-          height: 280,
+          height: 270,
           color: Colors.grey[200],
           child: SafeArea(
             child: Column(
@@ -82,7 +82,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                     ],
                   ),
                 ),
-                Gap(12),
+                Gap(8),
                 Container(
                   padding: EdgeInsets.only(
                     left: 16,
@@ -100,6 +100,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                               Icons.add,
                             ),
                           ),
+                          Gap(6),
                           Text(
                             "Add Story",
                           )
