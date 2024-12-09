@@ -12,7 +12,16 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
+        Container(
+          height: 280,
+          color: Colors.grey[200],
+        ),
+        Expanded(
+            child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+          ),
+        ))
       ],
     );
   }
