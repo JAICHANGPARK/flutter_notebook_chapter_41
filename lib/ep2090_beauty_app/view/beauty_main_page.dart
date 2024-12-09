@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
+import 'beauty_home_widget.dart';
+
 class BeautyMainPage extends StatefulWidget {
   const BeautyMainPage({super.key});
 
@@ -15,8 +17,12 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
+        index: page.toInt(),
         children: [
-
+          BeautyHomeWidget(),
+          Container(
+            decoration: BoxDecoration(color: Colors.orange),
+          )
         ],
       ),
       bottomNavigationBar: BottomAppBar(
