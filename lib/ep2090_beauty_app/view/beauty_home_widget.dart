@@ -25,8 +25,8 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
-
                         ),
+                        padding: EdgeInsets.all(2),
                         child: Row(
                           children: [
                             Container(
@@ -43,13 +43,13 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.grey[200],
+                                color: Colors.white,
 
                               ),
                               child: Row(
                                 children: [
-                                  Icon(Icons.group,),
-                                  Text("Social")
+                                  Icon(Icons.shopping_bag_outlined,),
+                                  Text("Shop")
                                 ],
                               ),
                             ),
