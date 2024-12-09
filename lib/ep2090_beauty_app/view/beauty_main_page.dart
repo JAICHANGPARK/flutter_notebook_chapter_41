@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class BeautyMainPage extends StatefulWidget {
   const BeautyMainPage({super.key});
@@ -13,7 +14,11 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: [
-
+          BottomNavigationBarItem(
+            icon: Icon(
+              HugeIcons.strokeRoundedHome01,
+            ),
+          )
         ],
       ),
     );
