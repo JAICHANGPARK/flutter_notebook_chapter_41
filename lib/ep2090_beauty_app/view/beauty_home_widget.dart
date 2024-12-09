@@ -26,6 +26,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
+                          borderRadius: BorderRadius.circular(32),
                         ),
                         padding: EdgeInsets.all(2),
                         child: Row(
@@ -34,6 +35,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(32),
                               ),
                               child: Row(
                                 children: [
@@ -50,6 +52,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                               decoration: BoxDecoration(
                                 color: Colors.white,
+                                borderRadius: BorderRadius.circular(32),
                               ),
                               child: Row(
                                 children: [
@@ -63,6 +66,13 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                             ),
                           ],
                         ),
+                      ),
+                      Spacer(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
                       )
                     ],
                   ),
