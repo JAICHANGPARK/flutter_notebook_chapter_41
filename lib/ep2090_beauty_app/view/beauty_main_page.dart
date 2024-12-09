@@ -34,7 +34,7 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
             CircleAvatar(
               backgroundColor: Colors.lightGreen,
               radius: 24,
-              
+              child: Icon(Icons.add),
             ),
           ],
         ),
