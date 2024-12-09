@@ -16,8 +16,10 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
         color: Colors.white,
         surfaceTintColor: Colors.white,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Column(
+              
               children: [
                 Icon(
                   HugeIcons.strokeRoundedHome01,
