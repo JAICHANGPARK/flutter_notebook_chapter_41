@@ -14,7 +14,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
     return Column(
       children: [
         Container(
-          height: 270,
+          height: 272,
           color: Colors.grey[200],
           child: SafeArea(
             child: Column(
@@ -85,7 +85,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                 Gap(8),
                 Container(
                   padding: EdgeInsets.only(
-                    left: 16,
+                    left: 24,
                   ),
                   height: 92,
                   child: ListView(
@@ -105,6 +105,26 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                             "Add Story",
                           )
                         ],
+                      ),
+                      Gap(12),
+                      ...List.generate(
+                        10,
+                        (index) => Padding(
+                          padding: const EdgeInsets.only(right: 12),
+                          child: Column(
+                            children: [
+                              CircleAvatar(
+                                radius: 32,
+                                backgroundColor: Colors.white,
+
+                              ),
+                              Gap(6),
+                              Text(
+                                "Dream ${index}",
+                              )
+                            ],
+                          ),
+                        ),
                       )
                     ],
                   ),
