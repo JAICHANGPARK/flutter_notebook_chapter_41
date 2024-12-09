@@ -12,8 +12,9 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:
-      BottomAppBar(
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
+        surfaceTintColor: Colors.white,
         child: Row(
           children: [
             Column(
@@ -23,21 +24,21 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
                 ),
                 Text("Home")
               ],
-            )
-           ,
-            Column(
-              children: [
-                Icon(
-                  Icons.explore_outlined,
-                ),
-                Text("Discover")
-              ],
-            )
-
+            ),
+            Column(children: [
+              Icon(
+                Icons.explore_outlined,
+              ),
+              Text("Discover")
+            ]),
+            CircleAvatar(
+              backgroundColor: Colors.lightGreen,
+              radius: 24,
+              
+            ),
           ],
         ),
       ),
-   
     );
   }
 }
