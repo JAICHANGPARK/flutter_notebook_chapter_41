@@ -71,10 +71,13 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                         radius: 22,
+                        child: Icon(Icons.notifications_none),
                       ),
                       Gap(12),
                       CircleAvatar(
+                        radius: 22,
                         backgroundColor: Colors.white,
+                        child: Icon(Icons.send_outlined),
                       )
                     ],
                   ),
