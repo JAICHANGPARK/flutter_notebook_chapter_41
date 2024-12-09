@@ -18,6 +18,13 @@ class _BeautyMainPageState extends State<BeautyMainPage> {
             icon: Icon(
               HugeIcons.strokeRoundedHome01,
             ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.explore_outlined,
+            ),
+            label: "Discover",
           )
         ],
       ),
