@@ -31,14 +31,15 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                         child: Row(
                           children: [
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 12,vertical: 6),
+                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
-
                               ),
                               child: Row(
                                 children: [
-                                  Icon(Icons.group,),
+                                  Icon(
+                                    Icons.group,
+                                  ),
                                   Gap(4),
                                   Text("Social")
                                 ],
@@ -46,19 +47,20 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                             ),
                             Gap(8),
                             Container(
+                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-
                               ),
                               child: Row(
                                 children: [
-                                  Icon(Icons.shopping_bag_outlined,),
+                                  Icon(
+                                    Icons.shopping_bag_outlined,
+                                  ),
                                   Gap(4),
                                   Text("Shop")
                                 ],
                               ),
                             ),
-
                           ],
                         ),
                       )
@@ -76,7 +78,9 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
             ),
           ),
         ),
-        Divider(height: 0,)
+        Divider(
+          height: 0,
+        )
       ],
     );
   }
