@@ -81,7 +81,10 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       )
                     ],
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 82,child: Placeholder(),
+                ),
               ],
             ),
           ),
@@ -90,6 +93,16 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
+            ),
+
+            child: Column(
+              children: [
+              Row(
+                children: [
+                  Text("Featured Discussions")
+                ],
+              )
+              ],
             ),
           ),
         ),
