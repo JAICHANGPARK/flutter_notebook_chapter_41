@@ -18,31 +18,47 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
           child: SafeArea(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-            
-                      ),
-                      child: Row(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey[200],
-            
+                Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+
+                        ),
+                        child: Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+
+                              ),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.group,),
+                                  Text("Social")
+                                ],
+                              ),
                             ),
-                            child: Row(
-                              children: [
-                                Icon(Icons.group,),
-                                Text("Social")
-                              ],
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+
+                              ),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.group,),
+                                  Text("Social")
+                                ],
+                              ),
                             ),
-                          )
-                        ],
-                      ),
-                    )
-                  ],
+
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
