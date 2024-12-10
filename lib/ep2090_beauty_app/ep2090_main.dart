@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'view/beauty_main_page.dart';
 
 void main() {
-  runApp(BeautyApp());
+  runApp(BeautyApp(),);
 }
 
 class BeautyApp extends StatelessWidget {
