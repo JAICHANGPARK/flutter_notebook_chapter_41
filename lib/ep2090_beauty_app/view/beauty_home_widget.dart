@@ -166,8 +166,22 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                 Container(
                   height: 280,
                   color: Colors.orange,
-                  margin: EdgeInsets.only(
-                    left: 16,
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                              color: Colors.grey[300]!,
+                            )),
+                          );
+                        },
+                      ))
+                    ],
                   ),
                 )
               ],
