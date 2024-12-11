@@ -183,10 +183,12 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                               border: Border.all(
                                 color: Colors.grey[300]!,
                               ),
+                              borderRadius: BorderRadius.circular(12),
                             ),
                             padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
@@ -238,7 +240,6 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                     Icon(Icons.bookmark_border),
                                     Gap(4),
                                     Text("120"),
-
                                   ],
                                 )
                               ],
