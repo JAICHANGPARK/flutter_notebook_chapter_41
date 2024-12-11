@@ -264,21 +264,17 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                         Text("Now Trending"),
                         Expanded(
                           child: Wrap(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Text("#"),
-                                    Text("acnetips")
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
+                              children: List.generate(
+                                  5,
+                                  (index) => Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [Text("#"), Text("acnetips")],
+                                        ),
+                                      )).toList()),
                         )
                       ],
                     ),
