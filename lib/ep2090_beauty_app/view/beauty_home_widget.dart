@@ -259,11 +259,15 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                     decoration: BoxDecoration(
                       color: Colors.indigo[50],
                     ),
+                    
                     child: Column(
                       children: [
                         Text("Now Trending"),
                         Expanded(
                           child: Wrap(
+                            spacing: 16,
+                              runSpacing: 16,
+
                               children: List.generate(
                                   5,
                                   (index) => Container(
