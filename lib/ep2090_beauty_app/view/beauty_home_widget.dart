@@ -262,7 +262,13 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                     padding: EdgeInsets.all(24),
                     child: Column(
                       children: [
-                        Text("Now Trending"),
+                        Text(
+                          "Now Trending",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Expanded(
                           child: Wrap(
                               spacing: 16,
