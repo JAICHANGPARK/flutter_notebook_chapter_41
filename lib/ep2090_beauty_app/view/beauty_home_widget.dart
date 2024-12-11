@@ -222,12 +222,24 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                 Divider(),
                                 Row(
                                   children: [
-                                    Icon(Icons.thumb_up_alt_outlined),
+                                    Icon(
+                                      Icons.thumb_up_alt_outlined,
+                                      size: 18,
+                                    ),
                                     Gap(4),
                                     Text("345"),
                                     Gap(12),
-                                    Icon(Icons.chat_outlined),
+                                    Icon(
+                                      Icons.chat_outlined,
+                                      size: 18,
+                                    ),
+                                    Gap(4),
                                     Text("120"),
+                                    Spacer(),
+                                    Icon(Icons.bookmark_border),
+                                    Gap(4),
+                                    Text("120"),
+
                                   ],
                                 )
                               ],
