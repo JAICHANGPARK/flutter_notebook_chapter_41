@@ -165,7 +165,6 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                 ),
                 Container(
                   height: 240,
-                  color: Colors.orange,
                   child: Row(
                     children: [
                       SizedBox(
