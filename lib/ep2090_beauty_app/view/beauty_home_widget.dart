@@ -139,118 +139,126 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
             decoration: BoxDecoration(
               color: Colors.white,
             ),
-            child: Column(
-              children: [
-                Gap(12),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Row(
-                    children: [
-                      Text(
-                        "Featured Discussions",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Gap(12),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Featured Discussions",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                         ),
-                      ),
-                      Spacer(),
-                      Text("Explore"),
-                      Gap(4),
-                      Icon(
-                        Icons.arrow_forward,
-                        size: 16,
-                      )
-                    ],
+                        Spacer(),
+                        Text("Explore"),
+                        Gap(4),
+                        Icon(
+                          Icons.arrow_forward,
+                          size: 16,
+                        )
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  height: 240,
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                          child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            width: 320,
-                            margin: EdgeInsets.only(
-                              right: 16,
-                            ),
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
+                  Container(
+                    height: 240,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                            child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 320,
+                              margin: EdgeInsets.only(
+                                right: 16,
                               ),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            padding: EdgeInsets.all(16),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Row(
-                                  children: [
-                                    CircleAvatar(),
-                                    Gap(4),
-                                    Text("Dream Walker"),
-                                    Icon(
-                                      Icons.verified,
-                                      color: Colors.indigo,
-                                      size: 16,
-                                    ),
-                                    Gap(4),
-                                    Text("23h ago"),
-                                    Spacer(),
-                                    Icon(Icons.more_horiz)
-                                  ],
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
                                 ),
-                                Text(
-                                  'Best Products for Dry Winter Skin',
-                                ),
-                                Text(
-                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                                  maxLines: 2,
-                                ),
-                                Row(
-                                  children: [
-                                    Text("# skincare"),
-                                    Text("# dryskin"),
-                                    Text("# winter"),
-                                  ],
-                                ),
-                                Divider(),
-                                Row(
-                                  children: [
-                                    Icon(
-                                      Icons.thumb_up_alt_outlined,
-                                      size: 18,
-                                    ),
-                                    Gap(4),
-                                    Text("345"),
-                                    Gap(12),
-                                    Icon(
-                                      Icons.chat_outlined,
-                                      size: 18,
-                                    ),
-                                    Gap(4),
-                                    Text("120"),
-                                    Spacer(),
-                                    Icon(Icons.bookmark_border),
-                                    Gap(4),
-                                    Text("120"),
-                                  ],
-                                )
-                              ],
-                            ),
-                          );
-                        },
-                      ))
-                    ],
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              padding: EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      CircleAvatar(),
+                                      Gap(4),
+                                      Text("Dream Walker"),
+                                      Icon(
+                                        Icons.verified,
+                                        color: Colors.indigo,
+                                        size: 16,
+                                      ),
+                                      Gap(4),
+                                      Text("23h ago"),
+                                      Spacer(),
+                                      Icon(Icons.more_horiz)
+                                    ],
+                                  ),
+                                  Text(
+                                    'Best Products for Dry Winter Skin',
+                                  ),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                                    maxLines: 2,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("# skincare"),
+                                      Text("# dryskin"),
+                                      Text("# winter"),
+                                    ],
+                                  ),
+                                  Divider(),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.thumb_up_alt_outlined,
+                                        size: 18,
+                                      ),
+                                      Gap(4),
+                                      Text("345"),
+                                      Gap(12),
+                                      Icon(
+                                        Icons.chat_outlined,
+                                        size: 18,
+                                      ),
+                                      Gap(4),
+                                      Text("120"),
+                                      Spacer(),
+                                      Icon(Icons.bookmark_border),
+                                      Gap(4),
+                                      Text("120"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            );
+                          },
+                        ))
+                      ],
+                    ),
                   ),
-                )
-              ],
+                  Container(
+                    height: 280,
+                    decoration: BoxDecoration(
+                      color: Colors.indigo[50],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ),
