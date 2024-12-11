@@ -251,7 +251,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       ],
                     ),
                   ),
-
+                Gap(12),
                   Container(
                     height: 280,
                     margin: EdgeInsets.all(16),
