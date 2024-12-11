@@ -187,6 +187,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                             ),
                             padding: EdgeInsets.all(16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
