@@ -251,8 +251,10 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       ],
                     ),
                   ),
+
                   Container(
                     height: 280,
+                    margin: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: Colors.indigo[50],
                     ),
