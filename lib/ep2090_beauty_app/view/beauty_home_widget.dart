@@ -196,7 +196,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                       color: Colors.indigo,
                                     ),
                                     Text("23h ago"),
-                                    Spacer()
+                                    Spacer(),
                                     Icon(Icons.more_horiz)
                                   ],
                                 )
