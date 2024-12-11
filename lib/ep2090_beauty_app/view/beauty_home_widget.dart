@@ -164,7 +164,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                   ),
                 ),
                 Container(
-                  height: 280,
+                  height: 240,
                   color: Colors.orange,
                   child: Row(
                     children: [
@@ -176,7 +176,10 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
-                            width: 240,
+                            width: 320,
+                            margin: EdgeInsets.only(
+                              right: 16,
+                            ),
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.grey[300]!,
