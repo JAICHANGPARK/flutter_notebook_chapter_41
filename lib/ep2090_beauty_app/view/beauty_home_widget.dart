@@ -196,11 +196,20 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                     Icon(
                                       Icons.verified,
                                       color: Colors.indigo,
+                                      size: 16,
                                     ),
+                                    Gap(4),
                                     Text("23h ago"),
                                     Spacer(),
                                     Icon(Icons.more_horiz)
                                   ],
+                                ),
+                                Text(
+                                  'Best Products for Dry Winter Skin',
+                                ),
+                                Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                                  maxLines: 2,
                                 )
                               ],
                             ),
