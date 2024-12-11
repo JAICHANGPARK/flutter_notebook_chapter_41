@@ -171,13 +171,17 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       SizedBox(
                         width: 16,
                       ),
-                      Expanded(child: ListView.builder(
+                      Expanded(
+                          child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
+                            width: 240,
                             decoration: BoxDecoration(
-                                border: Border.all(
-                              color: Colors.grey[300]!,
-                            )),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
                           );
                         },
                       ))
