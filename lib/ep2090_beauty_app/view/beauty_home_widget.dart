@@ -118,7 +118,6 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                               CircleAvatar(
                                 radius: 32,
                                 backgroundColor: Colors.white,
-
                               ),
                               Gap(6),
                               Text(
@@ -162,6 +161,13 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                         size: 16,
                       )
                     ],
+                  ),
+                ),
+                Container(
+                  height: 280,
+                  color: Colors.orange,
+                  margin: EdgeInsets.only(
+                    left: 16,
                   ),
                 )
               ],
