@@ -211,6 +211,24 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                 Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                                   maxLines: 2,
+                                ),
+                                Row(
+                                  children: [
+                                    Text("# skincare"),
+                                    Text("# dryskin"),
+                                    Text("# winter"),
+                                  ],
+                                ),
+                                Divider(),
+                                Row(
+                                  children: [
+                                    Icon(Icons.thumb_up_alt_outlined),
+                                    Gap(4),
+                                    Text("345"),
+                                    Gap(12),
+                                    Icon(Icons.chat_outlined),
+                                    Text("120"),
+                                  ],
                                 )
                               ],
                             ),
