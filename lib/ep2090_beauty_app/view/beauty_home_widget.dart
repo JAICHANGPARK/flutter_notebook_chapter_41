@@ -185,6 +185,23 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                 color: Colors.grey[300]!,
                               ),
                             ),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Text("Dream Walker"),
+                                    Icon(
+                                      Icons.verified,
+                                      color: Colors.indigo,
+                                    ),
+                                    Text("23h ago"),
+                                    Spacer()
+                                    Icon(Icons.more_horiz)
+                                  ],
+                                )
+                              ],
+                            ),
                           );
                         },
                       ))
