@@ -251,12 +251,36 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                       ],
                     ),
                   ),
-                Gap(12),
+                  Gap(12),
                   Container(
-                    height: 280,
+                    height: 180,
+                    width: double.infinity,
                     margin: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: Colors.indigo[50],
+                    ),
+                    child: Column(
+                      children: [
+                        Text("Now Trending"),
+                        Expanded(
+                          child: Wrap(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Text("#"),
+                                    Text("acnetips")
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
                     ),
                   )
                 ],
