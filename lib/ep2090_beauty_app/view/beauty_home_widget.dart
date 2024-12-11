@@ -185,11 +185,13 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                 color: Colors.grey[300]!,
                               ),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
                                     CircleAvatar(),
+                                    Gap(4),
                                     Text("Dream Walker"),
                                     Icon(
                                       Icons.verified,
