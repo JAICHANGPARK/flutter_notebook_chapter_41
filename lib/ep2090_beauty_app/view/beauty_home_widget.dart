@@ -183,6 +183,7 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                   MaterialPageRoute(
                                     builder: (context) => BeautyDetailPage(),
                                   ),
+
                                 );
                               },
                               child: Container(
