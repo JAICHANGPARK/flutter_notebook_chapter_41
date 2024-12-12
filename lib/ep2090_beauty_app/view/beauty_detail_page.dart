@@ -30,7 +30,9 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                   color: Colors.grey[100],
                 ),
                 child: TextField(
-                  
+                  decoration: InputDecoration(
+                    hintText: "Add a comment",
+                  ),
                 ),
               ),
             )
