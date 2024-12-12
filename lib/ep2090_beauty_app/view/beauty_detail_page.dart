@@ -26,6 +26,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
             ),
             Expanded(
               child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 8),
                 decoration: BoxDecoration(
                   color: Colors.grey[100],
                 ),
@@ -35,7 +36,8 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                   ),
                 ),
               ),
-            )
+            ),
+            IconButton(onPressed: (){}, icon: Icon(Icons.send))
           ],
         ),
       ),
