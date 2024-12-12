@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BeautyDetailPage extends StatefulWidget {
   const BeautyDetailPage({super.key});
@@ -18,19 +19,51 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
               decoration: BoxDecoration(
                 color: Colors.grey[100],
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-
-                ],
+              padding: EdgeInsets.all(16),
+              child: SafeArea(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
+                          child: Icon(Icons.arrow_back),
+                        ),
+                        Spacer(),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          child: Row(
+                            children: [
+                              Icon(Icons.add),
+                              Gap(8),
+                              Text(
+                                "Follow This Topic",
+                              )
+                            ],
+                          ),
+                        ),
+                        Gap(12),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
+                          child: Icon(Icons.more_horiz),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
           Container(
             height: 200,
-            decoration: BoxDecoration(
-              color: Colors.white
-            ),
+            decoration: BoxDecoration(color: Colors.white),
           )
         ],
       ),
