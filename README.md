@@ -1,7 +1,5 @@
 # flutter_notebook_chapter_41
 
-
-
 ## EP2090
 
 - Comeuty - Beauty Community App
@@ -25,7 +23,6 @@
 - https://dribbble.com/shots/25251071-Trip-Planner-App
 
 <img src="https://cdn.dribbble.com/userupload/17758238/file/original-f844eb3f98822074ac11c945c9b8aaa7.png?resize=1905x1429&vertical=center"/>
-
 
 ## EP2078-2080
 
