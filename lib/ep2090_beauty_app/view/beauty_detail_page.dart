@@ -15,7 +15,15 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
         children: [
           Expanded(
             child: Container(
-              
+              decoration: BoxDecoration(
+                color: Colors.grey[100],
+              ),
+            ),
+          ),
+          Container(
+            height: 200,
+            decoration: BoxDecoration(
+              color: Colors.white
             ),
           )
         ],
