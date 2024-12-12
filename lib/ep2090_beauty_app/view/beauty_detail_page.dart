@@ -29,16 +29,18 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                 // margin: EdgeInsets.symmetric(horizontal: 8),
                 decoration: BoxDecoration(
                   color: Colors.grey[100],
+                  borderRadius: BorderRadius.circular(24),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 12),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Add a comment",
+                    border: InputBorder.none,
                   ),
                 ),
               ),
             ),
-            IconButton(onPressed: (){}, icon: Icon(Icons.send))
+            IconButton(onPressed: () {}, icon: Icon(Icons.send))
           ],
         ),
       ),
