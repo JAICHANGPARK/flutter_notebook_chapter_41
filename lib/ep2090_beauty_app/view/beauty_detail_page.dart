@@ -18,6 +18,12 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
               decoration: BoxDecoration(
                 color: Colors.grey[100],
               ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+
+                ],
+              ),
             ),
           ),
           Container(
