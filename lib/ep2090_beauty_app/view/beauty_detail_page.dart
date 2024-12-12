@@ -16,6 +16,16 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
+        child: Row(
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.add,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
