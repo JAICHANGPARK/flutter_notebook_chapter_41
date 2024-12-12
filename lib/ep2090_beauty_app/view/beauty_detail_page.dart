@@ -26,10 +26,11 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
             ),
             Expanded(
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 8),
+                // margin: EdgeInsets.symmetric(horizontal: 8),
                 decoration: BoxDecoration(
                   color: Colors.grey[100],
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 12),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Add a comment",
