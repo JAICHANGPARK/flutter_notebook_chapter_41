@@ -12,7 +12,13 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          Expanded(
+            child: Container(
+              
+            ),
+          )
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
