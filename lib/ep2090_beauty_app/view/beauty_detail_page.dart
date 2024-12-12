@@ -23,6 +23,16 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
               icon: Icon(
                 Icons.add,
               ),
+            ),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey[100],
+                ),
+                child: TextField(
+                  
+                ),
+              ),
             )
           ],
         ),
