@@ -31,7 +31,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                   color: Colors.grey[100],
                   borderRadius: BorderRadius.circular(24),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Add a comment",
