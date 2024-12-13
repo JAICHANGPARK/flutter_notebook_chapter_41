@@ -124,6 +124,15 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                             shape: StadiumBorder(),
                             color: Colors.white,
                           ),
+                          child: IntrinsicHeight(
+                            child: Row(
+                              children: [
+                                Icon(Icons.thumb_up_alt_outlined),
+                                Text("1.3k"),
+                                VerticalDivider(),
+                              ],
+                            ),
+                          ),
                         )
                       ],
                     )
