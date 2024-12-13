@@ -88,13 +88,24 @@ class AiImgStartPage extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(child: Container()),
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [],
-                      ),
+                Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      stops: [.6,.8,.9, 1],
+                      colors: [
+                        Colors.black,
+                        Colors.black.withOpacity(.9),
+                        Colors.black.withOpacity(.5),
+                        Colors.black.withOpacity(.1),
+                      ],
                     ),
+                  ),
+                  child: Column(
+                    children: [
+                      
+                    ],
                   ),
                 )
               ],
