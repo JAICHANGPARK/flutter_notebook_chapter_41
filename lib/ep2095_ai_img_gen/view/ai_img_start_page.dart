@@ -95,15 +95,13 @@ class AiImgStartPage extends StatelessWidget {
                     gradient: LinearGradient(
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
-                      // stops: [.7, .8, .9, 1],
+                      stops: [.7, .8, .9, 1],
                       colors: [
                         Colors.black,
-                        Colors.black,
-
-                        // Colors.black.withOpacity(.9),
-                        Colors.black.withOpacity(.5),
-                        // Colors.black.withOpacity(.1),
+                        Colors.black.withOpacity(.8),
+                        Colors.black.withOpacity(.6),
                         Colors.black.withOpacity(.1),
+
                       ],
                     ),
                   ),
