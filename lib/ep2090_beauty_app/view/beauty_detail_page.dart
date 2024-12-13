@@ -58,6 +58,17 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                           child: Icon(Icons.more_horiz),
                         ),
                       ],
+                    ),
+                    Gap(32),
+
+                    Text('Posted 23h ago'),
+                    Gap(12),
+                    Text(
+                      "Best Products for Dry\nWinter Skin",
+                      style: TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                      ),
                     )
                   ],
                 ),
