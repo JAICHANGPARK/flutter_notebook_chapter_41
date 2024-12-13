@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AiImgStartPage extends StatelessWidget {
   const AiImgStartPage({super.key});
 
@@ -9,7 +8,21 @@ class AiImgStartPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Expanded(child: child)
+          Positioned(
+
+              child: Row(
+            children: [
+              Expanded(
+                child: ListView(),
+              ),
+              Expanded(
+                child: ListView(),
+              ),
+              Expanded(
+                child: ListView(),
+              )
+            ],
+          ))
         ],
       ),
     );
