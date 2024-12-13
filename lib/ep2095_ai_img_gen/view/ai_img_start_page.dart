@@ -11,7 +11,7 @@ class AiImgStartPage extends StatelessWidget {
         children: [
           Positioned(
               left: -120,
-              top: 0,
+              top: -140,
               bottom: 0,
               right: -120,
               child: Row(
@@ -19,11 +19,11 @@ class AiImgStartPage extends StatelessWidget {
                   Expanded(
                     child: ListView(
                       children: [
-                        Gap(24),
+                        Gap(160),
                         ...List.generate(
                           10,
                           (index) => Container(
-                            margin: Ed,
+                            margin: EdgeInsets.only(bottom: 16),
                             height: 280,
                             decoration: BoxDecoration(
                               color: Colors.orange,
@@ -36,21 +36,23 @@ class AiImgStartPage extends StatelessWidget {
                   Gap(16),
                   Expanded(
                     child: ListView(
-                      children: [
-                        Container(
-                          height: 180,
+                      children:List.generate(
+                        10,
+                            (index) => Container(
+                          margin: EdgeInsets.only(bottom: 16),
+                          height: 280,
                           decoration: BoxDecoration(
                             color: Colors.orange,
                           ),
-                        )
-                      ],
+                        ),
+                      ),
                     ),
                   ),
                   Gap(16),
                   Expanded(
                     child: ListView(
                       children: [
-                        Gap(24),
+                        Gap(160),
                         Container(
                           height: 180,
                           decoration: BoxDecoration(
