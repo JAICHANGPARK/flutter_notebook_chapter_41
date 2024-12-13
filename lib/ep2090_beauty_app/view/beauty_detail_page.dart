@@ -155,6 +155,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         ),
                         Gap(12),
                         Container(
+
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white,
@@ -173,6 +174,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                     ),
                     Gap(16),
                     Container(
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
@@ -210,7 +212,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
             ),
           ),
           Container(
-            height: 160,
+            height: 140,
             decoration: BoxDecoration(color: Colors.white),
           )
         ],
