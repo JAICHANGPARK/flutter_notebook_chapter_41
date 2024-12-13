@@ -183,7 +183,6 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                                   MaterialPageRoute(
                                     builder: (context) => BeautyDetailPage(),
                                   ),
-
                                 );
                               },
                               child: Container(
@@ -283,25 +282,26 @@ class _BeautyHomeWidgetState extends State<BeautyHomeWidget> {
                         ),
                         Expanded(
                           child: Wrap(
-                              spacing: 16,
-                              runSpacing: 16,
-                              alignment: WrapAlignment.center,
-                              runAlignment: WrapAlignment.center,
-                              children: List.generate(
-                                  5,
-                                  (index) => Container(
-                                        padding: EdgeInsets.symmetric(
-                                          horizontal: 12,
-                                          vertical: 3,
-                                        ),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                        ),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [Text("#"), Text("acnetips")],
-                                        ),
-                                      )).toList()),
+                            spacing: 16,
+                            runSpacing: 16,
+                            alignment: WrapAlignment.center,
+                            runAlignment: WrapAlignment.center,
+                            children: List.generate(
+                                5,
+                                (index) => Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 3,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [Text("#"), Text("acnetips")],
+                                      ),
+                                    )).toList(),
+                          ),
                         )
                       ],
                     ),
