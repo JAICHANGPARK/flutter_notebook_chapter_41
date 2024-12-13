@@ -104,16 +104,24 @@ class AiImgStartPage extends StatelessWidget {
                       ],
                     ),
                   ),
+                  padding: EdgeInsets.all(24),
                   child: Column(
                     children: [
                       Text("Welcome to Your"),
                       Text("Creative Space"),
-                      Text(
-                          "Unleash your creativity and explore endless possibilities. "
-                              "Ready to bring your vision to life?"),
+                      Text("Unleash your creativity and explore endless possibilities. "
+                          "Ready to bring your vision to life?"),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.deepPurpleAccent,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Get Started",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       )
                     ],
