@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_41
 
-## EP2090
+## EP2095
+
+- Artify - AI Image Generator
+- Yohanes Nico for Matriks Studio
+- https://dribbble.com/shots/25324835-Artify-AI-Image-Generator
+
+<img src="https://cdn.dribbble.com/userupload/17914295/file/original-5c7acbb5955c6c27bce83c566d7783ee.jpg?resize=1905x1429&vertical=center"/>
+
+
+## EP2090-2094
 
 - Comeuty - Beauty Community App
 - Dhira Danuarta for Caraka
