@@ -60,7 +60,6 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                       ],
                     ),
                     Gap(32),
-
                     Text('Posted 23h ago'),
                     Gap(12),
                     Text(
@@ -78,19 +77,21 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                       runAlignment: WrapAlignment.center,
                       children: List.generate(
                           3,
-                              (index) => Container(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 3,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [Text("#"), Text("acnetips")],
-                            ),
-                          )).toList(),
+                          (index) => Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 6,
+                                ),
+                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Text("#"),
+                                    Gap(4),
+                                    Text("acnetips"),
+                                  ],
+                                ),
+                              )).toList(),
                     ),
                   ],
                 ),
