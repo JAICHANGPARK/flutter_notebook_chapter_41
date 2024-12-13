@@ -130,6 +130,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                                 Icon(Icons.thumb_up_alt_outlined),
                                 Text("1.3k"),
                                 VerticalDivider(),
+                                Icon(Icons.thumb_down_alt_outlined),
                               ],
                             ),
                           ),
