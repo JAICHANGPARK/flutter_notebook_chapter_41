@@ -177,6 +177,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       child: Row(
                         children: [
