@@ -44,6 +44,9 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                               Gap(8),
                               Text(
                                 "Follow This Topic",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               )
                             ],
                           ),
