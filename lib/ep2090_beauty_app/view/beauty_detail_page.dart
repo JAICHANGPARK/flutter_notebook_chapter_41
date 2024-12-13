@@ -187,7 +187,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                           Container(
                             decoration: ShapeDecoration(
                               shape: StadiumBorder(),
-                              color: Colors.white,
+                              color: Colors.green[200],
                             ),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                             child: IntrinsicHeight(
