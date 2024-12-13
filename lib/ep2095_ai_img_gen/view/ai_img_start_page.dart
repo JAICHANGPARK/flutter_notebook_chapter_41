@@ -25,33 +25,17 @@ class AiImgStartPage extends StatelessWidget {
             ),
           ),
           Positioned(
-              left: -120,
-              top: -140,
-              bottom: 0,
-              right: -120,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: ListView(
-                      children: [
-                        Gap(160),
-                        ...List.generate(
-                          10,
-                          (index) => Container(
-                            margin: EdgeInsets.only(bottom: 16),
-                            height: 280,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Gap(16),
-                  Expanded(
-                    child: ListView(
-                      children: List.generate(
+            left: -120,
+            top: -140,
+            bottom: 0,
+            right: -120,
+            child: Row(
+              children: [
+                Expanded(
+                  child: ListView(
+                    children: [
+                      Gap(160),
+                      ...List.generate(
                         10,
                         (index) => Container(
                           margin: EdgeInsets.only(bottom: 16),
@@ -61,28 +45,61 @@ class AiImgStartPage extends StatelessWidget {
                           ),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+                Gap(16),
+                Expanded(
+                  child: ListView(
+                    children: List.generate(
+                      10,
+                      (index) => Container(
+                        margin: EdgeInsets.only(bottom: 16),
+                        height: 280,
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                        ),
+                      ),
                     ),
                   ),
-                  Gap(16),
-                  Expanded(
-                    child: ListView(
-                      children: [
-                        Gap(160),
-                        ...List.generate(
-                          10,
-                          (index) => Container(
-                            margin: EdgeInsets.only(bottom: 16),
-                            height: 280,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                            ),
+                ),
+                Gap(16),
+                Expanded(
+                  child: ListView(
+                    children: [
+                      Gap(160),
+                      ...List.generate(
+                        10,
+                        (index) => Container(
+                          margin: EdgeInsets.only(bottom: 16),
+                          height: 280,
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
                           ),
                         ),
-                      ],
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
+          Positioned.fill(
+            child: Column(
+              children: [
+                Expanded(child: Container()),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [],
+                      ),
                     ),
-                  )
-                ],
-              ))
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
