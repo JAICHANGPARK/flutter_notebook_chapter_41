@@ -154,6 +154,23 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                             ),
                           ),
                         ),
+                        Gap(12),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                          child: IntrinsicHeight(
+                            child: Row(
+                              children: [
+                                Icon(Icons.bookmark_border),
+                                Text("382"),
+
+                              ],
+                            ),
+                          ),
+                        ),
                       ],
                     )
                   ],
