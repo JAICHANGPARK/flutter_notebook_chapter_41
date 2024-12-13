@@ -9,6 +9,21 @@ class AiImgStartPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment.topCenter,
+                  // begin: Alignment.topCenter,
+                  // end: Alignment.bottomCenter,
+                  colors: [
+                    Color.fromRGBO(41, 16, 68, 1),
+                    Color.fromRGBO(11, 4, 20, 1),
+                  ],
+                ),
+              ),
+            ),
+          ),
           Positioned(
               left: -120,
               top: -140,
@@ -36,9 +51,9 @@ class AiImgStartPage extends StatelessWidget {
                   Gap(16),
                   Expanded(
                     child: ListView(
-                      children:List.generate(
+                      children: List.generate(
                         10,
-                            (index) => Container(
+                        (index) => Container(
                           margin: EdgeInsets.only(bottom: 16),
                           height: 280,
                           decoration: BoxDecoration(
@@ -55,7 +70,7 @@ class AiImgStartPage extends StatelessWidget {
                         Gap(160),
                         ...List.generate(
                           10,
-                              (index) => Container(
+                          (index) => Container(
                             margin: EdgeInsets.only(bottom: 16),
                             height: 280,
                             decoration: BoxDecoration(
