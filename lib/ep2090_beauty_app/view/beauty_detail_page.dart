@@ -70,11 +70,28 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Row(
-                      children: [
-
-                      ],
-                    )
+                    Gap(16),
+                    Wrap(
+                      spacing: 16,
+                      runSpacing: 16,
+                      alignment: WrapAlignment.center,
+                      runAlignment: WrapAlignment.center,
+                      children: List.generate(
+                          3,
+                              (index) => Container(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 3,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [Text("#"), Text("acnetips")],
+                            ),
+                          )).toList(),
+                    ),
                   ],
                 ),
               ),
