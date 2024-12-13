@@ -89,6 +89,8 @@ class AiImgStartPage extends StatelessWidget {
               children: [
                 Expanded(child: Container()),
                 Container(
+                  height: 320,
+                  width: double.infinity,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.bottomCenter,
@@ -104,7 +106,8 @@ class AiImgStartPage extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
-                      
+                      Text("Welcome to Your"),
+                      Text("Creative Space"),
                     ],
                   ),
                 )
