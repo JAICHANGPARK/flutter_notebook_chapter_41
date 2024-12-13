@@ -117,7 +117,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         )
                       ],
                     ),
-                    Gap(12),
+                    Gap(24),
                     Row(
                       children: [
                         Container(
@@ -149,7 +149,6 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                               children: [
                                 Icon(Icons.chat_bubble_outline),
                                 Text("382"),
-
                               ],
                             ),
                           ),
@@ -166,12 +165,43 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                               children: [
                                 Icon(Icons.bookmark_border),
                                 Text("382"),
-
                               ],
                             ),
                           ),
                         ),
                       ],
+                    ),
+                    Gap(16),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                      child: Row(
+                        children: [
+                          CircleAvatar(),
+                          Text("Dream Walker"),
+                          Icon(
+                            Icons.verified,
+                            color: Colors.indigo,
+                          ),
+                          Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.white,
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                            child: IntrinsicHeight(
+                              child: Row(
+                                children: [
+                                  Icon(Icons.add),
+                                  Gap(4),
+                                  Text("Follow"),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 ),
@@ -179,7 +209,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
             ),
           ),
           Container(
-            height: 200,
+            height: 160,
             decoration: BoxDecoration(color: Colors.white),
           )
         ],
