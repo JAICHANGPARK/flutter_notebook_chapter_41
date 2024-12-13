@@ -174,17 +174,20 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                     ),
                     Gap(16),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
                       child: Row(
                         children: [
                           CircleAvatar(),
+                          Gap(12),
                           Text("Dream Walker"),
+                          Gap(4),
                           Icon(
                             Icons.verified,
                             color: Colors.indigo,
+                            size: 18,
                           ),
                           Spacer(),
                           Container(
