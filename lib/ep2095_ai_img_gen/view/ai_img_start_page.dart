@@ -42,6 +42,7 @@ class AiImgStartPage extends StatelessWidget {
                           height: 280,
                           decoration: BoxDecoration(
                             color: Colors.orange,
+                            borderRadius: BorderRadius.circular(8),
                           ),
                         ),
                       ),
@@ -58,6 +59,7 @@ class AiImgStartPage extends StatelessWidget {
                         height: 280,
                         decoration: BoxDecoration(
                           color: Colors.orange,
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                     ),
@@ -75,6 +77,7 @@ class AiImgStartPage extends StatelessWidget {
                           height: 280,
                           decoration: BoxDecoration(
                             color: Colors.orange,
+                            borderRadius: BorderRadius.circular(8),
                           ),
                         ),
                       ),
@@ -101,7 +104,6 @@ class AiImgStartPage extends StatelessWidget {
                         Colors.black.withOpacity(.8),
                         Colors.black.withOpacity(.6),
                         Colors.black.withOpacity(.1),
-
                       ],
                     ),
                   ),
