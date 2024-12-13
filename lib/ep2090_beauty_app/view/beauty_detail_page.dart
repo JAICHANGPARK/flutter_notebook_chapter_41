@@ -69,6 +69,11 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
                       ),
+                    ),
+                    Row(
+                      children: [
+
+                      ],
                     )
                   ],
                 ),
