@@ -117,6 +117,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         )
                       ],
                     ),
+                    Gap(12),
                     Row(
                       children: [
                         Container(
@@ -124,6 +125,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                             shape: StadiumBorder(),
                             color: Colors.white,
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                           child: IntrinsicHeight(
                             child: Row(
                               children: [
@@ -134,7 +136,24 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                               ],
                             ),
                           ),
-                        )
+                        ),
+                        Spacer(),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                          child: IntrinsicHeight(
+                            child: Row(
+                              children: [
+                                Icon(Icons.chat_bubble_outline),
+                                Text("382"),
+
+                              ],
+                            ),
+                          ),
+                        ),
                       ],
                     )
                   ],
