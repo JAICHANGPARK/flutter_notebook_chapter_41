@@ -76,22 +76,28 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                       alignment: WrapAlignment.center,
                       runAlignment: WrapAlignment.center,
                       children: List.generate(
-                          3,
-                          (index) => Container(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 16,
-                                  vertical: 6,
+                        3,
+                        (index) => Container(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 6,
+                          ),
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text("#"),
+                              Gap(4),
+                              Text(
+                                "acnetips",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
                                 ),
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Text("#"),
-                                    Gap(4),
-                                    Text("acnetips"),
-                                  ],
-                                ),
-                              )).toList(),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ).toList(),
                     ),
                   ],
                 ),
