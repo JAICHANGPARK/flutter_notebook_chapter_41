@@ -136,6 +136,7 @@ class AiImgStartPage extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.deepPurpleAccent,
                         ),
+                        padding: EdgeInsets.symmetric(vertical: 16),
                         child: Center(
                           child: Text(
                             "Get Started",
