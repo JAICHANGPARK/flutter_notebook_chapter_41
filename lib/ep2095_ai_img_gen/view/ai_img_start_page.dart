@@ -9,7 +9,7 @@ class AiImgStartPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          
+          Expanded(child: child)
         ],
       ),
     );
