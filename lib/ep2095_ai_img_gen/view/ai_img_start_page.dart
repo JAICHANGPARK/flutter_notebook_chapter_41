@@ -10,19 +10,41 @@ class AiImgStartPage extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-
               child: Row(
             children: [
               Expanded(
-                child: ListView(),
+                child: ListView(
+                  children: [
+                    Container(
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.orange,
+                      ),
+                    )
+                  ],
+                ),
               ),
               Gap(16),
               Expanded(
-                child: ListView(),
+                child: ListView( children: [
+                  Container(
+                    height: 180,
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                    ),
+                  )
+                ],),
               ),
               Gap(16),
               Expanded(
-                child: ListView(),
+                child: ListView( children: [
+                  Container(
+                    height: 180,
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                    ),
+                  )
+                ],),
               )
             ],
           ))
