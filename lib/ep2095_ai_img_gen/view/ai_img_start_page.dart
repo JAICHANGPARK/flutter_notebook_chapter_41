@@ -53,12 +53,16 @@ class AiImgStartPage extends StatelessWidget {
                     child: ListView(
                       children: [
                         Gap(160),
-                        Container(
-                          height: 180,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
+                        ...List.generate(
+                          10,
+                              (index) => Container(
+                            margin: EdgeInsets.only(bottom: 16),
+                            height: 280,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                            ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   )
