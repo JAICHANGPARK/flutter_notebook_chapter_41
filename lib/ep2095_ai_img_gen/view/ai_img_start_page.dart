@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class AiImgStartPage extends StatelessWidget {
   const AiImgStartPage({super.key});
@@ -15,9 +16,11 @@ class AiImgStartPage extends StatelessWidget {
               Expanded(
                 child: ListView(),
               ),
+              Gap(16),
               Expanded(
                 child: ListView(),
               ),
+              Gap(16),
               Expanded(
                 child: ListView(),
               )
