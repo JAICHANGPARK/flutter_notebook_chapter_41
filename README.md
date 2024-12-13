@@ -6,7 +6,7 @@
 - Yohanes Nico for Matriks Studio
 - https://dribbble.com/shots/25324835-Artify-AI-Image-Generator
 
-<img src="https://cdn.dribbble.com/userupload/17914295/file/original-5c7acbb5955c6c27bce83c566d7783ee.jpg?resize=1905x1429&vertical=center"/>
+<img src="https://cdn.dribbble.com/userupload/17980005/file/original-f431d0a265fb130c49c7b4a352be62e5.png?resize=1600x1200&vertical=center"/>
 
 
 ## EP2090-2094
