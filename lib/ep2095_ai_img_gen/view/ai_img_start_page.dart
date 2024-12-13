@@ -95,7 +95,7 @@ class AiImgStartPage extends StatelessWidget {
                     gradient: LinearGradient(
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
-                      stops: [.6,.8,.9, 1],
+                      stops: [.7, .8, .9, 1],
                       colors: [
                         Colors.black,
                         Colors.black.withOpacity(.9),
@@ -108,6 +108,7 @@ class AiImgStartPage extends StatelessWidget {
                     children: [
                       Text("Welcome to Your"),
                       Text("Creative Space"),
+                      Text("")
                     ],
                   ),
                 )
