@@ -184,6 +184,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                             Icons.verified,
                             color: Colors.indigo,
                           ),
+                          Spacer(),
                           Container(
                             decoration: ShapeDecoration(
                               shape: StadiumBorder(),
