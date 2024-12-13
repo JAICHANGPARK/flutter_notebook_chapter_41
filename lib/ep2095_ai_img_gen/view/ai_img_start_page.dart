@@ -15,6 +15,7 @@ class AiImgStartPage extends StatelessWidget {
               Expanded(
                 child: ListView(
                   children: [
+                    Gap(24),
                     Container(
                       height: 180,
                       decoration: BoxDecoration(
@@ -38,6 +39,7 @@ class AiImgStartPage extends StatelessWidget {
               Gap(16),
               Expanded(
                 child: ListView( children: [
+                  Gap(24),
                   Container(
                     height: 180,
                     decoration: BoxDecoration(
