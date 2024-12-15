@@ -20,6 +20,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
             left: 24,
             right: 24,
             top: 32,
+            bottom: 0,
             child: SafeArea(
               child: Column(
                 children: [
