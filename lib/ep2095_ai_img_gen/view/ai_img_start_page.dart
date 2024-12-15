@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import 'ai_img_home_page.dart';
+import 'ai_img_template_pagfe.dart';
 
 class AiImgStartPage extends StatelessWidget {
   const AiImgStartPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AiImgTemplatePage(
+      
+    );
+
+    Scaffold(
       body: Stack(
         children: [
           Positioned.fill(
