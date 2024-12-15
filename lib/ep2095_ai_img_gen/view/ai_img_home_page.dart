@@ -84,6 +84,31 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                           height: 320,
                           color: Colors.blue,
                         ),
+                        Gap(24),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Last Result Prompt",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "See All",
+                              ),
+                            ),
+                          ],
+                        ),
+                        Gap(16),
+                        Container(
+                          height: 320,
+                          color: Colors.blue,
+                        ),
                       ],
                     ),
                   ))
