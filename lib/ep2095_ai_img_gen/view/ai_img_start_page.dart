@@ -154,6 +154,6 @@ class AiImgStartPage extends StatelessWidget {
         ),
       ],),
     );
-    
+
   }
 }
