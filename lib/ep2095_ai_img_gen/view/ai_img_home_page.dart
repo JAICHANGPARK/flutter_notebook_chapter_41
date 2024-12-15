@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ai_img_template_pagfe.dart';
+
 class AiImgHomePage extends StatefulWidget {
   const AiImgHomePage({super.key});
 
@@ -10,12 +12,6 @@ class AiImgHomePage extends StatefulWidget {
 class _AiImgHomePageState extends State<AiImgHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-
-        ],
-      ),
-    );
+    return AiImgTemplatePage(child: Stack(),);
   }
 }
