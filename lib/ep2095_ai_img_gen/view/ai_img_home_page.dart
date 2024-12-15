@@ -26,7 +26,15 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                     children: [
                       CircleAvatar(),
                       Expanded(
-                        child: Text("ARTIFYYY"),
+                        child: Center(
+                          child: Text(
+                            "ARTIFYYY",
+                            style: TextStyle(
+                              fontSize: 24,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                       ),
                       Container(
                         decoration: BoxDecoration(
@@ -35,7 +43,11 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                             color: Colors.grey,
                           ),
                         ),
-                        child: Icon(Icons.menu, color: Colors.white,),
+                        padding: EdgeInsets.all(8),
+                        child: Icon(
+                          Icons.menu,
+                          color: Colors.white,
+                        ),
                       )
                     ],
                   )
