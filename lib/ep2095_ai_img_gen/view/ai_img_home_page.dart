@@ -10,6 +10,12 @@ class AiImgHomePage extends StatefulWidget {
 class _AiImgHomePageState extends State<AiImgHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
