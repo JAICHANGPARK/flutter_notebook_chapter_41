@@ -63,6 +63,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
+                          fontSize: 18,
                         ),
                       ),
                       TextButton(
