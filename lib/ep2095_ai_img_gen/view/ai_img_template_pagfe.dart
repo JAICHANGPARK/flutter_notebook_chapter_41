@@ -27,6 +27,7 @@ class _AiImgTemplatePageState extends State<AiImgTemplatePage> {
                   // end: Alignment.bottomCenter,
                   colors: [
                     Color.fromRGBO(41, 16, 68, 1),
+                    Color.fromRGBO(41, 16, 68, 1),
                     Color.fromRGBO(11, 4, 20, 1),
                   ],
                 ),
