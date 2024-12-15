@@ -89,7 +89,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Last Result Prompt",
+                              "Explore Styles",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
