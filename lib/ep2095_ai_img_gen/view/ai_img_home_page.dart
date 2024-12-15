@@ -12,6 +12,30 @@ class AiImgHomePage extends StatefulWidget {
 class _AiImgHomePageState extends State<AiImgHomePage> {
   @override
   Widget build(BuildContext context) {
-    return AiImgTemplatePage(child: Stack(),);
+    return AiImgTemplatePage(
+      child: Stack(
+        children: [
+          Positioned(
+            left: 24,
+            right: 24,
+            top: 32,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Expanded(
+                        child: Text("ARTIFYYY"),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
