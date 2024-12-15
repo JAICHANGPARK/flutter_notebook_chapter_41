@@ -54,31 +54,38 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                       )
                     ],
                   ),
-                  Gap(24),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Last Result Prompt",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 18,
+                  Expanded(
+                      child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Gap(24),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Last Result Prompt",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "See All",
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "See All",
+                        Gap(16),
+                        Container(
+                          height: 320,
+                          color: Colors.blue,
                         ),
-                      ),
-                    ],
-                  ),
-                  Gap(16),
-                  Container(
-                    height: 320,
-                    color: Colors.blue,
-                  )
+                      ],
+                    ),
+                  ))
                 ],
               ),
             ),
