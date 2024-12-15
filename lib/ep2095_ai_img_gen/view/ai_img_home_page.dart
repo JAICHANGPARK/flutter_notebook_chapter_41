@@ -28,6 +28,15 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                       Expanded(
                         child: Text("ARTIFYYY"),
                       ),
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        child: Icon(Icons.menu, color: Colors.white,),
+                      )
                     ],
                   )
                 ],
