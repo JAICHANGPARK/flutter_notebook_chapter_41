@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AiImgTemplatePage extends StatefulWidget {
   final Widget child;
 
-  AiImgTemplatePage({
+  const AiImgTemplatePage({
     super.key,
     required this.child,
   });
@@ -33,6 +33,7 @@ class _AiImgTemplatePageState extends State<AiImgTemplatePage> {
               ),
             ),
           ),
+          Positioned.fill(child: widget.child),
         ],
       ),
     );
