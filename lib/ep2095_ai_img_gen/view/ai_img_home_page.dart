@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import 'ai_img_template_pagfe.dart';
 
@@ -53,6 +54,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                       )
                     ],
                   ),
+                  Gap(24),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -68,8 +70,13 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                         child: Text(
                           "See All",
                         ),
-                      )
+                      ),
                     ],
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 320,
+                    color: Colors.blue,
                   )
                 ],
               ),
