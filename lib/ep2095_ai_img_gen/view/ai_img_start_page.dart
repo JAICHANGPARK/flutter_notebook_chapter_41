@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'ai_img_home_page.dart';
+
 class AiImgStartPage extends StatelessWidget {
   const AiImgStartPage({super.key});
 
@@ -136,8 +138,12 @@ class AiImgStartPage extends StatelessWidget {
                       ),
                       Gap(24),
                       InkWell(
-                        onTap: (){
-                          
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => AiImgHomePage(),
+                            ),
+                          );
                         },
                         child: Container(
                           decoration: BoxDecoration(
