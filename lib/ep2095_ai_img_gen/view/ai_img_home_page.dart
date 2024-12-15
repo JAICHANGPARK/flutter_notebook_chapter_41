@@ -24,7 +24,9 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 24,
+                      ),
                       Expanded(
                         child: Center(
                           child: Text(
@@ -47,6 +49,24 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                         child: Icon(
                           Icons.menu,
                           color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Last Result Prompt",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "See All",
                         ),
                       )
                     ],
