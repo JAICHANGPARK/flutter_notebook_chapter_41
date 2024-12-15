@@ -135,17 +135,22 @@ class AiImgStartPage extends StatelessWidget {
                         ),
                       ),
                       Gap(24),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.deepPurpleAccent,
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        padding: EdgeInsets.symmetric(vertical: 16),
-                        child: Center(
-                          child: Text(
-                            "Get Started",
-                            style: TextStyle(
-                              color: Colors.white,
+                      InkWell(
+                        onTap: (){
+                          
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurpleAccent,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          child: Center(
+                            child: Text(
+                              "Get Started",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
