@@ -90,7 +90,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
-                            spacing: 12,
+                            spacing: 16,
                             children: [
                               Row(
                                 spacing: 8,
@@ -105,12 +105,24 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                                   CircleAvatar(
                                     backgroundColor: Colors.deepPurple,
                                     foregroundColor: Colors.white,
+                                    radius: 16,
                                     child: Icon(Icons.download),
                                   ),
                                   CircleAvatar(
+                                    radius: 16,
+                                    backgroundColor: Colors.deepPurple,
+                                    foregroundColor: Colors.white,
                                     child: Icon(Icons.more_horiz),
                                   ),
                                 ],
+                              ),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                ),
                               )
                             ],
                           ),
