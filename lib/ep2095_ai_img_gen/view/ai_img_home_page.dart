@@ -123,7 +123,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
             child: Container(
               height: 80,
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Colors.green,
               ),
               padding: EdgeInsets.all(16),
               child: Row(
