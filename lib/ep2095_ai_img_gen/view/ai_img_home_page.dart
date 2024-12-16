@@ -121,6 +121,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
             left: 24,
             right: 24,
             child: Container(
+              height: 80,
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
@@ -128,10 +129,22 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                        decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.white,
-                    )),
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.white,
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.home_filled,
+                          ),
+                          Gap(12),
+                          Text(
+                            "Home",
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                   Expanded(
                     child: Container(
