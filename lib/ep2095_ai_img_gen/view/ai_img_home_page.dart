@@ -106,13 +106,19 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                                     backgroundColor: Colors.deepPurple,
                                     foregroundColor: Colors.white,
                                     radius: 16,
-                                    child: Icon(Icons.download),
+                                    child: Icon(
+                                      Icons.download,
+                                      size: 18,
+                                    ),
                                   ),
                                   CircleAvatar(
                                     radius: 16,
                                     backgroundColor: Colors.deepPurple,
                                     foregroundColor: Colors.white,
-                                    child: Icon(Icons.more_horiz),
+                                    child: Icon(
+                                      Icons.more_horiz,
+                                      size: 18,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -123,6 +129,13 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                                     borderRadius: BorderRadius.circular(16),
                                   ),
                                 ),
+                              ),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                maxLines: 2,
                               )
                             ],
                           ),
