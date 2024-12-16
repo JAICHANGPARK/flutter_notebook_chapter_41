@@ -55,6 +55,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                       )
                     ],
                   ),
+                  Gap(24),
                   Expanded(
                       child: SingleChildScrollView(
                     child: Column(
@@ -141,7 +142,6 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                             ],
                           ),
                         ),
-                        Gap(24),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -161,7 +161,6 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                             ),
                           ],
                         ),
-                        Gap(16),
                         Container(
                           height: 320,
                           color: Colors.blue,
