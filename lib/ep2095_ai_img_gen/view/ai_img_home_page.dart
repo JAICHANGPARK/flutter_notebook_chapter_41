@@ -117,11 +117,46 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
             ),
           ),
           Positioned(
-              child: Container(
-            decoration: BoxDecoration(
-              color: Colors.black,
+            bottom: 24,
+            left: 24,
+            right: 24,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.search,
+                        ),
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(),
+                    ),
+                  )
+                ],
+              ),
             ),
-          ))
+          )
         ],
       ),
     );
