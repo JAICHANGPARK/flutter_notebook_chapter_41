@@ -90,7 +90,23 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                           ),
                           child: Column(
                             spacing: 12,
-                            children: [],
+                            children: [
+                              Row(
+                                spacing: 8,
+                                children: [
+                                  Text("Anime Style", style: TextStyle(
+                                    color: Colors.white,
+                                  ),),
+                                  Spacer(),
+                                  CircleAvatar(
+                                    child: Icon(Icons.download),
+                                  ),
+                                  CircleAvatar(
+                                    child: Icon(Icons.download),
+                                  ),
+                                ],
+                              )
+                            ],
                           ),
                         ),
                         Gap(24),
