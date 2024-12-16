@@ -99,6 +99,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                                     "Anime Style",
                                     style: TextStyle(
                                       color: Colors.white,
+                                      fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   Spacer(),
