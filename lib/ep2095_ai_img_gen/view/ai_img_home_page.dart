@@ -161,11 +161,25 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.photo_outlined,
+                        ),
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.person_2_outlined,
+                        ),
+                        color: Colors.white,
+                      ),
                     ),
                   )
                 ],
