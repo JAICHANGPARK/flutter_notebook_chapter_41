@@ -88,21 +88,27 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                               color: Colors.white.withValues(alpha: .2),
                             ),
                           ),
+                          padding: EdgeInsets.all(16),
                           child: Column(
                             spacing: 12,
                             children: [
                               Row(
                                 spacing: 8,
                                 children: [
-                                  Text("Anime Style", style: TextStyle(
-                                    color: Colors.white,
-                                  ),),
+                                  Text(
+                                    "Anime Style",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                   Spacer(),
                                   CircleAvatar(
+                                    backgroundColor: Colors.deepPurple,
+                                    foregroundColor: Colors.white,
                                     child: Icon(Icons.download),
                                   ),
                                   CircleAvatar(
-                                    child: Icon(Icons.download),
+                                    child: Icon(Icons.more_horiz),
                                   ),
                                 ],
                               )
