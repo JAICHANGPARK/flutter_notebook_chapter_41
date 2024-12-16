@@ -58,8 +58,8 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                   Expanded(
                       child: SingleChildScrollView(
                     child: Column(
+                      spacing: 24,
                       children: [
-                        Gap(24),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -79,7 +79,6 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                             ),
                           ],
                         ),
-                        Gap(16),
                         Container(
                           height: 320,
                           decoration: BoxDecoration(
@@ -100,6 +99,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
+                                      fontSize: 16,
                                     ),
                                   ),
                                   Spacer(),
