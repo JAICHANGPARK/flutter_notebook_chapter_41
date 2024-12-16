@@ -128,8 +128,10 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(),
-                    ),
+                        decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.white,
+                    )),
                   ),
                   Expanded(
                     child: Container(
