@@ -117,7 +117,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
             ),
           ),
           Positioned(
-            bottom: 24,
+            bottom: 32,
             left: 24,
             right: 24,
             child: Container(
@@ -146,6 +146,10 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                           Gap(12),
                           Text(
                             "Home",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ],
                       ),
