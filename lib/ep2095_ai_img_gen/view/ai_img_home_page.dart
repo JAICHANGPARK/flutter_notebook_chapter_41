@@ -86,7 +86,7 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
-                              color: Colors.white.withOpacity(opacity)!,
+                              color: Colors.white.withValues(),
                             ),
 
                           ),
