@@ -82,7 +82,14 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                         Gap(16),
                         Container(
                           height: 320,
-                          color: Colors.blue,
+
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: Colors.white.withOpacity(opacity)!,
+                            ),
+
+                          ),
                         ),
                         Gap(24),
                         Row(
@@ -117,13 +124,13 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
             ),
           ),
           Positioned(
-            bottom: 32,
+            bottom: 42,
             left: 24,
             right: 24,
             child: Container(
               height: 72,
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(32),
               ),
               padding: EdgeInsets.all(16),
