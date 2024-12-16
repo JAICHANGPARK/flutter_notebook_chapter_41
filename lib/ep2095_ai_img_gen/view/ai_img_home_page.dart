@@ -162,17 +162,21 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                           ],
                         ),
                         Container(
-                          color: Colors.blue,
                           child: GridView.builder(
                             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2,
                               crossAxisSpacing: 16,
                               mainAxisSpacing: 16,
                             ),
+                            itemCount: 10,
+                            shrinkWrap: true,
+                            physics: NeverScrollableScrollPhysics(),
                             itemBuilder: (context, index) {
                               return Container(
+
                                 decoration: BoxDecoration(
                                   color: Colors.brown,
+                                  borderRadius: BorderRadius.circular(12),
                                 ),
                               );
                             },
