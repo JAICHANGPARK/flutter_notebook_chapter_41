@@ -125,7 +125,9 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
+              padding: EdgeInsets.all(16),
               child: Row(
+                spacing: 12,
                 children: [
                   Expanded(
                     child: Container(
@@ -146,40 +148,34 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                       ),
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.search,
-                        ),
-                        color: Colors.white,
+                  Container(
+                    decoration: BoxDecoration(),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.search,
                       ),
+                      color: Colors.white,
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.photo_outlined,
-                        ),
-                        color: Colors.white,
+                  Container(
+                    decoration: BoxDecoration(),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.photo_outlined,
                       ),
+                      color: Colors.white,
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.person_2_outlined,
-                        ),
-                        color: Colors.white,
+                  Container(
+                    decoration: BoxDecoration(),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.person_2_outlined,
                       ),
+                      color: Colors.white,
                     ),
                   )
                 ],
