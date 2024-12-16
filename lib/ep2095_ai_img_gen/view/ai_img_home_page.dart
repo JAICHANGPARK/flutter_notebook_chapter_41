@@ -82,13 +82,15 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                         Gap(16),
                         Container(
                           height: 320,
-
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
-                              color: Colors.white.withValues(),
+                              color: Colors.white.withValues(alpha: .2),
                             ),
-
+                          ),
+                          child: Column(
+                            spacing: 12,
+                            children: [],
                           ),
                         ),
                         Gap(24),
