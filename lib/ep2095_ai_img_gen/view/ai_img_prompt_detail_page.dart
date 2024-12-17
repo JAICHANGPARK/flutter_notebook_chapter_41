@@ -68,18 +68,20 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                         ),
                       ),
                       SizedBox(
-                        height: 52,
+                        height: 62,
                         child: Row(
                           spacing: 16,
                           children: [
                             Expanded(
                               child: Container(
+                                height: double.infinity,
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Color.fromRGBO(28, 28, 28, 1),
                                 ),
                                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   spacing: 8,
                                   children: [
                                     Icon(
@@ -98,13 +100,16 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                             ),
                             Expanded(
                               child: Container(
+                                height: double.infinity,
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Color.fromRGBO(28, 28, 28, 1),
                                 ),
                                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                 child: Row(
+
                                   spacing: 8,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(
                                       Icons.download,
