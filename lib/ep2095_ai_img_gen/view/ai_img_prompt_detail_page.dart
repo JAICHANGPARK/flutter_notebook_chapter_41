@@ -75,12 +75,10 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                             Container(
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
+                                color: Color.fromRGBO(28, 28, 28, 1),
                               ),
                               child: Row(
-                                children: [
-                                  Icon(Icons.download),
-                                  Text("Download")
-                                ],
+                                children: [Icon(Icons.download), Text("Download")],
                               ),
                             )
                           ],
