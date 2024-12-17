@@ -58,13 +58,32 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                             border: Border.all(
                               color: Colors.white.withValues(alpha: .1),
                             )),
-                        padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                        padding: EdgeInsets.symmetric(vertical: 6, horizontal: 6),
                         child: Text(
                           """<lora:EtherPDXLStyleXL:1>, best quality, masterpiece, EtherPDXLStyle, 1girl, megumi katou, katou megumi , smile, looking at viewer, Megumi <lora:KatoMegumi:1>,brown hair,katou megumi,brown eyes, medium breasts , short hair, hood down, short hair, upper body, glitch, black hoodie, colorful, black jacket, paint splatter, long sleeves, abstract background, looking back, multicolored background, from side, hooded jacket, heart, chromatic aberration Show less""",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                           maxLines: 5,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 52,
+                        child: Row(
+                          spacing: 16,
+                          children: [
+                            Container(
+                              decoration: ShapeDecoration(
+                                shape: StadiumBorder(),
+                              ),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.download),
+                                  Text("Download")
+                                ],
+                              ),
+                            )
+                          ],
                         ),
                       )
                     ],
