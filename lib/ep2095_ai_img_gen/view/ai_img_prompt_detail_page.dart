@@ -77,6 +77,7 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                                 shape: StadiumBorder(),
                                 color: Color.fromRGBO(28, 28, 28, 1),
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                               child: Row(
                                 spacing: 8,
                                 children: [
