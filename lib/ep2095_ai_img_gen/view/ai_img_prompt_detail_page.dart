@@ -10,6 +10,16 @@ class AiImgPromptDetailPage extends StatefulWidget {
 class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.network(
+              "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d6a9ac6b-68f9-48b5-988f-593d9e8e8de4/original=true,quality=90/45231417.jpeg",
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
