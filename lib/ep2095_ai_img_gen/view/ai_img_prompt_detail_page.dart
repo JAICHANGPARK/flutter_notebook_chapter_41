@@ -68,7 +68,7 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                         ),
                       ),
                       SizedBox(
-                        height: 62,
+                        height: 52,
                         child: Row(
                           spacing: 16,
                           children: [
