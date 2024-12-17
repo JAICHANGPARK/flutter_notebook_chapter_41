@@ -32,12 +32,14 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
                             "Prompt Result",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
+                              fontSize: 16,
                             ),
                           ),
                           IconButton(
@@ -48,7 +50,15 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                             color: Colors.white,
                           )
                         ],
-                      )
+                      ),
+                      Container(
+                          decoration: BoxDecoration(),
+                          child: Text(
+                            """<lora:EtherPDXLStyleXL:1>, best quality, masterpiece, EtherPDXLStyle, 1girl, megumi katou, katou megumi , smile, looking at viewer, Megumi <lora:KatoMegumi:1>,brown hair,katou megumi,brown eyes, medium breasts , short hair, hood down, short hair, upper body, glitch, black hoodie, colorful, black jacket, paint splatter, long sleeves, abstract background, looking back, multicolored background, from side, hooded jacket, heart, chromatic aberration Show less""",
+                            style: TextStyle(
+                              
+                            ),
+                          ))
                     ],
                   ),
                 )
