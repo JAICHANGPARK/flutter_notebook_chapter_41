@@ -72,26 +72,52 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                         child: Row(
                           spacing: 16,
                           children: [
-                            Container(
-                              decoration: ShapeDecoration(
-                                shape: StadiumBorder(),
-                                color: Color.fromRGBO(28, 28, 28, 1),
-                              ),
-                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                              child: Row(
-                                spacing: 8,
-                                children: [
-                                  Icon(
-                                    Icons.download,
-                                    color: Colors.white,
-                                  ),
-                                  Text(
-                                    "Download",
-                                    style: TextStyle(
+                            Expanded(
+                              child: Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Color.fromRGBO(28, 28, 28, 1),
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                child: Row(
+                                  spacing: 8,
+                                  children: [
+                                    Icon(
+                                      Icons.download,
                                       color: Colors.white,
                                     ),
-                                  )
-                                ],
+                                    Text(
+                                      "Download",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Color.fromRGBO(28, 28, 28, 1),
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                child: Row(
+                                  spacing: 8,
+                                  children: [
+                                    Icon(
+                                      Icons.download,
+                                      color: Colors.white,
+                                    ),
+                                    Text(
+                                      "Download",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             )
                           ],
