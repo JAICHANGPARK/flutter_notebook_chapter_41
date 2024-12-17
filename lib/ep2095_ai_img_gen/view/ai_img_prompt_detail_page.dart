@@ -107,16 +107,15 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                                 ),
                                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                 child: Row(
-
                                   spacing: 8,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(
-                                      Icons.download,
+                                      Icons.share,
                                       color: Colors.white,
                                     ),
                                     Text(
-                                      "Download",
+                                      "Share",
                                       style: TextStyle(
                                         color: Colors.white,
                                       ),
@@ -126,6 +125,12 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                               ),
                             )
                           ],
+                        ),
+                      ),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white,
                         ),
                       )
                     ],
