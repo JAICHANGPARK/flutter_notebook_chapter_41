@@ -22,7 +22,20 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
           Positioned.fill(
               child: SafeArea(
             child: Column(
-              children: [],
+              children: [
+                Expanded(child: Container()),
+                Container(
+
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(12, 5, 21, 1),
+                  ),
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
+                )
+              ],
             ),
           ))
         ],
