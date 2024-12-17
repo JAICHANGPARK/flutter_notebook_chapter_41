@@ -78,7 +78,19 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                                 color: Color.fromRGBO(28, 28, 28, 1),
                               ),
                               child: Row(
-                                children: [Icon(Icons.download), Text("Download")],
+                                spacing: 8,
+                                children: [
+                                  Icon(
+                                    Icons.download,
+                                    color: Colors.white,
+                                  ),
+                                  Text(
+                                    "Download",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
                               ),
                             )
                           ],
