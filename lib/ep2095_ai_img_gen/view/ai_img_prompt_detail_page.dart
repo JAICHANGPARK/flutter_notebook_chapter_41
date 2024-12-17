@@ -132,9 +132,15 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                           shape: StadiumBorder(),
                           color: Colors.white,
                         ),
-                        padding: EdgeInsets.symmetric(vertical: 16),
+                        padding: EdgeInsets.symmetric(vertical: 12),
                         child: Center(
-                          child: Text("Open Editor",),
+                          child: Text(
+                            "Open Editor",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
                         ),
                       )
                     ],
