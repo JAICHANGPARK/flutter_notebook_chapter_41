@@ -10,6 +10,6 @@ class AiImgPromptDetailPage extends StatefulWidget {
 class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
