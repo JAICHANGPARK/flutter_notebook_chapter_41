@@ -30,7 +30,7 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                     color: Color.fromRGBO(12, 5, 21, 1),
                   ),
                   child: Column(
-                    spacing: 16,
+                    spacing: 20,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -132,7 +132,7 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                           shape: StadiumBorder(),
                           color: Colors.white,
                         ),
-                        padding: EdgeInsets.symmetric(vertical: 12),
+                        padding: EdgeInsets.symmetric(vertical: 16),
                         child: Center(
                           child: Text("Open Editor",),
                         ),
