@@ -30,6 +30,7 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                     color: Color.fromRGBO(12, 5, 21, 1),
                   ),
                   child: Column(
+                    spacing: 16,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -52,13 +53,20 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
                         ],
                       ),
                       Container(
-                          decoration: BoxDecoration(),
-                          child: Text(
-                            """<lora:EtherPDXLStyleXL:1>, best quality, masterpiece, EtherPDXLStyle, 1girl, megumi katou, katou megumi , smile, looking at viewer, Megumi <lora:KatoMegumi:1>,brown hair,katou megumi,brown eyes, medium breasts , short hair, hood down, short hair, upper body, glitch, black hoodie, colorful, black jacket, paint splatter, long sleeves, abstract background, looking back, multicolored background, from side, hooded jacket, heart, chromatic aberration Show less""",
-                            style: TextStyle(
-                              
-                            ),
-                          ))
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            border: Border.all(
+                              color: Colors.white.withValues(alpha: .1),
+                            )),
+                        padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                        child: Text(
+                          """<lora:EtherPDXLStyleXL:1>, best quality, masterpiece, EtherPDXLStyle, 1girl, megumi katou, katou megumi , smile, looking at viewer, Megumi <lora:KatoMegumi:1>,brown hair,katou megumi,brown eyes, medium breasts , short hair, hood down, short hair, upper body, glitch, black hoodie, colorful, black jacket, paint splatter, long sleeves, abstract background, looking back, multicolored background, from side, hooded jacket, heart, chromatic aberration Show less""",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                          maxLines: 5,
+                        ),
+                      )
                     ],
                   ),
                 )
