@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'ai_img_prompt_detail_page.dart';
 import 'ai_img_template_pagfe.dart';
 
 class AiImgHomePage extends StatefulWidget {
@@ -126,10 +127,11 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                               ),
                               Expanded(
                                 child: InkWell(
-                                  onTap: (){
+                                  onTap: () {
                                     Navigator.of(context).push(
-
-                                      
+                                      MaterialPageRoute(
+                                        builder: (context) => AiImgPromptDetailPage(),
+                                      ),
                                     );
                                   },
                                   child: Container(
@@ -181,7 +183,6 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                             physics: NeverScrollableScrollPhysics(),
                             itemBuilder: (context, index) {
                               return Container(
-
                                 decoration: BoxDecoration(
                                   color: Colors.brown,
                                   borderRadius: BorderRadius.circular(12),
