@@ -125,10 +125,18 @@ class _AiImgHomePageState extends State<AiImgHomePage> {
                                 ],
                               ),
                               Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.orange,
-                                    borderRadius: BorderRadius.circular(16),
+                                child: InkWell(
+                                  onTap: (){
+                                    Navigator.of(context).push(
+
+                                      
+                                    );
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.orange,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                   ),
                                 ),
                               ),
