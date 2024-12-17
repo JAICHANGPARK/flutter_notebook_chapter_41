@@ -25,13 +25,22 @@ class _AiImgPromptDetailPageState extends State<AiImgPromptDetailPage> {
               children: [
                 Expanded(child: Container()),
                 Container(
-
                   decoration: BoxDecoration(
                     color: Color.fromRGBO(12, 5, 21, 1),
                   ),
                   child: Column(
                     children: [
-                      
+                      Row(
+                        children: [
+                          Text("Prompt Result"),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.copy,
+                            ),
+                          )
+                        ],
+                      )
                     ],
                   ),
                 )
