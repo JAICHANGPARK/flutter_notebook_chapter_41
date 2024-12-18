@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'vierw/makeup_home_page.dart';
+
 
 void main() {
   runApp(MakeupApp());
@@ -10,6 +12,8 @@ class MakeupApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: MakeupHomePage(),
+    );
   }
 }
