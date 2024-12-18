@@ -6,7 +6,7 @@
 - Caraka
 - https://dribbble.com/shots/25348126-Makeupe-Virtual-Makeup-Try-On-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/17980005/file/original-f431d0a265fb130c49c7b4a352be62e5.png?resize=1600x1200&vertical=center"/>
+<img src="https://cdn.dribbble.com/userupload/18051741/file/original-e47bd08e1f499b3888db6baea5b52036.jpg?resize=1905x1428&vertical=center"/>
 
 ## EP2095-2098
 
