@@ -23,9 +23,13 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
             ),
             Column(
               children: [
-                Icon(Icons.home_filled),
-                Text("Home"),
+                Icon(Icons.storefront),
+                Text("Shop"),
               ],
+            ),
+            CircleAvatar(
+              backgroundColor: Colors.orange,
+              child: Icon(Icons.qr_code_scanner),
             )
           ],
         ),
