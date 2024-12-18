@@ -13,6 +13,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           spacing: 16,
           children: [
             Column(
@@ -32,7 +33,21 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
             CircleAvatar(
               backgroundColor: Colors.orange,
               child: Icon(Icons.qr_code_scanner),
-            )
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.lightbulb_outline),
+                Text("Forum"),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.person_2_outlined),
+                Text("Profile"),
+              ],
+            ),
           ],
         ),
       ),
