@@ -12,7 +12,17 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            Column(
+              children: [
+                
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
