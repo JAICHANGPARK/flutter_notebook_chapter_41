@@ -31,9 +31,32 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                 Spacer(),
                 CircleAvatar(
                   backgroundColor: Colors.white,
+                  child: Icon(Icons.search),
+                ),
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Badge(
+                    child: Icon(Icons.notifications_none),
+                  ),
+                ),
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Badge(
+                    child: Icon(Icons.shopping_bag_outlined),
+                  ),
                 ),
               ],
-            )
+            ),
+            Container(
+              height: 200,
+              child: Placeholder(),
+            ),
+            Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+            ))
           ],
         ),
       ),
