@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MakeupHomePage extends StatefulWidget {
   const MakeupHomePage({super.key});
 
@@ -14,10 +13,18 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Row(
+          spacing: 16,
           children: [
             Column(
               children: [
-                
+                Icon(Icons.home_filled),
+                Text("Home"),
+              ],
+            ),
+            Column(
+              children: [
+                Icon(Icons.home_filled),
+                Text("Home"),
               ],
             )
           ],
