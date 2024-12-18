@@ -11,6 +11,32 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              spacing: 16,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.storage),
+                      Text("230 Points"),
+                    ],
+                  ),
+                ),
+                Spacer(),
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
