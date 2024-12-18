@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  
+  runApp(MakeupApp());
 }
 
 class MakeupApp extends StatelessWidget {
@@ -10,6 +10,6 @@ class MakeupApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp();
   }
 }
