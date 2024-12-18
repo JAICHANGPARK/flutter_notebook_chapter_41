@@ -15,44 +15,52 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              spacing: 16,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                  ),
-                  child: Row(
+            Container(
+              padding: EdgeInsets.all(16),
+              child: Column(
+                spacing: 16,
+                children: [
+                  Row(
+                    spacing: 16,
                     children: [
-                      Icon(Icons.storage),
-                      Text("230 Points"),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.storage),
+                            Text("230 Points"),
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(Icons.search),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Badge(
+                          child: Icon(Icons.notifications_none),
+                        ),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Badge(
+                          child: Icon(Icons.shopping_bag_outlined),
+                        ),
+                      ),
                     ],
                   ),
-                ),
-                Spacer(),
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  child: Icon(Icons.search),
-                ),
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  child: Badge(
-                    child: Icon(Icons.notifications_none),
+                  Container(
+                    height: 200,
+                    child: Placeholder(),
                   ),
-                ),
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  child: Badge(
-                    child: Icon(Icons.shopping_bag_outlined),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Container(
-              height: 200,
-              child: Placeholder(),
-            ),
-            Gap(16),
+            
             Expanded(
                 child: Container(
                   padding: EdgeInsets.all(16),
