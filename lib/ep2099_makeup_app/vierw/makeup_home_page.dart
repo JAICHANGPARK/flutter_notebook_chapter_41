@@ -33,6 +33,8 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
             CircleAvatar(
               backgroundColor: Colors.orange,
               child: Icon(Icons.qr_code_scanner),
+              radius: 28,
+              foregroundColor: Colors.black,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
