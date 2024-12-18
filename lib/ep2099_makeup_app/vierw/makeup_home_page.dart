@@ -16,12 +16,14 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
           spacing: 16,
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.home_filled),
                 Text("Home"),
               ],
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.storefront),
                 Text("Shop"),
