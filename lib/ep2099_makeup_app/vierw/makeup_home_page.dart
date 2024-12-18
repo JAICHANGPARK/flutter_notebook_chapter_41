@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MakeupHomePage extends StatefulWidget {
   const MakeupHomePage({super.key});
@@ -51,8 +52,10 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
               height: 200,
               child: Placeholder(),
             ),
+            Gap(16),
             Expanded(
                 child: Container(
+                  padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
