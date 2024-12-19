@@ -125,7 +125,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
@@ -135,6 +135,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                     children: [
                       Container(
                           height: 180,
+                          width: double.infinity,
                           decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(12),
