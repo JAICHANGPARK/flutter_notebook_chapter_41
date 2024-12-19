@@ -92,6 +92,12 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         shrinkWrap: true,
                         itemBuilder: (context, index) {
                           return Container(
+                            decoration: BoxDecoration(
+                              
+                            ),
+                            child: Stack(children: [
+
+                            ],),
 
                           );
                         },
