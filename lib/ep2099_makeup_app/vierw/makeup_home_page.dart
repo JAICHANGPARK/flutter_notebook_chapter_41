@@ -52,6 +52,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                               "230 Points",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontSize: 16,
                               ),
                             ),
                           ],
@@ -102,7 +103,10 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                 color: Colors.grey[200]!,
                               )),
                           child: Column(
-                            children: [],
+                            children: [
+                              Expanded(child: Center(child: Icon(Icons.brush))),
+
+                            ],
                           ),
                         );
                       },
