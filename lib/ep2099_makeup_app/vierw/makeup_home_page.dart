@@ -105,7 +105,14 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                           child: Column(
                             children: [
                               Expanded(child: Center(child: Icon(Icons.brush))),
-
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200]!,
+                                ),
+                                child: Center(
+                                  child: Text("Brush"),
+                                ),
+                              )
                             ],
                           ),
                         );
