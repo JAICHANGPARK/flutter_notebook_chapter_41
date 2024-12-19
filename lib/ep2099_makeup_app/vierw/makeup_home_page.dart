@@ -197,6 +197,23 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                       color: Colors.red,
                                     ),
                                   ),
+                                ),
+                                Positioned(
+                                  bottom: 12,
+                                  left: 12,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(
+                                          backgroundColor: Colors.black,
+                                          radius: 12,
+                                        )
+                                      ],
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
