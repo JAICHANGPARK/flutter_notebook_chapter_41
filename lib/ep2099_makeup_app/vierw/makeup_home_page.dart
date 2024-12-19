@@ -109,6 +109,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.grey[200]!,
                                 ),
+                                padding: EdgeInsets.symmetric(vertical: 4),
                                 child: Center(
                                   child: Text("Brush"),
                                 ),
