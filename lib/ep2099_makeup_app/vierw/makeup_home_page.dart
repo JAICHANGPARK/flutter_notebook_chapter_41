@@ -206,7 +206,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(24),
                                     ),
-                                    padding: Ed,
+                                    padding: EdgeInsets.all(4),
                                     child: Row(
                                       children: [
                                         CircleAvatar(
