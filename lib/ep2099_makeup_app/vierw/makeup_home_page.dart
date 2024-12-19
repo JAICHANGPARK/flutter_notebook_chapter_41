@@ -20,9 +20,9 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 gradient: RadialGradient(
+                  center: Alignment.bottomCenter,
                   colors: [
-                    Colors.orange,
-                    Colors.orangeAccent,
+                    Colors.orange[400]!,
                     Colors.white,
                   ],
                 ),
