@@ -68,13 +68,18 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                 ),
                 child: SingleChildScrollView(
                   child: Column(
-                    spacing: 16,
+                    spacing: 12,
                     children: [
                       Container(
                         height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         child: Placeholder(),
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("Recommendations"),
                           TextButton(
@@ -92,13 +97,10 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         shrinkWrap: true,
                         itemBuilder: (context, index) {
                           return Container(
-                            decoration: BoxDecoration(
-
+                            decoration: BoxDecoration(),
+                            child: Stack(
+                              children: [],
                             ),
-                            child: Stack(children: [
-
-                            ],),
-
                           );
                         },
                       )
