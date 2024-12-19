@@ -26,7 +26,6 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                     // Colors.white,
                     Colors.grey[50]!,
                   ],
-
                   radius: 0.8,
                 ),
               ),
@@ -42,8 +41,13 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         ),
                         child: Row(
                           children: [
-                            Icon(Icons.storage),
-                            Text("230 Points"),
+                            Icon(
+                              Icons.storage,
+                              color: Colors.white,
+                            ),
+                            Text("230 Points",style: TextStyle(
+                              
+                            ),),
                           ],
                         ),
                       ),
@@ -54,13 +58,15 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         child: Icon(Icons.search),
                       ),
                       CircleAvatar(
-                        backgroundColor: Colors.white,foregroundColor: Colors.black,
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
                         child: Badge(
                           child: Icon(Icons.notifications_none),
                         ),
                       ),
                       CircleAvatar(
-                        backgroundColor: Colors.white,foregroundColor: Colors.black,
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
                         child: Badge(
                           child: Icon(Icons.shopping_bag_outlined),
                         ),
