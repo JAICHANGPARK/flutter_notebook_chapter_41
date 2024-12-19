@@ -177,7 +177,15 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                           return Container(
                             decoration: BoxDecoration(),
                             child: Stack(
-                              children: [],
+                              children: [
+                                Positioned.fill(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                )
+                              ],
                             ),
                           );
                         },
