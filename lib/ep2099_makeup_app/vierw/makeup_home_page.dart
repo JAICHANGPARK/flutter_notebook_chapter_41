@@ -17,6 +17,16 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
           children: [
             Container(
               padding: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                gradient: RadialGradient(
+                  colors: [
+                    Colors.orange,
+                    Colors.orangeAccent,
+                    Colors.white,
+                  ],
+                ),
+              ),
               child: Column(
                 spacing: 16,
                 children: [
@@ -59,6 +69,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    padding: EdgeInsets.all(12),
                     child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
