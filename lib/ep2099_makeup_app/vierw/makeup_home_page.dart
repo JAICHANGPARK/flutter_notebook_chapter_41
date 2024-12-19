@@ -61,31 +61,36 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
               ),
             ),
             Expanded(
-                child: Container(
-              padding: EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.white,
-              ),
-              child: Column(
-                children: [
-                  Container(
-                    height: 180,
-                    child: Placeholder(),
-                  ),
-                  Row(
+              child: Container(
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: SingleChildScrollView(
+                  child: Column(
+                    spacing: 16,
                     children: [
-                      Text("Recommendations"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View All",
-                        ),
+
+                      Container(
+                        height: 180,
+                        child: Placeholder(),
+                      ),
+                      Row(
+                        children: [
+                          Text("Recommendations"),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "View All",
+                            ),
+                          )
+                        ],
                       )
                     ],
-                  )
-                ],
+                  ),
+                ),
               ),
-            ))
+            ),
           ],
         ),
       ),
