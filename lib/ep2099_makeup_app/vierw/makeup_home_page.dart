@@ -169,7 +169,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                           crossAxisCount: 2,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,
-                          childAspectRatio: 0.85,
+                          childAspectRatio: 0.8,
                         ),
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
@@ -188,8 +188,8 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                   ),
                                 ),
                                 Positioned(
-                                  right: 8,
-                                  top: 8,
+                                  right: 12,
+                                  top: 12,
                                   child: CircleAvatar(
                                     backgroundColor: Colors.white,
                                     child: Icon(
