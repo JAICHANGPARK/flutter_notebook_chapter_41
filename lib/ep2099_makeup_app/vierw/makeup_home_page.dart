@@ -23,7 +23,8 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                   center: Alignment.bottomCenter,
                   colors: [
                     Colors.orange[200]!,
-                    Colors.white,
+                    // Colors.white,
+                    Colors.grey[50]!,
                   ],
 
                   radius: 0.8,
