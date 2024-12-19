@@ -22,11 +22,11 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                 gradient: RadialGradient(
                   center: Alignment.bottomCenter,
                   colors: [
-                    Colors.orange[400]!,
+                    Colors.orange[200]!,
                     Colors.white,
                   ],
 
-                  radius: 1,
+                  radius: 0.8,
                 ),
               ),
               child: Column(
