@@ -39,15 +39,19 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.black,
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                         child: Row(
                           children: [
                             Icon(
                               Icons.storage,
                               color: Colors.white,
                             ),
-                            Text("230 Points",style: TextStyle(
-                              
-                            ),),
+                            Text(
+                              "230 Points",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ],
                         ),
                       ),
