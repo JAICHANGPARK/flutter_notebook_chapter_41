@@ -93,8 +93,11 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                       GridView.builder(
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
+                          crossAxisSpacing: 12,
+                          mainAxisSpacing: 12,
                         ),
                         shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(),
