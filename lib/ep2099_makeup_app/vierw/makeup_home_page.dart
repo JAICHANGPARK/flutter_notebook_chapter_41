@@ -204,13 +204,16 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: Colors.white,
+                                      borderRadius: BorderRadius.circular(24),
                                     ),
+                                    padding: Ed,
                                     child: Row(
                                       children: [
                                         CircleAvatar(
                                           backgroundColor: Colors.black,
                                           radius: 12,
-                                        )
+                                        ),
+                                        Text("ABCD Beauty")
                                       ],
                                     ),
                                   ),
