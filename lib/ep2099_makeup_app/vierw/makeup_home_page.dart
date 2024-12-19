@@ -38,14 +38,16 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.black,
+                          borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         child: Row(
                           children: [
                             Icon(
                               Icons.storage,
                               color: Colors.white,
                             ),
+                            Gap(8),
                             Text(
                               "230 Points",
                               style: TextStyle(
