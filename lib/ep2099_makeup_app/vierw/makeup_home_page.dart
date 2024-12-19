@@ -86,14 +86,16 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         ],
                       ),
                       GridView.builder(
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                          ),
-                          itemBuilder: (context,index){
-                            return Container(
-                              
-                            );
-                          })
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                        ),
+                        shrinkWrap: true,
+                        itemBuilder: (context, index) {
+                          return Container(
+
+                          );
+                        },
+                      )
                     ],
                   ),
                 ),
