@@ -76,7 +76,13 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        child: Placeholder(),
+                        padding: EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+
+                          ],
+                        )
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
