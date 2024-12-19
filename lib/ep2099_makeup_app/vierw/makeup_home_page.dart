@@ -54,9 +54,18 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                     ],
                   ),
                   Container(
-                    height: 200,
-                    child: Placeholder(),
-                  ),
+                      height: 200,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: GridView.builder(
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 4,
+                            crossAxisSpacing: 8,
+                            mainAxisSpacing: 8,
+                          ),
+                          itemBuilder: (context, index))),
                 ],
               ),
             ),
@@ -71,19 +80,16 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                     spacing: 12,
                     children: [
                       Container(
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        padding: EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-
-                          ],
-                        )
-                      ),
+                          height: 180,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          padding: EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [],
+                          )),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -104,6 +110,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         ),
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
+                        itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(),
