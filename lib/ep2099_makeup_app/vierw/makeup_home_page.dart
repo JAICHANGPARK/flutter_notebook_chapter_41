@@ -188,6 +188,8 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                   ),
                                 ),
                                 Positioned(
+                                  right: 8,
+                                  top: 8,
                                   child: CircleAvatar(
                                     backgroundColor: Colors.white,
                                     child: Icon(
