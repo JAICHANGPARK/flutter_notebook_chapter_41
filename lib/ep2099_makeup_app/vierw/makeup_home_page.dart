@@ -149,7 +149,13 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Recommendations"),
+                          Text(
+                            "Recommendations",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: Text(
