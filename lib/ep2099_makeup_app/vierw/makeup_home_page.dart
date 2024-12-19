@@ -169,6 +169,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                           crossAxisCount: 2,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,
+                          childAspectRatio: 0.85,
                         ),
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
@@ -182,6 +183,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
+                                      b
                                     ),
                                   ),
                                 )
