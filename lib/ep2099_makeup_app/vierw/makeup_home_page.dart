@@ -50,16 +50,17 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                       Spacer(),
                       CircleAvatar(
                         backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
                         child: Icon(Icons.search),
                       ),
                       CircleAvatar(
-                        backgroundColor: Colors.white,
+                        backgroundColor: Colors.white,foregroundColor: Colors.black,
                         child: Badge(
                           child: Icon(Icons.notifications_none),
                         ),
                       ),
                       CircleAvatar(
-                        backgroundColor: Colors.white,
+                        backgroundColor: Colors.white,foregroundColor: Colors.black,
                         child: Badge(
                           child: Icon(Icons.shopping_bag_outlined),
                         ),
