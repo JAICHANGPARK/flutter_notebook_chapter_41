@@ -25,6 +25,8 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                     Colors.orange[400]!,
                     Colors.white,
                   ],
+
+                  radius: 1,
                 ),
               ),
               child: Column(
