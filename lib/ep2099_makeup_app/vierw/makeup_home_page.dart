@@ -93,7 +93,7 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(
-                              
+
                             ),
                             child: Stack(children: [
 
