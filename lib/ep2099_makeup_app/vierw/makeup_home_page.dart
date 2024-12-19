@@ -70,7 +70,6 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                   child: Column(
                     spacing: 16,
                     children: [
-
                       Container(
                         height: 180,
                         child: Placeholder(),
@@ -85,7 +84,16 @@ class _MakeupHomePageState extends State<MakeupHomePage> {
                             ),
                           )
                         ],
-                      )
+                      ),
+                      GridView.builder(
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                          ),
+                          itemBuilder: (context,index){
+                            return Container(
+                              
+                            );
+                          })
                     ],
                   ),
                 ),
